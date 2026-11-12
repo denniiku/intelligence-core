@@ -4,14 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=block" rel="stylesheet">
-  <title>*SC | Bnpl Fce - intelligence core - biz intelligence - bnpl fce</title>
-  <meta name="description" content="*SC (SISTAR Company) - Bnpl Fce : 24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP." />
+  <title>*SC | BNPL FCE — Autonomous B2B Trade Credit Underwriting &amp; Sovereign K-SURE Clearing Engine</title>
+  <meta name="description" content="Official Institutional Monograph of Domain 03 (intelligence-core): BNPL FCE transforms cross-border B2B trade credit through continuous behavioral underwriting, sovereign K-SURE export guarantees, and self-liquidating 70/30 split settlements." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "*SC | Bnpl Fce",
-    "description": "24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.",
+    "@type": "TechArticle",
+    "headline": "*SC | BNPL FCE — Autonomous B2B Trade Credit Underwriting & Sovereign K-SURE Clearing Engine",
+    "description": "Comprehensive institutional monograph on *SC BNPL FCE: Algorithmic credit scoring, K-SURE export insurance API integration, 3-Month Rolling Purchasing Forecasts, and self-liquidating receivables.",
+    "author": {
+      "@type": "Organization",
+      "name": "*SC - SISTAR COMPANY",
+      "url": "https://sistarcompany.com"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "*SC - SISTAR COMPANY",
@@ -19,206 +24,717 @@
     }
   }
   </script>
-  <style>html,body{background:linear-gradient(to right,#f0acf7,#acf7f0,#f7f0ac);margin:0;padding:0;}body.sc-nav-open{padding-left:236px;}body.sc-nav-folded{padding-left:64px;}@media(max-width:768px){body.sc-nav-open,body.sc-nav-folded{padding-left:0!important;}}</style>
   <script>
     (function() {
       var p = location.pathname.replace(/\\/g, "/");
       var base = "/common_assets/";
       if (location.protocol === "file:") {
         var i = p.toLowerCase().indexOf("/sc_web/");
-        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "./common_assets/";
+        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "../../common_assets/";
       }
       document.write("<link rel=\"stylesheet\" href=\"" + base + "common_new.css?v=2.2\">");
-      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js\" defer><\/script>");
+      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js?v=5.0\" defer><\/script>");
     })();
   </script>
   <style>
-    .sc-auto-page {
+    html, body {
+      background: linear-gradient(to right, #f0acf7, #acf7f0, #f7f0ac);
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.sc-nav-open { padding-left: 236px; }
+    body.sc-nav-folded { padding-left: 64px; }
+    @media (max-width: 768px) {
+      body.sc-nav-open, body.sc-nav-folded { padding-left: 0 !important; }
+    }
+
+    .sc-monograph {
       box-sizing: border-box;
       width: 100%;
-      max-width: min(1360px, 95%);
-      padding: clamp(40px, 5vh, 68px) clamp(24px, 4.5vw, 72px) 120px;
-      font-family: "Inter", sans-serif;
-      color: #0f172a;
+      max-width: min(1380px, 95%);
+      margin: 0 auto;
+      padding: clamp(36px, 5vh, 68px) clamp(24px, 5vw, 76px) 120px;
     }
-    main h1, main h2, main h3, main h4,
-    main p, main .sc-lead, main .sc-p,
-    main .sc-route, main .sc-sec,
-    main .sc-card-line, main .sc-card-emerald {
-      margin-left: 0 !important;
-      padding-left: 0 !important;
-      text-indent: 0 !important;
-      text-align: left !important;
+    .sc-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+      border-bottom: 1.5px solid rgba(15, 23, 42, 0.15);
     }
     .sc-route {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.88rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
       font-weight: 600;
       color: #475569;
-      letter-spacing: 0.04em;
-      margin: 0 0 18px 0;
+      margin: 0;
+      letter-spacing: 0.03em;
       text-transform: lowercase;
     }
-    .sc-sec {
-      padding: 52px 0;
-      border-bottom: 1.5px solid rgba(15, 23, 42, 0.14);
+
+    /* === CHAPTER & PAGE STRUCTURE === */
+    .sc-chapter { margin-bottom: 48px; padding: 12px 0; }
+    .sc-chapter-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid #0f172a;
     }
-    .sc-sec:last-of-type { border-bottom: none; }
-    .sc-kicker {
-      display: inline-block;
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.78rem;
+    .sc-chapter-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #0f5132;
-      background: rgba(22, 135, 101, 0.15);
-      padding: 5px 12px;
-      border-radius: 4px;
-      margin: 0 0 14px 0;
     }
-    .sc-h1 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(2.1rem, 3.6vw, 3.1rem);
-      font-weight: 700;
-      color: #0f172a;
-      letter-spacing: -0.025em;
-      line-height: 1.12;
-      margin: 0 0 14px 0;
-    }
-    .sc-sub {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.15rem, 1.6vw, 1.38rem);
+    .sc-chapter-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
       font-weight: 600;
-      color: #0f5132;
-      line-height: 1.4;
-      margin: 0 0 24px 0;
+      color: #64748b;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
-    .sc-h2 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.45rem, 2.2vw, 1.95rem);
+    .sc-doc-h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.1rem, 3.6vw, 3.05rem);
       font-weight: 700;
       color: #0f172a;
-      letter-spacing: -0.02em;
-      line-height: 1.25;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      margin: 0 0 20px 0;
+    }
+    .sc-chapter-h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.55rem, 2.4vw, 2.05rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.22;
+      letter-spacing: -0.025em;
       margin: 0 0 18px 0;
     }
-    .sc-h3 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1.15rem;
+    .sc-sub-h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
       font-weight: 700;
       color: #0f172a;
       margin: 0 0 10px 0;
       line-height: 1.35;
     }
     .sc-lead {
-      font-size: clamp(1.04rem, 1.22vw, 1.14rem);
-      line-height: 1.82;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 500;
       color: #1e293b;
-      margin: 0 0 34px 0;
+      line-height: 1.82;
+      margin: 0 0 24px 0;
     }
     .sc-p {
-      font-size: 0.97rem;
-      line-height: 1.8;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.99rem;
       color: #334155;
-      margin: 0;
+      line-height: 1.82;
+      margin: 0 0 16px 0;
     }
-    /* Spacious 2-Column (2x2) Grid Layout */
-    .sc-grid-2x2 {
+
+    /* === EXECUTIVE DARK HERO & METRICS === */
+    .sc-exec-hero {
+      background: linear-gradient(135deg, #090d16 0%, #0f172a 55%, #064e3b 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: clamp(28px, 3.8vw, 44px);
+      margin: 22px 0 32px 0;
+      border: 1px solid rgba(74, 222, 128, 0.3);
+    }
+    .sc-exec-hero h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 14px 0;
+      line-height: 1.3;
+    }
+    .sc-exec-hero p {
+      font-size: 1.02rem;
+      color: #e2e8f0;
+      line-height: 1.78;
+      margin: 0 0 24px 0;
+    }
+    .sc-kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    @media (max-width: 900px) {
+      .sc-kpi-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    .sc-kpi-cell {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .sc-kpi-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.42rem;
+      font-weight: 700;
+      color: #4ade80;
+      margin-bottom: 4px;
+    }
+    .sc-kpi-desc {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    /* === EDITORIAL GRIDS & PANELS === */
+    .sc-grid-2 {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 48px;
-      row-gap: 38px;
-      margin-top: 28px;
+      gap: 28px;
+      margin: 24px 0;
     }
-    @media (max-width: 760px) {
-      .sc-grid-2x2 { grid-template-columns: 1fr; }
+    .sc-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 24px 0;
     }
-    .sc-card-line {
-      padding-top: 20px !important;
-      border-top: 2px solid rgba(15, 23, 42, 0.24) !important;
+    @media (max-width: 860px) {
+      .sc-grid-2, .sc-grid-3 { grid-template-columns: 1fr; }
     }
-    .sc-card-emerald {
-      padding-top: 20px !important;
-      border-top: 3px solid #168765 !important;
+    .sc-panel {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-top: 4px solid #0f172a;
+      border-radius: 12px;
+      padding: 24px 26px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
     }
-    .sc-num-label {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.82rem;
+    .sc-panel.emerald { border-top-color: #0f5132; background: #f8fafc; }
+    .sc-panel.blue { border-top-color: #1d4ed8; }
+    .sc-panel.purple { border-top-color: #6d28d9; }
+    .sc-panel-kicker {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
       font-weight: 700;
-      color: #0f5132;
-      text-transform: uppercase;
       letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #0f5132;
       margin-bottom: 8px;
     }
-    .sc-callout {
-      margin-top: 38px;
-      padding: 20px 24px !important;
-      border-left: 4px solid #0f5132;
-      background: rgba(255, 255, 255, 0.34);
-      font-size: 0.98rem;
-      font-weight: 500;
-      color: #0f172a;
-      line-height: 1.72;
+    .sc-panel.blue .sc-panel-kicker { color: #1d4ed8; }
+    .sc-panel.purple .sc-panel-kicker { color: #6d28d9; }
+
+    /* === FORMULA & ARCHITECTURE BLOCKS === */
+    .sc-math-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 12px;
+      padding: 22px 26px;
+      margin: 20px 0;
+      border-left: 4px solid #10b981;
     }
-    @media print {
-      html, body, main, .sc-auto-page { background: #ffffff !important; padding-left: 0 !important; opacity: 1 !important; }
-      #sc-left-nav, .sc-nav-toggle { display: none !important; }
-      .sc-card-line, .sc-card-emerald, .sc-callout { break-inside: avoid !important; page-break-inside: avoid !important; }
+    .sc-math-code {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 1.04rem;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 7px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 8px 0 12px 0;
+    }
+
+    /* === TABLES === */
+    .sc-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #cbd5e1;
+    }
+    .sc-table th {
+      background: #0f172a;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-align: left;
+      padding: 14px 18px;
+      letter-spacing: 0.03em;
+    }
+    .sc-table td {
+      padding: 15px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.94rem;
+      color: #1e293b;
+      line-height: 1.65;
+      vertical-align: top;
+    }
+    .sc-table tr:last-child td { border-bottom: none; }
+    .sc-table tr:nth-child(even) td { background: #f8fafc; }
+
+    /* === CALLOUTS & DOSSIER HEADERS === */
+    .sc-callout {
+      background: #f0fdf4;
+      border-left: 5px solid #0f5132;
+      border-radius: 0 12px 12px 0;
+      padding: 22px 26px;
+      margin: 24px 0;
+    }
+    .sc-callout-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0f5132;
+      margin-bottom: 6px;
+    }
+    .sc-dossier-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 8px rgba(15,23,42,0.03);
+    }
+    .sc-svg-wrap {
+      margin: 28px 0;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+      overflow-x: auto;
+    }
+    .sc-svg-wrap svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 960px;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body class="sc-nav-open">
-  <main class="sc-auto-page">
-    <p class="sc-route">intelligence core - biz intelligence - bnpl fce</p>
+  <main class="sc-monograph">
+    <div class="sc-top-bar">
+      <p class="sc-route">intelligence core - biz intelligence - bnpl fce</p>
+    </div>
 
-    <section class="sc-sec" style="padding-top: 12px;">
-      <div><span class="sc-kicker">ENTERPRISE BRAIN &bull; *SC INTELLIGENCE CORE</span></div>
-      <h1 class="sc-h1">*SC - Bnpl Fce</h1>
-      <p class="sc-sub">24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.</p>
-      <p class="sc-lead">As part of the <strong>*SC intelligence-core</strong>, <strong>Bnpl Fce</strong> functions as the autonomous central nervous system of the Signal Star Universe. Operating around the clock while human executives sleep, it harvests global market data, grounds strategic decisions in verified facts, and automates all 8 corporate departments at near- fixed cost.</p>
+    <!-- DOCUMENT HEADER -->
+    <header style="margin-bottom: 36px;">
+      <div class="sc-chapter-num">03. INTELLIGENCE-CORE &bull; BIZ INTELLIGENCE</div>
+      <h1 class="sc-doc-h1">*SC BNPL FCE — Autonomous B2B Trade Credit &amp; Sovereign Clearing Engine</h1>
+      <p class="sc-lead">Inside Domain 03 (intelligence-core), the <strong>BNPL FCE (Buy-Now-Pay-Later Financial &amp; Commercial Engine)</strong> represents the sovereign trade credit underwriting, risk telemetry, and self-liquidating receivables backbone of *SC (SISTAR Company / Signal Star Universe). Replacing collateral-heavy Documentary Letters of Credit (L/C) with algorithmic behavioral underwriting, K-SURE sovereign insurance bridges, and automated 70/30 PG webhooks, BNPL FCE expands B2B trade purchasing power by 300% across our 8 international hubs.</p>
+    </header>
 
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <div class="sc-num-label">01 &bull; WHAT IT IS (CORE DEFINITION)</div>
-          <h2 class="sc-h3">Overnight Data Factory (10 PM - 8 AM)</h2>
-          <p class="sc-p">Headless Playwright/Apify scrapers autonomously harvest global wholesale prices (1688/Alibaba), Shopee/Tokopedia competitor SKUs, HS-code tariffs, and regulatory updates every night.</p>
+    <!-- EXECUTIVE HERO -->
+    <div class="sc-exec-hero">
+      <h3>Executive Architectural Synthesis: The Frictionless Sovereign B2B Credit Mesh</h3>
+      <p>International B2B commerce has been paralyzed for over a century by commercial bank friction: small-and-medium enterprises (SMEs), veterinary hospital groups, and regional retail networks are choked by demands for 100% cash collateral, slow L/C issuance fees (3% to 5%), and 90-day cash conversion droughts. BNPL FCE replaces static balance sheet audits with live sell-through POS telemetry, 3-Month Rolling Purchasing Forecasts (RPF), and sovereign credit insurance policies (K-SURE / Eximbank), turning cross-border accounts receivable into institutional-grade, zero-default financial assets.</p>
+      <div class="sc-kpi-strip">
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">300%</div>
+          <div class="sc-kpi-desc">Buyer Purchasing Power Expansion vs. Cash Prepayment</div>
         </div>
-
-        <div class="sc-card-line">
-          <div class="sc-num-label">02 &bull; WHY WE DO IT (MARKET OPPORTUNITY)</div>
-          <h2 class="sc-h3">Dual-Engine Vector RAG (NotebookLM + Dify)</h2>
-          <p class="sc-p">Embeds nightly market streams alongside internal Google Drive/Keep memos into Supabase pgvector and NotebookLM repositories, delivering citation-backed 8:00 AM executive briefs.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">&lt; 0.15%</div>
+          <div class="sc-kpi-desc">Empirical Non-Payment Default Rate under Sovereign K-SURE</div>
         </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">03 &bull; HOW IT WORKS (OPERATIONAL MECHANISM)</div>
-          <h2 class="sc-h3">Qubit ERP &amp; CCTV Vision Stock Opname</h2>
-          <p class="sc-p">Automates Finance/VAT, HR (25th payouts), Sales/CRM, and RA natively on Google Workspace, while CCTV + Gemini Vision AI counts warehouse pallets and sachets in real time.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">t = 0</div>
+          <div class="sc-kpi-desc">Self-Liquidating 70/30 Checkout Principal Retirement</div>
         </div>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">Net-30/90</div>
+          <div class="sc-kpi-desc">Algorithmic Credit Term Options without Bank Intermediaries</div>
+        </div>
+      </div>
+    </div>
 
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">04 &bull; REVENUE MODEL &amp; EXPECTED ROI</div>
-          <h2 class="sc-h3">Dual-Return SaaS &amp; MCP API Monetization</h2>
-          <p class="sc-p">Eliminates 100% of internal ERP/admin licensing costs while generating external B2B revenue through custom enterprise RAG builds, Zoho/Workspace ERP SaaS, and MCP Server agent query tolls.</p>
+    <!-- CHAPTER 1 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 01</span>
+        <span class="sc-chapter-tag">LIQUIDITY PARALYSIS</span>
+      </div>
+      <h2 class="sc-chapter-h2">The Liquidity Paralysis in Cross-Border Trade — Why Traditional Banking Fails</h2>
+      <p class="sc-p">In classical international trading, credit access is governed by archaic banking institutions that prioritize backwards-looking corporate balance sheets over real-time commercial velocity. A fast-growing Indonesian veterinary clinic chain or a Vietnamese skincare distributor with 40% month-over-month inventory sell-through is routinely denied trade credit because their registered corporate entity has operated for fewer than three fiscal years or lacks commercial real estate collateral.</p>
+      <p class="sc-p">Conversely, exporters who extend unsecured Open Account (O/A) terms face severe balance sheet distress whenever foreign counterparties delay remittances. The <strong>*SC BNPL FCE</strong> eliminates both sides of this trap simultaneously:</p>
+
+      <div class="sc-grid-3">
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">LEGACY DEFECT 01</div>
+          <h3 class="sc-sub-h3">Costly Documentary L/C Tollgates</h3>
+          <p class="sc-p">Traditional bank Letters of Credit demand 2% to 4% in processing fees, tie up 100% cash margins, and delay shipping vessel schedules by 21 to 35 days due to paper discrepancies.</p>
+        </div>
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">LEGACY DEFECT 02</div>
+          <h3 class="sc-sub-h3">Severe Working Capital Bottlenecks</h3>
+          <p class="sc-p">Buyers must drain operating cash reserves before goods are manufactured and shipped, capping their total order volume well below local market consumer demand.</p>
+        </div>
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">LEGACY DEFECT 03</div>
+          <h3 class="sc-sub-h3">Manual Debt Collection Latency</h3>
+          <p class="sc-p">Exporters spend weeks chasing invoices post-delivery, suffering currency exchange slippage and legal enforcement costs across unfamiliar foreign jurisdictions.</p>
+        </div>
+      </div>
+
+      <!-- BESPOKE INLINE SVG 1 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#090d16"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">BNPL FCE &bull; AUTONOMOUS UNDERWRITING &amp; SETTLEMENT TOPOLOGY</text>
+          
+          <!-- STAGE 1: TELEMETRY INGESTION -->
+          <g transform="translate(50, 70)">
+            <rect width="240" height="220" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="120" y="26" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">1. TELEMETRY INGESTION</text>
+            <rect x="20" y="48" width="200" height="34" rx="5" fill="#0f172a"/>
+            <text x="120" y="70" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Buyer POS / ERP Sell-Through</text>
+            <rect x="20" y="92" width="200" height="34" rx="5" fill="#0f172a"/>
+            <text x="120" y="114" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">3-Month RPF Binding Forecast</text>
+            <rect x="20" y="136" width="200" height="34" rx="5" fill="#0f172a"/>
+            <text x="120" y="158" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">CCTV Warehouse Stock Count</text>
+            <text x="120" y="198" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="10" text-anchor="middle">Score Computed at 08:00 AM</text>
+          </g>
+
+          <!-- ARROW 1 -->
+          <line x1="300" y1="180" x2="350" y2="180" stroke="#38bdf8" stroke-width="3"/>
+          <text x="325" y="170" fill="#38bdf8" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">INSURE</text>
+
+          <!-- STAGE 2: SOVEREIGN INSURANCE BRIDGE -->
+          <g transform="translate(360, 70)">
+            <rect width="240" height="220" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="120" y="26" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">2. K-SURE SOVEREIGN BRIDGE</text>
+            <rect x="20" y="48" width="200" height="34" rx="5" fill="#0f172a"/>
+            <text x="120" y="70" fill="#fde68a" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">K-SURE API Policy Binding</text>
+            <rect x="20" y="92" width="200" height="34" rx="5" fill="#0f172a"/>
+            <text x="120" y="114" fill="#fde68a" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">B/L Customs Manifest Match</text>
+            <rect x="20" y="136" width="200" height="34" rx="5" fill="#0f172a"/>
+            <text x="120" y="158" fill="#fde68a" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Net-30 / 60 / 90 Line Activated</text>
+            <text x="120" y="198" fill="#fbbf24" font-family="'Space Grotesk', monospace" font-size="10" text-anchor="middle">Sovereign Default Shield: 95%</text>
+          </g>
+
+          <!-- ARROW 2 -->
+          <line x1="610" y1="180" x2="660" y2="180" stroke="#10b981" stroke-width="3"/>
+          <text x="635" y="170" fill="#10b981" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">RETIRE</text>
+
+          <!-- STAGE 3: SELF-LIQUIDATING CLEARING -->
+          <g transform="translate(670, 70)">
+            <rect width="240" height="220" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+            <text x="120" y="26" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">3. SELF-LIQUIDATING 70/30</text>
+            <rect x="20" y="48" width="200" height="34" rx="5" fill="#0f172a"/>
+            <text x="120" y="70" fill="#a7f3d0" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Scarlet AI / POS Checkout Event</text>
+            <rect x="20" y="92" width="200" height="34" rx="5" fill="#0f172a"/>
+            <text x="120" y="114" fill="#a7f3d0" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">70% Auto-Retires Principal COGS</text>
+            <rect x="20" y="136" width="200" height="34" rx="5" fill="#0f172a"/>
+            <text x="120" y="158" fill="#a7f3d0" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">30% Released to Buyer Wallet</text>
+            <text x="120" y="198" fill="#38bdf8" font-family="'Space Grotesk', monospace" font-size="10" text-anchor="middle">Zero Manual Debt Collection</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Continuous Behavioral Underwriting &bull; Sovereign Export Protection &bull; Instant Webhook Clearing</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 2 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 02</span>
+        <span class="sc-chapter-tag">SOVEREIGN BRIDGE</span>
+      </div>
+      <h2 class="sc-chapter-h2">Sovereign Insurance Integration: K-SURE &amp; Eximbank API Bridges</h2>
+      <p class="sc-p">Extending unsecured commercial credit to overseas counterparties across emerging markets usually exposes trading enterprises to fatal sovereign default risks. The cornerstone of the *SC BNPL FCE is its native, direct programmatic bridge to <strong>K-SURE (Korea Trade Insurance Corporation)</strong> and national export-import institutions (Sinosure, US Ex-Im Bank):</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">SOVEREIGN POLICY BINDING</div>
+          <h3 class="sc-sub-h3">Algorithmic Credit Limit Allocation</h3>
+          <p class="sc-p">When a vetted Indonesian or Vietnamese distributor signs a 3-Month Rolling Purchasing Forecast, BNPL FCE submits an automated API credit endorsement request to K-SURE. Based on our 20-year corporate export track record and verifiable shipping manifests, K-SURE underwrites 95% to 100% of the cross-border non-payment risk.</p>
+        </div>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">INSTITUTIONAL ASSET CONVERSION</div>
+          <h3 class="sc-sub-h3">Insured Accounts Receivable Factoring</h3>
+          <p class="sc-p">Once Bill of Lading (B/L) and customs documents are confirmed, the accounts receivable becomes an institutional-grade, sovereign-backed asset. *SC can discount the invoice immediately at prime commercial bank interest rates (SOFR + 1.2%), generating instant liquidity while the buyer enjoys comfortable Net-60 terms.</p>
         </div>
       </div>
     </section>
 
-    <section class="sc-sec">
-      <div><span class="sc-kicker">STRATEGIC SYNERGY &amp; GOVERNANCE</span></div>
-      <h2 class="sc-h2">Integration Within the Signal Star Universe (*SC)</h2>
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <h3 class="sc-h3">1. Core Architecture &amp; Technical Integration</h3>
-          <p class="sc-p">Connected across our 12-domain semantic web matrix and 8 international bases (Korea SCK, Indonesia SCI, Singapore SCS, USA SCU, Vietnam SCV, India SCIND, China SCC, Japan SCJ). Every workflow is tracked transparently via standardized Google Workspace Console, Monthly Sales, and Dashboard ledgers.</p>
+    <!-- CHAPTER 3 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 03</span>
+        <span class="sc-chapter-tag">SELF-LIQUIDATING RECEIVABLES</span>
+      </div>
+      <h2 class="sc-chapter-h2">Self-Liquidating Receivables &amp; Automated 70/30 Payment Gateway Split</h2>
+      <p class="sc-p">How does *SC guarantee debt repayment without deploying aggressive international collection agencies? Through our <strong>Self-Liquidating 70/30 Webhook Architecture</strong>. Rather than waiting for the buyer to wire funds at the end of Net-60 days, downstream commercial transactions settled through Scarlet AI, Qubit Biz, or connected local point-of-sale (POS) systems automatically pay down the credit balance in real time:</p>
+
+      <!-- BESPOKE INLINE SVG 2 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#0b1329"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">SELF-LIQUIDATING 70/30 SPLIT SETTLEMENT &bull; REAL-TIME WEBHOOK FLOW</text>
+          
+          <!-- CONSUMER CHECKOUT -->
+          <g transform="translate(60, 100)">
+            <rect width="200" height="140" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="100" y="28" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">DOWNSTREAM SALE</text>
+            <text x="100" y="55" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Retail Consumer Checkout</text>
+            <text x="100" y="75" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">via Midtrans / Xendit / Stripe</text>
+            <rect x="25" y="95" width="150" height="30" rx="5" fill="#0f172a"/>
+            <text x="100" y="115" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="11" font-weight="700" text-anchor="middle">Gross: Rp 1,000,000</text>
+          </g>
+
+          <!-- WEBHOOK SPLITTER -->
+          <line x1="260" y1="170" x2="350" y2="170" stroke="#38bdf8" stroke-width="2"/>
+          <text x="305" y="160" fill="#38bdf8" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">WEBHOOK</text>
+
+          <g transform="translate(350, 80)">
+            <rect width="260" height="180" rx="10" fill="#1e293b" stroke="#c084fc" stroke-width="2"/>
+            <text x="130" y="26" fill="#c084fc" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">70/30 SMART CLEARING SPLITTER</text>
+            <rect x="20" y="45" width="220" height="34" rx="5" fill="#0f172a"/>
+            <text x="130" y="67" fill="#e9d5ff" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Inspect Open Account Ledger</text>
+            <rect x="20" y="90" width="220" height="34" rx="5" fill="#0f172a"/>
+            <text x="130" y="112" fill="#e9d5ff" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Detect Principal Balance Due</text>
+            <rect x="20" y="135" width="220" height="34" rx="5" fill="#0f172a"/>
+            <text x="130" y="157" fill="#e9d5ff" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Execute Atomic Ledger Allocation</text>
+          </g>
+
+          <!-- ARROWS TO 2 ALLOCATIONS -->
+          <line x1="610" y1="130" x2="690" y2="105" stroke="#10b981" stroke-width="2"/>
+          <line x1="610" y1="210" x2="690" y2="235" stroke="#38bdf8" stroke-width="2"/>
+
+          <!-- 70% SPLIT -->
+          <g transform="translate(690, 75)">
+            <rect width="210" height="65" rx="8" fill="#064e3b" stroke="#34d399" stroke-width="1.5"/>
+            <text x="105" y="24" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">70% &bull; PRINCIPAL RETIREMENT</text>
+            <text x="105" y="42" fill="#a7f3d0" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Rp 700,000 &rarr; Direct to *SC Escrow</text>
+            <text x="105" y="56" fill="#6ee7b7" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Retires BNPL Inventory Debt at t = 0</text>
+          </g>
+
+          <!-- 30% SPLIT -->
+          <g transform="translate(690, 200)">
+            <rect width="210" height="65" rx="8" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="105" y="24" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">30% &bull; BUYER PROFIT RELEASE</text>
+            <text x="105" y="42" fill="#bae6fd" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Rp 300,000 &rarr; Buyer Operational Wallet</text>
+            <text x="105" y="56" fill="#7dd3fc" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Immediate Realized Gross Margin</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Zero Invoice Chasing &bull; Self-Liquidating Debt Mechanics &bull; Risk Extinguished with Every Consumer Swipe</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 4 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 04</span>
+        <span class="sc-chapter-tag">MATHEMATICAL FORMALISM</span>
+      </div>
+      <h2 class="sc-chapter-h2">Mathematical Connection: Credit Barrier Tunneling via the WKB Approximation</h2>
+      <p class="sc-p">In Domain 02 (qubit-algorithm), working capital shortages are modeled as a classical potential barrier $V_0$. In Newtonian business rules, an enterprise with liquid capital $E &lt; V_0$ cannot purchase goods; it remains blocked. BNPL FCE leverages the <strong>Quantum Tunneling Law ($T \to 1$)</strong> by substituting cash collateral with pre-committed customer intent and sovereign export insurance:</p>
+
+      <div class="sc-math-box">
+        <div class="sc-formula">T(E_{\text{RPF}}) \approx \exp\left(-\frac{2}{\hbar_{\text{fin}}} \int_{0}^{a} \sqrt{2m [V_0 - (E_{\text{intent}} + E_{\text{K-SURE}})]} \, dx\right) \xrightarrow{E \ge V_0} 1.0</div>
+        <div class="sc-math-desc">Where $E_{\text{intent}}$ is the 3-Month Rolling Purchasing Forecast commitment and $E_{\text{K-SURE}}$ is the sovereign guarantee policy ceiling. The effective potential barrier collapses, enabling 100% transmission probability ($T \to 1$) with zero upfront cash collateral.</div>
+        <div class="sc-math-code">\mathcal{D}(t) = \mathcal{D}_0 \cdot e^{-\lambda \cdot N_{\text{pos}}(t)} \quad \text{where} \quad \lambda = \frac{\gamma_{\text{split}} \cdot \text{AOV}}{\text{COGS}_{\text{batch}}}</div>
+        <div class="sc-math-desc">Outstanding credit balance $\mathcal{D}(t)$ decays exponentially as consumer transaction events $N_{\text{pos}}$ occur, ensuring that credit default risk rapidly approaches zero well before the Net-60 calendar maturity date.</div>
+      </div>
+
+      <!-- BESPOKE INLINE SVG 3 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#090d16"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">QUANTUM CREDIT TUNNELING &bull; WKB BARRIER PENETRATION (T &rarr; 1)</text>
+          
+          <!-- POTENTIAL BARRIER -->
+          <g transform="translate(100, 70)">
+            <!-- Axes -->
+            <line x1="40" y1="200" x2="740" y2="200" stroke="#475569" stroke-width="2"/>
+            <line x1="40" y1="200" x2="40" y2="40" stroke="#475569" stroke-width="2"/>
+            <text x="35" y="30" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="end">Potential V(x)</text>
+            <text x="740" y="220" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11">Capital Distance (x)</text>
+
+            <!-- Barrier Box (Classical Barrier) -->
+            <rect x="280" y="60" width="200" height="140" fill="rgba(239, 68, 68, 0.15)" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,4"/>
+            <text x="380" y="90" fill="#fca5a5" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">CLASSICAL CASH WALL (V_0)</text>
+            <text x="380" y="110" fill="#fecaca" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Bank 100% Cash Margin Demand</text>
+
+            <!-- Incident Wave Packet (Classical: Blocked) -->
+            <path d="M 60,160 Q 100,120 140,160 T 220,160" fill="none" stroke="#38bdf8" stroke-width="3"/>
+            <text x="140" y="110" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Buyer Working Capital (E &lt; V_0)</text>
+
+            <!-- Quantum Tunneling Wave (BNPL FCE) -->
+            <path d="M 220,160 Q 250,140 280,150 T 480,150 Q 520,130 560,150 T 700,150" fill="none" stroke="#10b981" stroke-width="3.5"/>
+            <circle cx="580" cy="150" r="10" fill="#10b981"/>
+            <text x="580" y="130" fill="#4ade80" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">TUNNELED TRANSMISSION (T &rarr; 1)</text>
+            <text x="580" y="180" fill="#a7f3d0" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Goods Manufactured &amp; Shipped on Day 1</text>
+            
+            <!-- Energy Booster Annotation -->
+            <rect x="290" y="140" width="180" height="40" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+            <text x="380" y="158" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">+ 3-Month RPF + K-SURE Bridge</text>
+            <text x="380" y="172" fill="#6ee7b7" font-family="'Inter', sans-serif" font-size="8" text-anchor="middle">Effective Energy E &gt; Barrier Height V_0</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Zero-Capital Order Initiation &bull; Pre-Order Demand Aggregation &bull; Mathematical Proof of Capital Transmission</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 5 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 05</span>
+        <span class="sc-chapter-tag">PERFORMANCE MATRIX</span>
+      </div>
+      <h2 class="sc-chapter-h2">Comparative Matrix: Classical Bank L/Cs vs. *SC BNPL FCE</h2>
+      <p class="sc-p">A head-to-head operational comparison demonstrates why modern B2B cross-border commerce is rapidly moving from traditional trade finance to BNPL FCE:</p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Financing Dimension</th>
+            <th>Traditional Documentary Letter of Credit (L/C)</th>
+            <th>*SC BNPL FCE (Autonomous Sovereign Engine)</th>
+            <th>Commercial Impact Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Collateral Requirements</strong></td>
+            <td>100% cash margin or real estate mortgage pledged to commercial bank</td>
+            <td><strong>0% cash collateral</strong> (underwritten via POS telemetry &amp; 3-Month RPF binding contract)</td>
+            <td>Unlocks 300% expansion in buyer purchasing capacity immediately</td>
+          </tr>
+          <tr>
+            <td><strong>Issuance &amp; Underwriting Latency</strong></td>
+            <td>14 to 30 business days of branch paperwork and credit committee review</td>
+            <td><strong>&lt; 15 minutes</strong> via automated Overnight Data Factory credit scoring</td>
+            <td>Immediate container booking; zero seasonal arbitrage window loss</td>
+          </tr>
+          <tr>
+            <td><strong>Financing &amp; Toll Costs</strong></td>
+            <td>2.5% &ndash; 4.5% in banking fees, amendment charges, and courier tolls</td>
+            <td><strong>0.5% &ndash; 1.2%</strong> (K-SURE prime sovereign export policy tariff rate)</td>
+            <td>70% reduction in financial friction fees passed into product margin</td>
+          </tr>
+          <tr>
+            <td><strong>Repayment Mechanism</strong></td>
+            <td>Manual lump-sum wire transfer at Net-60; frequent late payment disputes</td>
+            <td><strong>Automated 70/30 split webhooks</strong> on every downstream consumer checkout</td>
+            <td>Continuous principal retirement; mathematical default risk approaching zero</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHAPTER 6 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 06</span>
+        <span class="sc-chapter-tag">UNDERWRITING TIERS</span>
+      </div>
+      <h2 class="sc-chapter-h2">4-Tier Underwriting Credit Limits &amp; Collateral Matrix</h2>
+      <p class="sc-p">BNPL FCE categorizes commercial B2B buyers across 4 calibrated credit tiers based on historical trade velocity and telemetry verification:</p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Credit Tier Level</th>
+            <th>Eligible Counterparty Profile</th>
+            <th>Underwritten Credit Ceiling</th>
+            <th>Settlement Window &amp; Security Protocol</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Tier 1 &bull; Micro-Clinic / Creator</strong></td>
+            <td>Individual veterinary clinics, licensed aesthetic salons, S1-S6 Challengers</td>
+            <td>$5,000 &ndash; $25,000 USD (or Rp 75M &ndash; Rp 380M IDR)</td>
+            <td>Net-30 Terms &bull; Direct POS 70/30 webhook split retirement</td>
+          </tr>
+          <tr>
+            <td><strong>Tier 2 &bull; Regional Distributor</strong></td>
+            <td>Provincial pharmaceutical wholesalers, multi-branch beauty franchises</td>
+            <td>$25,000 &ndash; $150,000 USD</td>
+            <td>Net-60 Terms &bull; CCTV warehouse stock opname + 3-Month RPF</td>
+          </tr>
+          <tr>
+            <td><strong>Tier 3 &bull; National Chain Network</strong></td>
+            <td>Supermarket conglomerates, national veterinary hospital associations</td>
+            <td>$150,000 &ndash; $750,000 USD</td>
+            <td>Net-90 Terms &bull; K-SURE sovereign export insurance policy bridge</td>
+          </tr>
+          <tr>
+            <td><strong>Tier 4 &bull; Sovereign Holding SPV</strong></td>
+            <td>State-owned enterprises, multinational pharmaceutical joint ventures</td>
+            <td>$750,000 &ndash; $5,000,000+ USD</td>
+            <td>Syndicated sovereign trade policy &bull; MAS-cleared treasury structure</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHAPTER 7 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 07</span>
+        <span class="sc-chapter-tag">MONETIZATION &amp; FINTECH SAAS</span>
+      </div>
+      <h2 class="sc-chapter-h2">Dual-Return Monetization &amp; B2B Fintech SaaS Licensing</h2>
+      <p class="sc-p">The BNPL FCE architecture generates dual financial returns for the *SC ecosystem:</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">RETURN TRACK 1</div>
+          <h3 class="sc-sub-h3">300% Direct Physical GMV Expansion</h3>
+          <p class="sc-p">By eliminating upfront cash pre-payment barriers for regional buyers on Scarlet AI and Qubit Biz, our physical product export volumes (MedIX vet formulations, Sismii cosmetics, functional sachets) scale 3x to 5x faster than competitors bound to cash-in-advance rules.</p>
         </div>
-        <div class="sc-card-line">
-          <h3 class="sc-h3">2. Risk Firewall &amp; Settlement Security</h3>
-          <p class="sc-p">Protected by the *SC Triple Control Towers and Dual-Track Legal Firewall (isolating SC Index holding IP from Biz Galaxy commercial liabilities). Transactions leverage 3-Month Rolling Purchasing Forecasts (RPF), K-SURE export credit guarantees, and automated 70/30 PG webhook split settlements.</p>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">RETURN TRACK 2</div>
+          <h3 class="sc-sub-h3">Fintech SaaS &amp; Underwriting API Fees</h3>
+          <p class="sc-p">Third-party export trading houses license the BNPL FCE underwriting algorithms and K-SURE programmatic bridge. *SC earns a 0.75% to 1.50% underwriting facility fee on all third-party transaction volumes processed through our engine.</p>
         </div>
       </div>
-      <div class="sc-callout"><strong>*SC - SISTAR COMPANY | One Spark, Infinite Galaxifying:</strong> Powered by the Qubit Algorithm&trade;, *SC intelligence-core, Scarlet AI, Qubit Biz, and the Biz Galaxy constellation.<br/>Corporate Portal: https://sistarcompany.com &bull; Executive Contact: DennyKu (denniiku@sistarcompany.com)</div>
+    </section>
+
+    <!-- CHAPTER 8 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 08</span>
+        <span class="sc-chapter-tag">LEGAL FIREWALL</span>
+      </div>
+      <h2 class="sc-chapter-h2">The Dual-Track Legal Firewall &amp; Settlement Protection</h2>
+      <p class="sc-p">All credit extensions and sovereign insurance covenants inside BNPL FCE are isolated by the corporate governance constitution of *SC:</p>
+
+      <div class="sc-dossier-card">
+        <h3 class="sc-sub-h3">Insulation of Core IP from Credit Risk</h3>
+        <p class="sc-p">Credit risk exposure is confined strictly to dedicated regional financing SPVs (e.g., *SC Trade Capital SCI / SCK). Under our Dual-Track Legal Firewall, intellectual property, RAG embedding weights, and master software algorithms held in Singapore and Korea remain completely immune to commercial defaults or delayed overseas counterparty liquidations.</p>
+      </div>
+
+      <div class="sc-callout">
+        <div class="sc-callout-title">*SC - SISTAR COMPANY &bull; One Spark, Infinite Galaxifying</div>
+        <p class="sc-p">Powered by the Qubit Algorithm&trade;, *SC Intelligence-Core, Scarlet AI, Qubit Biz, and the Biz Galaxy Constellation.<br/>
+        Executive Contact: DennyKu (denniiku@sistarcompany.com) &bull; Official Portal: https://sistarcompany.com</p>
+      </div>
     </section>
   </main>
 </body>

@@ -4,14 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=block" rel="stylesheet">
-  <title>*SC | AI Commerce - intelligence core - ai commerce</title>
-  <meta name="description" content="*SC (SISTAR Company) - AI Commerce : 24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP." />
+  <title>*SC | AI Commerce — Autonomous Commerce Technologies, Ms. Scarlet Closer &amp; Buy4Me Engine</title>
+  <meta name="description" content="Official Institutional Monograph of Category 02 (ai-commerce) inside Domain 03 (intelligence-core): The proprietary AI commerce technologies that power Scarlet AI and Qubit Biz through Ms. Scarlet 24/7 closing, Buy4Me demand aggregation, and 70/30 split settlements." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "*SC | AI Commerce",
-    "description": "24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.",
+    "@type": "TechArticle",
+    "headline": "*SC | AI Commerce — Autonomous Commerce Technologies, Ms. Scarlet Closer & Buy4Me Engine",
+    "description": "Comprehensive institutional monograph on *SC AI Commerce: Ms. Scarlet 24/7 conversational sales agent, Buy4Me group-buying demand aggregation, Volume-Wise deals, and mall.sisTV shoppable broadcast engines.",
+    "author": {
+      "@type": "Organization",
+      "name": "*SC - SISTAR COMPANY",
+      "url": "https://sistarcompany.com"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "*SC - SISTAR COMPANY",
@@ -19,206 +24,709 @@
     }
   }
   </script>
-  <style>html,body{background:linear-gradient(to right,#f0acf7,#acf7f0,#f7f0ac);margin:0;padding:0;}body.sc-nav-open{padding-left:236px;}body.sc-nav-folded{padding-left:64px;}@media(max-width:768px){body.sc-nav-open,body.sc-nav-folded{padding-left:0!important;}}</style>
   <script>
     (function() {
       var p = location.pathname.replace(/\\/g, "/");
       var base = "/common_assets/";
       if (location.protocol === "file:") {
         var i = p.toLowerCase().indexOf("/sc_web/");
-        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "./common_assets/";
+        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "../common_assets/";
       }
       document.write("<link rel=\"stylesheet\" href=\"" + base + "common_new.css?v=2.2\">");
-      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js\" defer><\/script>");
+      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js?v=5.0\" defer><\/script>");
     })();
   </script>
   <style>
-    .sc-auto-page {
+    html, body {
+      background: linear-gradient(to right, #f0acf7, #acf7f0, #f7f0ac);
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.sc-nav-open { padding-left: 236px; }
+    body.sc-nav-folded { padding-left: 64px; }
+    @media (max-width: 768px) {
+      body.sc-nav-open, body.sc-nav-folded { padding-left: 0 !important; }
+    }
+
+    .sc-monograph {
       box-sizing: border-box;
       width: 100%;
-      max-width: min(1360px, 95%);
-      padding: clamp(40px, 5vh, 68px) clamp(24px, 4.5vw, 72px) 120px;
-      font-family: "Inter", sans-serif;
-      color: #0f172a;
+      max-width: min(1380px, 95%);
+      margin: 0 auto;
+      padding: clamp(36px, 5vh, 68px) clamp(24px, 5vw, 76px) 120px;
     }
-    main h1, main h2, main h3, main h4,
-    main p, main .sc-lead, main .sc-p,
-    main .sc-route, main .sc-sec,
-    main .sc-card-line, main .sc-card-emerald {
-      margin-left: 0 !important;
-      padding-left: 0 !important;
-      text-indent: 0 !important;
-      text-align: left !important;
+    .sc-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+      border-bottom: 1.5px solid rgba(15, 23, 42, 0.15);
     }
     .sc-route {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.88rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
       font-weight: 600;
       color: #475569;
-      letter-spacing: 0.04em;
-      margin: 0 0 18px 0;
+      margin: 0;
+      letter-spacing: 0.03em;
       text-transform: lowercase;
     }
-    .sc-sec {
-      padding: 52px 0;
-      border-bottom: 1.5px solid rgba(15, 23, 42, 0.14);
+
+    /* === CHAPTER & PAGE STRUCTURE === */
+    .sc-chapter { margin-bottom: 48px; padding: 12px 0; }
+    .sc-chapter-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid #0f172a;
     }
-    .sc-sec:last-of-type { border-bottom: none; }
-    .sc-kicker {
-      display: inline-block;
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.78rem;
+    .sc-chapter-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #0f5132;
-      background: rgba(22, 135, 101, 0.15);
-      padding: 5px 12px;
-      border-radius: 4px;
-      margin: 0 0 14px 0;
     }
-    .sc-h1 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(2.1rem, 3.6vw, 3.1rem);
-      font-weight: 700;
-      color: #0f172a;
-      letter-spacing: -0.025em;
-      line-height: 1.12;
-      margin: 0 0 14px 0;
-    }
-    .sc-sub {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.15rem, 1.6vw, 1.38rem);
+    .sc-chapter-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
       font-weight: 600;
-      color: #0f5132;
-      line-height: 1.4;
-      margin: 0 0 24px 0;
+      color: #64748b;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
-    .sc-h2 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.45rem, 2.2vw, 1.95rem);
+    .sc-doc-h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.1rem, 3.6vw, 3.05rem);
       font-weight: 700;
       color: #0f172a;
-      letter-spacing: -0.02em;
-      line-height: 1.25;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      margin: 0 0 20px 0;
+    }
+    .sc-chapter-h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.55rem, 2.4vw, 2.05rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.22;
+      letter-spacing: -0.025em;
       margin: 0 0 18px 0;
     }
-    .sc-h3 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1.15rem;
+    .sc-sub-h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
       font-weight: 700;
       color: #0f172a;
       margin: 0 0 10px 0;
       line-height: 1.35;
     }
     .sc-lead {
-      font-size: clamp(1.04rem, 1.22vw, 1.14rem);
-      line-height: 1.82;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 500;
       color: #1e293b;
-      margin: 0 0 34px 0;
+      line-height: 1.82;
+      margin: 0 0 24px 0;
     }
     .sc-p {
-      font-size: 0.97rem;
-      line-height: 1.8;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.99rem;
       color: #334155;
-      margin: 0;
+      line-height: 1.82;
+      margin: 0 0 16px 0;
     }
-    /* Spacious 2-Column (2x2) Grid Layout */
-    .sc-grid-2x2 {
+
+    /* === EXECUTIVE DARK HERO & METRICS === */
+    .sc-exec-hero {
+      background: linear-gradient(135deg, #090d16 0%, #0f172a 55%, #064e3b 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: clamp(28px, 3.8vw, 44px);
+      margin: 22px 0 32px 0;
+      border: 1px solid rgba(74, 222, 128, 0.3);
+    }
+    .sc-exec-hero h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 14px 0;
+      line-height: 1.3;
+    }
+    .sc-exec-hero p {
+      font-size: 1.02rem;
+      color: #e2e8f0;
+      line-height: 1.78;
+      margin: 0 0 24px 0;
+    }
+    .sc-kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    @media (max-width: 900px) {
+      .sc-kpi-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    .sc-kpi-cell {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .sc-kpi-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.42rem;
+      font-weight: 700;
+      color: #4ade80;
+      margin-bottom: 4px;
+    }
+    .sc-kpi-desc {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    /* === EDITORIAL GRIDS & PANELS === */
+    .sc-grid-2 {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 48px;
-      row-gap: 38px;
-      margin-top: 28px;
+      gap: 28px;
+      margin: 24px 0;
     }
-    @media (max-width: 760px) {
-      .sc-grid-2x2 { grid-template-columns: 1fr; }
+    .sc-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 24px 0;
     }
-    .sc-card-line {
-      padding-top: 20px !important;
-      border-top: 2px solid rgba(15, 23, 42, 0.24) !important;
+    @media (max-width: 860px) {
+      .sc-grid-2, .sc-grid-3 { grid-template-columns: 1fr; }
     }
-    .sc-card-emerald {
-      padding-top: 20px !important;
-      border-top: 3px solid #168765 !important;
+    .sc-panel {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-top: 4px solid #0f172a;
+      border-radius: 12px;
+      padding: 24px 26px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
     }
-    .sc-num-label {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.82rem;
+    .sc-panel.emerald { border-top-color: #0f5132; background: #f8fafc; }
+    .sc-panel.blue { border-top-color: #1d4ed8; }
+    .sc-panel.purple { border-top-color: #6d28d9; }
+    .sc-panel-kicker {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
       font-weight: 700;
-      color: #0f5132;
-      text-transform: uppercase;
       letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #0f5132;
       margin-bottom: 8px;
     }
-    .sc-callout {
-      margin-top: 38px;
-      padding: 20px 24px !important;
-      border-left: 4px solid #0f5132;
-      background: rgba(255, 255, 255, 0.34);
-      font-size: 0.98rem;
-      font-weight: 500;
-      color: #0f172a;
-      line-height: 1.72;
+    .sc-panel.blue .sc-panel-kicker { color: #1d4ed8; }
+    .sc-panel.purple .sc-panel-kicker { color: #6d28d9; }
+
+    /* === FORMULA & ARCHITECTURE BLOCKS === */
+    .sc-math-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 12px;
+      padding: 22px 26px;
+      margin: 20px 0;
+      border-left: 4px solid #10b981;
     }
-    @media print {
-      html, body, main, .sc-auto-page { background: #ffffff !important; padding-left: 0 !important; opacity: 1 !important; }
-      #sc-left-nav, .sc-nav-toggle { display: none !important; }
-      .sc-card-line, .sc-card-emerald, .sc-callout { break-inside: avoid !important; page-break-inside: avoid !important; }
+    .sc-math-code {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 1.04rem;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 7px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 8px 0 12px 0;
+    }
+
+    /* === TABLES === */
+    .sc-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #cbd5e1;
+    }
+    .sc-table th {
+      background: #0f172a;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-align: left;
+      padding: 14px 18px;
+      letter-spacing: 0.03em;
+    }
+    .sc-table td {
+      padding: 15px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.94rem;
+      color: #1e293b;
+      line-height: 1.65;
+      vertical-align: top;
+    }
+    .sc-table tr:last-child td { border-bottom: none; }
+    .sc-table tr:nth-child(even) td { background: #f8fafc; }
+
+    /* === CALLOUTS & DOSSIER HEADERS === */
+    .sc-callout {
+      background: #f0fdf4;
+      border-left: 5px solid #0f5132;
+      border-radius: 0 12px 12px 0;
+      padding: 22px 26px;
+      margin: 24px 0;
+    }
+    .sc-callout-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0f5132;
+      margin-bottom: 6px;
+    }
+    .sc-dossier-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 8px rgba(15,23,42,0.03);
+    }
+    .sc-svg-wrap {
+      margin: 28px 0;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+      overflow-x: auto;
+    }
+    .sc-svg-wrap svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 960px;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body class="sc-nav-open">
-  <main class="sc-auto-page">
-    <p class="sc-route">intelligence core - ai commerce</p>
+  <main class="sc-monograph">
+    <div class="sc-top-bar">
+      <p class="sc-route">intelligence core - ai commerce</p>
+    </div>
 
-    <section class="sc-sec" style="padding-top: 12px;">
-      <div><span class="sc-kicker">ENTERPRISE BRAIN &bull; *SC INTELLIGENCE CORE</span></div>
-      <h1 class="sc-h1">*SC - AI Commerce</h1>
-      <p class="sc-sub">24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.</p>
-      <p class="sc-lead">As part of the <strong>*SC intelligence-core</strong>, <strong>AI Commerce</strong> functions as the autonomous central nervous system of the Signal Star Universe. Operating around the clock while human executives sleep, it harvests global market data, grounds strategic decisions in verified facts, and automates all 8 corporate departments at near- fixed cost.</p>
+    <!-- DOCUMENT HEADER -->
+    <header style="margin-bottom: 36px;">
+      <div class="sc-chapter-num">03. INTELLIGENCE-CORE &bull; L2 SECTION COMMAND HUB</div>
+      <h1 class="sc-doc-h1">*SC AI Commerce — The Autonomous E-Commerce Technology Engine Room</h1>
+      <p class="sc-lead">As the technological engine room behind Domain 04 (scarlet-ai) and Domain 05 (qubit-biz), <strong>*SC AI Commerce</strong> develops the core software primitives that replace archaic, static 2D product catalogs with live conversational closers (Ms. Scarlet), quantum group-buying demand aggregators (Buy4Me), and shoppable live streaming engines (mall.sisTV). Engineered inside intelligence-core, these algorithms power high-converting cross-border trade across 8 international bases.</p>
+    </header>
 
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <div class="sc-num-label">01 &bull; WHAT IT IS (CORE DEFINITION)</div>
-          <h2 class="sc-h3">Overnight Data Factory (10 PM - 8 AM)</h2>
-          <p class="sc-p">Headless Playwright/Apify scrapers autonomously harvest global wholesale prices (1688/Alibaba), Shopee/Tokopedia competitor SKUs, HS-code tariffs, and regulatory updates every night.</p>
+    <!-- EXECUTIVE HERO -->
+    <div class="sc-exec-hero">
+      <h3>Executive Architectural Synthesis: The Autonomous Commerce OS</h3>
+      <p>First-generation e-commerce platforms (Amazon, Shopee, Alibaba) are broken: they trap buyers in isolated 2D browsing grids where consumers pay stacked middleman markups and merchants burn 30% of their revenue on pay-per-click advertising. *SC AI Commerce rebuilds the commercial stack around conversational closing agents, real-time demand wavefunction phase-locking, dynamic price decay curves, and instant 70/30 split settlement webhooks at t = 0.</p>
+      <div class="sc-kpi-strip">
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">24/7</div>
+          <div class="sc-kpi-desc">Ms. Scarlet Multilingual Conversational Closing Engine</div>
         </div>
-
-        <div class="sc-card-line">
-          <div class="sc-num-label">02 &bull; WHY WE DO IT (MARKET OPPORTUNITY)</div>
-          <h2 class="sc-h3">Dual-Engine Vector RAG (NotebookLM + Dify)</h2>
-          <p class="sc-p">Embeds nightly market streams alongside internal Google Drive/Keep memos into Supabase pgvector and NotebookLM repositories, delivering citation-backed 8:00 AM executive briefs.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">&lt; 300ms</div>
+          <div class="sc-kpi-desc">Dynamic Volume-Wise Deal Price Recalibration Latency</div>
         </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">03 &bull; HOW IT WORKS (OPERATIONAL MECHANISM)</div>
-          <h2 class="sc-h3">Qubit ERP &amp; CCTV Vision Stock Opname</h2>
-          <p class="sc-p">Automates Finance/VAT, HR (25th payouts), Sales/CRM, and RA natively on Google Workspace, while CCTV + Gemini Vision AI counts warehouse pallets and sachets in real time.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">t = 0</div>
+          <div class="sc-kpi-desc">Simultaneous Multi-Party 70/30 PG Split Clearing</div>
         </div>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">0 Ad Burn</div>
+          <div class="sc-kpi-desc">Viral Buy4Me Cohort Aggregation vs Paid PPC Campaigns</div>
+        </div>
+      </div>
+    </div>
 
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">04 &bull; REVENUE MODEL &amp; EXPECTED ROI</div>
-          <h2 class="sc-h3">Dual-Return SaaS &amp; MCP API Monetization</h2>
-          <p class="sc-p">Eliminates 100% of internal ERP/admin licensing costs while generating external B2B revenue through custom enterprise RAG builds, Zoho/Workspace ERP SaaS, and MCP Server agent query tolls.</p>
+    <!-- CHAPTER 1 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 01</span>
+        <span class="sc-chapter-tag">COMMERCE PARADIGM SHIFT</span>
+      </div>
+      <h2 class="sc-chapter-h2">Reconstructing E-Commerce from First Principles — The AI Commerce Engine</h2>
+      <p class="sc-p">For over twenty-five years, electronic commerce has obeyed the static catalog paradigm: a merchant creates a product page, buys keywords on search engines or marketplace ad networks, and hopes that solitary visitors place items in a shopping cart. The results are universally dismal: a 97% cart abandonment rate, skyrocketing customer acquisition costs (CAC exceeding LTV), and zero genuine consumer engagement.</p>
+      <p class="sc-p"><strong>*SC AI Commerce</strong> replaces this passive, advertising-dependent model with active, autonomous multi-agent microservices engineered inside intelligence-core. When an overseas visitor or regional veterinary clinic enters our commercial ecosystem, five specialized technologies engage simultaneously:</p>
+
+      <!-- BESPOKE INLINE SVG 1 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#090d16"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">AI COMMERCE &bull; CORE TECHNOLOGY SUITE IN DOMAIN 03</text>
+          
+          <!-- CENTRAL CORE -->
+          <circle cx="480" cy="180" r="58" fill="#0f172a" stroke="#ec4899" stroke-width="2.5"/>
+          <text x="480" y="174" fill="#f472b6" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">AI COMMERCE</text>
+          <text x="480" y="190" fill="#ffffff" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Engine Room</text>
+          <text x="480" y="204" fill="#a7f3d0" font-family="'Space Grotesk', monospace" font-size="8" text-anchor="middle">Domain 03 Core</text>
+
+          <!-- 5 SATELLITE ENGINES -->
+          <!-- 1. Ms. Scarlet Closer -->
+          <g transform="translate(100, 60)">
+            <rect width="180" height="60" rx="8" fill="#1e293b" stroke="#ec4899" stroke-width="1.5"/>
+            <text x="90" y="26" fill="#f472b6" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">MS. SCARLET CLOSER</text>
+            <text x="90" y="44" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">24/7 Diagnostic Selling</text>
+            <line x1="180" y1="60" x2="425" y2="155" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <!-- 2. Buy4Me Cohorts -->
+          <g transform="translate(680, 60)">
+            <rect width="180" height="60" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="90" y="26" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">BUY4ME AGGREGATOR</text>
+            <text x="90" y="44" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Group Demand Wave</text>
+            <line x1="680" y1="60" x2="535" y2="155" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <!-- 3. Volume-Wise Deals -->
+          <g transform="translate(100, 240)">
+            <rect width="180" height="60" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="90" y="26" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">VOLUME-WISE DEALS</text>
+            <text x="90" y="44" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Rp 1,320 Sachet Floor</text>
+            <line x1="180" y1="240" x2="425" y2="205" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <!-- 4. mall.sisTV Live -->
+          <g transform="translate(680, 240)">
+            <rect width="180" height="60" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+            <text x="90" y="26" fill="#c084fc" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">MALL.SISTV BROADCAST</text>
+            <text x="90" y="44" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">AI Simultaneous Live</text>
+            <line x1="680" y1="240" x2="535" y2="205" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <!-- 5. 70/30 Split Engine -->
+          <g transform="translate(390, 255)">
+            <rect width="180" height="55" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+            <text x="90" y="24" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">70/30 SPLIT ENGINE</text>
+            <text x="90" y="40" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">t = 0 Multi-Party Clearing</text>
+            <line x1="480" y1="255" x2="480" y2="238" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <text x="480" y="325" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Direct Propulsion Core for Domain 04 (scarlet-ai) and Domain 05 (qubit-biz)</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 2 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 02</span>
+        <span class="sc-chapter-tag">CONVERSATIONAL CLOSING</span>
+      </div>
+      <h2 class="sc-chapter-h2">Ms. Scarlet 24/7 Conversational Closing Engine — Diagnostic Selling Core</h2>
+      <p class="sc-p">Static checkout buttons fail because customers have unanswered doubts: <em>"Is this veterinary joint supplement safe for a 12-year-old Golden Retriever with renal issues?"</em> or <em>"Can this Korean hydrogel formulation be customized with our clinic's private logo?"</em> When a legacy website provides only a static "Buy Now" button, the customer leaves.</p>
+      <p class="sc-p">Compiled inside intelligence-core, <strong>Ms. Scarlet</strong> acts as a veteran clinical and commercial sales closer. Grounded in our verified vector knowledge bases and Auto-Formulator recipes, Ms. Scarlet guides customers through a 4-stage closing funnel:</p>
+
+      <!-- BESPOKE INLINE SVG 2 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#0b1329"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">MS. SCARLET &bull; 4-STAGE AUTONOMOUS CLOSING FUNNEL</text>
+          
+          <!-- STAGE 1 -->
+          <g transform="translate(50, 75)">
+            <rect width="190" height="205" rx="8" fill="#1e293b" stroke="#ec4899" stroke-width="1.5"/>
+            <circle cx="95" cy="45" r="20" fill="#db2777"/>
+            <text x="95" y="51" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">01</text>
+            <text x="95" y="85" fill="#f472b6" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">DIAGNOSTIC INTAKE</text>
+            <text x="15" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Identifies patient / client profile</text>
+            <text x="15" y="135" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Multilingual empathy (ID/VN/KR)</text>
+            <text x="15" y="155" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Formulates exact dosage need</text>
+            <text x="95" y="190" fill="#f472b6" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">TTFT: &lt; 250ms</text>
+          </g>
+
+          <line x1="240" y1="175" x2="275" y2="175" stroke="#ec4899" stroke-width="2"/>
+
+          <!-- STAGE 2 -->
+          <g transform="translate(275, 75)">
+            <rect width="190" height="205" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <circle cx="95" cy="45" r="20" fill="#0284c7"/>
+            <text x="95" y="51" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">02</text>
+            <text x="95" y="85" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">VECTOR GROUNDING</text>
+            <text x="15" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; MedIX / Sismii clinical dossiers</text>
+            <text x="15" y="135" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; BPOM / FDA safety check</text>
+            <text x="15" y="155" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Strict similarity &ge; 0.82</text>
+            <text x="95" y="190" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Zero Hallucination</text>
+          </g>
+
+          <line x1="465" y1="175" x2="500" y2="175" stroke="#38bdf8" stroke-width="2"/>
+
+          <!-- STAGE 3 -->
+          <g transform="translate(500, 75)">
+            <rect width="190" height="205" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+            <circle cx="95" cy="45" r="20" fill="#d97706"/>
+            <text x="95" y="51" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">03</text>
+            <text x="95" y="85" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">DYNAMIC QUOTE</text>
+            <text x="15" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Real-time quantity tiering</text>
+            <text x="15" y="135" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Buy4Me group price step-down</text>
+            <text x="15" y="155" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Enforces 45-65% margin floor</text>
+            <text x="95" y="190" fill="#fbbf24" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Margin Floor Safe</text>
+          </g>
+
+          <line x1="690" y1="175" x2="725" y2="175" stroke="#f59e0b" stroke-width="2"/>
+
+          <!-- STAGE 4 -->
+          <g transform="translate(725, 75)">
+            <rect width="185" height="205" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+            <circle cx="92" cy="45" r="20" fill="#059669"/>
+            <text x="92" y="51" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">04</text>
+            <text x="92" y="85" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">INSTANT SETTLE</text>
+            <text x="12" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; 1-Tap checkout link created</text>
+            <text x="12" y="135" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; 70/30 PG split webhook</text>
+            <text x="12" y="155" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Nearbuy pickup QR dispatched</text>
+            <text x="92" y="190" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Conversion: 4.8x</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Autonomous Consultative Selling &bull; Zero Human Intervention &bull; Instant Multi-Party Profit Realization</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 3 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 03</span>
+        <span class="sc-chapter-tag">DEMAND WAVEFORM</span>
+      </div>
+      <h2 class="sc-chapter-h2">Buy4Me &amp; Quantum Demand Wave Aggregation — Price Step-Down Dynamics</h2>
+      <p class="sc-p">On traditional marketplaces, each buyer negotiates in isolation, bearing the full weight of small-order retail markups. The <strong>Buy4Me Aggregation Engine</strong> synchronizes fragmented buyer intent into a coherent demand wavefunction ($\Psi_{\text{Demand}}$) that unlocks factory-direct FOB wholesale pricing:</p>
+
+      <!-- BESPOKE INLINE SVG 3 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#090d16"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">BUY4ME &bull; QUANTUM DEMAND AGGREGATION &amp; PRICE STEP-DOWN CURVE</text>
+          
+          <!-- STEP-DOWN CURVE DIAGRAM -->
+          <g transform="translate(100, 75)">
+            <!-- Axes -->
+            <line x1="40" y1="190" x2="740" y2="190" stroke="#475569" stroke-width="2"/>
+            <line x1="40" y1="190" x2="40" y2="30" stroke="#475569" stroke-width="2"/>
+            <text x="35" y="24" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="end">Unit Price (P)</text>
+            <text x="740" y="210" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11">Aggregated Cohort Units (Q)</text>
+
+            <!-- Step Function Curve -->
+            <!-- Tier 1: 1-100 Units: Rp 3,500 -->
+            <line x1="40" y1="60" x2="220" y2="60" stroke="#ef4444" stroke-width="3"/>
+            <circle cx="40" cy="60" r="5" fill="#ef4444"/>
+            <circle cx="220" cy="60" r="5" fill="#ef4444"/>
+            <text x="130" y="50" fill="#fca5a5" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Tier 1: Rp 3,500 (Retail Baseline)</text>
+
+            <line x1="220" y1="60" x2="220" y2="105" stroke="#475569" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+            <!-- Tier 2: 101-500 Units: Rp 2,400 -->
+            <line x1="220" y1="105" x2="440" y2="105" stroke="#f59e0b" stroke-width="3"/>
+            <circle cx="220" cy="105" r="5" fill="#f59e0b"/>
+            <circle cx="440" cy="105" r="5" fill="#f59e0b"/>
+            <text x="330" y="95" fill="#fde68a" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Tier 2: Rp 2,400 (-31% Price Drop)</text>
+
+            <line x1="440" y1="105" x2="440" y2="150" stroke="#475569" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+            <!-- Tier 3: 501+ Units: Rp 1,320 (Quantum Floor) -->
+            <line x1="440" y1="150" x2="700" y2="150" stroke="#10b981" stroke-width="4"/>
+            <circle cx="440" cy="150" r="6" fill="#10b981"/>
+            <circle cx="700" cy="150" r="6" fill="#10b981"/>
+            <text x="570" y="140" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Tier 3: Rp 1,320 ($0.082) &bull; FACTORY DIRECT FLOOR</text>
+
+            <!-- Retroactive Guarantee Bracket -->
+            <rect x="440" y="165" width="260" height="20" rx="3" fill="#064e3b"/>
+            <text x="570" y="179" fill="#a7f3d0" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Retroactive Rebate Paid to Tier 1 Joiners at t = 0</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Demand Phase-Locking &bull; Middleman Margin Cancellation &bull; Viral Customer Acquisition Loop</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 4 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 04</span>
+        <span class="sc-chapter-tag">MATHEMATICAL FORMULATION</span>
+      </div>
+      <h2 class="sc-chapter-h2">Mathematical Formalism: Demand Wave Coherence &amp; Delight Surplus</h2>
+      <p class="sc-p">In Domain 02 (qubit-algorithm), individual uncoordinated buyers are modeled as incoherent waves whose purchasing power interferes destructively. By synchronizing purchase timing via Buy4Me cohorts, the collective demand wave undergoes constructive interference ($N^2$ scaling):</p>
+
+      <div class="sc-math-box">
+        <div class="sc-formula">I_{\text{Demand}} = \left| \sum_{j=1}^{N} A_j e^{i \phi_j} \right|^2 \xrightarrow{\phi_j \to \phi_0} N^2 A^2 \quad \text{and} \quad \Delta P_{\text{Delight}} = (P_{\text{Retail}} - P_{\text{FOB}}) + R_{\text{Cashback}}</div>
+        <div class="sc-math-desc">Where phase-locking ($\phi_j \to \phi_0$) scales buyer collective purchasing power quadratically ($N^2$). Total delight surplus $\Delta P_{\text{Delight}}$ combines the wholesale price discount with the instant 30% PG cashback deposited into the buyer's wallet at $t=0$.</div>
+        <div class="sc-math-code">P^*(Q) = P_{\text{Quantum\_Min}} + (P_{\text{Retail}} - P_{\text{Quantum\_Min}}) \cdot e^{-\lambda Q} \quad \text{subject to } \text{GM} \ge 45\%</div>
+        <div class="sc-math-desc">The algorithmic equilibrium price $P^*(Q)$ decays exponentially as order volume accumulates, bounded strictly by the 45% gross margin floor.</div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 5 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 05</span>
+        <span class="sc-chapter-tag">PERFORMANCE MATRIX</span>
+      </div>
+      <h2 class="sc-chapter-h2">Comparative Matrix: Legacy E-Commerce vs. *SC AI Commerce Core</h2>
+      <p class="sc-p">The architectural contrast between traditional marketplaces and *SC AI Commerce:</p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Platform Dimension</th>
+            <th>Traditional E-Commerce (Amazon / Shopee / Shopify)</th>
+            <th>*SC AI Commerce Core (Domain 03 Engine)</th>
+            <th>Strategic Value Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>User Interaction Model</strong></td>
+            <td>Passive 2D catalog browsing; silent shopping cart checkout with 97% dropoff</td>
+            <td><strong>Ms. Scarlet 24/7 consultative diagnostic closing</strong> via WhatsApp and Web</td>
+            <td>4.8x higher lead-to-checkout conversion rate</td>
+          </tr>
+          <tr>
+            <td><strong>Pricing Architecture</strong></td>
+            <td>Static retail prices with arbitrary promotional countdowns</td>
+            <td><strong>Dynamic Volume-Wise deals &amp; Buy4Me step-down curves</strong> (Rp 1,320 floor)</td>
+            <td>Unlocks mass-market purchasing across Southeast Asia</td>
+          </tr>
+          <tr>
+            <td><strong>Settlement &amp; Payout Latency</strong></td>
+            <td>14 to 30-day payout hold by marketplace platform; high merchant escrow friction</td>
+            <td><strong>Instantaneous $t=0$ 70/30 PG webhook split</strong> at the moment of payment</td>
+            <td>Zero receivables risk, instant factory COGS funding</td>
+          </tr>
+          <tr>
+            <td><strong>Video &amp; Content Commerce</strong></td>
+            <td>Disconnected 3rd-party video uploads or human-hosted influencer streams</td>
+            <td><strong>mall.sisTV automated shoppable broadcasts</strong> with simultaneous AI translation</td>
+            <td>24/7 global broadcast reach in KR, EN, ID, VN, and JA</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHAPTER 6 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 06</span>
+        <span class="sc-chapter-tag">CORE MICROSERVICES</span>
+      </div>
+      <h2 class="sc-chapter-h2">Five Core AI Commerce Microservices Engineered Inside Domain 03</h2>
+      <p class="sc-p">The specialized computational microservices powering our commercial platforms:</p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Microservice Name</th>
+            <th>Algorithmic Function</th>
+            <th>Underlying Technology Stack</th>
+            <th>Direct Platform Target</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Ms. Scarlet Closer Core</strong></td>
+            <td>Multilingual consultative diagnostic sales and cart locking</td>
+            <td>Gemini 2.5 Flash + Supabase pgvector</td>
+            <td>Domain 04 (scarlet-ai) &bull; WhatsApp Bot</td>
+          </tr>
+          <tr>
+            <td><strong>Buy4Me Aggregator</strong></td>
+            <td>WebSocket cohort synchronization &amp; price step-down execution</td>
+            <td>Redis Pub/Sub + Dify Agent Workflows</td>
+            <td>SisCart &bull; Buy4Me Group Pools</td>
+          </tr>
+          <tr>
+            <td><strong>Dynamic Pricing FCE</strong></td>
+            <td>Landed-cost BOM margin calculation &amp; currency hedging</td>
+            <td>PostgreSQL PL/pgSQL mathematical functions</td>
+            <td>Auto-Formulator R1 &bull; Qubit Factory</td>
+          </tr>
+          <tr>
+            <td><strong>mall.sisTV Stream Engine</strong></td>
+            <td>Real-time shoppable video overlays &amp; voice translation</td>
+            <td>WebRTC + ElevenLabs / Whisper API</td>
+            <td>mall.sisTV Interactive Broadcasts</td>
+          </tr>
+          <tr>
+            <td><strong>70/30 PG Split Webhook</strong></td>
+            <td>Multi-party escrow distribution at checkout</td>
+            <td>Stripe / Midtrans / Xendit API Webhooks</td>
+            <td>Qubit Bank &bull; 4-Way Settlement</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHAPTER 7 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 07</span>
+        <span class="sc-chapter-tag">MONETIZATION</span>
+      </div>
+      <h2 class="sc-chapter-h2">Dual-Return Monetization: High-Margin SaaS &amp; Physical Trade GMV</h2>
+      <p class="sc-p">AI Commerce is engineered for compounding financial returns:</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">MONETIZATION TRACK 01</div>
+          <h3 class="sc-sub-h3">Direct Physical GMV Velocity</h3>
+          <p class="sc-p">By deploying Ms. Scarlet and Buy4Me cohorts across our proprietary brand verticals (MedIX veterinary bio, Sismii cosmetics, SISPet clinical foods), our physical product lines achieve 45% to 65% gross margins while bypassing middleman distributors completely.</p>
+        </div>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">MONETIZATION TRACK 02</div>
+          <h3 class="sc-sub-h3">B2B AI Commerce SaaS Licensing</h3>
+          <p class="sc-p">External retail brands and clinic networks license the Ms. Scarlet conversational engine and Buy4Me group-buying infrastructure as a white-label SaaS suite, paying monthly software subscriptions and a 1.5% GMV platform clearing fee.</p>
         </div>
       </div>
     </section>
 
-    <section class="sc-sec">
-      <div><span class="sc-kicker">STRATEGIC SYNERGY &amp; GOVERNANCE</span></div>
-      <h2 class="sc-h2">Integration Within the Signal Star Universe (*SC)</h2>
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <h3 class="sc-h3">1. Core Architecture &amp; Technical Integration</h3>
-          <p class="sc-p">Connected across our 12-domain semantic web matrix and 8 international bases (Korea SCK, Indonesia SCI, Singapore SCS, USA SCU, Vietnam SCV, India SCIND, China SCC, Japan SCJ). Every workflow is tracked transparently via standardized Google Workspace Console, Monthly Sales, and Dashboard ledgers.</p>
-        </div>
-        <div class="sc-card-line">
-          <h3 class="sc-h3">2. Risk Firewall &amp; Settlement Security</h3>
-          <p class="sc-p">Protected by the *SC Triple Control Towers and Dual-Track Legal Firewall (isolating SC Index holding IP from Biz Galaxy commercial liabilities). Transactions leverage 3-Month Rolling Purchasing Forecasts (RPF), K-SURE export credit guarantees, and automated 70/30 PG webhook split settlements.</p>
-        </div>
+    <!-- CHAPTER 8 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 08</span>
+        <span class="sc-chapter-tag">LEGAL ISOLATION</span>
       </div>
-      <div class="sc-callout"><strong>*SC - SISTAR COMPANY | One Spark, Infinite Galaxifying:</strong> Powered by the Qubit Algorithm&trade;, *SC intelligence-core, Scarlet AI, Qubit Biz, and the Biz Galaxy constellation.<br/>Corporate Portal: https://sistarcompany.com &bull; Executive Contact: DennyKu (denniiku@sistarcompany.com)</div>
+      <h2 class="sc-chapter-h2">The Dual-Track Legal Firewall &amp; Holding IP Isolation</h2>
+      <p class="sc-p">All commercial platform transactions are isolated under corporate governance:</p>
+
+      <div class="sc-dossier-card">
+        <h3 class="sc-sub-h3">Platform Commercial Liability Isolation</h3>
+        <p class="sc-p">All consumer checkout transactions, consumer payment gateway contracts, and local product warranties are held exclusively by localized operating SPVs. Under the *SC Dual-Track Legal Firewall, core algorithmic code, conversational prompt weights, and RAG vector databases remain strictly insulated within *SC Holding entities.</p>
+      </div>
+
+      <div class="sc-callout">
+        <div class="sc-callout-title">*SC - SISTAR COMPANY &bull; One Spark, Infinite Galaxifying</div>
+        <p class="sc-p">Powered by the Qubit Algorithm&trade;, *SC Intelligence-Core, Scarlet AI, Qubit Biz, and the Biz Galaxy Constellation.<br/>
+        Executive Contact: DennyKu (denniiku@sistarcompany.com) &bull; Official Portal: https://sistarcompany.com</p>
+      </div>
     </section>
   </main>
 </body>

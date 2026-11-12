@@ -4,14 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=block" rel="stylesheet">
-  <title>*SC | Biz Intelligence - intelligence core - biz intelligence</title>
-  <meta name="description" content="*SC (SISTAR Company) - Biz Intelligence : 24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP." />
+  <title>*SC | Biz Intelligence — Master Command Hub &amp; Enterprise Autonomous Intelligence OS</title>
+  <meta name="description" content="Official Institutional Monograph of Category 01 (biz-intelligence) inside Domain 03 (intelligence-core): The master command hub uniting all 11 autonomous intelligence modules across ERP, AI Centers, RAG, HR, Dynamic Pricing, BNPL, Logistics, and Project Generation." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "*SC | Biz Intelligence",
-    "description": "24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.",
+    "@type": "TechArticle",
+    "headline": "*SC | Biz Intelligence — Master Command Hub & Enterprise Autonomous Intelligence OS",
+    "description": "Comprehensive institutional monograph on *SC Biz Intelligence: The central command hub uniting 11 specialized intelligence modules, Overnight Data Factory, and Qubit ERP across 8 global trade bases.",
+    "author": {
+      "@type": "Organization",
+      "name": "*SC - SISTAR COMPANY",
+      "url": "https://sistarcompany.com"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "*SC - SISTAR COMPANY",
@@ -19,206 +24,791 @@
     }
   }
   </script>
-  <style>html,body{background:linear-gradient(to right,#f0acf7,#acf7f0,#f7f0ac);margin:0;padding:0;}body.sc-nav-open{padding-left:236px;}body.sc-nav-folded{padding-left:64px;}@media(max-width:768px){body.sc-nav-open,body.sc-nav-folded{padding-left:0!important;}}</style>
   <script>
     (function() {
       var p = location.pathname.replace(/\\/g, "/");
       var base = "/common_assets/";
       if (location.protocol === "file:") {
         var i = p.toLowerCase().indexOf("/sc_web/");
-        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "./common_assets/";
+        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "../common_assets/";
       }
       document.write("<link rel=\"stylesheet\" href=\"" + base + "common_new.css?v=2.2\">");
-      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js\" defer><\/script>");
+      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js?v=5.0\" defer><\/script>");
     })();
   </script>
   <style>
-    .sc-auto-page {
+    html, body {
+      background: linear-gradient(to right, #f0acf7, #acf7f0, #f7f0ac);
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.sc-nav-open { padding-left: 236px; }
+    body.sc-nav-folded { padding-left: 64px; }
+    @media (max-width: 768px) {
+      body.sc-nav-open, body.sc-nav-folded { padding-left: 0 !important; }
+    }
+
+    .sc-monograph {
       box-sizing: border-box;
       width: 100%;
-      max-width: min(1360px, 95%);
-      padding: clamp(40px, 5vh, 68px) clamp(24px, 4.5vw, 72px) 120px;
-      font-family: "Inter", sans-serif;
-      color: #0f172a;
+      max-width: min(1380px, 95%);
+      margin: 0 auto;
+      padding: clamp(36px, 5vh, 68px) clamp(24px, 5vw, 76px) 120px;
     }
-    main h1, main h2, main h3, main h4,
-    main p, main .sc-lead, main .sc-p,
-    main .sc-route, main .sc-sec,
-    main .sc-card-line, main .sc-card-emerald {
-      margin-left: 0 !important;
-      padding-left: 0 !important;
-      text-indent: 0 !important;
-      text-align: left !important;
+    .sc-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+      border-bottom: 1.5px solid rgba(15, 23, 42, 0.15);
     }
     .sc-route {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.88rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
       font-weight: 600;
       color: #475569;
-      letter-spacing: 0.04em;
-      margin: 0 0 18px 0;
+      margin: 0;
+      letter-spacing: 0.03em;
       text-transform: lowercase;
     }
-    .sc-sec {
-      padding: 52px 0;
-      border-bottom: 1.5px solid rgba(15, 23, 42, 0.14);
+
+    /* === CHAPTER & PAGE STRUCTURE === */
+    .sc-chapter { margin-bottom: 48px; padding: 12px 0; }
+    .sc-chapter-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid #0f172a;
     }
-    .sc-sec:last-of-type { border-bottom: none; }
-    .sc-kicker {
-      display: inline-block;
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.78rem;
+    .sc-chapter-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #0f5132;
-      background: rgba(22, 135, 101, 0.15);
-      padding: 5px 12px;
-      border-radius: 4px;
-      margin: 0 0 14px 0;
     }
-    .sc-h1 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(2.1rem, 3.6vw, 3.1rem);
-      font-weight: 700;
-      color: #0f172a;
-      letter-spacing: -0.025em;
-      line-height: 1.12;
-      margin: 0 0 14px 0;
-    }
-    .sc-sub {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.15rem, 1.6vw, 1.38rem);
+    .sc-chapter-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
       font-weight: 600;
-      color: #0f5132;
-      line-height: 1.4;
-      margin: 0 0 24px 0;
+      color: #64748b;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
-    .sc-h2 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.45rem, 2.2vw, 1.95rem);
+    .sc-doc-h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.1rem, 3.6vw, 3.05rem);
       font-weight: 700;
       color: #0f172a;
-      letter-spacing: -0.02em;
-      line-height: 1.25;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      margin: 0 0 20px 0;
+    }
+    .sc-chapter-h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.55rem, 2.4vw, 2.05rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.22;
+      letter-spacing: -0.025em;
       margin: 0 0 18px 0;
     }
-    .sc-h3 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1.15rem;
+    .sc-sub-h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
       font-weight: 700;
       color: #0f172a;
       margin: 0 0 10px 0;
       line-height: 1.35;
     }
     .sc-lead {
-      font-size: clamp(1.04rem, 1.22vw, 1.14rem);
-      line-height: 1.82;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 500;
       color: #1e293b;
-      margin: 0 0 34px 0;
+      line-height: 1.82;
+      margin: 0 0 24px 0;
     }
     .sc-p {
-      font-size: 0.97rem;
-      line-height: 1.8;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.99rem;
       color: #334155;
-      margin: 0;
+      line-height: 1.82;
+      margin: 0 0 16px 0;
     }
-    /* Spacious 2-Column (2x2) Grid Layout */
-    .sc-grid-2x2 {
+
+    /* === EXECUTIVE DARK HERO & METRICS === */
+    .sc-exec-hero {
+      background: linear-gradient(135deg, #090d16 0%, #0f172a 55%, #064e3b 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: clamp(28px, 3.8vw, 44px);
+      margin: 22px 0 32px 0;
+      border: 1px solid rgba(74, 222, 128, 0.3);
+    }
+    .sc-exec-hero h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 14px 0;
+      line-height: 1.3;
+    }
+    .sc-exec-hero p {
+      font-size: 1.02rem;
+      color: #e2e8f0;
+      line-height: 1.78;
+      margin: 0 0 24px 0;
+    }
+    .sc-kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    @media (max-width: 900px) {
+      .sc-kpi-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    .sc-kpi-cell {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .sc-kpi-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.42rem;
+      font-weight: 700;
+      color: #4ade80;
+      margin-bottom: 4px;
+    }
+    .sc-kpi-desc {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    /* === EDITORIAL GRIDS & PANELS === */
+    .sc-grid-2 {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 48px;
-      row-gap: 38px;
-      margin-top: 28px;
+      gap: 28px;
+      margin: 24px 0;
     }
-    @media (max-width: 760px) {
-      .sc-grid-2x2 { grid-template-columns: 1fr; }
+    .sc-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 24px 0;
     }
-    .sc-card-line {
-      padding-top: 20px !important;
-      border-top: 2px solid rgba(15, 23, 42, 0.24) !important;
+    @media (max-width: 860px) {
+      .sc-grid-2, .sc-grid-3 { grid-template-columns: 1fr; }
     }
-    .sc-card-emerald {
-      padding-top: 20px !important;
-      border-top: 3px solid #168765 !important;
+    .sc-panel {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-top: 4px solid #0f172a;
+      border-radius: 12px;
+      padding: 24px 26px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
     }
-    .sc-num-label {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.82rem;
+    .sc-panel.emerald { border-top-color: #0f5132; background: #f8fafc; }
+    .sc-panel.blue { border-top-color: #1d4ed8; }
+    .sc-panel.purple { border-top-color: #6d28d9; }
+    .sc-panel-kicker {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
       font-weight: 700;
-      color: #0f5132;
-      text-transform: uppercase;
       letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #0f5132;
       margin-bottom: 8px;
     }
-    .sc-callout {
-      margin-top: 38px;
-      padding: 20px 24px !important;
-      border-left: 4px solid #0f5132;
-      background: rgba(255, 255, 255, 0.34);
-      font-size: 0.98rem;
-      font-weight: 500;
-      color: #0f172a;
-      line-height: 1.72;
+    .sc-panel.blue .sc-panel-kicker { color: #1d4ed8; }
+    .sc-panel.purple .sc-panel-kicker { color: #6d28d9; }
+
+    /* === FORMULA & ARCHITECTURE BLOCKS === */
+    .sc-math-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 12px;
+      padding: 22px 26px;
+      margin: 20px 0;
+      border-left: 4px solid #10b981;
     }
-    @media print {
-      html, body, main, .sc-auto-page { background: #ffffff !important; padding-left: 0 !important; opacity: 1 !important; }
-      #sc-left-nav, .sc-nav-toggle { display: none !important; }
-      .sc-card-line, .sc-card-emerald, .sc-callout { break-inside: avoid !important; page-break-inside: avoid !important; }
+    .sc-math-code {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 1.04rem;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 7px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 8px 0 12px 0;
+    }
+
+    /* === TABLES === */
+    .sc-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #cbd5e1;
+    }
+    .sc-table th {
+      background: #0f172a;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-align: left;
+      padding: 14px 18px;
+      letter-spacing: 0.03em;
+    }
+    .sc-table td {
+      padding: 15px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.94rem;
+      color: #1e293b;
+      line-height: 1.65;
+      vertical-align: top;
+    }
+    .sc-table tr:last-child td { border-bottom: none; }
+    .sc-table tr:nth-child(even) td { background: #f8fafc; }
+
+    /* === CALLOUTS & DOSSIER HEADERS === */
+    .sc-callout {
+      background: #f0fdf4;
+      border-left: 5px solid #0f5132;
+      border-radius: 0 12px 12px 0;
+      padding: 22px 26px;
+      margin: 24px 0;
+    }
+    .sc-callout-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0f5132;
+      margin-bottom: 6px;
+    }
+    .sc-dossier-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 8px rgba(15,23,42,0.03);
+    }
+    .sc-svg-wrap {
+      margin: 28px 0;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+      overflow-x: auto;
+    }
+    .sc-svg-wrap svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 960px;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body class="sc-nav-open">
-  <main class="sc-auto-page">
-    <p class="sc-route">intelligence core - biz intelligence</p>
+  <main class="sc-monograph">
+    <div class="sc-top-bar">
+      <p class="sc-route">intelligence core - biz intelligence</p>
+    </div>
 
-    <section class="sc-sec" style="padding-top: 12px;">
-      <div><span class="sc-kicker">ENTERPRISE BRAIN &bull; *SC INTELLIGENCE CORE</span></div>
-      <h1 class="sc-h1">*SC - Biz Intelligence</h1>
-      <p class="sc-sub">24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.</p>
-      <p class="sc-lead">As part of the <strong>*SC intelligence-core</strong>, <strong>Biz Intelligence</strong> functions as the autonomous central nervous system of the Signal Star Universe. Operating around the clock while human executives sleep, it harvests global market data, grounds strategic decisions in verified facts, and automates all 8 corporate departments at near- fixed cost.</p>
+    <!-- DOCUMENT HEADER -->
+    <header style="margin-bottom: 36px;">
+      <div class="sc-chapter-num">03. INTELLIGENCE-CORE &bull; L2 SECTION COMMAND HUB</div>
+      <h1 class="sc-doc-h1">*SC Biz Intelligence — Autonomous Enterprise Intelligence Engine Room</h1>
+      <p class="sc-lead">As the master command hub of Category 01 inside Domain 03 (intelligence-core), <strong>Biz Intelligence</strong> unites the 11 specialized intelligence pillars of *SC (SISTAR Company / Signal Star Universe). Powered by the 24/7 Overnight Data Factory, Dual-Engine Vector RAG, and native Google Workspace automation, Biz Intelligence automates corporate strategy, sourcing, compliance, pricing, credit, and fulfillment at near-zero marginal operational cost.</p>
+    </header>
 
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <div class="sc-num-label">01 &bull; WHAT IT IS (CORE DEFINITION)</div>
-          <h2 class="sc-h3">Overnight Data Factory (10 PM - 8 AM)</h2>
-          <p class="sc-p">Headless Playwright/Apify scrapers autonomously harvest global wholesale prices (1688/Alibaba), Shopee/Tokopedia competitor SKUs, HS-code tariffs, and regulatory updates every night.</p>
+    <!-- EXECUTIVE HERO -->
+    <div class="sc-exec-hero">
+      <h3>Executive Architectural Synthesis: The 11-Node Autonomous Intelligence Matrix</h3>
+      <p>Biz Intelligence functions as the cybernetic central nervous system of the Signal Star Universe. By interconnecting ERP, AI Centers, RAG Fine-Tuning, Intelligence On-Tap HR, Dynamic Pricing FCE, BNPL FCE, Smart Logistics, Space Share Warehousing, Open Accounts Sales, Project Generator, and AI Secretary into a unified state vector, *SC eliminates 100% of internal enterprise software license fees while orchestrating high-margin physical and digital commerce across 8 international bases.</p>
+      <div class="sc-kpi-strip">
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">11 Modules</div>
+          <div class="sc-kpi-desc">Specialized Autonomous Intelligence Sub-Nodes</div>
         </div>
-
-        <div class="sc-card-line">
-          <div class="sc-num-label">02 &bull; WHY WE DO IT (MARKET OPPORTUNITY)</div>
-          <h2 class="sc-h3">Dual-Engine Vector RAG (NotebookLM + Dify)</h2>
-          <p class="sc-p">Embeds nightly market streams alongside internal Google Drive/Keep memos into Supabase pgvector and NotebookLM repositories, delivering citation-backed 8:00 AM executive briefs.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">8 Bases</div>
+          <div class="sc-kpi-desc">Synchronized Trade Jurisdictions (SCK, SCI, SCV, etc.)</div>
         </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">03 &bull; HOW IT WORKS (OPERATIONAL MECHANISM)</div>
-          <h2 class="sc-h3">Qubit ERP &amp; CCTV Vision Stock Opname</h2>
-          <p class="sc-p">Automates Finance/VAT, HR (25th payouts), Sales/CRM, and RA natively on Google Workspace, while CCTV + Gemini Vision AI counts warehouse pallets and sachets in real time.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">24/7</div>
+          <div class="sc-kpi-desc">Unmanned Nocturnal Harvesting (10:00 PM &ndash; 08:00 AM)</div>
         </div>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">t = 0</div>
+          <div class="sc-kpi-desc">Simultaneous 70/30 Settlement and State Verification</div>
+        </div>
+      </div>
+    </div>
 
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">04 &bull; REVENUE MODEL &amp; EXPECTED ROI</div>
-          <h2 class="sc-h3">Dual-Return SaaS &amp; MCP API Monetization</h2>
-          <p class="sc-p">Eliminates 100% of internal ERP/admin licensing costs while generating external B2B revenue through custom enterprise RAG builds, Zoho/Workspace ERP SaaS, and MCP Server agent query tolls.</p>
+    <!-- CHAPTER 1 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 01</span>
+        <span class="sc-chapter-tag">MASTER TOPOLOGY</span>
+      </div>
+      <h2 class="sc-chapter-h2">The Sovereign Brain of *SC — The Biz Intelligence Constellation</h2>
+      <p class="sc-p">In conventional multinationals, corporate intelligence is fragmented across siloed software tools and disconnected departments: an ERP from SAP, a CRM from Salesforce, supply chain data from legacy freight brokers, and pricing spreadsheets scattered across regional offices. This fragmentation produces fatal latency, expensive integration consulting fees, and severe blind spots in cross-border decision making.</p>
+      <p class="sc-p"><strong>*SC Biz Intelligence</strong> unifies corporate capability into an interconnected cognitive mesh. Every module communicates via standardized JSON-RPC 2.0 tool buses, Supabase pgvector embedding indexes, and real-time Google Workspace master ledgers:</p>
+
+      <!-- BESPOKE INLINE SVG 1 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#090d16"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">BIZ INTELLIGENCE &bull; 11-NODE MASTER CONSTELLATION MAP</text>
+          
+          <!-- CENTRAL CORE -->
+          <circle cx="480" cy="180" r="56" fill="#0f172a" stroke="#10b981" stroke-width="2.5"/>
+          <text x="480" y="174" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">BIZ INTEL</text>
+          <text x="480" y="190" fill="#ffffff" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Command Hub</text>
+          <text x="480" y="204" fill="#a7f3d0" font-family="'Space Grotesk', monospace" font-size="8" text-anchor="middle">11 Sub-Nodes</text>
+
+          <!-- 11 SATELLITE NODES -->
+          <!-- 01 ERP -->
+          <circle cx="200" cy="70" r="28" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+          <text x="200" y="68" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" text-anchor="middle">01 &bull; ERP</text>
+          <text x="200" y="80" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="7" text-anchor="middle">8-Team Core</text>
+          <line x1="228" y1="78" x2="430" y2="155" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2,2"/>
+
+          <!-- 02 AI Centers -->
+          <circle cx="340" cy="60" r="28" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+          <text x="340" y="68" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" text-anchor="middle">02 &bull; CENTERS</text>
+          <text x="340" y="80" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="7" text-anchor="middle">8 Global Bases</text>
+          <line x1="355" y1="85" x2="445" y2="145" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2,2"/>
+
+          <!-- 03 RAG Fine-Tuning -->
+          <circle cx="480" cy="55" r="28" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+          <text x="480" y="63" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" text-anchor="middle">03 &bull; RAG</text>
+          <text x="480" y="75" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="7" text-anchor="middle">Zero Halluc.</text>
+          <line x1="480" y1="83" x2="480" y2="124" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2,2"/>
+
+          <!-- 04 HR On-Tap -->
+          <circle cx="620" cy="60" r="28" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+          <text x="620" y="68" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" text-anchor="middle">04 &bull; HR</text>
+          <text x="620" y="80" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="7" text-anchor="middle">25th Payout</text>
+          <line x1="605" y1="85" x2="515" y2="145" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2,2"/>
+
+          <!-- 05 Dynamic Pricing -->
+          <circle cx="760" cy="70" r="28" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+          <text x="760" y="68" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" text-anchor="middle">05 &bull; PRICING</text>
+          <text x="760" y="80" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="7" text-anchor="middle">FCE Elastic</text>
+          <line x1="732" y1="78" x2="530" y2="155" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2,2"/>
+
+          <!-- 06 BNPL FCE -->
+          <circle cx="820" cy="180" r="28" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+          <text x="820" y="178" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" text-anchor="middle">06 &bull; BNPL</text>
+          <text x="820" y="190" fill="#34d399" font-family="'Inter', sans-serif" font-size="7" text-anchor="middle">K-SURE Net60</text>
+          <line x1="792" y1="180" x2="536" y2="180" stroke="#10b981" stroke-width="1" stroke-dasharray="2,2"/>
+
+          <!-- 07 Smart Logistics -->
+          <circle cx="760" cy="270" r="28" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+          <text x="760" y="268" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" text-anchor="middle">07 &bull; LOGISTICS</text>
+          <text x="760" y="280" fill="#34d399" font-family="'Inter', sans-serif" font-size="7" text-anchor="middle">3D Cube SCM</text>
+          <line x1="732" y1="262" x2="530" y2="205" stroke="#10b981" stroke-width="1" stroke-dasharray="2,2"/>
+
+          <!-- 08 Space Share -->
+          <circle cx="620" cy="285" r="28" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+          <text x="620" y="283" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" text-anchor="middle">08 &bull; STORAGE</text>
+          <text x="620" y="295" fill="#34d399" font-family="'Inter', sans-serif" font-size="7" text-anchor="middle">Nearbuy Lockers</text>
+          <line x1="605" y1="265" x2="515" y2="215" stroke="#10b981" stroke-width="1" stroke-dasharray="2,2"/>
+
+          <!-- 09 Open Accounts -->
+          <circle cx="480" cy="290" r="28" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+          <text x="480" y="288" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" text-anchor="middle">09 &bull; ACCOUNTS</text>
+          <text x="480" y="300" fill="#c084fc" font-family="'Inter', sans-serif" font-size="7" text-anchor="middle">3-Month RPF</text>
+          <line x1="480" y1="262" x2="480" y2="236" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="2,2"/>
+
+          <!-- 10 Project Generator -->
+          <circle cx="340" cy="285" r="28" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+          <text x="340" y="283" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" text-anchor="middle">10 &bull; GEN</text>
+          <text x="340" y="295" fill="#c084fc" font-family="'Inter', sans-serif" font-size="7" text-anchor="middle">Cosmo Seed</text>
+          <line x1="355" y1="265" x2="445" y2="215" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="2,2"/>
+
+          <!-- 11 AI Secretary -->
+          <circle cx="200" cy="270" r="28" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+          <text x="200" y="268" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" text-anchor="middle">11 &bull; SECRETARY</text>
+          <text x="200" y="280" fill="#c084fc" font-family="'Inter', sans-serif" font-size="7" text-anchor="middle">Chief of Staff</text>
+          <line x1="228" y1="262" x2="430" y2="205" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="2,2"/>
+
+          <!-- Outer Left Node -->
+          <circle cx="140" cy="180" r="28" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+          <text x="140" y="178" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" text-anchor="middle">NIGHT</text>
+          <text x="140" y="190" fill="#fbbf24" font-family="'Inter', sans-serif" font-size="7" text-anchor="middle">Data Factory</text>
+          <line x1="168" y1="180" x2="424" y2="180" stroke="#f59e0b" stroke-width="1" stroke-dasharray="2,2"/>
+
+          <text x="480" y="325" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Unified Quantum State Vector &bull; Zero Silos &bull; End-to-End Autonomous Commerce</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 2 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 02</span>
+        <span class="sc-chapter-tag">CYBERNETIC LOOP</span>
+      </div>
+      <h2 class="sc-chapter-h2">The Cybernetic Commercial Loop — From Nightly Harvest to Real-Time Settlement</h2>
+      <p class="sc-p">What makes Biz Intelligence fundamentally superior to static business intelligence dashboards (PowerBI, Tableau) is that it is not passive: it is an active cybernetic loop where real-world events continuously trigger automated actions. The sequence flows uninterrupted across 24 hours:</p>
+
+      <!-- BESPOKE INLINE SVG 2 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#0b1329"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">CYBERNETIC COMMERCIAL INFORMATION &amp; VALUE LOOP</text>
+          
+          <!-- STAGE 1: NOCTURNAL DATA -->
+          <g transform="translate(60, 80)">
+            <rect width="180" height="190" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="90" y="28" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">1. HARVEST &amp; RAG</text>
+            <text x="15" y="55" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10">&bull; 10 PM &ndash; 8 AM Scrapers</text>
+            <text x="15" y="75" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10">&bull; 1688 / Shopee / Toko</text>
+            <text x="15" y="95" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10">&bull; pgvector indexing</text>
+            <text x="15" y="115" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10">&bull; 08:00 AM C.A.N. Brief</text>
+            <rect x="15" y="145" width="150" height="28" rx="4" fill="#0f172a"/>
+            <text x="90" y="163" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Zero Hallucination</text>
+          </g>
+
+          <line x1="240" y1="175" x2="280" y2="175" stroke="#38bdf8" stroke-width="2"/>
+
+          <!-- STAGE 2: PRICING & CREDIT -->
+          <g transform="translate(280, 80)">
+            <rect width="180" height="190" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="90" y="28" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">2. PRICING &amp; CREDIT</text>
+            <text x="15" y="55" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10">&bull; Dynamic Pricing FCE</text>
+            <text x="15" y="75" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10">&bull; Rp 1,320 Sachet floor</text>
+            <text x="15" y="95" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10">&bull; BNPL FCE Net-60</text>
+            <text x="15" y="115" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10">&bull; K-SURE sovereign limit</text>
+            <rect x="15" y="145" width="150" height="28" rx="4" fill="#0f172a"/>
+            <text x="90" y="163" fill="#fbbf24" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">300% Purchasing Power</text>
+          </g>
+
+          <line x1="460" y1="175" x2="500" y2="175" stroke="#f59e0b" stroke-width="2"/>
+
+          <!-- STAGE 3: LOGISTICS & VISION -->
+          <g transform="translate(500, 80)">
+            <rect width="180" height="190" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+            <text x="90" y="28" fill="#c084fc" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">3. SCM &amp; VISION</text>
+            <text x="15" y="55" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10">&bull; 3D Container Cube SCM</text>
+            <text x="15" y="75" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10">&bull; AKFTA 0% Duty clearance</text>
+            <text x="15" y="95" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10">&bull; CCTV stock opname (60s)</text>
+            <text x="15" y="115" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10">&bull; Space Share fractional</text>
+            <rect x="15" y="145" width="150" height="28" rx="4" fill="#0f172a"/>
+            <text x="90" y="163" fill="#c084fc" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Zero Shrinkage</text>
+          </g>
+
+          <line x1="680" y1="175" x2="720" y2="175" stroke="#8b5cf6" stroke-width="2"/>
+
+          <!-- STAGE 4: SCARLET & 70/30 SPLIT -->
+          <g transform="translate(720, 80)">
+            <rect width="180" height="190" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+            <text x="90" y="28" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">4. CLOSE &amp; CLEAR</text>
+            <text x="15" y="55" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10">&bull; Ms. Scarlet 24/7 Closing</text>
+            <text x="15" y="75" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10">&bull; Buy4Me group cohorts</text>
+            <text x="15" y="95" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10">&bull; Nearbuy 2-hour pickup</text>
+            <text x="15" y="115" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10">&bull; 70/30 PG Webhook split</text>
+            <rect x="15" y="145" width="150" height="28" rx="4" fill="#0f172a"/>
+            <text x="90" y="163" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Simultaneous t = 0</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Closed Cybernetic Feedback &bull; Continuous Margin Optimization &bull; Fully Automated Execution</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 3 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 03</span>
+        <span class="sc-chapter-tag">GOVERNANCE &amp; FIREWALL</span>
+      </div>
+      <h2 class="sc-chapter-h2">The Triple Control Towers &amp; Dual-Track Legal Firewall</h2>
+      <p class="sc-p">To manage systemic risk across 8 global trade bases and 11 intelligence modules, *SC enforces the <strong>Triple Control Towers</strong> governance architecture:</p>
+
+      <!-- BESPOKE INLINE SVG 3 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#090d16"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">TRIPLE CONTROL TOWERS &bull; SYSTEMIC RISK FIREWALL</text>
+          
+          <!-- TOWER 1: TECHNICAL CONTROL TOWER -->
+          <g transform="translate(60, 75)">
+            <rect width="260" height="210" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <circle cx="130" cy="45" r="22" fill="#0284c7"/>
+            <text x="130" y="51" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">TECH</text>
+            <text x="130" y="85" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">1. TECHNICAL CONTROL</text>
+            <text x="20" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Similarity threshold gating (&ge;0.82)</text>
+            <text x="20" y="135" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Hallucination audit &amp; prompt logs</text>
+            <text x="20" y="155" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Edge-to-cloud mesh health</text>
+            <text x="130" y="195" fill="#38bdf8" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Base: Singapore (SCS)</text>
+          </g>
+
+          <!-- TOWER 2: COMMERCIAL CONTROL TOWER -->
+          <g transform="translate(350, 75)">
+            <rect width="260" height="210" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+            <circle cx="130" cy="45" r="22" fill="#d97706"/>
+            <text x="130" y="51" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">COMM</text>
+            <text x="130" y="85" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">2. COMMERCIAL CONTROL</text>
+            <text x="20" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Dynamic price margin boundaries</text>
+            <text x="20" y="135" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; 3-Month RPF volume commitment</text>
+            <text x="20" y="155" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; K-SURE credit insurance ceiling</text>
+            <text x="130" y="195" fill="#fbbf24" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Base: Jakarta (SCI) / Seoul (SCK)</text>
+          </g>
+
+          <!-- TOWER 3: LEGAL CONTROL TOWER -->
+          <g transform="translate(640, 75)">
+            <rect width="260" height="210" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+            <circle cx="130" cy="45" r="22" fill="#059669"/>
+            <text x="130" y="51" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">LEGAL</text>
+            <text x="130" y="85" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">3. LEGAL &amp; FIREWALL</text>
+            <text x="20" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Dual-Track Holding/SPV separation</text>
+            <text x="20" y="135" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Sovereign regulatory adherence</text>
+            <text x="20" y="155" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; 70/30 PG escrow release logic</text>
+            <text x="130" y="195" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Base: Holding Governance Board</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Institutional Due Diligence Grade &bull; Complete Sovereign Protection &bull; Zero Contagion Risk</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 4 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 04</span>
+        <span class="sc-chapter-tag">MATHEMATICAL FORMALISM</span>
+      </div>
+      <h2 class="sc-chapter-h2">Mathematical Formalism: Systemic Leverage &amp; Entropy Minimization</h2>
+      <p class="sc-p">In Domain 02 (qubit-algorithm), organizational performance is governed by the systemic coordination equation. Biz Intelligence couples all 11 modules into an entangled enterprise state vector:</p>
+
+      <div class="sc-math-box">
+        <div class="sc-formula">|\Psi_{\text{Enterprise}}\rangle = \bigotimes_{k=1}^{11} |\text{Module}_k\rangle \quad \text{with} \quad \Lambda_{\text{BizIntel}} = \frac{\text{Global Gross Output}}{\text{Fixed Administrative Headcount}} \ge 100\times</div>
+        <div class="sc-math-desc">A single commercial directive collapses all 11 modules simultaneously ($t=0$), unlocking 100x operational leverage per human operator.</div>
+        <div class="sc-math-code">\Delta S_{\text{BizIntel}} = k_B \sum_{j=1}^{11} \left( \ln W_{\text{manual}}(j) - \ln W_{\text{autonomous}}(j) \right) \longrightarrow 0</div>
+        <div class="sc-math-desc">Systemic operational entropy $\Delta S$ approaches zero as manual reconciliation friction is eliminated by autonomous Google Workspace and Supabase webhook protocols.</div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 5 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 05</span>
+        <span class="sc-chapter-tag">SUB-NODE DIRECTORY</span>
+      </div>
+      <h2 class="sc-chapter-h2">Comprehensive Sub-Node Directory: The 11 Biz Intelligence Pillars</h2>
+      <p class="sc-p">The 11 specialized modules constituting the Biz Intelligence division within intelligence-core:</p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Module Code &amp; Path</th>
+            <th>Core Autonomous Mission</th>
+            <th>Primary Technology Architecture</th>
+            <th>Commercial Propulsion Target</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>01 &bull; erp</strong></td>
+            <td>8-department central nervous system</td>
+            <td>Google Workspace + Supabase pgvector</td>
+            <td>100% internal ERP license elimination</td>
+          </tr>
+          <tr>
+            <td><strong>02 &bull; ai-centers</strong></td>
+            <td>8-base distributed cognitive grid</td>
+            <td>Multi-model routing (Flash/Sonnet/R1)</td>
+            <td>Localized trade &amp; customs intelligence</td>
+          </tr>
+          <tr>
+            <td><strong>03 &bull; rag-fine-tuning</strong></td>
+            <td>Zero-hallucination domain RAG</td>
+            <td>LoRA fine-tuning + cosine similarity &ge;0.82</td>
+            <td>100% verified trade compliance answers</td>
+          </tr>
+          <tr>
+            <td><strong>04 &bull; intelligence-on-tab-hr</strong></td>
+            <td>Autonomous talent &amp; 25th payroll</td>
+            <td>Dify agent pairing + statutory tax math</td>
+            <td>One-Man Unicorn workforce scaling</td>
+          </tr>
+          <tr>
+            <td><strong>05 &bull; dynamic-pricing-fce</strong></td>
+            <td>Real-time elastic margin optimization</td>
+            <td>Overnight SKU telemetry + landed-cost BOM</td>
+            <td>Rp 1,320 micro-sachet market dominance</td>
+          </tr>
+          <tr>
+            <td><strong>06 &bull; bnpl-fce</strong></td>
+            <td>Sovereign B2B trade credit underwriting</td>
+            <td>K-SURE API bridge + 70/30 auto-split</td>
+            <td>300% expansion in buyer purchasing power</td>
+          </tr>
+          <tr>
+            <td><strong>07 &bull; smart-logistics</strong></td>
+            <td>Cross-border SCM &amp; 3D container packing</td>
+            <td>3D bin-packing + AKFTA/RCEP duty engine</td>
+            <td>34% reduction in ocean landed freight</td>
+          </tr>
+          <tr>
+            <td><strong>08 &bull; space-shae-warehousing</strong></td>
+            <td>Fractional bonded pallet micro-leases</td>
+            <td>CCTV Vision AI + Nearbuy 2-hour pickup</td>
+            <td>Zero multi-year real estate leases</td>
+          </tr>
+          <tr>
+            <td><strong>09 &bull; open-accounts-sales</strong></td>
+            <td>Open account credit &amp; RPF scheduling</td>
+            <td>3-Month Rolling Purchasing Forecasts</td>
+            <td>Zero-default sovereign insured trade</td>
+          </tr>
+          <tr>
+            <td><strong>10 &bull; project-generator</strong></td>
+            <td>Overnight Cosmo Seed venture synthesizer</td>
+            <td>5-perspective Spark explosion JSON DAG</td>
+            <td>Compress 6 months of strategy to 10 hours</td>
+          </tr>
+          <tr>
+            <td><strong>11 &bull; ai-secretary</strong></td>
+            <td>24/7 Chief of Staff &amp; C.A.N. executor</td>
+            <td>Whisper parsing + 08:00 AM strategic brief</td>
+            <td>Zero administrative distraction for CEOs</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHAPTER 6 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 06</span>
+        <span class="sc-chapter-tag">REGIONAL IMPACT</span>
+      </div>
+      <h2 class="sc-chapter-h2">Operational Impact Across the 8 International Bases</h2>
+      <p class="sc-p">How Biz Intelligence empowers our sovereign global operational hubs:</p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>International Base</th>
+            <th>Primary Active Biz Intelligence Workflows</th>
+            <th>Landed Operational Impact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>SCK &bull; Korea (Seoul)</strong></td>
+            <td>Formulation R&amp;D (Auto-Formulator R1), K-SURE underwriting, 25th payroll</td>
+            <td>Automated export factory runs; zero credit default</td>
+          </tr>
+          <tr>
+            <td><strong>SCI &bull; Indonesia (Jakarta)</strong></td>
+            <td>BPOM RAG compliance, Rp 1,320 Dynamic Pricing, Nearbuy micro-fulfillment</td>
+            <td>Mass consumer market penetration across 280M pop.</td>
+          </tr>
+          <tr>
+            <td><strong>SCV &bull; Vietnam (HCMC)</strong></td>
+            <td>VKFTA zero-tariff Form KV clearing, SCM container consolidation</td>
+            <td>6-day ocean transit, zero customs demurrage</td>
+          </tr>
+          <tr>
+            <td><strong>SCS &bull; Singapore (Central)</strong></td>
+            <td>Treasury management, 70/30 PG split clearing, IP holding governance</td>
+            <td>Sovereign multi-currency liquidity protection</td>
+          </tr>
+          <tr>
+            <td><strong>SCU &bull; USA (Los Angeles)</strong></td>
+            <td>US FDA OTC cosmetic registration RAG, Amazon North America pricing</td>
+            <td>Instant institutional VC due diligence access</td>
+          </tr>
+          <tr>
+            <td><strong>SCC &bull; China (Yiwu)</strong></td>
+            <td>1688 raw material wholesale scrapers, aluminum packaging procurement</td>
+            <td>Nightly BOM spot cost recalibration</td>
+          </tr>
+          <tr>
+            <td><strong>SCJ &bull; Japan (Tokyo)</strong></td>
+            <td>PMDA veterinary diagnostic validation, precision clinic distribution</td>
+            <td>Premium clinic alliance expansion</td>
+          </tr>
+          <tr>
+            <td><strong>SCIND &bull; India (Mumbai)</strong></td>
+            <td>API pharmaceutical sourcing, multi-agent core software engineering</td>
+            <td>Low-cost active ingredient supply chain</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHAPTER 7 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 07</span>
+        <span class="sc-chapter-tag">MONETIZATION</span>
+      </div>
+      <h2 class="sc-chapter-h2">Dual-Return Monetization Matrix: Internal Opex Replacement vs B2B SaaS Cashflow</h2>
+      <p class="sc-p">Biz Intelligence generates compounding enterprise value across two distinct economic tracks:</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">TRACK 1 &bull; INTERNAL OPEX REPLACEMENT</div>
+          <h3 class="sc-sub-h3">$250,000+ Annual Software Overhead Eliminated</h3>
+          <p class="sc-p">By replacing third-party enterprise subscriptions (SAP ERP, Salesforce CRM, Workday HR, Celonis SCM) across our 8 international hubs with native Google Workspace + Supabase workflows, *SC captures an immediate, permanent bottom-line margin expansion.</p>
+        </div>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">TRACK 2 &bull; EXTERNAL B2B SAAS CASHFLOW</div>
+          <h3 class="sc-sub-h3">White-Label Enterprise OS &amp; MCP Query Tolls</h3>
+          <p class="sc-p">External trading conglomerates and regional healthcare networks license the complete Biz Intelligence suite or individual modules (BNPL FCE, Smart Logistics). Furthermore, autonomous AI procurement bots query our trade APIs via Model Context Protocol (MCP) micro-tolls.</p>
         </div>
       </div>
     </section>
 
-    <section class="sc-sec">
-      <div><span class="sc-kicker">STRATEGIC SYNERGY &amp; GOVERNANCE</span></div>
-      <h2 class="sc-h2">Integration Within the Signal Star Universe (*SC)</h2>
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <h3 class="sc-h3">1. Core Architecture &amp; Technical Integration</h3>
-          <p class="sc-p">Connected across our 12-domain semantic web matrix and 8 international bases (Korea SCK, Indonesia SCI, Singapore SCS, USA SCU, Vietnam SCV, India SCIND, China SCC, Japan SCJ). Every workflow is tracked transparently via standardized Google Workspace Console, Monthly Sales, and Dashboard ledgers.</p>
-        </div>
-        <div class="sc-card-line">
-          <h3 class="sc-h3">2. Risk Firewall &amp; Settlement Security</h3>
-          <p class="sc-p">Protected by the *SC Triple Control Towers and Dual-Track Legal Firewall (isolating SC Index holding IP from Biz Galaxy commercial liabilities). Transactions leverage 3-Month Rolling Purchasing Forecasts (RPF), K-SURE export credit guarantees, and automated 70/30 PG webhook split settlements.</p>
-        </div>
+    <!-- CHAPTER 8 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 08</span>
+        <span class="sc-chapter-tag">CONSTITUTIONAL MANDATE</span>
       </div>
-      <div class="sc-callout"><strong>*SC - SISTAR COMPANY | One Spark, Infinite Galaxifying:</strong> Powered by the Qubit Algorithm&trade;, *SC intelligence-core, Scarlet AI, Qubit Biz, and the Biz Galaxy constellation.<br/>Corporate Portal: https://sistarcompany.com &bull; Executive Contact: DennyKu (denniiku@sistarcompany.com)</div>
+      <h2 class="sc-chapter-h2">The Supreme Corporate Constitution of *SC</h2>
+      <p class="sc-p">Biz Intelligence operates in strict compliance with the supreme founding constitution of *SC:</p>
+
+      <div class="sc-dossier-card">
+        <h3 class="sc-sub-h3">One Spark, Infinite Galaxifying — One Task, Multi Outcomes</h3>
+        <p class="sc-p">Biz Intelligence realizes the foundational axiom of the Signal Star Universe. A single human strategic intent or customer transaction does not trigger a slow, linear sequence of manual emails; it ignites an entangled quantum state of execution across all 11 modules simultaneously at $t=0$, guaranteeing corporate agility and unshakeable balance sheet resilience.</p>
+      </div>
+
+      <div class="sc-callout">
+        <div class="sc-callout-title">*SC - SISTAR COMPANY &bull; One Spark, Infinite Galaxifying</div>
+        <p class="sc-p">Powered by the Qubit Algorithm&trade;, *SC Intelligence-Core, Scarlet AI, Qubit Biz, and the Biz Galaxy Constellation.<br/>
+        Executive Contact: DennyKu (denniiku@sistarcompany.com) &bull; Official Portal: https://sistarcompany.com</p>
+      </div>
     </section>
   </main>
 </body>

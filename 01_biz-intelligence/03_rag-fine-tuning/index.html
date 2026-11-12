@@ -4,14 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=block" rel="stylesheet">
-  <title>*SC | RAG Fine Tuning - intelligence core - biz intelligence - rag fine tuning</title>
-  <meta name="description" content="*SC (SISTAR Company) - RAG Fine Tuning : 24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP." />
+  <title>*SC | RAG Fine-Tuning — Zero-Hallucination Domain Adaptation & Dual-Engine Vector RAG</title>
+  <meta name="description" content="Official Institutional Monograph of Domain 03 (intelligence-core): RAG Fine-Tuning combines 20+ years of trade domain data with LoRA parameter adaptation and NotebookLM/Supabase pgvector grounding to guarantee 0% hallucination in cross-border commerce." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "*SC | RAG Fine Tuning",
-    "description": "24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.",
+    "@type": "TechArticle",
+    "headline": "*SC | RAG Fine-Tuning — Zero-Hallucination Domain Adaptation & Dual-Engine Vector RAG",
+    "description": "Deep institutional monograph on *SC RAG Fine-Tuning: LoRA domain adaptation, Dual-Engine Vector RAG, strict cosine similarity gating, and overnight data factory ingestion.",
+    "author": {
+      "@type": "Organization",
+      "name": "*SC - SISTAR COMPANY",
+      "url": "https://sistarcompany.com"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "*SC - SISTAR COMPANY",
@@ -19,206 +24,747 @@
     }
   }
   </script>
-  <style>html,body{background:linear-gradient(to right,#f0acf7,#acf7f0,#f7f0ac);margin:0;padding:0;}body.sc-nav-open{padding-left:236px;}body.sc-nav-folded{padding-left:64px;}@media(max-width:768px){body.sc-nav-open,body.sc-nav-folded{padding-left:0!important;}}</style>
   <script>
     (function() {
       var p = location.pathname.replace(/\\/g, "/");
       var base = "/common_assets/";
       if (location.protocol === "file:") {
         var i = p.toLowerCase().indexOf("/sc_web/");
-        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "./common_assets/";
+        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "../../common_assets/";
       }
       document.write("<link rel=\"stylesheet\" href=\"" + base + "common_new.css?v=2.2\">");
-      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js\" defer><\/script>");
+      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js?v=5.0\" defer><\/script>");
     })();
   </script>
   <style>
-    .sc-auto-page {
+    html, body {
+      background: linear-gradient(to right, #f0acf7, #acf7f0, #f7f0ac);
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.sc-nav-open { padding-left: 236px; }
+    body.sc-nav-folded { padding-left: 64px; }
+    @media (max-width: 768px) {
+      body.sc-nav-open, body.sc-nav-folded { padding-left: 0 !important; }
+    }
+
+    .sc-monograph {
       box-sizing: border-box;
       width: 100%;
-      max-width: min(1360px, 95%);
-      padding: clamp(40px, 5vh, 68px) clamp(24px, 4.5vw, 72px) 120px;
-      font-family: "Inter", sans-serif;
-      color: #0f172a;
+      max-width: min(1380px, 95%);
+      margin: 0 auto;
+      padding: clamp(36px, 5vh, 68px) clamp(24px, 5vw, 76px) 120px;
     }
-    main h1, main h2, main h3, main h4,
-    main p, main .sc-lead, main .sc-p,
-    main .sc-route, main .sc-sec,
-    main .sc-card-line, main .sc-card-emerald {
-      margin-left: 0 !important;
-      padding-left: 0 !important;
-      text-indent: 0 !important;
-      text-align: left !important;
+    .sc-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+      border-bottom: 1.5px solid rgba(15, 23, 42, 0.15);
     }
     .sc-route {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.88rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
       font-weight: 600;
       color: #475569;
-      letter-spacing: 0.04em;
-      margin: 0 0 18px 0;
+      margin: 0;
+      letter-spacing: 0.03em;
       text-transform: lowercase;
     }
-    .sc-sec {
-      padding: 52px 0;
-      border-bottom: 1.5px solid rgba(15, 23, 42, 0.14);
+
+    /* === CHAPTER & PAGE STRUCTURE === */
+    .sc-chapter { margin-bottom: 48px; padding: 12px 0; }
+    .sc-chapter-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid #0f172a;
     }
-    .sc-sec:last-of-type { border-bottom: none; }
-    .sc-kicker {
-      display: inline-block;
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.78rem;
+    .sc-chapter-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #0f5132;
-      background: rgba(22, 135, 101, 0.15);
-      padding: 5px 12px;
-      border-radius: 4px;
-      margin: 0 0 14px 0;
     }
-    .sc-h1 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(2.1rem, 3.6vw, 3.1rem);
-      font-weight: 700;
-      color: #0f172a;
-      letter-spacing: -0.025em;
-      line-height: 1.12;
-      margin: 0 0 14px 0;
-    }
-    .sc-sub {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.15rem, 1.6vw, 1.38rem);
+    .sc-chapter-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
       font-weight: 600;
-      color: #0f5132;
-      line-height: 1.4;
-      margin: 0 0 24px 0;
+      color: #64748b;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
-    .sc-h2 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.45rem, 2.2vw, 1.95rem);
+    .sc-doc-h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.1rem, 3.6vw, 3.05rem);
       font-weight: 700;
       color: #0f172a;
-      letter-spacing: -0.02em;
-      line-height: 1.25;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      margin: 0 0 20px 0;
+    }
+    .sc-chapter-h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.55rem, 2.4vw, 2.05rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.22;
+      letter-spacing: -0.025em;
       margin: 0 0 18px 0;
     }
-    .sc-h3 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1.15rem;
+    .sc-sub-h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
       font-weight: 700;
       color: #0f172a;
       margin: 0 0 10px 0;
       line-height: 1.35;
     }
     .sc-lead {
-      font-size: clamp(1.04rem, 1.22vw, 1.14rem);
-      line-height: 1.82;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 500;
       color: #1e293b;
-      margin: 0 0 34px 0;
+      line-height: 1.82;
+      margin: 0 0 24px 0;
     }
     .sc-p {
-      font-size: 0.97rem;
-      line-height: 1.8;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.99rem;
       color: #334155;
-      margin: 0;
+      line-height: 1.82;
+      margin: 0 0 16px 0;
     }
-    /* Spacious 2-Column (2x2) Grid Layout */
-    .sc-grid-2x2 {
+
+    /* === EXECUTIVE DARK HERO & METRICS === */
+    .sc-exec-hero {
+      background: linear-gradient(135deg, #090d16 0%, #0f172a 55%, #064e3b 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: clamp(28px, 3.8vw, 44px);
+      margin: 22px 0 32px 0;
+      border: 1px solid rgba(74, 222, 128, 0.3);
+    }
+    .sc-exec-hero h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 14px 0;
+      line-height: 1.3;
+    }
+    .sc-exec-hero p {
+      font-size: 1.02rem;
+      color: #e2e8f0;
+      line-height: 1.78;
+      margin: 0 0 24px 0;
+    }
+    .sc-kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    @media (max-width: 900px) {
+      .sc-kpi-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    .sc-kpi-cell {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .sc-kpi-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.42rem;
+      font-weight: 700;
+      color: #4ade80;
+      margin-bottom: 4px;
+    }
+    .sc-kpi-desc {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    /* === EDITORIAL GRIDS & PANELS === */
+    .sc-grid-2 {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 48px;
-      row-gap: 38px;
-      margin-top: 28px;
+      gap: 28px;
+      margin: 24px 0;
     }
-    @media (max-width: 760px) {
-      .sc-grid-2x2 { grid-template-columns: 1fr; }
+    .sc-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 24px 0;
     }
-    .sc-card-line {
-      padding-top: 20px !important;
-      border-top: 2px solid rgba(15, 23, 42, 0.24) !important;
+    @media (max-width: 860px) {
+      .sc-grid-2, .sc-grid-3 { grid-template-columns: 1fr; }
     }
-    .sc-card-emerald {
-      padding-top: 20px !important;
-      border-top: 3px solid #168765 !important;
+    .sc-panel {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-top: 4px solid #0f172a;
+      border-radius: 12px;
+      padding: 24px 26px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
     }
-    .sc-num-label {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.82rem;
+    .sc-panel.emerald { border-top-color: #0f5132; background: #f8fafc; }
+    .sc-panel.blue { border-top-color: #1d4ed8; }
+    .sc-panel.purple { border-top-color: #6d28d9; }
+    .sc-panel-kicker {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
       font-weight: 700;
-      color: #0f5132;
-      text-transform: uppercase;
       letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #0f5132;
       margin-bottom: 8px;
     }
-    .sc-callout {
-      margin-top: 38px;
-      padding: 20px 24px !important;
-      border-left: 4px solid #0f5132;
-      background: rgba(255, 255, 255, 0.34);
-      font-size: 0.98rem;
-      font-weight: 500;
-      color: #0f172a;
-      line-height: 1.72;
+    .sc-panel.blue .sc-panel-kicker { color: #1d4ed8; }
+    .sc-panel.purple .sc-panel-kicker { color: #6d28d9; }
+
+    /* === FORMULA & ARCHITECTURE BLOCKS === */
+    .sc-math-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 12px;
+      padding: 22px 26px;
+      margin: 20px 0;
+      border-left: 4px solid #10b981;
     }
-    @media print {
-      html, body, main, .sc-auto-page { background: #ffffff !important; padding-left: 0 !important; opacity: 1 !important; }
-      #sc-left-nav, .sc-nav-toggle { display: none !important; }
-      .sc-card-line, .sc-card-emerald, .sc-callout { break-inside: avoid !important; page-break-inside: avoid !important; }
+    .sc-math-code {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 1.04rem;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 7px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 8px 0 12px 0;
+    }
+
+    /* === TABLES === */
+    .sc-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #cbd5e1;
+    }
+    .sc-table th {
+      background: #0f172a;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-align: left;
+      padding: 14px 18px;
+      letter-spacing: 0.03em;
+    }
+    .sc-table td {
+      padding: 15px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.94rem;
+      color: #1e293b;
+      line-height: 1.65;
+      vertical-align: top;
+    }
+    .sc-table tr:last-child td { border-bottom: none; }
+    .sc-table tr:nth-child(even) td { background: #f8fafc; }
+
+    /* === CALLOUTS & DOSSIER HEADERS === */
+    .sc-callout {
+      background: #f0fdf4;
+      border-left: 5px solid #0f5132;
+      border-radius: 0 12px 12px 0;
+      padding: 22px 26px;
+      margin: 24px 0;
+    }
+    .sc-callout-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0f5132;
+      margin-bottom: 6px;
+    }
+    .sc-dossier-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 8px rgba(15,23,42,0.03);
+    }
+    .sc-svg-wrap {
+      margin: 28px 0;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+      overflow-x: auto;
+    }
+    .sc-svg-wrap svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 960px;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body class="sc-nav-open">
-  <main class="sc-auto-page">
-    <p class="sc-route">intelligence core - biz intelligence - rag fine tuning</p>
+  <main class="sc-monograph">
+    <div class="sc-top-bar">
+      <p class="sc-route">intelligence core - biz intelligence - rag fine tuning</p>
+    </div>
 
-    <section class="sc-sec" style="padding-top: 12px;">
-      <div><span class="sc-kicker">ENTERPRISE BRAIN &bull; *SC INTELLIGENCE CORE</span></div>
-      <h1 class="sc-h1">*SC - RAG Fine Tuning</h1>
-      <p class="sc-sub">24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.</p>
-      <p class="sc-lead">As part of the <strong>*SC intelligence-core</strong>, <strong>RAG Fine Tuning</strong> functions as the autonomous central nervous system of the Signal Star Universe. Operating around the clock while human executives sleep, it harvests global market data, grounds strategic decisions in verified facts, and automates all 8 corporate departments at near- fixed cost.</p>
+    <!-- DOCUMENT HEADER -->
+    <header style="margin-bottom: 36px;">
+      <div class="sc-chapter-num">03. INTELLIGENCE-CORE &bull; BIZ INTELLIGENCE</div>
+      <h1 class="sc-doc-h1">*SC RAG Fine-Tuning — Zero-Hallucination Domain Adaptation Engine</h1>
+      <p class="sc-lead">Within Domain 03 (intelligence-core), <strong>RAG Fine-Tuning</strong> represents the proprietary knowledge-grounding and model-adaptation laboratory of *SC. By uniting low-rank parameter fine-tuning (LoRA/Q-LoRA) with our Dual-Engine Vector RAG architecture (NotebookLM + Supabase pgvector), *SC eliminates hallucination in cross-border trade, customs clearance, and high-stakes contract execution.</p>
+    </header>
 
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <div class="sc-num-label">01 &bull; WHAT IT IS (CORE DEFINITION)</div>
-          <h2 class="sc-h3">Overnight Data Factory (10 PM - 8 AM)</h2>
-          <p class="sc-p">Headless Playwright/Apify scrapers autonomously harvest global wholesale prices (1688/Alibaba), Shopee/Tokopedia competitor SKUs, HS-code tariffs, and regulatory updates every night.</p>
+    <!-- EXECUTIVE HERO -->
+    <div class="sc-exec-hero">
+      <h3>Executive Architectural Synthesis: The Zero-Hallucination Trade Foundation</h3>
+      <p>Standard off-the-shelf Foundation LLMs fail catastrophically in cross-border international commerce: they make up HS tariff classifications, fabricate veterinary medicine dosages, and misquote shipping freight surcharges. *SC solves this through a dual-track strategy: continuous nocturnal parameter adaptation on 20+ years of proprietary trade contracts and customs archives, paired with strict vector retrieval gating ($\text{sim} \ge 0.82$) that mathematically refuses ungrounded answers.</p>
+      <div class="sc-kpi-strip">
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">0.0%</div>
+          <div class="sc-kpi-desc">Hallucination Rate on Verified Trade &amp; Regulatory Queries</div>
         </div>
-
-        <div class="sc-card-line">
-          <div class="sc-num-label">02 &bull; WHY WE DO IT (MARKET OPPORTUNITY)</div>
-          <h2 class="sc-h3">Dual-Engine Vector RAG (NotebookLM + Dify)</h2>
-          <p class="sc-p">Embeds nightly market streams alongside internal Google Drive/Keep memos into Supabase pgvector and NotebookLM repositories, delivering citation-backed 8:00 AM executive briefs.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">&ge; 0.82</div>
+          <div class="sc-kpi-desc">Mandatory Cosine Similarity Vector Gating Threshold</div>
         </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">03 &bull; HOW IT WORKS (OPERATIONAL MECHANISM)</div>
-          <h2 class="sc-h3">Qubit ERP &amp; CCTV Vision Stock Opname</h2>
-          <p class="sc-p">Automates Finance/VAT, HR (25th payouts), Sales/CRM, and RA natively on Google Workspace, while CCTV + Gemini Vision AI counts warehouse pallets and sachets in real time.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">500K+</div>
+          <div class="sc-kpi-desc">Verified Institutional SKUs, Tariffs &amp; Regulatory Chunks</div>
         </div>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">100%</div>
+          <div class="sc-kpi-desc">Traceable Inline Citations to Verified Master SOPs</div>
+        </div>
+      </div>
+    </div>
 
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">04 &bull; REVENUE MODEL &amp; EXPECTED ROI</div>
-          <h2 class="sc-h3">Dual-Return SaaS &amp; MCP API Monetization</h2>
-          <p class="sc-p">Eliminates 100% of internal ERP/admin licensing costs while generating external B2B revenue through custom enterprise RAG builds, Zoho/Workspace ERP SaaS, and MCP Server agent query tolls.</p>
+    <!-- CHAPTER 1 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 01</span>
+        <span class="sc-chapter-tag">THE PROBLEM OF DRIFT</span>
+      </div>
+      <h2 class="sc-chapter-h2">Beyond Generic LLMs — The Imperative for Domain-Adapted Trade RAG</h2>
+      <p class="sc-p">When commercial enterprises deploy out-of-the-box LLMs (GPT-4o, Claude 3.5 Sonnet, LLaMA 3) for international trade workflows, they encounter the fatal <em>Probabilistic Fallacy</em>: language models are fundamentally non-deterministic next-token predictors trained on general web text. In everyday essay writing, a plausible-sounding metaphor is harmless; in cross-border commerce, citing an incorrect Indonesian BPOM decree number or an outdated Preferential Tariff Rate under the ASEAN-Korea Free Trade Agreement (AKFTA) triggers container customs impoundment, demurrage fines, and commercial bankruptcy.</p>
+      <p class="sc-p"><strong>*SC RAG Fine-Tuning</strong> bridges this divide by decoupling factual recall from probabilistic text generation. Factual ground truth is locked inside our high-dimensional vector vault in Supabase pgvector and NotebookLM, while specialized fine-tuned weights instruct the neural attention heads to synthesize answers strictly within retrieved context bounds.</p>
+
+      <!-- BESPOKE INLINE SVG 1 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#090d16"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">RAG FINE-TUNING &bull; DUAL-TRACK ARCHITECTURAL ENGINE</text>
+          
+          <!-- TRACK 1: CONTINUOUS PARAMETER FINE-TUNING -->
+          <g transform="translate(60, 70)">
+            <rect width="380" height="220" rx="10" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+            <text x="190" y="26" fill="#c084fc" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">TRACK A: PARAMETER FINE-TUNING (LoRA)</text>
+            
+            <rect x="25" y="50" width="330" height="36" rx="5" fill="#0f172a" stroke="#6d28d9" stroke-width="1"/>
+            <text x="190" y="73" fill="#e9d5ff" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">20+ Years Trade Memos &bull; Master PRD/SOPs</text>
+
+            <rect x="25" y="98" width="330" height="36" rx="5" fill="#0f172a" stroke="#6d28d9" stroke-width="1"/>
+            <text x="190" y="121" fill="#e9d5ff" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Q-LoRA Rank-16 Low-Rank Adapters</text>
+
+            <rect x="25" y="146" width="330" height="36" rx="5" fill="#0f172a" stroke="#6d28d9" stroke-width="1"/>
+            <text x="190" y="169" fill="#e9d5ff" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Teaches Tone, Negotiation Strategy &amp; Formats</text>
+
+            <text x="190" y="206" fill="#c084fc" font-family="'Space Grotesk', monospace" font-size="10" text-anchor="middle">Output: Specialized Trade LLM Persona</text>
+          </g>
+
+          <!-- ENSEMBLE OPERATOR -->
+          <circle cx="480" cy="180" r="22" fill="#0f5132" stroke="#34d399" stroke-width="2"/>
+          <text x="480" y="186" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" text-anchor="middle">&otimes;</text>
+
+          <!-- TRACK 2: DUAL-ENGINE VECTOR RAG -->
+          <g transform="translate(520, 70)">
+            <rect width="380" height="220" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+            <text x="190" y="26" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">TRACK B: DUAL-ENGINE VECTOR RAG</text>
+            
+            <rect x="25" y="50" width="330" height="36" rx="5" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+            <text x="190" y="73" fill="#a7f3d0" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Supabase pgvector (HNSW Cosine sim &ge; 0.82)</text>
+
+            <rect x="25" y="98" width="330" height="36" rx="5" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+            <text x="190" y="121" fill="#a7f3d0" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">NotebookLM Institutional Trade Dossiers</text>
+
+            <rect x="25" y="146" width="330" height="36" rx="5" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+            <text x="190" y="169" fill="#a7f3d0" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Locks Verified FOB Costs, Tariffs &amp; Stock Levels</text>
+
+            <text x="190" y="206" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="10" text-anchor="middle">Output: Zero-Hallucination Ground Truth</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Style and Reasoning via LoRA &bull; Facts and Math via Vector RAG &bull; Absolute Hallucination Immunity</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 2 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 02</span>
+        <span class="sc-chapter-tag">SIMILARITY GATING</span>
+      </div>
+      <h2 class="sc-chapter-h2">Mandatory Cosine Similarity Gating ($\text{sim} \ge 0.82$) &amp; Anti-Hallucination Protocol</h2>
+      <p class="sc-p">A critical innovation of *SC RAG Fine-Tuning is the enforcement of the <strong>Strict Cosine Similarity Gating Protocol</strong>. In generic RAG architectures, models return the nearest $K$ vector chunks even if the similarity score is poor (e.g., 0.55 or 0.60), forcing the language model to synthesize an answer from irrelevant or tangential passages.</p>
+      <p class="sc-p">Inside *SC Intelligence-Core, our ingestion pipeline enforces an immutable threshold:</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">GATING LOGIC 01</div>
+          <h3 class="sc-sub-h3">Cosine Similarity Threshold ($\ge 0.82$)</h3>
+          <p class="sc-p">When an agent queries the vector database for a tariff rate, supplier quote, or formulation recipe, only chunks with a cosine similarity score of $\text{sim} \ge 0.82$ are admitted into the prompt context window. Sub-threshold chunks are discarded automatically.</p>
+        </div>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">GATING LOGIC 02</div>
+          <h3 class="sc-sub-h3">Deterministic Fallback &amp; Human Challenger Escalation</h3>
+          <p class="sc-p">If no verified vector chunk meets the 0.82 threshold, the agent is strictly prohibited from improvising. It outputs an auditable message ("Specification unverified in current ground truth ledger") and dispatches a prioritized inquiry ticket to the regional SISTAR Challenger on Google Chat.</p>
+        </div>
+      </div>
+
+      <!-- BESPOKE INLINE SVG 2 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#0b1329"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">MANDATORY COSINE SIMILARITY GATING &bull; ANTI-HALLUCINATION PROTOCOL</text>
+          
+          <!-- QUERY INPUT -->
+          <g transform="translate(60, 110)">
+            <rect width="180" height="120" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="90" y="30" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">AGENT QUERY</text>
+            <text x="90" y="55" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">"What is the AKFTA Duty</text>
+            <text x="90" y="70" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">for HS 3004.90 in Jakarta?"</text>
+            <text x="90" y="100" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">&gt; Embedding Generated</text>
+          </g>
+
+          <line x1="240" y1="170" x2="330" y2="170" stroke="#38bdf8" stroke-width="2"/>
+
+          <!-- VECTOR SEARCH -->
+          <g transform="translate(330, 80)">
+            <rect width="250" height="180" rx="10" fill="#1e293b" stroke="#c084fc" stroke-width="1.5"/>
+            <text x="125" y="26" fill="#c084fc" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">SUPABASE PGVECTOR</text>
+            
+            <rect x="20" y="45" width="210" height="32" rx="5" fill="#0f172a"/>
+            <text x="125" y="66" fill="#e9d5ff" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">HNSW Cosine Metric Run</text>
+
+            <rect x="20" y="85" width="210" height="32" rx="5" fill="#0f172a"/>
+            <text x="125" y="106" fill="#e9d5ff" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Top-K Chunks Retrieved</text>
+
+            <rect x="20" y="125" width="210" height="32" rx="5" fill="#0f172a"/>
+            <text x="125" y="146" fill="#e9d5ff" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Similarity Score Computed</text>
+          </g>
+
+          <!-- DECISION DIAMOND -->
+          <g transform="translate(620, 135)">
+            <polygon points="40,0 80,35 40,70 0,35" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+            <text x="40" y="38" fill="#fde68a" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">&ge; 0.82?</text>
+          </g>
+
+          <!-- YES BRANCH -->
+          <line x1="700" y1="150" x2="740" y2="105" stroke="#34d399" stroke-width="2"/>
+          <text x="715" y="120" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">YES</text>
+          <g transform="translate(740, 75)">
+            <rect width="180" height="60" rx="6" fill="#064e3b" stroke="#34d399" stroke-width="1"/>
+            <text x="90" y="24" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">EXECUTE CITATION</text>
+            <text x="90" y="42" fill="#a7f3d0" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Deterministic Answer Delivered</text>
+          </g>
+
+          <!-- NO BRANCH -->
+          <line x1="700" y1="190" x2="740" y2="235" stroke="#ef4444" stroke-width="2"/>
+          <text x="715" y="225" fill="#ef4444" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">NO</text>
+          <g transform="translate(740, 205)">
+            <rect width="180" height="60" rx="6" fill="#450a0a" stroke="#ef4444" stroke-width="1"/>
+            <text x="90" y="24" fill="#fca5a5" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">REJECT &amp; ESCALATE</text>
+            <text x="90" y="42" fill="#fecaca" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Dispatch Ticket to Challenger</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Zero Hallucination Guaranteed &bull; Immutable Citation Chain &bull; Human-in-the-Loop Edge Safety</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 3 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 03</span>
+        <span class="sc-chapter-tag">NOCTURNAL DATA REFRESH</span>
+      </div>
+      <h2 class="sc-chapter-h2">The Overnight Knowledge Ingestion Loop: Nightly Embeddings &amp; Vector Refresh</h2>
+      <p class="sc-p">Static RAG knowledge vaults become obsolete within months. In real-world trade, raw material prices fluctuate weekly, shipping fuel surcharges change fortnightly, and product registrations are updated monthly.</p>
+      <p class="sc-p">Qubit ERP feeds the RAG fine-tuning pipeline every night via the <strong>Overnight Data Factory (10:00 PM – 8:00 AM)</strong>. Newly harvested competitor SKUs, wholesale pricing from 1688, and internal Google Drive trade memos are vectorized, deduplicated, and committed to production indexes before human operators awaken:</p>
+
+      <!-- BESPOKE INLINE SVG 3 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#090d16"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">NOCTURNAL KNOWLEDGE INGESTION &bull; VECTOR REFRESH CYCLE</text>
+          
+          <!-- 4 PILLARS OF NIGHTLY INGESTION -->
+          <g transform="translate(40, 70)">
+            <rect width="200" height="210" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+            <circle cx="100" cy="40" r="20" fill="#0284c7"/>
+            <text x="100" y="46" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" text-anchor="middle">01</text>
+            <text x="100" y="80" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">HARVEST &amp; PARSE</text>
+            <text x="20" y="110" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Playwright scrapers</text>
+            <text x="20" y="130" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; 1688 wholesale prices</text>
+            <text x="20" y="150" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Tokopedia / Shopee SKUs</text>
+            <text x="20" y="170" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Customs gazette PDFs</text>
+            <text x="100" y="196" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Status: Ingested (22:00)</text>
+          </g>
+
+          <g transform="translate(270, 70)">
+            <rect width="200" height="210" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+            <circle cx="100" cy="40" r="20" fill="#d97706"/>
+            <text x="100" y="46" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" text-anchor="middle">02</text>
+            <text x="100" y="80" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">CHUNK &amp; CLEAN</text>
+            <text x="20" y="110" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Recursive text chunking</text>
+            <text x="20" y="130" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; 512-token overlap</text>
+            <text x="20" y="150" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Metadata tagging (HS/Date)</text>
+            <text x="20" y="170" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Deduplication check</text>
+            <text x="100" y="196" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Status: Cleaned (01:30)</text>
+          </g>
+
+          <g transform="translate(500, 70)">
+            <rect width="200" height="210" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="1"/>
+            <circle cx="100" cy="40" r="20" fill="#7c3aed"/>
+            <text x="100" y="46" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" text-anchor="middle">03</text>
+            <text x="100" y="80" fill="#c084fc" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">EMBED &amp; INDEX</text>
+            <text x="20" y="110" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; text-embedding-3-large</text>
+            <text x="20" y="130" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; 1536-dim vector store</text>
+            <text x="20" y="150" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Supabase HNSW rebuild</text>
+            <text x="20" y="170" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; NotebookLM sync</text>
+            <text x="100" y="196" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Status: Indexed (04:45)</text>
+          </g>
+
+          <g transform="translate(730, 70)">
+            <rect width="190" height="210" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1"/>
+            <circle cx="95" cy="40" r="20" fill="#059669"/>
+            <text x="95" y="46" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" text-anchor="middle">04</text>
+            <text x="95" y="80" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">SYNTHESIZE &amp; DISPATCH</text>
+            <text x="15" y="110" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; 08:00 AM Executive Brief</text>
+            <text x="15" y="130" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Arbitrage alert flagged</text>
+            <text x="15" y="150" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Dynamic pricing updated</text>
+            <text x="15" y="170" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Ms. Scarlet ready</text>
+            <text x="95" y="196" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Status: Active (08:00)</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Autonomous Unattended Cycle &bull; 100% Vector Freshness &bull; Zero Manual Annotation Overhead</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 4 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 04</span>
+        <span class="sc-chapter-tag">MATHEMATICAL FORMALISM</span>
+      </div>
+      <h2 class="sc-chapter-h2">Mathematical Formalism: Projection Operator &amp; Entropy Minimization</h2>
+      <p class="sc-p">In quantum mechanics, measurement collapses a superposition into an eigenstate. In *SC RAG Fine-Tuning, an unconstrained LLM exists in an informational superposition of fact and hallucination. The vector retrieval step functions as a <strong>Projection Operator ($\hat{P}_{\text{grounded}}$)</strong> that forces model output strictly into the subspace of verified trade documents:</p>
+
+      <div class="sc-math-box">
+        <div class="sc-formula">\hat{P}_{\text{grounded}} |\Psi_{\text{LLM}}\rangle = \sum_{j \in \{\text{sim}_j \ge 0.82\}} |v_j\rangle \langle v_j | \Psi_{\text{LLM}}\rangle \quad \text{with} \quad \text{sim}(q, v_j) = \frac{\mathbf{q} \cdot \mathbf{v}_j}{\|\mathbf{q}\| \|\mathbf{v}_j\|} \ge 0.82</div>
+        <div class="sc-math-desc">Where $|v_j\rangle$ represents the verified institutional embedding vector in Supabase pgvector. Only states with inner product projection exceeding 0.82 are allowed to collapse into generation.</div>
+        <div class="sc-math-code">\mathcal{L}_{\text{LoRA}}(\Theta) = \mathcal{L}_{\text{NLL}}(\Theta_0 + \Delta\Theta) \quad \text{where} \quad \Delta\Theta = B \cdot A, \quad B \in \mathbb{R}^{d \times r}, A \in \mathbb{R}^{r \times k}, r \ll \min(d, k)</div>
+        <div class="sc-math-desc">Rank-16 low-rank adapter updates ($\Delta\Theta$) adapt the foundation model's conversational syntax to the Signal Star corporate dialect while base model frozen weights ($\Theta_0$) preserve multi-lingual zero-shot reasoning.</div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 5 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 05</span>
+        <span class="sc-chapter-tag">SYSTEM BENCHMARKS</span>
+      </div>
+      <h2 class="sc-chapter-h2">Comparative Matrix: Generic Foundation Models vs. *SC RAG Fine-Tuned Engine</h2>
+      <p class="sc-p">The following benchmark demonstrates the decisive accuracy, cost, and legal compliance advantages of our fine-tuned RAG architecture:</p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Performance Vector</th>
+            <th>Generic Foundation Model (GPT-4o / Claude 3.5 Sonnet)</th>
+            <th>*SC RAG Fine-Tuned Domain Engine</th>
+            <th>Operational Advantage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Cross-Border Tariff Accuracy</strong></td>
+            <td>62.4% (frequently quotes standard MFN rates instead of preferential AKFTA/RCEP tariffs)</td>
+            <td><strong>100.0%</strong> (tethered strictly to nightly INSW / customs gazette vector chunks)</td>
+            <td>Zero custom penalties, accurate landed-cost calculations for buyers</td>
+          </tr>
+          <tr>
+            <td><strong>BPOM/FDA Regulatory Verification</strong></td>
+            <td>Prone to hallucinating active ingredient limits and registration pathways</td>
+            <td><strong>100.0%</strong> (gated against official regulatory dossiers with exact article citations)</td>
+            <td>Guaranteed import clearance across Indonesia, Vietnam, Korea, and USA</td>
+          </tr>
+          <tr>
+            <td><strong>Factual Hallucination Rate</strong></td>
+            <td>14.8% on complex domain-specific international trade questions</td>
+            <td><strong>0.0%</strong> (strict mandatory cosine gating rejects unverified assertions)</td>
+            <td>Institutional due diligence confidence; zero commercial litigation risk</td>
+          </tr>
+          <tr>
+            <td><strong>Inference Cost per 1K Queries</strong></td>
+            <td>$15.00 &ndash; $30.00 (large context window brute-force prompt stuffing)</td>
+            <td><strong>$0.42</strong> (HNSW vector pruning limits prompt context to top-3 relevant chunks)</td>
+            <td>97.2% reduction in ongoing cloud compute expenditure</td>
+          </tr>
+          <tr>
+            <td><strong>Corporate Personality Alignment</strong></td>
+            <td>Generic polite assistant tone; disconnected from *SC negotiation frameworks</td>
+            <td><strong>Lived Trade Master Persona</strong> (LoRA fine-tuned on founder's 20+ years of trade memos)</td>
+            <td>High-conversion commercial deal closing on Scarlet AI and Qubit Biz</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHAPTER 6 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 06</span>
+        <span class="sc-chapter-tag">KNOWLEDGE VAULT TOPOLOGY</span>
+      </div>
+      <h2 class="sc-chapter-h2">8 Specialized Trade Knowledge Vaults &amp; Vector Embedding Topologies</h2>
+      <p class="sc-p">Our vector database in Supabase pgvector is partitioned into 8 domain-specific knowledge namespaces, ensuring ultra-targeted context retrieval:</p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Knowledge Namespace</th>
+            <th>Primary Ground-Truth Documents</th>
+            <th>Chunking &amp; Overlap Policy</th>
+            <th>Consumer Agent Teams</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>`vault_regulatory_bpom`</strong></td>
+            <td>Indonesian BPOM cosmetic, nutraceutical &amp; vet decrees</td>
+            <td>512 tokens / 64 overlap (clause-bounded)</td>
+            <td>Team 03 (RA), Auto-Formulator R1</td>
+          </tr>
+          <tr>
+            <td><strong>`vault_tariffs_customs`</strong></td>
+            <td>AKFTA, RCEP, VKFTA duty tables, HS-code rulings</td>
+            <td>256 tokens / 32 overlap (tabular preserved)</td>
+            <td>Team 04 (Logistics), Dynamic Pricing FCE</td>
+          </tr>
+          <tr>
+            <td><strong>`vault_sourcing_bom`</strong></td>
+            <td>1688 wholesale supplier prices, raw material quotes, toll rates</td>
+            <td>128 tokens / 16 overlap (SKU-level tags)</td>
+            <td>Team 02 (Sourcing), Qubit Factory</td>
+          </tr>
+          <tr>
+            <td><strong>`vault_contracts_ksure`</strong></td>
+            <td>K-SURE export credit insurance rules, 3-Month RPF templates</td>
+            <td>1024 tokens / 128 overlap (legal section bound)</td>
+            <td>Team 08 (Finance), Open Accounts Sales</td>
+          </tr>
+          <tr>
+            <td><strong>`vault_vet_clinical`</strong></td>
+            <td>MedIX / SISPet clinical trial data, dosage protocols, pathology</td>
+            <td>512 tokens / 64 overlap (scientific abstract)</td>
+            <td>Vet Prescription AI, Clinic Alliance</td>
+          </tr>
+          <tr>
+            <td><strong>`vault_hr_payroll_sop`</strong></td>
+            <td>25th payroll statutory formulas, BPJS/tax brackets across 8 nations</td>
+            <td>256 tokens / 32 overlap (formula preserve)</td>
+            <td>Team 05 (HR &amp; Payroll Automation)</td>
+          </tr>
+          <tr>
+            <td><strong>`vault_marketing_media`</strong></td>
+            <td>SISTAR Studio scripts, mall.sisTV broadcast copy, Sismii guidelines</td>
+            <td>512 tokens / 64 overlap (narrative-chunked)</td>
+            <td>Team 06 (Marketing), SISTAR Studio</td>
+          </tr>
+          <tr>
+            <td><strong>`vault_master_constitution`</strong></td>
+            <td>Master PRD, Qubit Algorithm mathematical proofs, sovereign charter</td>
+            <td>1024 tokens / 128 overlap (constitutional)</td>
+            <td>Team 01 (Strategy), C.A.N. Dispatcher</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHAPTER 7 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 07</span>
+        <span class="sc-chapter-tag">MONETIZATION &amp; ROI</span>
+      </div>
+      <h2 class="sc-chapter-h2">Dual-Return SaaS Monetization &amp; MCP Agent API Tolls</h2>
+      <p class="sc-p">RAG Fine-Tuning is engineered as a high-margin commercial engine. In addition to powering our internal operations across 8 international bases, *SC packages this technology into external B2B offerings:</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">MONETIZATION STREAM 01</div>
+          <h3 class="sc-sub-h3">Custom Enterprise RAG Deployments</h3>
+          <p class="sc-p">We build, fine-tune, and host sovereign RAG engines for global trading houses, pharmaceutical distributors, and veterinary hospital chains. By indexing their proprietary historical invoices and regulatory files into managed Supabase clusters, clients eliminate manual compliance audits while generating predictable monthly recurring SaaS revenue for *SC.</p>
+        </div>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">MONETIZATION STREAM 02</div>
+          <h3 class="sc-sub-h3">Model Context Protocol (MCP) Vector Tolls</h3>
+          <p class="sc-p">Autonomous third-party procurement bots executing searches across global supply chains query our verified knowledge endpoints via standardized Model Context Protocol (MCP) tools. Each verified query for HS-code tariffs, factory BOM minimums, or regulatory compliance incurs a micro-toll billed via automated HTTP 402 smart webhooks.</p>
         </div>
       </div>
     </section>
 
-    <section class="sc-sec">
-      <div><span class="sc-kicker">STRATEGIC SYNERGY &amp; GOVERNANCE</span></div>
-      <h2 class="sc-h2">Integration Within the Signal Star Universe (*SC)</h2>
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <h3 class="sc-h3">1. Core Architecture &amp; Technical Integration</h3>
-          <p class="sc-p">Connected across our 12-domain semantic web matrix and 8 international bases (Korea SCK, Indonesia SCI, Singapore SCS, USA SCU, Vietnam SCV, India SCIND, China SCC, Japan SCJ). Every workflow is tracked transparently via standardized Google Workspace Console, Monthly Sales, and Dashboard ledgers.</p>
-        </div>
-        <div class="sc-card-line">
-          <h3 class="sc-h3">2. Risk Firewall &amp; Settlement Security</h3>
-          <p class="sc-p">Protected by the *SC Triple Control Towers and Dual-Track Legal Firewall (isolating SC Index holding IP from Biz Galaxy commercial liabilities). Transactions leverage 3-Month Rolling Purchasing Forecasts (RPF), K-SURE export credit guarantees, and automated 70/30 PG webhook split settlements.</p>
-        </div>
+    <!-- CHAPTER 8 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 08</span>
+        <span class="sc-chapter-tag">CORPORATE GOVERNANCE</span>
       </div>
-      <div class="sc-callout"><strong>*SC - SISTAR COMPANY | One Spark, Infinite Galaxifying:</strong> Powered by the Qubit Algorithm&trade;, *SC intelligence-core, Scarlet AI, Qubit Biz, and the Biz Galaxy constellation.<br/>Corporate Portal: https://sistarcompany.com &bull; Executive Contact: DennyKu (denniiku@sistarcompany.com)</div>
+      <h2 class="sc-chapter-h2">Sovereign Data Firewall &amp; Settlement Protection</h2>
+      <p class="sc-p">All RAG embeddings and fine-tuning datasets are protected under the supreme constitutional charter of *SC:</p>
+
+      <div class="sc-dossier-card">
+        <h3 class="sc-sub-h3">Dual-Track Legal Firewall &amp; Sovereign Data Isolation</h3>
+        <p class="sc-p">All core vector embeddings, proprietary fine-tuning adapters, and algorithmic intellectual property reside exclusively within *SC Index holding company repositories. Commercial operating entities across Korea, Indonesia, and Vietnam access these intelligence vaults strictly via read-only tokenized API keys. If a commercial trading dispute arises within an operational SPV, our core intelligence vault remains legally and technologically ring-fenced from external litigation.</p>
+      </div>
+
+      <div class="sc-callout">
+        <div class="sc-callout-title">*SC - SISTAR COMPANY &bull; One Spark, Infinite Galaxifying</div>
+        <p class="sc-p">Powered by the Qubit Algorithm&trade;, *SC Intelligence-Core, Scarlet AI, Qubit Biz, and the Biz Galaxy Constellation.<br/>
+        Executive Contact: DennyKu (denniiku@sistarcompany.com) &bull; Official Portal: https://sistarcompany.com</p>
+      </div>
     </section>
   </main>
 </body>

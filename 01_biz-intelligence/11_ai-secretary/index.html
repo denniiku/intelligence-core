@@ -4,14 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=block" rel="stylesheet">
-  <title>*SC | AI Secretary - intelligence core - biz intelligence - ai secretary</title>
-  <meta name="description" content="*SC (SISTAR Company) - AI Secretary : 24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP." />
+  <title>*SC | AI Secretary — Autonomous Executive Co-Pilot, C.A.N. Voice-to-Action &amp; Chief of Staff</title>
+  <meta name="description" content="Official Institutional Monograph of Domain 03 (intelligence-core): AI Secretary operates as the autonomous 24/7 Chief of Staff for *SC executives, converting voice memos into atomic ERP execution graphs and delivering 08:00 AM strategic briefs." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "*SC | AI Secretary",
-    "description": "24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.",
+    "@type": "TechArticle",
+    "headline": "*SC | AI Secretary — Autonomous Executive Co-Pilot, C.A.N. Voice-to-Action & Chief of Staff",
+    "description": "Comprehensive institutional monograph on *SC AI Secretary: C.A.N. (CEO ActionNote) voice-to-execution pipeline, 08:00 AM executive briefs, Google Workspace orchestration, and 8-team task graph compilation.",
+    "author": {
+      "@type": "Organization",
+      "name": "*SC - SISTAR COMPANY",
+      "url": "https://sistarcompany.com"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "*SC - SISTAR COMPANY",
@@ -19,206 +24,733 @@
     }
   }
   </script>
-  <style>html,body{background:linear-gradient(to right,#f0acf7,#acf7f0,#f7f0ac);margin:0;padding:0;}body.sc-nav-open{padding-left:236px;}body.sc-nav-folded{padding-left:64px;}@media(max-width:768px){body.sc-nav-open,body.sc-nav-folded{padding-left:0!important;}}</style>
   <script>
     (function() {
       var p = location.pathname.replace(/\\/g, "/");
       var base = "/common_assets/";
       if (location.protocol === "file:") {
         var i = p.toLowerCase().indexOf("/sc_web/");
-        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "./common_assets/";
+        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "../../common_assets/";
       }
       document.write("<link rel=\"stylesheet\" href=\"" + base + "common_new.css?v=2.2\">");
-      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js\" defer><\/script>");
+      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js?v=5.0\" defer><\/script>");
     })();
   </script>
   <style>
-    .sc-auto-page {
+    html, body {
+      background: linear-gradient(to right, #f0acf7, #acf7f0, #f7f0ac);
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.sc-nav-open { padding-left: 236px; }
+    body.sc-nav-folded { padding-left: 64px; }
+    @media (max-width: 768px) {
+      body.sc-nav-open, body.sc-nav-folded { padding-left: 0 !important; }
+    }
+
+    .sc-monograph {
       box-sizing: border-box;
       width: 100%;
-      max-width: min(1360px, 95%);
-      padding: clamp(40px, 5vh, 68px) clamp(24px, 4.5vw, 72px) 120px;
-      font-family: "Inter", sans-serif;
-      color: #0f172a;
+      max-width: min(1380px, 95%);
+      margin: 0 auto;
+      padding: clamp(36px, 5vh, 68px) clamp(24px, 5vw, 76px) 120px;
     }
-    main h1, main h2, main h3, main h4,
-    main p, main .sc-lead, main .sc-p,
-    main .sc-route, main .sc-sec,
-    main .sc-card-line, main .sc-card-emerald {
-      margin-left: 0 !important;
-      padding-left: 0 !important;
-      text-indent: 0 !important;
-      text-align: left !important;
+    .sc-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+      border-bottom: 1.5px solid rgba(15, 23, 42, 0.15);
     }
     .sc-route {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.88rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
       font-weight: 600;
       color: #475569;
-      letter-spacing: 0.04em;
-      margin: 0 0 18px 0;
+      margin: 0;
+      letter-spacing: 0.03em;
       text-transform: lowercase;
     }
-    .sc-sec {
-      padding: 52px 0;
-      border-bottom: 1.5px solid rgba(15, 23, 42, 0.14);
+
+    /* === CHAPTER & PAGE STRUCTURE === */
+    .sc-chapter { margin-bottom: 48px; padding: 12px 0; }
+    .sc-chapter-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid #0f172a;
     }
-    .sc-sec:last-of-type { border-bottom: none; }
-    .sc-kicker {
-      display: inline-block;
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.78rem;
+    .sc-chapter-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #0f5132;
-      background: rgba(22, 135, 101, 0.15);
-      padding: 5px 12px;
-      border-radius: 4px;
-      margin: 0 0 14px 0;
     }
-    .sc-h1 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(2.1rem, 3.6vw, 3.1rem);
-      font-weight: 700;
-      color: #0f172a;
-      letter-spacing: -0.025em;
-      line-height: 1.12;
-      margin: 0 0 14px 0;
-    }
-    .sc-sub {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.15rem, 1.6vw, 1.38rem);
+    .sc-chapter-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
       font-weight: 600;
-      color: #0f5132;
-      line-height: 1.4;
-      margin: 0 0 24px 0;
+      color: #64748b;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
-    .sc-h2 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.45rem, 2.2vw, 1.95rem);
+    .sc-doc-h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.1rem, 3.6vw, 3.05rem);
       font-weight: 700;
       color: #0f172a;
-      letter-spacing: -0.02em;
-      line-height: 1.25;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      margin: 0 0 20px 0;
+    }
+    .sc-chapter-h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.55rem, 2.4vw, 2.05rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.22;
+      letter-spacing: -0.025em;
       margin: 0 0 18px 0;
     }
-    .sc-h3 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1.15rem;
+    .sc-sub-h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
       font-weight: 700;
       color: #0f172a;
       margin: 0 0 10px 0;
       line-height: 1.35;
     }
     .sc-lead {
-      font-size: clamp(1.04rem, 1.22vw, 1.14rem);
-      line-height: 1.82;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 500;
       color: #1e293b;
-      margin: 0 0 34px 0;
+      line-height: 1.82;
+      margin: 0 0 24px 0;
     }
     .sc-p {
-      font-size: 0.97rem;
-      line-height: 1.8;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.99rem;
       color: #334155;
-      margin: 0;
+      line-height: 1.82;
+      margin: 0 0 16px 0;
     }
-    /* Spacious 2-Column (2x2) Grid Layout */
-    .sc-grid-2x2 {
+
+    /* === EXECUTIVE DARK HERO & METRICS === */
+    .sc-exec-hero {
+      background: linear-gradient(135deg, #090d16 0%, #0f172a 55%, #064e3b 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: clamp(28px, 3.8vw, 44px);
+      margin: 22px 0 32px 0;
+      border: 1px solid rgba(74, 222, 128, 0.3);
+    }
+    .sc-exec-hero h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 14px 0;
+      line-height: 1.3;
+    }
+    .sc-exec-hero p {
+      font-size: 1.02rem;
+      color: #e2e8f0;
+      line-height: 1.78;
+      margin: 0 0 24px 0;
+    }
+    .sc-kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    @media (max-width: 900px) {
+      .sc-kpi-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    .sc-kpi-cell {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .sc-kpi-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.42rem;
+      font-weight: 700;
+      color: #4ade80;
+      margin-bottom: 4px;
+    }
+    .sc-kpi-desc {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    /* === EDITORIAL GRIDS & PANELS === */
+    .sc-grid-2 {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 48px;
-      row-gap: 38px;
-      margin-top: 28px;
+      gap: 28px;
+      margin: 24px 0;
     }
-    @media (max-width: 760px) {
-      .sc-grid-2x2 { grid-template-columns: 1fr; }
+    .sc-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 24px 0;
     }
-    .sc-card-line {
-      padding-top: 20px !important;
-      border-top: 2px solid rgba(15, 23, 42, 0.24) !important;
+    @media (max-width: 860px) {
+      .sc-grid-2, .sc-grid-3 { grid-template-columns: 1fr; }
     }
-    .sc-card-emerald {
-      padding-top: 20px !important;
-      border-top: 3px solid #168765 !important;
+    .sc-panel {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-top: 4px solid #0f172a;
+      border-radius: 12px;
+      padding: 24px 26px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
     }
-    .sc-num-label {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.82rem;
+    .sc-panel.emerald { border-top-color: #0f5132; background: #f8fafc; }
+    .sc-panel.blue { border-top-color: #1d4ed8; }
+    .sc-panel.purple { border-top-color: #6d28d9; }
+    .sc-panel-kicker {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
       font-weight: 700;
-      color: #0f5132;
-      text-transform: uppercase;
       letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #0f5132;
       margin-bottom: 8px;
     }
-    .sc-callout {
-      margin-top: 38px;
-      padding: 20px 24px !important;
-      border-left: 4px solid #0f5132;
-      background: rgba(255, 255, 255, 0.34);
-      font-size: 0.98rem;
-      font-weight: 500;
-      color: #0f172a;
-      line-height: 1.72;
+    .sc-panel.blue .sc-panel-kicker { color: #1d4ed8; }
+    .sc-panel.purple .sc-panel-kicker { color: #6d28d9; }
+
+    /* === FORMULA & ARCHITECTURE BLOCKS === */
+    .sc-math-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 12px;
+      padding: 22px 26px;
+      margin: 20px 0;
+      border-left: 4px solid #10b981;
     }
-    @media print {
-      html, body, main, .sc-auto-page { background: #ffffff !important; padding-left: 0 !important; opacity: 1 !important; }
-      #sc-left-nav, .sc-nav-toggle { display: none !important; }
-      .sc-card-line, .sc-card-emerald, .sc-callout { break-inside: avoid !important; page-break-inside: avoid !important; }
+    .sc-math-code {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 1.04rem;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 7px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 8px 0 12px 0;
+    }
+
+    /* === TABLES === */
+    .sc-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #cbd5e1;
+    }
+    .sc-table th {
+      background: #0f172a;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-align: left;
+      padding: 14px 18px;
+      letter-spacing: 0.03em;
+    }
+    .sc-table td {
+      padding: 15px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.94rem;
+      color: #1e293b;
+      line-height: 1.65;
+      vertical-align: top;
+    }
+    .sc-table tr:last-child td { border-bottom: none; }
+    .sc-table tr:nth-child(even) td { background: #f8fafc; }
+
+    /* === CALLOUTS & DOSSIER HEADERS === */
+    .sc-callout {
+      background: #f0fdf4;
+      border-left: 5px solid #0f5132;
+      border-radius: 0 12px 12px 0;
+      padding: 22px 26px;
+      margin: 24px 0;
+    }
+    .sc-callout-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0f5132;
+      margin-bottom: 6px;
+    }
+    .sc-dossier-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 8px rgba(15,23,42,0.03);
+    }
+    .sc-svg-wrap {
+      margin: 28px 0;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+      overflow-x: auto;
+    }
+    .sc-svg-wrap svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 960px;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body class="sc-nav-open">
-  <main class="sc-auto-page">
-    <p class="sc-route">intelligence core - biz intelligence - ai secretary</p>
+  <main class="sc-monograph">
+    <div class="sc-top-bar">
+      <p class="sc-route">intelligence core - biz intelligence - ai secretary</p>
+    </div>
 
-    <section class="sc-sec" style="padding-top: 12px;">
-      <div><span class="sc-kicker">ENTERPRISE BRAIN &bull; *SC INTELLIGENCE CORE</span></div>
-      <h1 class="sc-h1">*SC - AI Secretary</h1>
-      <p class="sc-sub">24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.</p>
-      <p class="sc-lead">As part of the <strong>*SC intelligence-core</strong>, <strong>AI Secretary</strong> functions as the autonomous central nervous system of the Signal Star Universe. Operating around the clock while human executives sleep, it harvests global market data, grounds strategic decisions in verified facts, and automates all 8 corporate departments at near- fixed cost.</p>
+    <!-- DOCUMENT HEADER -->
+    <header style="margin-bottom: 36px;">
+      <div class="sc-chapter-num">03. INTELLIGENCE-CORE &bull; BIZ INTELLIGENCE</div>
+      <h1 class="sc-doc-h1">*SC AI Secretary — Autonomous Executive Co-Pilot &amp; C.A.N. Action Core</h1>
+      <p class="sc-lead">Positioned within Founder Priority Project 03 (Agent Builder &amp; AI Secretary) and Project 04 (C.A.N. CEO ActionNote) inside Domain 03, the <strong>*SC AI Secretary</strong> operates as the autonomous Chief of Staff for the Signal Star Universe. Operating 24/7 across borders, it translates executive voice memos and strategic thoughts into atomic task graphs, delivers 08:00 AM nocturnal market briefs, and directs all 8 departmental AI teams with zero administrative friction.</p>
+    </header>
 
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <div class="sc-num-label">01 &bull; WHAT IT IS (CORE DEFINITION)</div>
-          <h2 class="sc-h3">Overnight Data Factory (10 PM - 8 AM)</h2>
-          <p class="sc-p">Headless Playwright/Apify scrapers autonomously harvest global wholesale prices (1688/Alibaba), Shopee/Tokopedia competitor SKUs, HS-code tariffs, and regulatory updates every night.</p>
+    <!-- EXECUTIVE HERO -->
+    <div class="sc-exec-hero">
+      <h3>Executive Architectural Synthesis: The 24/7 Autonomous Chief of Staff</h3>
+      <p>In conventional corporate structures, high-level executives are bogged down by administrative overhead: scheduling cross-timezone Zoom calls, synthesizing status reports, drafting routine correspondence, and tracking task delegation across dozens of junior managers. *SC AI Secretary liberates leadership to focus 100% on high-conviction ideas, venture sparks, and partnership alliances. Integrated directly into Google Workspace, Whisper audio tokenizers, and Dify DAG engines, the AI Secretary executes directives with sub-minute latency.</p>
+      <div class="sc-kpi-strip">
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">&lt; 15s</div>
+          <div class="sc-kpi-desc">Voice Memo to Multi-Department Task DAG Compilation</div>
         </div>
-
-        <div class="sc-card-line">
-          <div class="sc-num-label">02 &bull; WHY WE DO IT (MARKET OPPORTUNITY)</div>
-          <h2 class="sc-h3">Dual-Engine Vector RAG (NotebookLM + Dify)</h2>
-          <p class="sc-p">Embeds nightly market streams alongside internal Google Drive/Keep memos into Supabase pgvector and NotebookLM repositories, delivering citation-backed 8:00 AM executive briefs.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">08:00 AM</div>
+          <div class="sc-kpi-desc">Daily Executive Strategic Briefing Delivery Time</div>
         </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">03 &bull; HOW IT WORKS (OPERATIONAL MECHANISM)</div>
-          <h2 class="sc-h3">Qubit ERP &amp; CCTV Vision Stock Opname</h2>
-          <p class="sc-p">Automates Finance/VAT, HR (25th payouts), Sales/CRM, and RA natively on Google Workspace, while CCTV + Gemini Vision AI counts warehouse pallets and sachets in real time.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">8 Teams</div>
+          <div class="sc-kpi-desc">Autonomous Qubit ERP Departments Coordinated Concurrently</div>
         </div>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">100%</div>
+          <div class="sc-kpi-desc">Native Google Workspace (Drive, Gmail, Chat, Docs) GCM Bridge</div>
+        </div>
+      </div>
+    </div>
 
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">04 &bull; REVENUE MODEL &amp; EXPECTED ROI</div>
-          <h2 class="sc-h3">Dual-Return SaaS &amp; MCP API Monetization</h2>
-          <p class="sc-p">Eliminates 100% of internal ERP/admin licensing costs while generating external B2B revenue through custom enterprise RAG builds, Zoho/Workspace ERP SaaS, and MCP Server agent query tolls.</p>
+    <!-- CHAPTER 1 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 01</span>
+        <span class="sc-chapter-tag">EXECUTIVE CO-PILOT</span>
+      </div>
+      <h2 class="sc-chapter-h2">The Autonomous Chief of Staff — Elevating Human Leadership to 100x Leverage</h2>
+      <p class="sc-p">The founding philosophy of *SC proclaims: <em>"Human to Focus on Ideas &amp; Insights; Let Your AI Work for AI Commerce &amp; International Trading."</em> Traditional management theory assumes that expanding an enterprise requires hiring an expanding pyramid of executive assistants, project coordinators, and department heads. In practice, this creates bureaucratic distortion: strategic intent expressed by leadership is diluted as it passes down the corporate chain of command.</p>
+      <p class="sc-p">The <strong>*SC AI Secretary</strong> operates as a direct neural extension of leadership. When the founder or an international Challenger issues a natural-language intent—whether typing on Google Chat or dictating a 30-second voice note while traveling between airport gates—the AI Secretary interprets the underlying commercial objectives, checks historical corporate records in NotebookLM, and orchestrates concrete execution across all 8 functional departments without intermediate human gatekeepers.</p>
+
+      <!-- BESPOKE INLINE SVG 1 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#090d16"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">C.A.N. (CEO ACTIONNOTE) &bull; VOICE-TO-EXECUTION PIPELINE</text>
+          
+          <!-- STEP 1: VOICE INPUT -->
+          <g transform="translate(50, 70)">
+            <rect width="190" height="210" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <circle cx="95" cy="50" r="22" fill="#0284c7"/>
+            <text x="95" y="56" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">MIC</text>
+            <text x="95" y="90" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">1. VOICE INPUT</text>
+            <text x="15" y="120" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; CEO Audio Memo (30s)</text>
+            <text x="15" y="140" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Google Chat / Keep</text>
+            <text x="15" y="160" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Multilingual raw intent</text>
+            <text x="95" y="196" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Whisper / Gemini Parse</text>
+          </g>
+
+          <line x1="240" y1="175" x2="275" y2="175" stroke="#38bdf8" stroke-width="2"/>
+
+          <!-- STEP 2: COGNITIVE EXTRACTION -->
+          <g transform="translate(275, 70)">
+            <rect width="190" height="210" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+            <circle cx="95" cy="50" r="22" fill="#d97706"/>
+            <text x="95" y="56" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">NLP</text>
+            <text x="95" y="90" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">2. INTENT &amp; CONTEXT</text>
+            <text x="15" y="120" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Extract commercial intent</text>
+            <text x="15" y="140" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Supabase pgvector lookup</text>
+            <text x="15" y="160" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Resolve client &amp; SKU ID</text>
+            <text x="95" y="196" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Vector Grounded: 100%</text>
+          </g>
+
+          <line x1="465" y1="175" x2="500" y2="175" stroke="#f59e0b" stroke-width="2"/>
+
+          <!-- STEP 3: DAG TASK COMPILER -->
+          <g transform="translate(500, 70)">
+            <rect width="190" height="210" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+            <circle cx="95" cy="50" r="22" fill="#7c3aed"/>
+            <text x="95" y="56" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">DAG</text>
+            <text x="95" y="90" fill="#c084fc" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">3. ATOMIC TASK GRAPH</text>
+            <text x="15" y="120" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Compile Dify workflow</text>
+            <text x="15" y="140" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Map 8 ERP sub-tasks</text>
+            <text x="15" y="160" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Set margin guardrails</text>
+            <text x="95" y="196" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Latency: &lt; 4.8s</text>
+          </g>
+
+          <line x1="690" y1="175" x2="725" y2="175" stroke="#8b5cf6" stroke-width="2"/>
+
+          <!-- STEP 4: AUTONOMOUS DISPATCH -->
+          <g transform="translate(725, 70)">
+            <rect width="185" height="210" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+            <circle cx="92" cy="50" r="22" fill="#059669"/>
+            <text x="92" y="56" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">SYNC</text>
+            <text x="92" y="90" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">4. ERP DISPATCH</text>
+            <text x="12" y="120" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Google Sheets updated</text>
+            <text x="12" y="140" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Auto-Formulator slot set</text>
+            <text x="12" y="160" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; 70/30 PG link prepared</text>
+            <text x="92" y="196" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Action Closed at t = 0</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Zero Human Administrative Bottlenecks &bull; 100% Traceable Execution Graph &bull; Sub-Minute Turnaround</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 2 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 02</span>
+        <span class="sc-chapter-tag">08:00 AM SYNTHESIS</span>
+      </div>
+      <h2 class="sc-chapter-h2">The 08:00 AM Nocturnal Intelligence Synthesis &amp; Daily Briefing Core</h2>
+      <p class="sc-p">While human executives rest, the Overnight Data Factory harvests millions of data points from wholesale exchanges, competitive marketplaces, and customs bulletins. Raw data dumps, however, are useless to a busy executive; dumping 50 spreadsheets onto a founder's desk merely causes cognitive paralysis.</p>
+      <p class="sc-p">At 08:00 AM sharp every morning, the AI Secretary delivers the <strong>*SC Executive Morning Briefing</strong> directly into Google Chat and email. Synthesized by Gemini 2.5 Pro through the lens of our master corporate priorities, the brief condenses thousands of overnight market signals into three actionable decision cards:</p>
+
+      <!-- BESPOKE INLINE SVG 2 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#0b1329"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">08:00 AM EXECUTIVE STRATEGIC BRIEFING &bull; DECISION CARD SYNTHESIS</text>
+          
+          <!-- CARD 1: SOURCING ARBITRAGE -->
+          <g transform="translate(60, 75)">
+            <rect width="255" height="200" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="127" y="26" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">CARD 01 &bull; SOURCING ARBITRAGE</text>
+            <rect x="20" y="45" width="215" height="32" rx="5" fill="#0f172a"/>
+            <text x="127" y="66" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">1688 Glucosamine Bulk Spot: -18%</text>
+            <text x="20" y="100" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Impact: MedIX Vet BOM Drops</text>
+            <text x="20" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Co-Pack Run: 50,000 Sachets</text>
+            <text x="20" y="130" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Expected Margin: 54% &rarr; 63%</text>
+            <rect x="20" y="150" width="215" height="32" rx="5" fill="#064e3b" stroke="#34d399" stroke-width="1"/>
+            <text x="127" y="171" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">[APPROVE PURCHASE ORDER]</text>
+          </g>
+
+          <!-- CARD 2: COMPETITOR FLASH DISCOUNTS -->
+          <g transform="translate(352, 75)">
+            <rect width="255" height="200" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="127" y="26" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">CARD 02 &bull; COMPETITOR TELEMETRY</text>
+            <rect x="20" y="45" width="215" height="32" rx="5" fill="#0f172a"/>
+            <text x="127" y="66" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Tokopedia Vet Supplement Flash Sale</text>
+            <text x="20" y="100" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Competitor SKU Discount: 22%</text>
+            <text x="20" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; FCE Recalibrated Price: Rp 1,290</text>
+            <text x="20" y="130" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Preserves 48% Gross Margin Floor</text>
+            <rect x="20" y="150" width="215" height="32" rx="5" fill="#451a03" stroke="#f59e0b" stroke-width="1"/>
+            <text x="127" y="171" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">[EXECUTE DYNAMIC REPRICE]</text>
+          </g>
+
+          <!-- CARD 3: REGULATORY COMPLIANCE -->
+          <g transform="translate(645, 75)">
+            <rect width="255" height="200" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+            <text x="127" y="26" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">CARD 03 &bull; REGULATORY &amp; CLEARING</text>
+            <rect x="20" y="45" width="215" height="32" rx="5" fill="#0f172a"/>
+            <text x="127" y="66" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">BPOM Vet Notification Approved</text>
+            <text x="20" y="100" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; SKI Import Permit Ready</text>
+            <text x="20" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; K-SURE Credit Guarantee: Active</text>
+            <text x="20" y="130" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Container Cat Lai Arrival: Day 4</text>
+            <rect x="20" y="150" width="215" height="32" rx="5" fill="#064e3b" stroke="#34d399" stroke-width="1"/>
+            <text x="127" y="171" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">[RELEASE GREEN-LANE SHIPMENT]</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Actionable 1-Click Executive Governance &bull; Zero Cognitive Clutter &bull; Instant Multi-Jurisdictional Sync</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 3 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 03</span>
+        <span class="sc-chapter-tag">GOOGLE WORKSPACE MESH</span>
+      </div>
+      <h2 class="sc-chapter-h2">Google Workspace Native Orchestration &amp; Multi-Platform Edge Dispatch</h2>
+      <p class="sc-p">Unlike generic chatbot assistants that exist in isolated browser tabs, the *SC AI Secretary is deeply embedded into <strong>Google Workspace (Gmail, Calendar, Drive, Docs, Sheets, and Chat)</strong>. It does not ask human operators to learn a new interface; it works inside the enterprise tools executives already use:</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">COMMUNICATION ARBITRATION</div>
+          <h3 class="sc-sub-h3">Automated Email &amp; Chat Triage</h3>
+          <p class="sc-p">Parses incoming inbound distributor inquiries across Gmail, WhatsApp, and WeChat. Evaluates sender credibility against Supabase CRM histories, cross-references inventory availability, and pre-drafts institutional proposals before notifying the executive.</p>
+        </div>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">CROSS-BORDER CALENDAR HARMONY</div>
+          <h3 class="sc-sub-h3">Autonomous 8-Timezone Meeting Scheduling</h3>
+          <p class="sc-p">Eliminates the friction of coordinating meetings between Seoul (GMT+9), Jakarta (GMT+7), Singapore (GMT+8), and Los Angeles (GMT-7). Evaluates executive focus blocks, negotiates times with counterparty AI agents, and books calendar events with briefing dossiers pre-attached.</p>
+        </div>
+      </div>
+
+      <!-- BESPOKE INLINE SVG 3 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#090d16"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">AI SECRETARY &bull; GOOGLE WORKSPACE API ORCHESTRATION GRID</text>
+          
+          <!-- CENTRAL AI SECRETARY CORE -->
+          <circle cx="480" cy="180" r="58" fill="#0f172a" stroke="#c084fc" stroke-width="2"/>
+          <text x="480" y="174" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">AI SECRETARY</text>
+          <text x="480" y="190" fill="#c084fc" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Chief of Staff Core</text>
+          <text x="480" y="204" fill="#a7f3d0" font-family="'Space Grotesk', monospace" font-size="8" text-anchor="middle">Gemini 2.5 Pro</text>
+
+          <!-- 6 SATELLITE GOOGLE WORKSPACE APIS -->
+          <!-- 1. Gmail -->
+          <g transform="translate(100, 60)">
+            <rect width="160" height="50" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="1"/>
+            <text x="80" y="24" fill="#fca5a5" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">GMAIL API</text>
+            <text x="80" y="40" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Autonomous Inbound Triage</text>
+            <line x1="160" y1="25" x2="422" y2="150" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <!-- 2. Google Calendar -->
+          <g transform="translate(400, 50)">
+            <rect width="160" height="50" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+            <text x="80" y="24" fill="#93c5fd" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">CALENDAR API</text>
+            <text x="80" y="40" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">8-Timezone Sync</text>
+            <line x1="480" y1="100" x2="480" y2="122" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <!-- 3. Google Drive / Docs -->
+          <g transform="translate(700, 60)">
+            <rect width="160" height="50" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+            <text x="80" y="24" fill="#fde68a" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">DRIVE &amp; DOCS API</text>
+            <text x="80" y="40" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Contract &amp; PRD Drafting</text>
+            <line x1="700" y1="25" x2="538" y2="150" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <!-- 4. Google Sheets -->
+          <g transform="translate(100, 240)">
+            <rect width="160" height="50" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1"/>
+            <text x="80" y="24" fill="#6ee7b7" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">SHEETS MASTER</text>
+            <text x="80" y="40" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Qubit ERP Master Ledgers</text>
+            <line x1="160" y1="25" x2="422" y2="210" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <!-- 5. Google Chat / Meet -->
+          <g transform="translate(400, 250)">
+            <rect width="160" height="50" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="1"/>
+            <text x="80" y="24" fill="#67e8f9" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">CHAT &amp; MEET API</text>
+            <text x="80" y="40" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Direct CEO Action Channel</text>
+            <line x1="480" y1="250" x2="480" y2="238" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <!-- 6. Edge Webhooks (WhatsApp/Zalo) -->
+          <g transform="translate(700, 240)">
+            <rect width="160" height="50" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="1"/>
+            <text x="80" y="24" fill="#c084fc" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">MESSAGING APIS</text>
+            <text x="80" y="40" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">WhatsApp / Zalo / Telegram</text>
+            <line x1="700" y1="25" x2="538" y2="210" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Bi-Directional OAuth 2.0 Security &bull; Role-Based Access Control &bull; Sovereign Encryption at Rest</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 4 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 04</span>
+        <span class="sc-chapter-tag">MATHEMATICAL FORMULATION</span>
+      </div>
+      <h2 class="sc-chapter-h2">Mathematical Formalism: Executive Attention Entropy Minimization</h2>
+      <p class="sc-p">In high-growth international enterprises, the ultimate growth limiter is not capital or technology, but the bounded cognitive bandwidth of leadership. The AI Secretary models executive attention as a finite thermodynamic resource. By filtering noise and compiling atomic task tensors, the engine drives executive informational entropy ($\Delta S_{\text{attention}}$) toward zero:</p>
+
+      <div class="sc-math-box">
+        <div class="sc-formula">\Delta S_{\text{attention}} = -k_B \sum_{k=1}^{M} p_k \ln p_k \xrightarrow{\hat{O}_{\text{Secretary}}} 0 \quad \text{with} \quad \mathbf{T}_{\text{Action}} = \sum_{i=1}^{8} \mathbf{W}_i \cdot |\text{Task}_i\rangle \otimes \langle \text{KPI}_i|</div>
+        <div class="sc-math-desc">Where $\hat{O}_{\text{Secretary}}$ is the multi-agent cognitive filtering operator that isolates high-impact commercial decisions from administrative noise, producing an unambiguous action tensor across all 8 ERP divisions.</div>
+        <div class="sc-math-code">\tau_{\text{execution}} = \min \left[ \sum_{j} t_{\text{human}}(j) \right] \longrightarrow t_{\text{API}} \le 15.0\text{ seconds}</div>
+        <div class="sc-math-desc">Wall-clock execution latency $\tau_{\text{execution}}$ collapses from 14 business days of sequential delegation to sub-15-second programmatic API dispatch.</div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 5 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 05</span>
+        <span class="sc-chapter-tag">PERFORMANCE MATRIX</span>
+      </div>
+      <h2 class="sc-chapter-h2">Comparative Matrix: Traditional Human Executive Assistants vs. *SC AI Secretary</h2>
+      <p class="sc-p">The following institutional comparison highlights the dramatic operational leverage afforded by our autonomous executive co-pilot:</p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Operational Dimension</th>
+            <th>Traditional Human Executive Assistant</th>
+            <th>*SC AI Secretary (Autonomous Co-Pilot)</th>
+            <th>Strategic Value Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Operating Availability</strong></td>
+            <td>8 hours/day; subject to local business hours, sick leaves, and vacation latency</td>
+            <td><strong>24/7/365 continuous operation</strong> across all 8 global timezones</td>
+            <td>Immediate overnight task synthesis; zero cross-timezone coordination lag</td>
+          </tr>
+          <tr>
+            <td><strong>Institutional Memory Recall</strong></td>
+            <td>Vulnerable to personal memory lapses and complete erasure upon resignation</td>
+            <td><strong>100% permanent vector indexing</strong> in NotebookLM &amp; Supabase pgvector</td>
+            <td>30 years of trade contracts, Master PRDs, and SOPs instantly recallable</td>
+          </tr>
+          <tr>
+            <td><strong>Task Execution Throughput</strong></td>
+            <td>2 to 5 administrative tasks processed per hour; prone to clerical entry errors</td>
+            <td><strong>Hundreds of parallel DAG workflows</strong> executed concurrently in seconds</td>
+            <td>Empowers a single executive to direct 100 simultaneous international ventures</td>
+          </tr>
+          <tr>
+            <td><strong>Direct Technical Execution</strong></td>
+            <td>Cannot edit databases, adjust pricing models, or execute code webhooks</td>
+            <td><strong>Direct Google Workspace &amp; Qubit ERP API integration</strong> via MCP tools</td>
+            <td>Translates voice memos directly into live inventory and financial updates</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHAPTER 6 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 06</span>
+        <span class="sc-chapter-tag">DAILY EXECUTIVE ROUTINE</span>
+      </div>
+      <h2 class="sc-chapter-h2">The Autonomous Daily Executive Orchestration Schedule</h2>
+      <p class="sc-p">A typical 24-hour cycle of the AI Secretary's autonomous governance across the Signal Star Universe:</p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Time Window (Local)</th>
+            <th>AI Secretary Autonomous Action</th>
+            <th>Target Systems &amp; Ledgers</th>
+            <th>Executive Touchpoint</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>22:00 &ndash; 06:00</strong></td>
+            <td>Supervises nocturnal scraping clusters; indexes raw material and competitor SKU prices</td>
+            <td>Overnight Data Factory &bull; Supabase pgvector</td>
+            <td>Zero (Executive Sleeps Uninterrupted)</td>
+          </tr>
+          <tr>
+            <td><strong>06:00 &ndash; 07:55</strong></td>
+            <td>Compiles 08:00 AM briefing synthesis; drafts pending pro-forma contracts &amp; task graphs</td>
+            <td>NotebookLM &bull; Gemini 2.5 Pro &bull; Qubit ERP</td>
+            <td>Zero (Automated Cognitive Compilation)</td>
+          </tr>
+          <tr>
+            <td><strong>08:00 &ndash; 08:30</strong></td>
+            <td>Delivers Strategic Morning Briefing; requests 1-click approvals for purchasing &amp; pricing</td>
+            <td>Google Chat &bull; C.A.N. Action Channel</td>
+            <td>3 to 5 Minutes (Review &amp; Approve Cards)</td>
+          </tr>
+          <tr>
+            <td><strong>08:30 &ndash; 18:00</strong></td>
+            <td>Real-time voice memo parsing; triages emails, coordinates meeting rooms &amp; monitors CRM</td>
+            <td>Google Workspace &bull; Dify DAG Engine</td>
+            <td>Continuous Ambient Support via Voice</td>
+          </tr>
+          <tr>
+            <td><strong>18:00 &ndash; 22:00</strong></td>
+            <td>Reconciles daily sales ledgers; audits warehouse CCTV counts; prepares nocturnal queue</td>
+            <td>70/30 PG Webhooks &bull; CCTV Vision Stream</td>
+            <td>Evening 2-Minute Performance Summary</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHAPTER 7 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 07</span>
+        <span class="sc-chapter-tag">MONETIZATION</span>
+      </div>
+      <h2 class="sc-chapter-h2">Dual-Return Monetization: White-Label Co-Pilot SaaS &amp; Enterprise Tool Tolls</h2>
+      <p class="sc-p">The AI Secretary is packaged as a high-margin enterprise software subscription:</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">MONETIZATION CHANNEL 01</div>
+          <h3 class="sc-sub-h3">Turnkey Executive Co-Pilot SaaS</h3>
+          <p class="sc-p">Multinational CEOs, family office principals, and regional clinical directors license the AI Secretary as a managed SaaS solution. By binding their existing corporate Google Workspace environments to our Dify orchestration templates, executives eliminate their executive assistant staffing costs for a $499 &ndash; $2,500/month seat fee.</p>
+        </div>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">MONETIZATION CHANNEL 02</div>
+          <h3 class="sc-sub-h3">Model Context Protocol (MCP) Executive Tool Tolls</h3>
+          <p class="sc-p">Third-party corporate bots querying our AI Secretary for executive scheduling, verified corporate profile credentials, or project collaboration slot reservations pay automated micro-tolls billed via HTTP 402 smart webhooks.</p>
         </div>
       </div>
     </section>
 
-    <section class="sc-sec">
-      <div><span class="sc-kicker">STRATEGIC SYNERGY &amp; GOVERNANCE</span></div>
-      <h2 class="sc-h2">Integration Within the Signal Star Universe (*SC)</h2>
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <h3 class="sc-h3">1. Core Architecture &amp; Technical Integration</h3>
-          <p class="sc-p">Connected across our 12-domain semantic web matrix and 8 international bases (Korea SCK, Indonesia SCI, Singapore SCS, USA SCU, Vietnam SCV, India SCIND, China SCC, Japan SCJ). Every workflow is tracked transparently via standardized Google Workspace Console, Monthly Sales, and Dashboard ledgers.</p>
-        </div>
-        <div class="sc-card-line">
-          <h3 class="sc-h3">2. Risk Firewall &amp; Settlement Security</h3>
-          <p class="sc-p">Protected by the *SC Triple Control Towers and Dual-Track Legal Firewall (isolating SC Index holding IP from Biz Galaxy commercial liabilities). Transactions leverage 3-Month Rolling Purchasing Forecasts (RPF), K-SURE export credit guarantees, and automated 70/30 PG webhook split settlements.</p>
-        </div>
+    <!-- CHAPTER 8 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 08</span>
+        <span class="sc-chapter-tag">SOVEREIGN FIREWALL</span>
       </div>
-      <div class="sc-callout"><strong>*SC - SISTAR COMPANY | One Spark, Infinite Galaxifying:</strong> Powered by the Qubit Algorithm&trade;, *SC intelligence-core, Scarlet AI, Qubit Biz, and the Biz Galaxy constellation.<br/>Corporate Portal: https://sistarcompany.com &bull; Executive Contact: DennyKu (denniiku@sistarcompany.com)</div>
+      <h2 class="sc-chapter-h2">The Dual-Track Legal Firewall &amp; Executive Confidentiality</h2>
+      <p class="sc-p">All voice recordings, executive memos, and strategic PRDs processed by the AI Secretary are governed by strict confidentiality protocols:</p>
+
+      <div class="sc-dossier-card">
+        <h3 class="sc-sub-h3">Zero Data Training &amp; Holding IP Isolation</h3>
+        <p class="sc-p">All model inferences utilize zero-data-retention enterprise API endpoints. Strategic executive memos and patent formulations are stored in encrypted Supabase instances protected by the *SC Dual-Track Legal Firewall, guaranteeing that holding company IP cannot be exposed to commercial counterparties or training sets.</p>
+      </div>
+
+      <div class="sc-callout">
+        <div class="sc-callout-title">*SC - SISTAR COMPANY &bull; One Spark, Infinite Galaxifying</div>
+        <p class="sc-p">Powered by the Qubit Algorithm&trade;, *SC Intelligence-Core, Scarlet AI, Qubit Biz, and the Biz Galaxy Constellation.<br/>
+        Executive Contact: DennyKu (denniiku@sistarcompany.com) &bull; Official Portal: https://sistarcompany.com</p>
+      </div>
     </section>
   </main>
 </body>

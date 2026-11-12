@@ -4,22 +4,413 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=block" rel="stylesheet">
-  <title>*SC | Data Factory - intelligence core - data factory</title>
-  <meta name="description" content="*SC (SISTAR Company) - Data Factory : 24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP." />
+  <title>*SC | Data Factory — 24/7 Overnight Autonomous Scraping, Price Telemetry & Vectorization Pipeline</title>
+  <meta name="description" content="Official Institutional Monograph of *SC Intelligence-Core (08_data-factory): Overnight 10:00 PM - 08:00 AM Data Harvesting Engine, Headless Playwright Fleet, 1688 / Shopee / Tokopedia Wholesale Telemetry, and High-Throughput Vectorization for Qubit ERP." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "*SC | Data Factory",
-    "description": "24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.",
+    "@type": "TechArticle",
+    "headline": "*SC | Data Factory — Overnight Autonomous Scraping & Vectorization Engine",
+    "description": "High-throughput data extraction and vectorization architecture within *SC intelligence-core: autonomous overnight harvesting across wholesale and retail platforms, distributed headless browser fleets, and semantic vector indexing.",
+    "author": {
+      "@type": "Person",
+      "name": "DennyKu (*SC)"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "*SC - SISTAR COMPANY",
+      "alternateName": "Signal Star Universe",
       "url": "https://sistarcompany.com"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://intelligencecore.sistarcompany.com/08_data-factory/"
     }
   }
   </script>
-  <style>html,body{background:linear-gradient(to right,#f0acf7,#acf7f0,#f7f0ac);margin:0;padding:0;}body.sc-nav-open{padding-left:236px;}body.sc-nav-folded{padding-left:64px;}@media(max-width:768px){body.sc-nav-open,body.sc-nav-folded{padding-left:0!important;}}</style>
+  <style>
+    html, body {
+      background: linear-gradient(to right, #f0acf7, #acf7f0, #f7f0ac);
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.sc-nav-open { padding-left: 236px; }
+    body.sc-nav-folded { padding-left: 64px; }
+    @media (max-width: 768px) {
+      body.sc-nav-open, body.sc-nav-folded { padding-left: 0 !important; }
+    }
+
+    .sc-monograph {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: min(1380px, 95%);
+      margin: 0 auto;
+      padding: clamp(36px, 5vh, 68px) clamp(24px, 5vw, 76px) 120px;
+    }
+    .sc-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+      border-bottom: 1.5px solid rgba(15, 23, 42, 0.15);
+    }
+    .sc-route {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #475569;
+      margin: 0;
+      letter-spacing: 0.03em;
+      text-transform: lowercase;
+    }
+
+    /* === CHAPTER & PAGE STRUCTURE === */
+    .sc-chapter {
+      margin-bottom: 48px;
+      padding: 12px 0;
+    }
+    .sc-chapter-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid #0f172a;
+    }
+    .sc-chapter-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #0f5132;
+    }
+    .sc-chapter-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #64748b;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .sc-doc-h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.1rem, 3.6vw, 3.05rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      margin: 0 0 20px 0;
+    }
+    .sc-chapter-h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.55rem, 2.4vw, 2.05rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.22;
+      letter-spacing: -0.025em;
+      margin: 0 0 18px 0;
+    }
+    .sc-sub-h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 0 0 10px 0;
+      line-height: 1.35;
+    }
+    .sc-lead {
+      font-size: 1.15rem;
+      line-height: 1.65;
+      color: #1e293b;
+      font-weight: 400;
+      margin-bottom: 28px;
+    }
+    .sc-lead strong {
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .sc-p {
+      font-size: 1.02rem;
+      line-height: 1.7;
+      color: #334155;
+      margin-bottom: 20px;
+    }
+    .sc-p code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.9em;
+      background: rgba(15, 23, 42, 0.06);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #0f172a;
+    }
+
+    /* === EXECUTIVE DARK HERO === */
+    .sc-exec-hero {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 14px;
+      padding: clamp(28px, 4vw, 44px);
+      margin: 28px 0 36px 0;
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.25);
+    }
+    .sc-exec-hero h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.25rem, 2vw, 1.6rem);
+      font-weight: 700;
+      color: #6ee7b7;
+      margin: 0 0 14px 0;
+      letter-spacing: -0.015em;
+    }
+    .sc-exec-hero p {
+      font-size: 1.05rem;
+      line-height: 1.65;
+      color: #cbd5e1;
+      margin: 0 0 24px 0;
+    }
+    .sc-kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .sc-kpi-cell {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 16px 20px;
+    }
+    .sc-kpi-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #38bdf8;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .sc-kpi-desc {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      line-height: 1.4;
+      font-weight: 500;
+    }
+
+    /* === PANELS & GRIDS === */
+    .sc-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin: 28px 0;
+    }
+    .sc-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin: 28px 0;
+    }
+    .sc-panel {
+      background: rgba(255, 255, 255, 0.95);
+      border: 1.5px solid rgba(15, 23, 42, 0.12);
+      border-radius: 14px;
+      padding: 26px 28px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .sc-panel:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08);
+    }
+    .sc-panel.emerald { border-left: 5px solid #0f5132; }
+    .sc-panel.blue { border-left: 5px solid #0284c7; }
+    .sc-panel.purple { border-left: 5px solid #7c3aed; }
+    .sc-panel.amber { border-left: 5px solid #d97706; }
+    .sc-panel-kicker {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin-bottom: 8px;
+    }
+
+    /* === SVG DIAGRAM CONTAINERS === */
+    .sc-diagram-wrap {
+      background: #ffffff;
+      border: 1.5px solid rgba(15, 23, 42, 0.15);
+      border-radius: 14px;
+      padding: 22px;
+      margin: 32px 0;
+      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+    }
+    .sc-diagram-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(15, 23, 42, 0.1);
+    }
+    .sc-diagram-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.96rem;
+      font-weight: 700;
+      color: #0f172a;
+      letter-spacing: 0.02em;
+    }
+    .sc-diagram-badge {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: #e2e8f0;
+      color: #334155;
+      padding: 4px 10px;
+      border-radius: 6px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .sc-diagram-wrap svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .sc-diagram-caption {
+      font-size: 0.88rem;
+      color: #64748b;
+      line-height: 1.5;
+      margin-top: 14px;
+      font-style: italic;
+    }
+
+    /* === MATH BOX === */
+    .sc-math-box {
+      background: #0f172a;
+      color: #e2e8f0;
+      border: 1.5px solid #1e293b;
+      border-radius: 12px;
+      padding: 26px 30px;
+      margin: 28px 0;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.95rem;
+      line-height: 1.65;
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.2);
+    }
+    .sc-math-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #38bdf8;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+      padding-bottom: 8px;
+    }
+    .sc-math-eq {
+      font-size: 1.05rem;
+      color: #6ee7b7;
+      margin: 12px 0;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.04);
+      border-left: 3px solid #6ee7b7;
+      border-radius: 4px;
+    }
+
+    /* === TABLES === */
+    .sc-table-wrap {
+      overflow-x: auto;
+      margin: 28px 0;
+      background: #ffffff;
+      border: 1.5px solid rgba(15, 23, 42, 0.12);
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+    }
+    .sc-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.92rem;
+    }
+    .sc-table th {
+      background: #0f172a;
+      color: #f8fafc;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      padding: 14px 18px;
+      border-bottom: 2px solid #0f172a;
+      letter-spacing: 0.02em;
+    }
+    .sc-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+      color: #334155;
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    .sc-table tr:hover td {
+      background: rgba(241, 245, 249, 0.6);
+    }
+    .sc-tag {
+      display: inline-block;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.74rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .sc-tag.emerald { background: #dcfce7; color: #166534; }
+    .sc-tag.blue { background: #e0f2fe; color: #075985; }
+    .sc-tag.purple { background: #f3e8ff; color: #6b21a8; }
+    .sc-tag.amber { background: #fef3c7; color: #92400e; }
+
+    /* === CALLOUT BOXES === */
+    .sc-callout {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1.5px solid rgba(15, 23, 42, 0.14);
+      border-left: 6px solid #0f5132;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin: 26px 0;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.03);
+    }
+    .sc-callout-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+    .sc-callout p {
+      font-size: 0.96rem;
+      line-height: 1.6;
+      color: #334155;
+      margin: 0;
+    }
+
+    @media print {
+      body { background: #ffffff !important; padding: 0 !important; }
+      .sc-monograph { max-width: 100% !important; padding: 0 !important; }
+      .sc-panel, .sc-table-wrap, .sc-diagram-wrap, .sc-math-box, .sc-exec-hero {
+        box-shadow: none !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+      }
+    }
+  </style>
   <script>
     (function() {
       var p = location.pathname.replace(/\\/g, "/");
@@ -29,197 +420,619 @@
         base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "./common_assets/";
       }
       document.write("<link rel=\"stylesheet\" href=\"" + base + "common_new.css?v=2.2\">");
-      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js\" defer><\/script>");
+      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js?v=5.0\" defer><\/script>");
     })();
   </script>
-  <style>
-    .sc-auto-page {
-      box-sizing: border-box;
-      width: 100%;
-      max-width: min(1360px, 95%);
-      padding: clamp(40px, 5vh, 68px) clamp(24px, 4.5vw, 72px) 120px;
-      font-family: "Inter", sans-serif;
-      color: #0f172a;
-    }
-    main h1, main h2, main h3, main h4,
-    main p, main .sc-lead, main .sc-p,
-    main .sc-route, main .sc-sec,
-    main .sc-card-line, main .sc-card-emerald {
-      margin-left: 0 !important;
-      padding-left: 0 !important;
-      text-indent: 0 !important;
-      text-align: left !important;
-    }
-    .sc-route {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.88rem;
-      font-weight: 600;
-      color: #475569;
-      letter-spacing: 0.04em;
-      margin: 0 0 18px 0;
-      text-transform: lowercase;
-    }
-    .sc-sec {
-      padding: 52px 0;
-      border-bottom: 1.5px solid rgba(15, 23, 42, 0.14);
-    }
-    .sc-sec:last-of-type { border-bottom: none; }
-    .sc-kicker {
-      display: inline-block;
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: #0f5132;
-      background: rgba(22, 135, 101, 0.15);
-      padding: 5px 12px;
-      border-radius: 4px;
-      margin: 0 0 14px 0;
-    }
-    .sc-h1 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(2.1rem, 3.6vw, 3.1rem);
-      font-weight: 700;
-      color: #0f172a;
-      letter-spacing: -0.025em;
-      line-height: 1.12;
-      margin: 0 0 14px 0;
-    }
-    .sc-sub {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.15rem, 1.6vw, 1.38rem);
-      font-weight: 600;
-      color: #0f5132;
-      line-height: 1.4;
-      margin: 0 0 24px 0;
-    }
-    .sc-h2 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.45rem, 2.2vw, 1.95rem);
-      font-weight: 700;
-      color: #0f172a;
-      letter-spacing: -0.02em;
-      line-height: 1.25;
-      margin: 0 0 18px 0;
-    }
-    .sc-h3 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: #0f172a;
-      margin: 0 0 10px 0;
-      line-height: 1.35;
-    }
-    .sc-lead {
-      font-size: clamp(1.04rem, 1.22vw, 1.14rem);
-      line-height: 1.82;
-      color: #1e293b;
-      margin: 0 0 34px 0;
-    }
-    .sc-p {
-      font-size: 0.97rem;
-      line-height: 1.8;
-      color: #334155;
-      margin: 0;
-    }
-    /* Spacious 2-Column (2x2) Grid Layout */
-    .sc-grid-2x2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 48px;
-      row-gap: 38px;
-      margin-top: 28px;
-    }
-    @media (max-width: 760px) {
-      .sc-grid-2x2 { grid-template-columns: 1fr; }
-    }
-    .sc-card-line {
-      padding-top: 20px !important;
-      border-top: 2px solid rgba(15, 23, 42, 0.24) !important;
-    }
-    .sc-card-emerald {
-      padding-top: 20px !important;
-      border-top: 3px solid #168765 !important;
-    }
-    .sc-num-label {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.82rem;
-      font-weight: 700;
-      color: #0f5132;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 8px;
-    }
-    .sc-callout {
-      margin-top: 38px;
-      padding: 20px 24px !important;
-      border-left: 4px solid #0f5132;
-      background: rgba(255, 255, 255, 0.34);
-      font-size: 0.98rem;
-      font-weight: 500;
-      color: #0f172a;
-      line-height: 1.72;
-    }
-    @media print {
-      html, body, main, .sc-auto-page { background: #ffffff !important; padding-left: 0 !important; opacity: 1 !important; }
-      #sc-left-nav, .sc-nav-toggle { display: none !important; }
-      .sc-card-line, .sc-card-emerald, .sc-callout { break-inside: avoid !important; page-break-inside: avoid !important; }
-    }
-  </style>
 </head>
 <body class="sc-nav-open">
-  <main class="sc-auto-page">
-    <p class="sc-route">intelligence core - data factory</p>
+  <main class="sc-monograph">
+    <div class="sc-top-bar">
+      <p class="sc-route">intelligence core - data factory</p>
+    </div>
 
-    <section class="sc-sec" style="padding-top: 12px;">
-      <div><span class="sc-kicker">ENTERPRISE BRAIN &bull; *SC INTELLIGENCE CORE</span></div>
-      <h1 class="sc-h1">*SC - Data Factory</h1>
-      <p class="sc-sub">24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.</p>
-      <p class="sc-lead">As part of the <strong>*SC intelligence-core</strong>, <strong>Data Factory</strong> functions as the autonomous central nervous system of the Signal Star Universe. Operating around the clock while human executives sleep, it harvests global market data, grounds strategic decisions in verified facts, and automates all 8 corporate departments at near- fixed cost.</p>
+    <!-- ============================================================================
+         CHAPTER I. EXECUTIVE MANIFESTO: OVERNIGHT UNMANNED HARVESTING
+         ============================================================================ -->
+    <article class="sc-chapter" id="chapter-1">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER I • OVERNIGHT DATA FACTORY PARADIGM</span>
+        <span class="sc-chapter-tag">DOMAIN 03 ENGINE • MODULE 08: DATA FACTORY</span>
+      </div>
+      <h1 class="sc-doc-h1">*SC Data Factory — 24/7 Overnight Autonomous Scraping, Wholesale Telemetry &amp; Vectorization</h1>
+      <p class="sc-lead">
+        Inside <strong>Domain 03 (<code>intelligence-core</code>)</strong>, the <strong>Data Factory</strong> operates as the automated intelligence harvesting engine of the Signal Star Universe. While executive leadership sleeps—between <strong>10:00 PM and 08:00 AM daily</strong>—a distributed fleet of headless Playwright and Apify browser crawlers scours wholesale markets (<code>1688.com, YiwuGo</code>), Southeast Asian retail giants (<code>Shopee, Tokopedia, TikTok Shop, Lazada</code>), and international customs manifest feeds. By 08:00 AM, raw web data is cleansed, normalized, vectorized, and delivered into <code>Qubit ERP</code> as actionable price intelligence.
+      </p>
 
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <div class="sc-num-label">01 &bull; WHAT IT IS (CORE DEFINITION)</div>
-          <h2 class="sc-h3">Overnight Data Factory (10 PM - 8 AM)</h2>
-          <p class="sc-p">Headless Playwright/Apify scrapers autonomously harvest global wholesale prices (1688/Alibaba), Shopee/Tokopedia competitor SKUs, HS-code tariffs, and regulatory updates every night.</p>
-        </div>
-
-        <div class="sc-card-line">
-          <div class="sc-num-label">02 &bull; WHY WE DO IT (MARKET OPPORTUNITY)</div>
-          <h2 class="sc-h3">Dual-Engine Vector RAG (NotebookLM + Dify)</h2>
-          <p class="sc-p">Embeds nightly market streams alongside internal Google Drive/Keep memos into Supabase pgvector and NotebookLM repositories, delivering citation-backed 8:00 AM executive briefs.</p>
-        </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">03 &bull; HOW IT WORKS (OPERATIONAL MECHANISM)</div>
-          <h2 class="sc-h3">Qubit ERP &amp; CCTV Vision Stock Opname</h2>
-          <p class="sc-p">Automates Finance/VAT, HR (25th payouts), Sales/CRM, and RA natively on Google Workspace, while CCTV + Gemini Vision AI counts warehouse pallets and sachets in real time.</p>
-        </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">04 &bull; REVENUE MODEL &amp; EXPECTED ROI</div>
-          <h2 class="sc-h3">Dual-Return SaaS &amp; MCP API Monetization</h2>
-          <p class="sc-p">Eliminates 100% of internal ERP/admin licensing costs while generating external B2B revenue through custom enterprise RAG builds, Zoho/Workspace ERP SaaS, and MCP Server agent query tolls.</p>
+      <div class="sc-exec-hero">
+        <h3>Asymmetric Information Arbitrage: Transforming Global Web Chaos into Proprietary Alpha</h3>
+        <p>
+          In modern international commerce and manufacturing, margins are won or lost on information latency. A competitor paying $0.08 per sachet packaging roll in Guangzhou can undercut a Jakarta brand by 30% if the local brand relies on quarterly supplier catalogs. <strong>*SC Data Factory</strong> obliterates information asymmetry by turning the entire global web into an automated structured database. Millions of nightly price points, ingredient costs, and customs manifests are automatically transformed into instant arbitrage opportunities for <strong>Cosmo Seed™</strong> deals and <strong>Auto-Formulator R1</strong> production lines.
+        </p>
+        <div class="sc-kpi-strip">
+          <div class="sc-kpi-cell">
+            <div class="sc-kpi-val">2.8M Products / Night</div>
+            <div class="sc-kpi-desc">Autonomous Headless Scraping Across 1688, Shopee, Tokopedia &amp; TikTok Shop</div>
+          </div>
+          <div class="sc-kpi-cell">
+            <div class="sc-kpi-val">&lt; 08:00 AM Delivery</div>
+            <div class="sc-kpi-desc">100% Vectorized, Deduped &amp; Synthesized Morning Executive Dossier</div>
+          </div>
+          <div class="sc-kpi-cell">
+            <div class="sc-kpi-val">99.85% Anti-Bot Bypass</div>
+            <div class="sc-kpi-desc">Adaptive TLS Fingerprinting, Stealth Canvas &amp; Dynamic Residential Proxies</div>
+          </div>
+          <div class="sc-kpi-cell">
+            <div class="sc-kpi-val">Zero Manual Work</div>
+            <div class="sc-kpi-desc">Fully Autonomous Ingestion, Cleanse, Normalization &amp; Vector Storage</div>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section class="sc-sec">
-      <div><span class="sc-kicker">STRATEGIC SYNERGY &amp; GOVERNANCE</span></div>
-      <h2 class="sc-h2">Integration Within the Signal Star Universe (*SC)</h2>
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <h3 class="sc-h3">1. Core Architecture &amp; Technical Integration</h3>
-          <p class="sc-p">Connected across our 12-domain semantic web matrix and 8 international bases (Korea SCK, Indonesia SCI, Singapore SCS, USA SCU, Vietnam SCV, India SCIND, China SCC, Japan SCJ). Every workflow is tracked transparently via standardized Google Workspace Console, Monthly Sales, and Dashboard ledgers.</p>
+      <div class="sc-grid-3">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">HARVESTING VECTOR 01</div>
+          <h3 class="sc-sub-h3">1688 &amp; China Factory Telemetry</h3>
+          <p class="sc-p">
+            Monitors real-time raw material quotes, cosmetic raw packaging (bottles, sachets, pumps), and machinery components directly from Tier-1 OEM/ODM manufacturers across Guangdong and Zhejiang.
+          </p>
         </div>
-        <div class="sc-card-line">
-          <h3 class="sc-h3">2. Risk Firewall &amp; Settlement Security</h3>
-          <p class="sc-p">Protected by the *SC Triple Control Towers and Dual-Track Legal Firewall (isolating SC Index holding IP from Biz Galaxy commercial liabilities). Transactions leverage 3-Month Rolling Purchasing Forecasts (RPF), K-SURE export credit guarantees, and automated 70/30 PG webhook split settlements.</p>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">HARVESTING VECTOR 02</div>
+          <h3 class="sc-sub-h3">ASEAN E-Commerce Price Grids</h3>
+          <p class="sc-p">
+            Extracts SKU-level transaction prices, flash sale discounts, inventory stock-outs, and review velocity across Tokopedia, Shopee, and TikTok Shop across Indonesia, Vietnam, and Singapore.
+          </p>
+        </div>
+        <div class="sc-panel purple">
+          <div class="sc-panel-kicker">HARVESTING VECTOR 03</div>
+          <h3 class="sc-sub-h3">Customs &amp; Trade Manifest Feeds</h3>
+          <p class="sc-p">
+            Ingests international bill-of-lading (B/L) filings, shipping manifests, and export volume trends to detect supply shifts weeks before they register in public commodity indices.
+          </p>
         </div>
       </div>
-      <div class="sc-callout"><strong>*SC - SISTAR COMPANY | One Spark, Infinite Galaxifying:</strong> Powered by the Qubit Algorithm&trade;, *SC intelligence-core, Scarlet AI, Qubit Biz, and the Biz Galaxy constellation.<br/>Corporate Portal: https://sistarcompany.com &bull; Executive Contact: DennyKu (denniiku@sistarcompany.com)</div>
-    </section>
+    </article>
+
+    <!-- ============================================================================
+         CHAPTER II. 5-STAGE CRAWL-TO-VECTOR PIPELINE
+         ============================================================================ -->
+    <article class="sc-chapter" id="chapter-2">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER II • ARCHITECTURAL TOPOLOGY</span>
+        <span class="sc-chapter-tag">OVERNIGHT INGESTION PIPELINE</span>
+      </div>
+      <h2 class="sc-chapter-h2">The 5-Stage Scraping-to-Vector Architecture</h2>
+      <p class="sc-p">
+        To harvest millions of complex, JavaScript-rendered web pages without triggering automated bans or degrading target platforms, <strong>*SC Data Factory</strong> employs an industrial 5-stage pipeline orchestrated by Redis queue clusters and distributed edge nodes:
+      </p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">STAGES 1, 2 &amp; 3</div>
+          <h3 class="sc-sub-h3">Target Dispatch, Headless Fleet &amp; Anti-Bot Stealth</h3>
+          <p class="sc-p">
+            <strong>Stage 1 (Target Queue Dispatch):</strong> At 22:00 UTC+7, the master orchestrator decomposes monitoring targets into 45,000 discrete scraping tasks partitioned across regional IP subnets.
+          </p>
+          <p class="sc-p">
+            <strong>Stage 2 (Headless Playwright Fleet):</strong> 128 concurrent Chromium instances execute full DOM hydration, simulated human mouse bezier-curve scrolling, and targeted schema extraction.
+          </p>
+          <p class="sc-p">
+            <strong>Stage 3 (Stealth &amp; Anti-Bot Gating):</strong> Emulates authentic device fingerprints (WebGL, AudioContext, Canvas, TLS JA4) with dynamic residential IP rotation to ensure undetectable scraping.
+          </p>
+        </div>
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">STAGES 4 &amp; 5</div>
+          <h3 class="sc-sub-h3">Semantic Cleansing &amp; Vector Graph Ingestion</h3>
+          <p class="sc-p">
+            <strong>Stage 4 (Semantic Cleansing &amp; Dedup):</strong> Strips HTML boilerplate, standardizes currencies (IDR, KRW, USD, CNY) using daily central bank rates, and resolves duplicate SKUs via fuzzy Jaccard hashing.
+          </p>
+          <p class="sc-p">
+            <strong>Stage 5 (Vector Embedding &amp; Qubit ERP Sync):</strong> Embeds product attributes and reviews into 384-dimensional dense vectors, synchronizing instantly with <code>Qubit ERP</code> for morning automated trading runs.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <!-- ============================================================================
+         CHAPTER III. SVG ARCHITECTURE DIAGRAM 01
+         ============================================================================ -->
+    <article class="sc-chapter" id="chapter-3">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER III • SYSTEM ARCHITECTURE</span>
+        <span class="sc-chapter-tag">VISUAL SCHEMATIC 01</span>
+      </div>
+      <h2 class="sc-chapter-h2">Architectural Blueprint: 22:00 to 08:00 Overnight Data Factory Pipeline</h2>
+      <p class="sc-p">
+        The schematic below details the complete nightly harvesting lifecycle—from distributed target queueing through headless stealth scraping, heuristic extraction, normalization, and semantic vector ingestion into Qubit ERP.
+      </p>
+
+      <div class="sc-diagram-wrap">
+        <div class="sc-diagram-header">
+          <span class="sc-diagram-title">FIGURE 8.1 • *SC OVERNIGHT DATA FACTORY DISTRIBUTED HARVESTING PIPELINE</span>
+          <span class="sc-diagram-badge">NIGHTLY BATCH • 22:00 - 08:00</span>
+        </div>
+        <svg viewBox="0 0 960 340" width="100%" height="auto" class="notranslate" translate="no" aria-label="Data Factory Architecture Diagram">
+          <defs>
+            <linearGradient id="dfGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0f172a" />
+              <stop offset="100%" stop-color="#1e293b" />
+            </linearGradient>
+            <marker id="dfArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 9 5 L 0 9 z" fill="#0284c7" />
+            </marker>
+          </defs>
+
+          <!-- Background Canvas -->
+          <rect x="0" y="0" width="960" height="340" fill="#f8fafc" rx="10" />
+
+          <!-- Column 1: Harvest Targets -->
+          <g transform="translate(24, 30)">
+            <rect x="0" y="0" width="166" height="280" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+            <rect x="0" y="0" width="166" height="34" rx="8" fill="#0f172a" />
+            <text x="83" y="22" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">TARGET TARGETS</text>
+
+            <rect x="14" y="50" width="138" height="44" rx="6" fill="#f1f5f9" stroke="#cbd5e1" />
+            <text x="83" y="68" fill="#0f172a" font-family="'Inter', sans-serif" font-size="10" font-weight="700" text-anchor="middle">1688 / YiwuGo</text>
+            <text x="83" y="82" fill="#64748b" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">China B2B Wholesale</text>
+
+            <rect x="14" y="104" width="138" height="44" rx="6" fill="#f1f5f9" stroke="#cbd5e1" />
+            <text x="83" y="122" fill="#0f172a" font-family="'Inter', sans-serif" font-size="10" font-weight="700" text-anchor="middle">Shopee / Tokopedia</text>
+            <text x="83" y="136" fill="#64748b" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">ASEAN Retail Marketplace</text>
+
+            <rect x="14" y="158" width="138" height="44" rx="6" fill="#f1f5f9" stroke="#cbd5e1" />
+            <text x="83" y="176" fill="#0f172a" font-family="'Inter', sans-serif" font-size="10" font-weight="700" text-anchor="middle">TikTok Shop Trends</text>
+            <text x="83" y="190" fill="#64748b" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Viral SKUs &amp; GMV Velocity</text>
+
+            <rect x="14" y="212" width="138" height="44" rx="6" fill="#f1f5f9" stroke="#cbd5e1" />
+            <text x="83" y="230" fill="#0f172a" font-family="'Inter', sans-serif" font-size="10" font-weight="700" text-anchor="middle">Customs B/L Feeds</text>
+            <text x="83" y="244" fill="#64748b" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Container Manifest Data</text>
+          </g>
+
+          <!-- Column 2: Headless Stealth Fleet -->
+          <g transform="translate(230, 30)">
+            <rect x="0" y="0" width="180" height="280" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+            <rect x="0" y="0" width="180" height="34" rx="8" fill="#0369a1" />
+            <text x="90" y="22" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">STEALTH CRAWL FLEET</text>
+
+            <rect x="15" y="56" width="150" height="60" rx="6" fill="#f0f9ff" stroke="#bae6fd" />
+            <text x="90" y="78" fill="#0369a1" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Playwright Engine</text>
+            <text x="90" y="96" fill="#475569" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">128 Headless Chromium</text>
+            <text x="90" y="108" fill="#475569" font-family="'Inter', sans-serif" font-size="8" text-anchor="middle">Dynamic DOM Hydration</text>
+
+            <rect x="15" y="132" width="150" height="60" rx="6" fill="#f0f9ff" stroke="#bae6fd" />
+            <text x="90" y="154" fill="#0369a1" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">JA4 Fingerprint Shield</text>
+            <text x="90" y="172" fill="#475569" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Canvas • WebGL • TLS Mask</text>
+            <text x="90" y="184" fill="#475569" font-family="'Inter', sans-serif" font-size="8" text-anchor="middle">Human Bezier Curves</text>
+
+            <rect x="15" y="208" width="150" height="52" rx="6" fill="#eff6ff" stroke="#bfdbfe" />
+            <text x="90" y="228" fill="#1d4ed8" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">Residential Proxy Pool</text>
+            <text x="90" y="244" fill="#475569" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Rotating 40,000 Clean IPs</text>
+          </g>
+
+          <!-- Column 3: Normalization & Vectorization -->
+          <g transform="translate(450, 30)">
+            <rect x="0" y="0" width="220" height="280" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+            <rect x="0" y="0" width="220" height="34" rx="8" fill="#0f5132" />
+            <text x="110" y="22" fill="#6ee7b7" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">TRANSFORM &amp; VECTORIZE</text>
+
+            <rect x="15" y="56" width="190" height="64" rx="6" fill="#f0fdf4" stroke="#bbf7d0" />
+            <text x="110" y="78" fill="#166534" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Schema Harmonization</text>
+            <text x="110" y="96" fill="#475569" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">IDR / CNY / USD Multi-Currency</text>
+            <text x="110" y="110" fill="#475569" font-family="'Inter', sans-serif" font-size="8" text-anchor="middle">Tax e-Faktur &amp; Duty Adjustments</text>
+
+            <rect x="15" y="132" width="190" height="64" rx="6" fill="#f0fdf4" stroke="#bbf7d0" />
+            <text x="110" y="154" fill="#166534" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">BGE Semantic Embeddings</text>
+            <text x="110" y="172" fill="#475569" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Dense Vectorization (384-Dim)</text>
+            <text x="110" y="186" fill="#475569" font-family="'Inter', sans-serif" font-size="8" text-anchor="middle">Fuzzy Deduplication &amp; Grouping</text>
+
+            <rect x="15" y="208" width="190" height="52" rx="6" fill="#f0fdf4" stroke="#bbf7d0" />
+            <text x="110" y="228" fill="#166534" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">Outlier &amp; Fraud Filter</text>
+            <text x="110" y="244" fill="#475569" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Eliminates Phantom Pricing</text>
+          </g>
+
+          <!-- Column 4: Morning Qubit ERP Delivery -->
+          <g transform="translate(710, 30)">
+            <rect x="0" y="0" width="226" height="280" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+            <rect x="0" y="0" width="226" height="34" rx="8" fill="#6b21a8" />
+            <text x="113" y="22" fill="#f3e8ff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">08:00 AM ERP ARBITRAGE</text>
+
+            <rect x="16" y="56" width="194" height="60" rx="6" fill="#faf5ff" stroke="#e9d5ff" />
+            <text x="113" y="78" fill="#6b21a8" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Cosmo Seed Matcher</text>
+            <text x="113" y="96" fill="#475569" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Surfaces 25%+ Margin Gaps</text>
+            <text x="113" y="108" fill="#475569" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Wholesale Buy -> Retail Sell</text>
+
+            <rect x="16" y="128" width="194" height="60" rx="6" fill="#faf5ff" stroke="#e9d5ff" />
+            <text x="113" y="150" fill="#6b21a8" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Auto-Formulator BOM Sync</text>
+            <text x="113" y="168" fill="#475569" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Updates Rp 1,320 Sachet Recipe</text>
+            <text x="113" y="180" fill="#475569" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Locks In Optimal Ingredient Batches</text>
+
+            <rect x="16" y="200" width="194" height="60" rx="6" fill="#0f172a" />
+            <text x="113" y="222" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Executive Morning Brief</text>
+            <text x="113" y="240" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Telegram / Notion Summary</text>
+            <text x="113" y="252" fill="#6ee7b7" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Delivered Promptly at 08:00 AM</text>
+          </g>
+
+          <!-- Connecting Arrows -->
+          <line x1="190" y1="170" x2="226" y2="170" stroke="#0284c7" stroke-width="2.5" marker-end="url(#dfArrow)" />
+          <line x1="410" y1="170" x2="446" y2="170" stroke="#0284c7" stroke-width="2.5" marker-end="url(#dfArrow)" />
+          <line x1="670" y1="170" x2="706" y2="170" stroke="#0284c7" stroke-width="2.5" marker-end="url(#dfArrow)" />
+        </svg>
+        <p class="sc-diagram-caption">
+          Figure 8.1: The 22:00 to 08:00 Overnight Data Factory harvesting topology. B2B wholesale sites, e-commerce marketplaces, and shipping customs feeds are ingested through stealth headless browser fleets, vectorized, and delivered into Qubit ERP before morning market open.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============================================================================
+         CHAPTER IV. MATHEMATICAL FORMULATION: HARVESTING THROUGHPUT
+         ============================================================================ -->
+    <article class="sc-chapter" id="chapter-4">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER IV • MATHEMATICAL FOUNDATIONS</span>
+        <span class="sc-chapter-tag">THROUGHPUT DYNAMICS &amp; FINGERPRINT ENTROPY</span>
+      </div>
+      <h2 class="sc-chapter-h2">Mathematical Formulation: Web Harvesting Throughput &amp; Anti-Bot Stealth</h2>
+      <p class="sc-p">
+        To sustain millions of page extractions per 10-hour night window without IP rate-limiting, the system dynamically solves an optimization problem balancing crawler concurrency $C$, proxy rotation period $T_{\text{rot}}$, and synthetic human delay distribution $\Delta t_{\text{delay}}$:
+      </p>
+
+      <div class="sc-math-box">
+        <div class="sc-math-title">MATHEMATICAL FORMULATION: OPTIMAL NIGHTLY HARVEST CAPACITY &amp; ENTROPY</div>
+        <p>
+          Let $N_{\text{total}}$ be the total harvest capacity over the 10-hour window $W = 36,000\text{ seconds}$. Given $M$ active proxy pools and per-request latency $\tau_{\text{req}}$:
+        </p>
+        <div class="sc-math-eq">
+          N_{\text{total}} = \sum_{k=1}^{M} \int_{0}^{W} \frac{C_k(t)}{\tau_{\text{req}}(k, t) + \mathbb{E}[\Delta t_{\text{human}}]} \cdot \left( 1 - P_{\text{block}}(k, t) \right) \, dt \ge 2,800,000
+        </div>
+        <p>
+          Where $P_{\text{block}}$ represents the probability of anti-bot challenge (Cloudflare, Akamai, GeeTest). $P_{\text{block}}$ is minimized by maximizing the fingerprint entropy $H(F)$ across synthetic browser sessions:
+        </p>
+        <div class="sc-math-eq">
+          H(F) = - \sum_{i=1}^{K} p(f_i) \log_2 p(f_i) \ge 18.4\text{ bits}
+        </div>
+        <p>
+          Where $f_i$ represents synthetic hardware attributes (WebGL vendor hash, audio oscillator drift, TCP window size, font enumeration). If $P_{\text{block}} &gt; 0.0015$, the session orchestrator triggers automatic JA4 SSL fingerprint mutation and proxy subnet hopping in under 120ms.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============================================================================
+         CHAPTER V. SVG ARCHITECTURE DIAGRAM 02
+         ============================================================================ -->
+    <article class="sc-chapter" id="chapter-5">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER V • DATA TRANSFORMATION</span>
+        <span class="sc-chapter-tag">VISUAL SCHEMATIC 02</span>
+      </div>
+      <h2 class="sc-chapter-h2">Cleansing, Deduplication &amp; Semantic Vectorization Pipeline</h2>
+      <p class="sc-p">
+        Raw HTML scraped from diverse marketplaces is noisy, duplicated, and unstandardized. The diagram below illustrates how our multi-stage pipeline transforms messy DOM payloads into structured, verifiable vector records ready for AI reasoning:
+      </p>
+
+      <div class="sc-diagram-wrap">
+        <div class="sc-diagram-header">
+          <span class="sc-diagram-title">FIGURE 8.2 • RAW HTML TO EMBEDDED KNOWLEDGE GRAPH NORMALIZATION PIPELINE</span>
+          <span class="sc-diagram-badge">CLEANSING ENGINE • REAL-TIME DEDUPLICATION</span>
+        </div>
+        <svg viewBox="0 0 960 340" width="100%" height="auto" class="notranslate" translate="no" aria-label="Data Cleansing and Vectorization Diagram">
+          <defs>
+            <marker id="dcArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 9 5 L 0 9 z" fill="#0f5132" />
+            </marker>
+            <marker id="dcBlueArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 9 5 L 0 9 z" fill="#0284c7" />
+            </marker>
+          </defs>
+
+          <!-- Background Canvas -->
+          <rect x="0" y="0" width="960" height="340" fill="#f8fafc" rx="10" />
+
+          <!-- Stage 1 -->
+          <g transform="translate(30, 60)">
+            <rect x="0" y="0" width="190" height="210" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+            <rect x="0" y="0" width="190" height="32" rx="8" fill="#0f172a" />
+            <text x="95" y="21" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">1. RAW DOM EXTRACTION</text>
+            <text x="95" y="60" fill="#0f172a" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">Raw Web Payloads</text>
+            <rect x="15" y="75" width="160" height="48" rx="5" fill="#f1f5f9" stroke="#cbd5e1" />
+            <text x="95" y="96" fill="#0f172a" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Raw HTML / JSON-LD</text>
+            <text x="95" y="110" fill="#64748b" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Noisy scripts &amp; ads</text>
+            <text x="95" y="145" fill="#64748b" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Payload size: 1.8 MB / page</text>
+            <text x="95" y="160" fill="#64748b" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Extracted in &lt;180ms</text>
+          </g>
+
+          <!-- Stage 2 -->
+          <g transform="translate(260, 60)">
+            <rect x="0" y="0" width="200" height="210" rx="8" fill="#ffffff" stroke="#0284c7" stroke-width="2" />
+            <rect x="0" y="0" width="200" height="32" rx="8" fill="#0284c7" />
+            <text x="100" y="21" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">2. STRIP &amp; HARMONIZE</text>
+            <text x="100" y="60" fill="#0f172a" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">Boilerplate Removal</text>
+            <rect x="15" y="75" width="170" height="48" rx="5" fill="#f0f9ff" stroke="#bae6fd" />
+            <text x="100" y="94" fill="#0369a1" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Parse Price, Unit &amp; MOQ</text>
+            <text x="100" y="110" fill="#0369a1" font-family="'Inter', sans-serif" font-size="9" font-weight="700" text-anchor="middle">Currency -> Base IDR / USD</text>
+            <text x="100" y="145" fill="#475569" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Clean Payload: 4.2 KB</text>
+            <text x="100" y="160" fill="#475569" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">99.7% Compression Ratio</text>
+          </g>
+
+          <!-- Stage 3 -->
+          <g transform="translate(500, 60)">
+            <rect x="0" y="0" width="200" height="210" rx="8" fill="#ffffff" stroke="#0f5132" stroke-width="2" />
+            <rect x="0" y="0" width="200" height="32" rx="8" fill="#0f5132" />
+            <text x="100" y="21" fill="#6ee7b7" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">3. FUZZY DEDUPLICATION</text>
+            <text x="100" y="60" fill="#0f172a" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">MinHash LSH Grouping</text>
+            <rect x="15" y="75" width="170" height="48" rx="5" fill="#f0fdf4" stroke="#bbf7d0" />
+            <text x="100" y="94" fill="#166534" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Cross-Platform SKU Link</text>
+            <text x="100" y="110" fill="#166534" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" text-anchor="middle">Matches 1688 to Shopee</text>
+            <text x="100" y="145" fill="#475569" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Calculates Gross Arbitrage Gap</text>
+            <text x="100" y="160" fill="#475569" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Filters Suspicious Outliers</text>
+          </g>
+
+          <!-- Stage 4 -->
+          <g transform="translate(740, 60)">
+            <rect x="0" y="0" width="190" height="210" rx="8" fill="#ffffff" stroke="#6b21a8" stroke-width="2" />
+            <rect x="0" y="0" width="190" height="32" rx="8" fill="#6b21a8" />
+            <text x="95" y="21" fill="#f3e8ff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">4. VECTOR INGESTION</text>
+            <text x="95" y="60" fill="#0f172a" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">Qubit Vector Store</text>
+            <rect x="15" y="75" width="160" height="48" rx="5" fill="#faf5ff" stroke="#e9d5ff" />
+            <text x="95" y="94" fill="#6b21a8" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Indexed in HNSW Vector</text>
+            <text x="95" y="110" fill="#6b21a8" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" text-anchor="middle">384-Dim BGE Embeddings</text>
+            <text x="95" y="145" fill="#0f172a" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">Queryable via RAG in &lt;15ms</text>
+            <text x="95" y="160" fill="#166534" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Sealed for Morning Trade Run</text>
+          </g>
+
+          <!-- Connecting Arrows -->
+          <line x1="220" y1="165" x2="255" y2="165" stroke="#0284c7" stroke-width="2" marker-end="url(#dcBlueArrow)" />
+          <line x1="460" y1="165" x2="495" y2="165" stroke="#0f5132" stroke-width="2" marker-end="url(#dcArrow)" />
+          <line x1="700" y1="165" x2="735" y2="165" stroke="#6b21a8" stroke-width="2" marker-end="url(#dcArrow)" />
+        </svg>
+        <p class="sc-diagram-caption">
+          Figure 8.2: Data normalization pipeline. Unstructured web pages are parsed, stripped of boilerplate, standardized to base currencies, clustered via Locality Sensitive Hashing (LSH), and permanently indexed into Qubit ERP vector memory.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============================================================================
+         CHAPTER VI. TELEMETRY SOURCE MATRIX
+         ============================================================================ -->
+    <article class="sc-chapter" id="chapter-6">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER VI • MARKET COVERAGE</span>
+        <span class="sc-chapter-tag">TELEMETRY PLATFORM MATRIX</span>
+      </div>
+      <h2 class="sc-chapter-h2">Global Data Ingestion Sources &amp; Telemetry Coverage Matrix</h2>
+      <p class="sc-p">
+        The Data Factory continuously aggregates pricing and inventory telemetry across multiple tiers of the global commerce funnel—from primary raw chemical suppliers in Asia to end-consumer retail checkout pages in Southeast Asia:
+      </p>
+
+      <div class="sc-table-wrap">
+        <table class="sc-table">
+          <thead>
+            <tr>
+              <th>Platform / Source</th>
+              <th>Market Domain</th>
+              <th>Nightly SKU Volume</th>
+              <th>Harvest Frequency</th>
+              <th>Telemetry Granularity</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1688.com (Alibaba B2B)</strong></td>
+              <td>China Wholesale Manufacturing</td>
+              <td>1,200,000 SKUs</td>
+              <td>Daily (22:00 - 04:00)</td>
+              <td>MOQ, Tiered Pricing, Factory Certs</td>
+              <td><span class="sc-tag emerald">Active Production</span></td>
+            </tr>
+            <tr>
+              <td><strong>Shopee (ID / VN / SG)</strong></td>
+              <td>Southeast Asia E-Commerce</td>
+              <td>850,000 SKUs</td>
+              <td>Daily (01:00 - 05:00)</td>
+              <td>Realized Sales, Vouchers, Flash Deals</td>
+              <td><span class="sc-tag emerald">Active Production</span></td>
+            </tr>
+            <tr>
+              <td><strong>Tokopedia (GoTo)</strong></td>
+              <td>Indonesia Domestic Marketplace</td>
+              <td>520,000 SKUs</td>
+              <td>Daily (02:00 - 06:00)</td>
+              <td>Official Store Prices, Stock Levels</td>
+              <td><span class="sc-tag emerald">Active Production</span></td>
+            </tr>
+            <tr>
+              <td><strong>TikTok Shop (ASEAN)</strong></td>
+              <td>Live Social Commerce</td>
+              <td>230,000 SKUs</td>
+              <td>Continuous Real-Time</td>
+              <td>Creator Commissions, GMV Trends</td>
+              <td><span class="sc-tag emerald">Active Production</span></td>
+            </tr>
+            <tr>
+              <td><strong>Customs Import Manifests</strong></td>
+              <td>B/L Shipping &amp; Container Logistics</td>
+              <td>45,000 Records</td>
+              <td>Weekly Batch</td>
+              <td>HS Codes, Weight, Importer Identity</td>
+              <td><span class="sc-tag emerald">Active Production</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="sc-callout">
+        <div class="sc-callout-title">Ethical Harvesting &amp; Rate-Limiting Integrity</div>
+        <p>
+          Data Factory operates under an ethical crawler charter. We adhere to distributed polite delays ($\ge 850\text{ms}$ per domain per IP), respect server health indicators, and never overwhelm target origin servers. Our aim is observational market intelligence, not denial-of-service.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============================================================================
+         CHAPTER VII. SVG ARCHITECTURE DIAGRAM 03
+         ============================================================================ -->
+    <article class="sc-chapter" id="chapter-7">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER VII • MORNING INTELLIGENCE DELIVERY</span>
+        <span class="sc-chapter-tag">VISUAL SCHEMATIC 03</span>
+      </div>
+      <h2 class="sc-chapter-h2">08:00 AM Morning Executive Dossier Delivery Flow</h2>
+      <p class="sc-p">
+        How does the overnight harvest translate into executive decision-making? By 08:00 AM each morning, synthesized market dossiers are delivered across executive channels:
+      </p>
+
+      <div class="sc-diagram-wrap">
+        <div class="sc-diagram-header">
+          <span class="sc-diagram-title">FIGURE 8.3 • 08:00 AM MORNING EXECUTIVE INTELLIGENCE DOSSIER DELIVERY</span>
+          <span class="sc-diagram-badge">EXECUTIVE DISPATCH • ZERO LATENCY</span>
+        </div>
+        <svg viewBox="0 0 960 340" width="100%" height="auto" class="notranslate" translate="no" aria-label="Morning Intelligence Delivery Diagram">
+          <defs>
+            <marker id="mdArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 9 5 L 0 9 z" fill="#0f5132" />
+            </marker>
+          </defs>
+
+          <!-- Background Canvas -->
+          <rect x="0" y="0" width="960" height="340" fill="#f8fafc" rx="10" />
+
+          <!-- Left: Vector Knowledge Base -->
+          <g transform="translate(30, 40)">
+            <rect x="0" y="0" width="260" height="260" rx="10" fill="#ffffff" stroke="#0284c7" stroke-width="2" />
+            <rect x="0" y="0" width="260" height="36" rx="10" fill="#0284c7" />
+            <text x="130" y="23" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">OVERNIGHT HARVEST CORE</text>
+
+            <rect x="18" y="55" width="224" height="52" rx="6" fill="#f0f9ff" stroke="#bae6fd" />
+            <text x="130" y="76" fill="#0369a1" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">2.8M Products Indexed</text>
+            <text x="130" y="94" fill="#334155" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Wholesale &amp; Retail Price Vectors</text>
+
+            <rect x="18" y="118" width="224" height="52" rx="6" fill="#f0f9ff" stroke="#bae6fd" />
+            <text x="130" y="139" fill="#0369a1" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Price Shift Alerts</text>
+            <text x="130" y="157" fill="#334155" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Flags &gt;12% daily commodity swings</text>
+
+            <rect x="18" y="180" width="224" height="52" rx="6" fill="#eff6ff" stroke="#bfdbfe" />
+            <text x="130" y="201" fill="#1d4ed8" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Stock Out Early Warning</text>
+            <text x="130" y="219" fill="#334155" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Detects competitor inventory drops</text>
+          </g>
+
+          <!-- Center: Autonomous Synthesis LLM -->
+          <g transform="translate(340, 90)">
+            <rect x="0" y="0" width="280" height="160" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="2" />
+            <text x="140" y="30" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">DOSSIER SYNTHESIS ENGINE</text>
+            <text x="140" y="52" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9.5" text-anchor="middle">Gemini Flash / Claude RAG Analysis</text>
+
+            <rect x="20" y="68" width="240" height="34" rx="4" fill="rgba(255, 255, 255, 0.06)" />
+            <text x="140" y="89" fill="#6ee7b7" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">Computes Arbitrage Spreads</text>
+
+            <rect x="20" y="110" width="240" height="34" rx="4" fill="rgba(255, 255, 255, 0.06)" />
+            <text x="140" y="131" fill="#fcd34d" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">Generates Actionable Bullet Recommendations</text>
+          </g>
+
+          <!-- Right: Multi-Channel Executive Delivery -->
+          <g transform="translate(670, 40)">
+            <rect x="0" y="0" width="260" height="260" rx="10" fill="#ffffff" stroke="#0f5132" stroke-width="2" />
+            <rect x="0" y="0" width="260" height="36" rx="10" fill="#0f5132" />
+            <text x="130" y="23" fill="#6ee7b7" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">08:00 AM EXECUTIVE DELIVERY</text>
+
+            <rect x="18" y="55" width="224" height="52" rx="6" fill="#f0fdf4" stroke="#bbf7d0" />
+            <text x="130" y="76" fill="#166534" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Telegram VIP Channel</text>
+            <text x="130" y="94" fill="#334155" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Top 5 Daily Deal Arbitrage Highlights</text>
+
+            <rect x="18" y="118" width="224" height="52" rx="6" fill="#f0fdf4" stroke="#bbf7d0" />
+            <text x="130" y="139" fill="#166534" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Notion / Qubit ERP Dashboard</text>
+            <text x="130" y="157" fill="#334155" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Interactive dynamic pricing matrix</text>
+
+            <rect x="18" y="180" width="224" height="52" rx="6" fill="#f0fdf4" stroke="#bbf7d0" />
+            <text x="130" y="201" fill="#166534" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Auto-Formulator R1 Locks</text>
+            <text x="130" y="219" fill="#334155" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Locks in Rp 1,320 sachet batches</text>
+          </g>
+
+          <!-- Connecting Lines -->
+          <line x1="290" y1="170" x2="335" y2="170" stroke="#0284c7" stroke-width="2.5" marker-end="url(#mdArrow)" />
+          <line x1="620" y1="170" x2="665" y2="170" stroke="#0f5132" stroke-width="2.5" marker-end="url(#mdArrow)" />
+        </svg>
+        <p class="sc-diagram-caption">
+          Figure 8.3: Daily 08:00 AM executive delivery. The overnight knowledge harvest is synthesized by reasoning LLMs and dispatched directly to executive Telegram channels, Notion dashboards, and Auto-Formulator R1 production line locks.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============================================================================
+         CHAPTER VIII. INSTITUTIONAL DATA SLA & ROADMAP
+         ============================================================================ -->
+    <article class="sc-chapter" id="chapter-8">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER VIII • INSTITUTIONAL SLA &amp; ROADMAP</span>
+        <span class="sc-chapter-tag">DATA INTEGRITY BENCHMARKS</span>
+      </div>
+      <h2 class="sc-chapter-h2">Data Hygiene Service Level Agreements &amp; Engineering Roadmap</h2>
+      <p class="sc-p">
+        High volume is useless without strict data hygiene. <code>*SC Data Factory</code> guarantees the following operational benchmarks across all harvested datasets:
+      </p>
+
+      <div class="sc-table-wrap">
+        <table class="sc-table">
+          <thead>
+            <tr>
+              <th>Data Metric</th>
+              <th>Guaranteed Benchmark</th>
+              <th>Validation Mechanism</th>
+              <th>Remediation Protocol</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Price Extraction Accuracy</strong></td>
+              <td>&ge; 99.8% Deterministic</td>
+              <td>Double-blind DOM selector cross-check</td>
+              <td>Automated DOM schema re-learning bot</td>
+            </tr>
+            <tr>
+              <td><strong>Currency Conversion Freshness</strong></td>
+              <td>&lt; 15 minutes old</td>
+              <td>Live Bank Indonesia / Bank of Korea FX stream</td>
+              <td>Fallback to central bank spot rate table</td>
+            </tr>
+            <tr>
+              <td><strong>Duplicate Record Rate</strong></td>
+              <td>&lt; 0.15% redundant records</td>
+              <td>LSH MinHash title &amp; image perceptual hash</td>
+              <td>Automated deduplication merge on commit</td>
+            </tr>
+            <tr>
+              <td><strong>Morning Delivery Deadline</strong></td>
+              <td>100% on or before 08:00 AM</td>
+              <td>Autonomous 06:30 AM synthesis kickoff</td>
+              <td>Emergency fallback snapshot trigger at 07:15 AM</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="sc-grid-3">
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">PHASE 1 • Q4 2026</div>
+          <h3 class="sc-sub-h3">ASEAN E-Commerce Grid</h3>
+          <p class="sc-p">
+            Scale Playwright crawler fleet across Indonesia, Vietnam, and Thailand to ingest 3,500,000 SKUs nightly with automated Tokopedia/Shopee flash sale detection.
+          </p>
+        </div>
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">PHASE 2 • Q2 2027</div>
+          <h3 class="sc-sub-h3">Multimodal Video Harvesting</h3>
+          <p class="sc-p">
+            Real-time optical frame parsing of TikTok and Instagram live selling streams to extract prices, host claims, and viewer purchase sentiment automatically.
+          </p>
+        </div>
+        <div class="sc-panel purple">
+          <div class="sc-panel-kicker">PHASE 3 • Q4 2027</div>
+          <h3 class="sc-sub-h3">Autonomous Trade Execution</h3>
+          <p class="sc-p">
+            Direct integration between Data Factory arbitrage signals and Qubit Bank escrow—automatically locking supplier purchase orders when margin spreads exceed 35%.
+          </p>
+        </div>
+      </div>
+    </article>
   </main>
 </body>
 </html>

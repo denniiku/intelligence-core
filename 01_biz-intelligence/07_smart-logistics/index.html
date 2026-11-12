@@ -4,14 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=block" rel="stylesheet">
-  <title>*SC | Smart Logistics - intelligence core - biz intelligence - smart logistics</title>
-  <meta name="description" content="*SC (SISTAR Company) - Smart Logistics : 24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP." />
+  <title>*SC | Smart Logistics — Autonomous Cross-Border SCM, 3D Container Cube &amp; Preferential FTA Engine</title>
+  <meta name="description" content="Official Institutional Monograph of Domain 03 (intelligence-core): Smart Logistics automates cross-border SCM, 3D container volumetric packing, and bilateral FTA preferential tariff computation (AKFTA/RCEP) across 8 global trade bases." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "*SC | Smart Logistics",
-    "description": "24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.",
+    "@type": "TechArticle",
+    "headline": "*SC | Smart Logistics — Autonomous Cross-Border SCM, 3D Container Cube & Preferential FTA Engine",
+    "description": "Comprehensive institutional monograph on *SC Smart Logistics: 3D container packing algorithms, bilateral preferential duty computation, real-time IoT customs telemetry, and Qubit ERP Team 04 integration.",
+    "author": {
+      "@type": "Organization",
+      "name": "*SC - SISTAR COMPANY",
+      "url": "https://sistarcompany.com"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "*SC - SISTAR COMPANY",
@@ -19,206 +24,712 @@
     }
   }
   </script>
-  <style>html,body{background:linear-gradient(to right,#f0acf7,#acf7f0,#f7f0ac);margin:0;padding:0;}body.sc-nav-open{padding-left:236px;}body.sc-nav-folded{padding-left:64px;}@media(max-width:768px){body.sc-nav-open,body.sc-nav-folded{padding-left:0!important;}}</style>
   <script>
     (function() {
       var p = location.pathname.replace(/\\/g, "/");
       var base = "/common_assets/";
       if (location.protocol === "file:") {
         var i = p.toLowerCase().indexOf("/sc_web/");
-        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "./common_assets/";
+        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "../../common_assets/";
       }
       document.write("<link rel=\"stylesheet\" href=\"" + base + "common_new.css?v=2.2\">");
-      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js\" defer><\/script>");
+      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js?v=5.0\" defer><\/script>");
     })();
   </script>
   <style>
-    .sc-auto-page {
+    html, body {
+      background: linear-gradient(to right, #f0acf7, #acf7f0, #f7f0ac);
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.sc-nav-open { padding-left: 236px; }
+    body.sc-nav-folded { padding-left: 64px; }
+    @media (max-width: 768px) {
+      body.sc-nav-open, body.sc-nav-folded { padding-left: 0 !important; }
+    }
+
+    .sc-monograph {
       box-sizing: border-box;
       width: 100%;
-      max-width: min(1360px, 95%);
-      padding: clamp(40px, 5vh, 68px) clamp(24px, 4.5vw, 72px) 120px;
-      font-family: "Inter", sans-serif;
-      color: #0f172a;
+      max-width: min(1380px, 95%);
+      margin: 0 auto;
+      padding: clamp(36px, 5vh, 68px) clamp(24px, 5vw, 76px) 120px;
     }
-    main h1, main h2, main h3, main h4,
-    main p, main .sc-lead, main .sc-p,
-    main .sc-route, main .sc-sec,
-    main .sc-card-line, main .sc-card-emerald {
-      margin-left: 0 !important;
-      padding-left: 0 !important;
-      text-indent: 0 !important;
-      text-align: left !important;
+    .sc-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+      border-bottom: 1.5px solid rgba(15, 23, 42, 0.15);
     }
     .sc-route {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.88rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
       font-weight: 600;
       color: #475569;
-      letter-spacing: 0.04em;
-      margin: 0 0 18px 0;
+      margin: 0;
+      letter-spacing: 0.03em;
       text-transform: lowercase;
     }
-    .sc-sec {
-      padding: 52px 0;
-      border-bottom: 1.5px solid rgba(15, 23, 42, 0.14);
+
+    /* === CHAPTER & PAGE STRUCTURE === */
+    .sc-chapter { margin-bottom: 48px; padding: 12px 0; }
+    .sc-chapter-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid #0f172a;
     }
-    .sc-sec:last-of-type { border-bottom: none; }
-    .sc-kicker {
-      display: inline-block;
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.78rem;
+    .sc-chapter-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #0f5132;
-      background: rgba(22, 135, 101, 0.15);
-      padding: 5px 12px;
-      border-radius: 4px;
-      margin: 0 0 14px 0;
     }
-    .sc-h1 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(2.1rem, 3.6vw, 3.1rem);
-      font-weight: 700;
-      color: #0f172a;
-      letter-spacing: -0.025em;
-      line-height: 1.12;
-      margin: 0 0 14px 0;
-    }
-    .sc-sub {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.15rem, 1.6vw, 1.38rem);
+    .sc-chapter-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
       font-weight: 600;
-      color: #0f5132;
-      line-height: 1.4;
-      margin: 0 0 24px 0;
+      color: #64748b;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
-    .sc-h2 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.45rem, 2.2vw, 1.95rem);
+    .sc-doc-h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.1rem, 3.6vw, 3.05rem);
       font-weight: 700;
       color: #0f172a;
-      letter-spacing: -0.02em;
-      line-height: 1.25;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      margin: 0 0 20px 0;
+    }
+    .sc-chapter-h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.55rem, 2.4vw, 2.05rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.22;
+      letter-spacing: -0.025em;
       margin: 0 0 18px 0;
     }
-    .sc-h3 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1.15rem;
+    .sc-sub-h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
       font-weight: 700;
       color: #0f172a;
       margin: 0 0 10px 0;
       line-height: 1.35;
     }
     .sc-lead {
-      font-size: clamp(1.04rem, 1.22vw, 1.14rem);
-      line-height: 1.82;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 500;
       color: #1e293b;
-      margin: 0 0 34px 0;
+      line-height: 1.82;
+      margin: 0 0 24px 0;
     }
     .sc-p {
-      font-size: 0.97rem;
-      line-height: 1.8;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.99rem;
       color: #334155;
-      margin: 0;
+      line-height: 1.82;
+      margin: 0 0 16px 0;
     }
-    /* Spacious 2-Column (2x2) Grid Layout */
-    .sc-grid-2x2 {
+
+    /* === EXECUTIVE DARK HERO & METRICS === */
+    .sc-exec-hero {
+      background: linear-gradient(135deg, #090d16 0%, #0f172a 55%, #064e3b 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: clamp(28px, 3.8vw, 44px);
+      margin: 22px 0 32px 0;
+      border: 1px solid rgba(74, 222, 128, 0.3);
+    }
+    .sc-exec-hero h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 14px 0;
+      line-height: 1.3;
+    }
+    .sc-exec-hero p {
+      font-size: 1.02rem;
+      color: #e2e8f0;
+      line-height: 1.78;
+      margin: 0 0 24px 0;
+    }
+    .sc-kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    @media (max-width: 900px) {
+      .sc-kpi-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    .sc-kpi-cell {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .sc-kpi-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.42rem;
+      font-weight: 700;
+      color: #4ade80;
+      margin-bottom: 4px;
+    }
+    .sc-kpi-desc {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    /* === EDITORIAL GRIDS & PANELS === */
+    .sc-grid-2 {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 48px;
-      row-gap: 38px;
-      margin-top: 28px;
+      gap: 28px;
+      margin: 24px 0;
     }
-    @media (max-width: 760px) {
-      .sc-grid-2x2 { grid-template-columns: 1fr; }
+    .sc-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 24px 0;
     }
-    .sc-card-line {
-      padding-top: 20px !important;
-      border-top: 2px solid rgba(15, 23, 42, 0.24) !important;
+    @media (max-width: 860px) {
+      .sc-grid-2, .sc-grid-3 { grid-template-columns: 1fr; }
     }
-    .sc-card-emerald {
-      padding-top: 20px !important;
-      border-top: 3px solid #168765 !important;
+    .sc-panel {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-top: 4px solid #0f172a;
+      border-radius: 12px;
+      padding: 24px 26px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
     }
-    .sc-num-label {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.82rem;
+    .sc-panel.emerald { border-top-color: #0f5132; background: #f8fafc; }
+    .sc-panel.blue { border-top-color: #1d4ed8; }
+    .sc-panel.purple { border-top-color: #6d28d9; }
+    .sc-panel-kicker {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
       font-weight: 700;
-      color: #0f5132;
-      text-transform: uppercase;
       letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #0f5132;
       margin-bottom: 8px;
     }
-    .sc-callout {
-      margin-top: 38px;
-      padding: 20px 24px !important;
-      border-left: 4px solid #0f5132;
-      background: rgba(255, 255, 255, 0.34);
-      font-size: 0.98rem;
-      font-weight: 500;
-      color: #0f172a;
-      line-height: 1.72;
+    .sc-panel.blue .sc-panel-kicker { color: #1d4ed8; }
+    .sc-panel.purple .sc-panel-kicker { color: #6d28d9; }
+
+    /* === FORMULA & ARCHITECTURE BLOCKS === */
+    .sc-math-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 12px;
+      padding: 22px 26px;
+      margin: 20px 0;
+      border-left: 4px solid #10b981;
     }
-    @media print {
-      html, body, main, .sc-auto-page { background: #ffffff !important; padding-left: 0 !important; opacity: 1 !important; }
-      #sc-left-nav, .sc-nav-toggle { display: none !important; }
-      .sc-card-line, .sc-card-emerald, .sc-callout { break-inside: avoid !important; page-break-inside: avoid !important; }
+    .sc-math-code {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 1.04rem;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 7px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 8px 0 12px 0;
+    }
+
+    /* === TABLES === */
+    .sc-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #cbd5e1;
+    }
+    .sc-table th {
+      background: #0f172a;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-align: left;
+      padding: 14px 18px;
+      letter-spacing: 0.03em;
+    }
+    .sc-table td {
+      padding: 15px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.94rem;
+      color: #1e293b;
+      line-height: 1.65;
+      vertical-align: top;
+    }
+    .sc-table tr:last-child td { border-bottom: none; }
+    .sc-table tr:nth-child(even) td { background: #f8fafc; }
+
+    /* === CALLOUTS & DOSSIER HEADERS === */
+    .sc-callout {
+      background: #f0fdf4;
+      border-left: 5px solid #0f5132;
+      border-radius: 0 12px 12px 0;
+      padding: 22px 26px;
+      margin: 24px 0;
+    }
+    .sc-callout-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0f5132;
+      margin-bottom: 6px;
+    }
+    .sc-dossier-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 8px rgba(15,23,42,0.03);
+    }
+    .sc-svg-wrap {
+      margin: 28px 0;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+      overflow-x: auto;
+    }
+    .sc-svg-wrap svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 960px;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body class="sc-nav-open">
-  <main class="sc-auto-page">
-    <p class="sc-route">intelligence core - biz intelligence - smart logistics</p>
+  <main class="sc-monograph">
+    <div class="sc-top-bar">
+      <p class="sc-route">intelligence core - biz intelligence - smart logistics</p>
+    </div>
 
-    <section class="sc-sec" style="padding-top: 12px;">
-      <div><span class="sc-kicker">ENTERPRISE BRAIN &bull; *SC INTELLIGENCE CORE</span></div>
-      <h1 class="sc-h1">*SC - Smart Logistics</h1>
-      <p class="sc-sub">24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.</p>
-      <p class="sc-lead">As part of the <strong>*SC intelligence-core</strong>, <strong>Smart Logistics</strong> functions as the autonomous central nervous system of the Signal Star Universe. Operating around the clock while human executives sleep, it harvests global market data, grounds strategic decisions in verified facts, and automates all 8 corporate departments at near- fixed cost.</p>
+    <!-- DOCUMENT HEADER -->
+    <header style="margin-bottom: 36px;">
+      <div class="sc-chapter-num">03. INTELLIGENCE-CORE &bull; BIZ INTELLIGENCE</div>
+      <h1 class="sc-doc-h1">*SC Smart Logistics — Autonomous Cross-Border SCM &amp; 3D Volumetric Cube Engine</h1>
+      <p class="sc-lead">Inside Domain 03 (intelligence-core), <strong>Smart Logistics</strong> powers the autonomous cross-border freight orchestration, container cube maximization, and preferential free-trade tariff execution of *SC (SISTAR Company / Signal Star Universe). Directly operating as Qubit ERP Team 04, it eliminates forwarder markups, optimizes 3D container utilization, and automates customs green-lane clearance across our 8 international bases.</p>
+    </header>
 
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <div class="sc-num-label">01 &bull; WHAT IT IS (CORE DEFINITION)</div>
-          <h2 class="sc-h3">Overnight Data Factory (10 PM - 8 AM)</h2>
-          <p class="sc-p">Headless Playwright/Apify scrapers autonomously harvest global wholesale prices (1688/Alibaba), Shopee/Tokopedia competitor SKUs, HS-code tariffs, and regulatory updates every night.</p>
+    <!-- EXECUTIVE HERO -->
+    <div class="sc-exec-hero">
+      <h3>Executive Architectural Synthesis: The High-Velocity Cross-Border SCM Engine</h3>
+      <p>International logistics has historically operated as an opaque, high-friction cost center dominated by middlemen freight forwarders charging hidden terminal fees, leaving containers 30% empty, and misapplying preferential trade tariffs. *SC Smart Logistics replaces this archaic process with algorithmic 3D container packing algorithms, real-time IoT maritime vessel tracking, and automated Preferential Certificate of Origin (Form AK / Form RCEP / Form D) generation—cutting landed logistics costs by 34%.</p>
+      <div class="sc-kpi-strip">
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">96.8%</div>
+          <div class="sc-kpi-desc">3D Container Volumetric Cube Fill Ratio (vs 68% Industry Avg)</div>
         </div>
-
-        <div class="sc-card-line">
-          <div class="sc-num-label">02 &bull; WHY WE DO IT (MARKET OPPORTUNITY)</div>
-          <h2 class="sc-h3">Dual-Engine Vector RAG (NotebookLM + Dify)</h2>
-          <p class="sc-p">Embeds nightly market streams alongside internal Google Drive/Keep memos into Supabase pgvector and NotebookLM repositories, delivering citation-backed 8:00 AM executive briefs.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">0.0%</div>
+          <div class="sc-kpi-desc">Preferential Tariff Rate via Automated AKFTA/RCEP Rules</div>
         </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">03 &bull; HOW IT WORKS (OPERATIONAL MECHANISM)</div>
-          <h2 class="sc-h3">Qubit ERP &amp; CCTV Vision Stock Opname</h2>
-          <p class="sc-p">Automates Finance/VAT, HR (25th payouts), Sales/CRM, and RA natively on Google Workspace, while CCTV + Gemini Vision AI counts warehouse pallets and sachets in real time.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">&lt; 4.2s</div>
+          <div class="sc-kpi-desc">Autonomous Sea/Air Freight Landed-Cost Calculation</div>
         </div>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">34%</div>
+          <div class="sc-kpi-desc">Net Reduction in Total Landed Ocean/Air Freight Costs</div>
+        </div>
+      </div>
+    </div>
 
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">04 &bull; REVENUE MODEL &amp; EXPECTED ROI</div>
-          <h2 class="sc-h3">Dual-Return SaaS &amp; MCP API Monetization</h2>
-          <p class="sc-p">Eliminates 100% of internal ERP/admin licensing costs while generating external B2B revenue through custom enterprise RAG builds, Zoho/Workspace ERP SaaS, and MCP Server agent query tolls.</p>
+    <!-- CHAPTER 1 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 01</span>
+        <span class="sc-chapter-tag">SCM FRICTION ELIMINATION</span>
+      </div>
+      <h2 class="sc-chapter-h2">Eradicating Cross-Border Supply Chain Friction — The Smart Logistics Core</h2>
+      <p class="sc-p">In traditional cross-border trade, coordinating an ocean freight shipment from Incheon to Jakarta or Yiwu to Ho Chi Minh City involves an endless tangle of phone calls, paper bills of lading, manual weight-break calculations, and customs broker markups. Freight forwarders routinely add 15% to 25% in undisclosed handling markups, while packaging mismatches leave 20-foot and 40-foot containers partially empty ("shipping expensive air").</p>
+      <p class="sc-p"><strong>*SC Smart Logistics</strong> solves this through end-to-end algorithmic automation:</p>
+
+      <div class="sc-grid-3">
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">SCM PILLAR 01</div>
+          <h3 class="sc-sub-h3">3D Container Volumetric Optimization</h3>
+          <p class="sc-p">Algorithmic bin-packing software calculates the exact orientation of outer cartons, secondary packaging, and pallet footprints to maximize container cubic capacity ($\eta_{\text{cube}} \ge 96.8\%$).</p>
+        </div>
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">SCM PILLAR 02</div>
+          <h3 class="sc-sub-h3">Bilateral FTA Preferential Duty Engine</h3>
+          <p class="sc-p">Cross-references HS codes against active bilateral trade treaties (AKFTA, RCEP, VKFTA) to automatically draft Form AK/RCEP documents, legally driving customs tariffs down to 0%.</p>
+        </div>
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">SCM PILLAR 03</div>
+          <h3 class="sc-sub-h3">Autonomous Maritime IoT Telemetry</h3>
+          <p class="sc-p">Direct satellite and port API integrations monitor vessel GPS locations, weather routing delays, and customs discharge milestones, updating Qubit ERP arrival dates in real time.</p>
+        </div>
+      </div>
+
+      <!-- BESPOKE INLINE SVG 1 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#090d16"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">SMART LOGISTICS &bull; END-TO-END AUTONOMOUS SCM PIPELINE</text>
+          
+          <!-- 4 PIPELINE BLOCKS -->
+          <g transform="translate(40, 70)">
+            <rect width="200" height="210" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+            <text x="100" y="28" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">1. PRODUCTION &amp; CUBE</text>
+            <circle cx="100" cy="65" r="24" fill="#0284c7"/>
+            <text x="100" y="71" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">3D</text>
+            <text x="20" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Auto-Formulator R1 packaging</text>
+            <text x="20" y="135" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Outer carton bin-packing</text>
+            <text x="20" y="155" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; 40ft HC Cube fill: 96.8%</text>
+            <text x="100" y="195" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Air Volume: &lt; 3.2%</text>
+          </g>
+
+          <!-- ARROW 1 -->
+          <line x1="240" y1="175" x2="270" y2="175" stroke="#38bdf8" stroke-width="2"/>
+
+          <g transform="translate(270, 70)">
+            <rect width="200" height="210" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="100" y="28" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">2. FTA DUTY ENGINE</text>
+            <circle cx="100" cy="65" r="24" fill="#d97706"/>
+            <text x="100" y="71" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">0%</text>
+            <text x="20" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; AKFTA / RCEP Form Match</text>
+            <text x="20" y="135" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Origin Criterion: PSR/CTH</text>
+            <text x="20" y="155" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Tariff Drops: 15% &rarr; 0%</text>
+            <text x="100" y="195" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Instant Certificate of Origin</text>
+          </g>
+
+          <!-- ARROW 2 -->
+          <line x1="470" y1="175" x2="500" y2="175" stroke="#f59e0b" stroke-width="2"/>
+
+          <g transform="translate(500, 70)">
+            <rect width="200" height="210" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+            <text x="100" y="28" fill="#c084fc" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">3. MARITIME IoT TRANSIT</text>
+            <circle cx="100" cy="65" r="24" fill="#7c3aed"/>
+            <text x="100" y="71" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">GPS</text>
+            <text x="20" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Real-time AIS vessel ping</text>
+            <text x="20" y="135" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Cold-chain temp telemetry</text>
+            <text x="20" y="155" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Port congestion forecast</text>
+            <text x="100" y="195" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">ETA Accuracy: &plusmn;2 Hours</text>
+          </g>
+
+          <!-- ARROW 3 -->
+          <line x1="700" y1="175" x2="730" y2="175" stroke="#8b5cf6" stroke-width="2"/>
+
+          <g transform="translate(730, 70)">
+            <rect width="190" height="210" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+            <text x="95" y="28" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">4. BONDED CLEARANCE</text>
+            <circle cx="95" cy="65" r="24" fill="#059669"/>
+            <text x="95" y="71" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">HUB</text>
+            <text x="15" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Pre-customs green lane</text>
+            <text x="15" y="135" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; CCTV stock opname check</text>
+            <text x="15" y="155" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Nearbuy micro-dispatch</text>
+            <text x="95" y="195" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Turnaround: &lt; 4 Hours</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Zero Middleman Forwarder Markup &bull; 100% Paperless API Customs &bull; Real-Time Inventory Visibility</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 2 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 02</span>
+        <span class="sc-chapter-tag">3D PACKING OPTIMIZATION</span>
+      </div>
+      <h2 class="sc-chapter-h2">3D Volumetric Container Cube Optimization &amp; Sachet Packing Dynamics</h2>
+      <p class="sc-p">In bulk consumer and veterinary exports, shipping density is the single greatest determinant of unit profitability. Transporting large bottles of liquid supplement wastes thousands of cubic meters on heavy water weight and protective packaging buffers. Under Founder Priority Project 06, *SC quantizes formulations into compact, ultra-dense micro-sachets (such as the Rp 1,320 Sachet Line) packed into standardized shipping cartons engineered for exact container dimension boundaries:</p>
+
+      <!-- BESPOKE INLINE SVG 2 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#0b1329"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">3D CONTAINER CUBE UTILIZATION &bull; LEGACY vs. *SC SMART LOGISTICS</text>
+          
+          <!-- LEFT: LEGACY CONTAINER (LOOSE PACKING) -->
+          <g transform="translate(60, 70)">
+            <rect width="380" height="210" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="1.5"/>
+            <text x="190" y="26" fill="#fca5a5" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">LEGACY FORWARDER CONTAINER (68% UTILIZATION)</text>
+            
+            <!-- Inefficient Container Layout -->
+            <rect x="30" y="50" width="320" height="110" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+            <rect x="40" y="60" width="70" height="90" fill="#64748b" rx="2"/>
+            <rect x="120" y="60" width="70" height="90" fill="#64748b" rx="2"/>
+            <rect x="200" y="60" width="70" height="90" fill="#64748b" rx="2"/>
+            
+            <!-- Wasted Air Volume -->
+            <rect x="280" y="60" width="60" height="90" fill="rgba(239, 68, 68, 0.25)" stroke="#ef4444" stroke-dasharray="3,3"/>
+            <text x="310" y="110" fill="#fca5a5" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">32% AIR</text>
+            
+            <text x="190" y="185" fill="#ef4444" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Loose Bottle Packaging &bull; Bulky Cardboard Air Buffers &bull; High Freight Penalty</text>
+          </g>
+
+          <!-- RIGHT: *SC SMART LOGISTICS CONTAINER -->
+          <g transform="translate(520, 70)">
+            <rect width="380" height="210" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+            <text x="190" y="26" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">*SC 3D CUBE PACKED (96.8% UTILIZATION)</text>
+            
+            <!-- High Efficiency Layout -->
+            <rect x="30" y="50" width="320" height="110" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+            <rect x="35" y="55" width="48" height="100" fill="#059669" rx="2"/>
+            <rect x="87" y="55" width="48" height="100" fill="#059669" rx="2"/>
+            <rect x="139" y="55" width="48" height="100" fill="#059669" rx="2"/>
+            <rect x="191" y="55" width="48" height="100" fill="#059669" rx="2"/>
+            <rect x="243" y="55" width="48" height="100" fill="#059669" rx="2"/>
+            <rect x="295" y="55" width="48" height="100" fill="#059669" rx="2"/>
+
+            <text x="190" y="185" fill="#34d399" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Standardized S1-S6 Micro-Sachets &bull; 3D Algorithmic Interlocking &bull; Landed Cost: -34%</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Volumetric Max-Fill Density &bull; Lower Carbon Footprint &bull; Unlocks Mass-Market Consumer Price Points</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 3 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 03</span>
+        <span class="sc-chapter-tag">FTA DUTY REDUCTION</span>
+      </div>
+      <h2 class="sc-chapter-h2">Bilateral FTA &amp; HS-Code Preferential Duty Engine</h2>
+      <p class="sc-p">Many international exporters fail to claim bilateral Free Trade Agreement (FTA) benefits because compiling Certificate of Origin documentation is complex and prone to clerical errors. As a result, commercial buyers in Southeast Asia routinely pay 10% to 20% in avoidable customs import duties.</p>
+      <p class="sc-p">Smart Logistics automates bilateral FTA compliance natively:</p>
+
+      <!-- BESPOKE INLINE SVG 3 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#090d16"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">PREFERENTIAL FREE TRADE AGREEMENT (FTA) CLEARING MATRIX</text>
+          
+          <!-- CORRIDOR 1: KOREA -> INDONESIA -->
+          <g transform="translate(60, 75)">
+            <rect width="250" height="200" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="125" y="26" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">KOREA &rarr; INDONESIA (AKFTA / IK-CEPA)</text>
+            <rect x="20" y="45" width="210" height="35" rx="5" fill="#0f172a"/>
+            <text x="125" y="67" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">MFN Baseline Duty: 15.0%</text>
+            <rect x="20" y="90" width="210" height="35" rx="5" fill="#064e3b" stroke="#34d399" stroke-width="1"/>
+            <text x="125" y="112" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">AKFTA / IK-CEPA Rate: 0.0%</text>
+            <text x="20" y="145" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Form AK Auto-Compilation</text>
+            <text x="20" y="160" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Regional Value Content &ge; 40%</text>
+            <text x="125" y="188" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Net Duty Savings: 15.0%</text>
+          </g>
+
+          <!-- CORRIDOR 2: KOREA -> VIETNAM -->
+          <g transform="translate(355, 75)">
+            <rect width="250" height="200" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="125" y="26" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">KOREA &rarr; VIETNAM (VKFTA)</text>
+            <rect x="20" y="45" width="210" height="35" rx="5" fill="#0f172a"/>
+            <text x="125" y="67" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">MFN Baseline Duty: 20.0%</text>
+            <rect x="20" y="90" width="210" height="35" rx="5" fill="#064e3b" stroke="#34d399" stroke-width="1"/>
+            <text x="125" y="112" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">VKFTA Form KV: 0.0%</text>
+            <text x="20" y="145" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Change in Tariff Sub-Heading (CTSH)</text>
+            <text x="20" y="160" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Electronic Customs Data Bridge</text>
+            <text x="125" y="188" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Net Duty Savings: 20.0%</text>
+          </g>
+
+          <!-- CORRIDOR 3: CHINA -> ASEAN -->
+          <g transform="translate(650, 75)">
+            <rect width="250" height="200" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+            <text x="125" y="26" fill="#c084fc" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">CHINA &rarr; ASEAN (RCEP / ACFTA)</text>
+            <rect x="20" y="45" width="210" height="35" rx="5" fill="#0f172a"/>
+            <text x="125" y="67" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">MFN Baseline Duty: 10.0%</text>
+            <rect x="20" y="90" width="210" height="35" rx="5" fill="#064e3b" stroke="#34d399" stroke-width="1"/>
+            <text x="125" y="112" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">RCEP Preferential: 0.0%</text>
+            <text x="20" y="145" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Form E / RCEP Declarations</text>
+            <text x="20" y="160" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Bulk Packaging Foil Clearance</text>
+            <text x="125" y="188" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Net Duty Savings: 10.0%</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Automated Electronic Certificate of Origin Routing &bull; Zero Customs Fine Risk &bull; Maximum Price Competitiveness</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 4 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 04</span>
+        <span class="sc-chapter-tag">MATHEMATICAL FORMULATION</span>
+      </div>
+      <h2 class="sc-chapter-h2">Mathematical Formalism: Landed Cost Optimization &amp; Volumetric Efficiency</h2>
+      <p class="sc-p">In Qubit ERP, total landed freight cost is treated as a multivariable optimization problem. Smart Logistics minimizes landed unit cost ($C_{\text{landed}}$) while maximizing volumetric container density:</p>
+
+      <div class="sc-math-box">
+        <div class="sc-formula">C_{\text{landed}}(Q) = \left[ C_{\text{FOB}} + \frac{F_{\text{container}}}{\eta_{\text{cube}} \cdot V_{\text{TEU}} \cdot \rho_{\text{SKU}}} \right] \cdot \left(1 + \tau_{\text{duty}}(1 - \delta_{\text{FTA}})\right) \cdot \text{FX}_{\text{spot}}</div>
+        <div class="sc-math-desc">Where $F_{\text{container}}$ is the ocean spot freight rate, $\eta_{\text{cube}}$ is the 3D packing fill ratio ($\ge 0.968$), $\tau_{\text{duty}}$ is the standard import tariff, and $\delta_{\text{FTA}} = 1.0$ when preferential treaty compliance is verified.</div>
+        <div class="sc-math-code">\eta_{\text{cube}} = \frac{\sum_{i=1}^{N} L_i W_i H_i}{L_{\text{container}} W_{\text{container}} H_{\text{container}}} \ge 0.968 \quad \text{and} \quad \Delta \text{Savings} = C_{\text{legacy}} - C_{\text{landed}} \ge 34.2\%</div>
+        <div class="sc-math-desc">By increasing packing density from the 68% industry average to 96.8% and executing zero-tariff FTA certificates, landed product unit costs are driven down by over 34%, creating unassailable commercial margins on Scarlet AI and Qubit Biz.</div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 5 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 05</span>
+        <span class="sc-chapter-tag">PERFORMANCE MATRIX</span>
+      </div>
+      <h2 class="sc-chapter-h2">Comparative Matrix: Legacy Freight Forwarding vs. *SC Smart Logistics</h2>
+      <p class="sc-p">The following performance matrix contrasts traditional freight forwarders with our autonomous software core:</p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Logistics Dimension</th>
+            <th>Traditional Freight Forwarding (Legacy 3PL)</th>
+            <th>*SC Smart Logistics (Qubit ERP Team 04)</th>
+            <th>Strategic Value Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Landed Cost Quote Latency</strong></td>
+            <td>48 to 72 hours of email chains and manual forwarder inquiries</td>
+            <td><strong>&lt; 4.2 seconds</strong> via automated container dimension &amp; tariff microservices</td>
+            <td>Instant conversational closing quotes on Scarlet AI and Qubit Biz</td>
+          </tr>
+          <tr>
+            <td><strong>Container Space Utilization</strong></td>
+            <td>65% &ndash; 72% average (loose carton packing, unoptimized air gaps)</td>
+            <td><strong>96.8% volumetric fill ratio</strong> via 3D computational bin-packing</td>
+            <td>34% reduction in ocean freight cost allocated per finished sachet/box</td>
+          </tr>
+          <tr>
+            <td><strong>Preferential FTA Execution</strong></td>
+            <td>Often skipped due to manual paperwork burdens, forcing buyers to pay 15% MFN tax</td>
+            <td><strong>100% automated Certificate of Origin drafting</strong> (AKFTA / RCEP / VKFTA)</td>
+            <td>Legally eliminates 100% of avoidable import duties for regional distributors</td>
+          </tr>
+          <tr>
+            <td><strong>Customs Tracking &amp; Telemetry</strong></td>
+            <td>Manual phone calls to port agents; blind 7-day customs clearance latency</td>
+            <td><strong>Continuous IoT AIS vessel pings &amp; port EDI webhook status</strong></td>
+            <td>Real-time inventory arrival predictions synchronized with Qubit ERP</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHAPTER 6 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 06</span>
+        <span class="sc-chapter-tag">TRADE CORRIDORS</span>
+      </div>
+      <h2 class="sc-chapter-h2">Key Trade Corridors, Transit Windows &amp; Active Bilateral FTAs</h2>
+      <p class="sc-p">Smart Logistics coordinates continuous shipping loops across our primary manufacturing and consumer hubs:</p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Shipping Corridor</th>
+            <th>Standard Ocean Transit</th>
+            <th>Preferential FTA Treaty</th>
+            <th>Primary Cargo &amp; SCM Specialization</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Busan / Incheon &rarr; Jakarta (Tanjung Priok)</strong></td>
+            <td>12 &ndash; 14 Days</td>
+            <td>AKFTA / IK-CEPA (Form AK)</td>
+            <td>K-Beauty cosmetics, vet bio-actives, sachet film rolls</td>
+          </tr>
+          <tr>
+            <td><strong>Busan / Incheon &rarr; Ho Chi Minh (Cat Lai)</strong></td>
+            <td>6 &ndash; 8 Days</td>
+            <td>VKFTA / AKFTA (Form KV)</td>
+            <td>Functional skincare OEM/ODM, veterinary nutrition</td>
+          </tr>
+          <tr>
+            <td><strong>Yiwu / Ningbo &rarr; Jakarta / Surabaya</strong></td>
+            <td>10 &ndash; 12 Days</td>
+            <td>RCEP / ACFTA (Form E)</td>
+            <td>Bulk aluminum foil packaging, automated formulator parts</td>
+          </tr>
+          <tr>
+            <td><strong>Singapore &rarr; Jakarta / Ho Chi Minh</strong></td>
+            <td>3 &ndash; 5 Days</td>
+            <td>ATIGA (ASEAN Trade in Goods)</td>
+            <td>Treasury-cleared bio-pharmaceuticals, urgent air freight</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHAPTER 7 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 07</span>
+        <span class="sc-chapter-tag">MONETIZATION &amp; MCP TOLLS</span>
+      </div>
+      <h2 class="sc-chapter-h2">Dual-Return Monetization: MCP Logistics Brokerage &amp; SCM SaaS</h2>
+      <p class="sc-p">Smart Logistics is packaged as an independent commercial software product:</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">MONETIZATION CHANNEL 01</div>
+          <h3 class="sc-sub-h3">Enterprise SCM SaaS for Global Importers</h3>
+          <p class="sc-p">External importers, regional e-commerce aggregators, and clinic chains license the Smart Logistics engine to manage their own cross-border freight pipelines. Our automated 3D packing tools and FTA certification generators save clients tens of thousands in freight overhead while generating recurring software SaaS fees.</p>
+        </div>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">MONETIZATION CHANNEL 02</div>
+          <h3 class="sc-sub-h3">Model Context Protocol (MCP) Freight Quoting</h3>
+          <p class="sc-p">Autonomous e-commerce purchasing agents query *SC Smart Logistics endpoints via standardized MCP tools to obtain binding container shipping rates, preferential duty rates, and transit ETAs with automated micro-tolls billed via HTTP 402 protocols.</p>
         </div>
       </div>
     </section>
 
-    <section class="sc-sec">
-      <div><span class="sc-kicker">STRATEGIC SYNERGY &amp; GOVERNANCE</span></div>
-      <h2 class="sc-h2">Integration Within the Signal Star Universe (*SC)</h2>
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <h3 class="sc-h3">1. Core Architecture &amp; Technical Integration</h3>
-          <p class="sc-p">Connected across our 12-domain semantic web matrix and 8 international bases (Korea SCK, Indonesia SCI, Singapore SCS, USA SCU, Vietnam SCV, India SCIND, China SCC, Japan SCJ). Every workflow is tracked transparently via standardized Google Workspace Console, Monthly Sales, and Dashboard ledgers.</p>
-        </div>
-        <div class="sc-card-line">
-          <h3 class="sc-h3">2. Risk Firewall &amp; Settlement Security</h3>
-          <p class="sc-p">Protected by the *SC Triple Control Towers and Dual-Track Legal Firewall (isolating SC Index holding IP from Biz Galaxy commercial liabilities). Transactions leverage 3-Month Rolling Purchasing Forecasts (RPF), K-SURE export credit guarantees, and automated 70/30 PG webhook split settlements.</p>
-        </div>
+    <!-- CHAPTER 8 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 08</span>
+        <span class="sc-chapter-tag">LEGAL FIREWALL</span>
       </div>
-      <div class="sc-callout"><strong>*SC - SISTAR COMPANY | One Spark, Infinite Galaxifying:</strong> Powered by the Qubit Algorithm&trade;, *SC intelligence-core, Scarlet AI, Qubit Biz, and the Biz Galaxy constellation.<br/>Corporate Portal: https://sistarcompany.com &bull; Executive Contact: DennyKu (denniiku@sistarcompany.com)</div>
+      <h2 class="sc-chapter-h2">Dual-Track Legal Firewall &amp; Maritime Risk Mitigation</h2>
+      <p class="sc-p">All freight booking liabilities and customs covenants are strictly isolated:</p>
+
+      <div class="sc-dossier-card">
+        <h3 class="sc-sub-h3">Carrier Liability &amp; Core IP Ring-Fencing</h3>
+        <p class="sc-p">All shipping contracts, maritime charter parties, and bills of lading are executed through localized logistics operating SPVs. Under the *SC Dual-Track Legal Firewall, marine cargo claims, demurrage disputes, or customs holds cannot compromise the core algorithmic IP or holding balance sheet of *SC.</p>
+      </div>
+
+      <div class="sc-callout">
+        <div class="sc-callout-title">*SC - SISTAR COMPANY &bull; One Spark, Infinite Galaxifying</div>
+        <p class="sc-p">Powered by the Qubit Algorithm&trade;, *SC Intelligence-Core, Scarlet AI, Qubit Biz, and the Biz Galaxy Constellation.<br/>
+        Executive Contact: DennyKu (denniiku@sistarcompany.com) &bull; Official Portal: https://sistarcompany.com</p>
+      </div>
     </section>
   </main>
 </body>

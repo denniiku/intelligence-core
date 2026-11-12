@@ -4,14 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=block" rel="stylesheet">
-  <title>*SC | AI Centers - intelligence core - biz intelligence - ai centers</title>
-  <meta name="description" content="*SC (SISTAR Company) - AI Centers : 24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP." />
+  <title>*SC | AI Centers — *SC AI Centers International & Distributed Global Intelligence Grid</title>
+  <meta name="description" content="Official Institutional Monograph of Domain 03 (intelligence-core): *SC AI Centers International operates as the decentralized cognitive grid across 8 global bases, powering autonomous multi-model routing, overnight data harvesting, and localized trade intelligence." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "*SC | AI Centers",
-    "description": "24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.",
+    "@type": "TechArticle",
+    "headline": "*SC | AI Centers — *SC AI Centers International & Distributed Global Intelligence Grid",
+    "description": "Comprehensive institutional monograph on *SC AI Centers International: 8-country sovereign mesh, multi-model cognitive routing, nocturnal data factories, and edge-to-cloud intelligence architecture.",
+    "author": {
+      "@type": "Organization",
+      "name": "*SC - SISTAR COMPANY",
+      "url": "https://sistarcompany.com"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "*SC - SISTAR COMPANY",
@@ -19,206 +24,808 @@
     }
   }
   </script>
-  <style>html,body{background:linear-gradient(to right,#f0acf7,#acf7f0,#f7f0ac);margin:0;padding:0;}body.sc-nav-open{padding-left:236px;}body.sc-nav-folded{padding-left:64px;}@media(max-width:768px){body.sc-nav-open,body.sc-nav-folded{padding-left:0!important;}}</style>
   <script>
     (function() {
       var p = location.pathname.replace(/\\/g, "/");
       var base = "/common_assets/";
       if (location.protocol === "file:") {
         var i = p.toLowerCase().indexOf("/sc_web/");
-        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "./common_assets/";
+        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "../../common_assets/";
       }
       document.write("<link rel=\"stylesheet\" href=\"" + base + "common_new.css?v=2.2\">");
-      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js\" defer><\/script>");
+      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js?v=5.0\" defer><\/script>");
     })();
   </script>
   <style>
-    .sc-auto-page {
+    html, body {
+      background: linear-gradient(to right, #f0acf7, #acf7f0, #f7f0ac);
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.sc-nav-open { padding-left: 236px; }
+    body.sc-nav-folded { padding-left: 64px; }
+    @media (max-width: 768px) {
+      body.sc-nav-open, body.sc-nav-folded { padding-left: 0 !important; }
+    }
+
+    .sc-monograph {
       box-sizing: border-box;
       width: 100%;
-      max-width: min(1360px, 95%);
-      padding: clamp(40px, 5vh, 68px) clamp(24px, 4.5vw, 72px) 120px;
-      font-family: "Inter", sans-serif;
-      color: #0f172a;
+      max-width: min(1380px, 95%);
+      margin: 0 auto;
+      padding: clamp(36px, 5vh, 68px) clamp(24px, 5vw, 76px) 120px;
     }
-    main h1, main h2, main h3, main h4,
-    main p, main .sc-lead, main .sc-p,
-    main .sc-route, main .sc-sec,
-    main .sc-card-line, main .sc-card-emerald {
-      margin-left: 0 !important;
-      padding-left: 0 !important;
-      text-indent: 0 !important;
-      text-align: left !important;
+    .sc-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+      border-bottom: 1.5px solid rgba(15, 23, 42, 0.15);
     }
     .sc-route {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.88rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
       font-weight: 600;
       color: #475569;
-      letter-spacing: 0.04em;
-      margin: 0 0 18px 0;
+      margin: 0;
+      letter-spacing: 0.03em;
       text-transform: lowercase;
     }
-    .sc-sec {
-      padding: 52px 0;
-      border-bottom: 1.5px solid rgba(15, 23, 42, 0.14);
+
+    /* === CHAPTER & PAGE STRUCTURE === */
+    .sc-chapter { margin-bottom: 48px; padding: 12px 0; }
+    .sc-chapter-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid #0f172a;
     }
-    .sc-sec:last-of-type { border-bottom: none; }
-    .sc-kicker {
-      display: inline-block;
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.78rem;
+    .sc-chapter-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #0f5132;
-      background: rgba(22, 135, 101, 0.15);
-      padding: 5px 12px;
-      border-radius: 4px;
-      margin: 0 0 14px 0;
     }
-    .sc-h1 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(2.1rem, 3.6vw, 3.1rem);
-      font-weight: 700;
-      color: #0f172a;
-      letter-spacing: -0.025em;
-      line-height: 1.12;
-      margin: 0 0 14px 0;
-    }
-    .sc-sub {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.15rem, 1.6vw, 1.38rem);
+    .sc-chapter-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
       font-weight: 600;
-      color: #0f5132;
-      line-height: 1.4;
-      margin: 0 0 24px 0;
+      color: #64748b;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
-    .sc-h2 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.45rem, 2.2vw, 1.95rem);
+    .sc-doc-h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.1rem, 3.6vw, 3.05rem);
       font-weight: 700;
       color: #0f172a;
-      letter-spacing: -0.02em;
-      line-height: 1.25;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      margin: 0 0 20px 0;
+    }
+    .sc-chapter-h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.55rem, 2.4vw, 2.05rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.22;
+      letter-spacing: -0.025em;
       margin: 0 0 18px 0;
     }
-    .sc-h3 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1.15rem;
+    .sc-sub-h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
       font-weight: 700;
       color: #0f172a;
       margin: 0 0 10px 0;
       line-height: 1.35;
     }
     .sc-lead {
-      font-size: clamp(1.04rem, 1.22vw, 1.14rem);
-      line-height: 1.82;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 500;
       color: #1e293b;
-      margin: 0 0 34px 0;
+      line-height: 1.82;
+      margin: 0 0 24px 0;
     }
     .sc-p {
-      font-size: 0.97rem;
-      line-height: 1.8;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.99rem;
       color: #334155;
-      margin: 0;
+      line-height: 1.82;
+      margin: 0 0 16px 0;
     }
-    /* Spacious 2-Column (2x2) Grid Layout */
-    .sc-grid-2x2 {
+
+    /* === EXECUTIVE DARK HERO & METRICS === */
+    .sc-exec-hero {
+      background: linear-gradient(135deg, #090d16 0%, #0f172a 55%, #064e3b 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: clamp(28px, 3.8vw, 44px);
+      margin: 22px 0 32px 0;
+      border: 1px solid rgba(74, 222, 128, 0.3);
+    }
+    .sc-exec-hero h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 14px 0;
+      line-height: 1.3;
+    }
+    .sc-exec-hero p {
+      font-size: 1.02rem;
+      color: #e2e8f0;
+      line-height: 1.78;
+      margin: 0 0 24px 0;
+    }
+    .sc-kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    @media (max-width: 900px) {
+      .sc-kpi-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    .sc-kpi-cell {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .sc-kpi-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.42rem;
+      font-weight: 700;
+      color: #4ade80;
+      margin-bottom: 4px;
+    }
+    .sc-kpi-desc {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    /* === EDITORIAL GRIDS & PANELS === */
+    .sc-grid-2 {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 48px;
-      row-gap: 38px;
-      margin-top: 28px;
+      gap: 28px;
+      margin: 24px 0;
     }
-    @media (max-width: 760px) {
-      .sc-grid-2x2 { grid-template-columns: 1fr; }
+    .sc-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 24px 0;
     }
-    .sc-card-line {
-      padding-top: 20px !important;
-      border-top: 2px solid rgba(15, 23, 42, 0.24) !important;
+    @media (max-width: 860px) {
+      .sc-grid-2, .sc-grid-3 { grid-template-columns: 1fr; }
     }
-    .sc-card-emerald {
-      padding-top: 20px !important;
-      border-top: 3px solid #168765 !important;
+    .sc-panel {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-top: 4px solid #0f172a;
+      border-radius: 12px;
+      padding: 24px 26px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
     }
-    .sc-num-label {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.82rem;
+    .sc-panel.emerald { border-top-color: #0f5132; background: #f8fafc; }
+    .sc-panel.blue { border-top-color: #1d4ed8; }
+    .sc-panel.purple { border-top-color: #6d28d9; }
+    .sc-panel-kicker {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
       font-weight: 700;
-      color: #0f5132;
-      text-transform: uppercase;
       letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #0f5132;
       margin-bottom: 8px;
     }
-    .sc-callout {
-      margin-top: 38px;
-      padding: 20px 24px !important;
-      border-left: 4px solid #0f5132;
-      background: rgba(255, 255, 255, 0.34);
-      font-size: 0.98rem;
-      font-weight: 500;
-      color: #0f172a;
-      line-height: 1.72;
+    .sc-panel.blue .sc-panel-kicker { color: #1d4ed8; }
+    .sc-panel.purple .sc-panel-kicker { color: #6d28d9; }
+
+    /* === FORMULA & ARCHITECTURE BLOCKS === */
+    .sc-math-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 12px;
+      padding: 22px 26px;
+      margin: 20px 0;
+      border-left: 4px solid #10b981;
     }
-    @media print {
-      html, body, main, .sc-auto-page { background: #ffffff !important; padding-left: 0 !important; opacity: 1 !important; }
-      #sc-left-nav, .sc-nav-toggle { display: none !important; }
-      .sc-card-line, .sc-card-emerald, .sc-callout { break-inside: avoid !important; page-break-inside: avoid !important; }
+    .sc-math-code {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 1.04rem;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 7px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 8px 0 12px 0;
+    }
+
+    /* === TABLES === */
+    .sc-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #cbd5e1;
+    }
+    .sc-table th {
+      background: #0f172a;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-align: left;
+      padding: 14px 18px;
+      letter-spacing: 0.03em;
+    }
+    .sc-table td {
+      padding: 15px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.94rem;
+      color: #1e293b;
+      line-height: 1.65;
+      vertical-align: top;
+    }
+    .sc-table tr:last-child td { border-bottom: none; }
+    .sc-table tr:nth-child(even) td { background: #f8fafc; }
+
+    /* === CALLOUTS & DOSSIER HEADERS === */
+    .sc-callout {
+      background: #f0fdf4;
+      border-left: 5px solid #0f5132;
+      border-radius: 0 12px 12px 0;
+      padding: 22px 26px;
+      margin: 24px 0;
+    }
+    .sc-callout-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0f5132;
+      margin-bottom: 6px;
+    }
+    .sc-dossier-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 8px rgba(15,23,42,0.03);
+    }
+    .sc-svg-wrap {
+      margin: 28px 0;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+      overflow-x: auto;
+    }
+    .sc-svg-wrap svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 960px;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body class="sc-nav-open">
-  <main class="sc-auto-page">
-    <p class="sc-route">intelligence core - biz intelligence - ai centers</p>
+  <main class="sc-monograph">
+    <div class="sc-top-bar">
+      <p class="sc-route">intelligence core - biz intelligence - ai centers</p>
+    </div>
 
-    <section class="sc-sec" style="padding-top: 12px;">
-      <div><span class="sc-kicker">ENTERPRISE BRAIN &bull; *SC INTELLIGENCE CORE</span></div>
-      <h1 class="sc-h1">*SC - AI Centers</h1>
-      <p class="sc-sub">24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.</p>
-      <p class="sc-lead">As part of the <strong>*SC intelligence-core</strong>, <strong>AI Centers</strong> functions as the autonomous central nervous system of the Signal Star Universe. Operating around the clock while human executives sleep, it harvests global market data, grounds strategic decisions in verified facts, and automates all 8 corporate departments at near- fixed cost.</p>
+    <!-- DOCUMENT HEADER -->
+    <header style="margin-bottom: 36px;">
+      <div class="sc-chapter-num">03. INTELLIGENCE-CORE &bull; BIZ INTELLIGENCE</div>
+      <h1 class="sc-doc-h1">*SC AI Centers International — The Distributed Global Cognitive Grid</h1>
+      <p class="sc-lead">As the sovereign operational nerve center of *SC (SISTAR Company / Signal Star Universe), <strong>*SC AI Centers International</strong> deploys a federated cognitive mesh across 8 sovereign international bases (Korea SCK, Indonesia SCI, Vietnam SCV, Singapore SCS, USA SCU, China SCC, Japan SCJ, and India SCIND). Combining multi-model compute routing, nocturnal scraping clusters, and edge-vision warehousing telemetry, AI Centers empower independent market operators to execute global trade at the scale of multinational conglomerates.</p>
+    </header>
 
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <div class="sc-num-label">01 &bull; WHAT IT IS (CORE DEFINITION)</div>
-          <h2 class="sc-h3">Overnight Data Factory (10 PM - 8 AM)</h2>
-          <p class="sc-p">Headless Playwright/Apify scrapers autonomously harvest global wholesale prices (1688/Alibaba), Shopee/Tokopedia competitor SKUs, HS-code tariffs, and regulatory updates every night.</p>
+    <!-- EXECUTIVE HERO -->
+    <div class="sc-exec-hero">
+      <h3>Executive Architectural Synthesis: The 8-Base Sovereign Cognitive Mesh</h3>
+      <p>Generic Silicon Valley AI laboratories concentrate large models inside centralized US cloud data centers, creating severe latency bottlenecks, local regulatory ignorance, and massive compute markups. *SC AI Centers International distributes cognitive processing directly across 8 operational trade jurisdictions—combining dynamic multi-LLM arbitrage (Gemini 2.5 Pro, Claude 3.7 Sonnet, DeepSeek-R1) with hyper-local trade customs datasets, zero-hallucination vector indexing, and automated 70/30 payment split clearing.</p>
+      <div class="sc-kpi-strip">
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">8 Bases</div>
+          <div class="sc-kpi-desc">Sovereign Edge Hubs (SCK, SCI, SCV, SCS, SCU, SCC, SCJ, SCIND)</div>
         </div>
-
-        <div class="sc-card-line">
-          <div class="sc-num-label">02 &bull; WHY WE DO IT (MARKET OPPORTUNITY)</div>
-          <h2 class="sc-h3">Dual-Engine Vector RAG (NotebookLM + Dify)</h2>
-          <p class="sc-p">Embeds nightly market streams alongside internal Google Drive/Keep memos into Supabase pgvector and NotebookLM repositories, delivering citation-backed 8:00 AM executive briefs.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">&lt; 180ms</div>
+          <div class="sc-kpi-desc">Global Multi-Model Cognitive Arbitration Latency</div>
         </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">03 &bull; HOW IT WORKS (OPERATIONAL MECHANISM)</div>
-          <h2 class="sc-h3">Qubit ERP &amp; CCTV Vision Stock Opname</h2>
-          <p class="sc-p">Automates Finance/VAT, HR (25th payouts), Sales/CRM, and RA natively on Google Workspace, while CCTV + Gemini Vision AI counts warehouse pallets and sachets in real time.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">100%</div>
+          <div class="sc-kpi-desc">Localized Regulatory Coverage (BPOM, FDA, MFDS, PMDA)</div>
         </div>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">24/7</div>
+          <div class="sc-kpi-desc">Unmanned Nocturnal Market Harvesting &amp; Briefing</div>
+        </div>
+      </div>
+    </div>
 
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">04 &bull; REVENUE MODEL &amp; EXPECTED ROI</div>
-          <h2 class="sc-h3">Dual-Return SaaS &amp; MCP API Monetization</h2>
-          <p class="sc-p">Eliminates 100% of internal ERP/admin licensing costs while generating external B2B revenue through custom enterprise RAG builds, Zoho/Workspace ERP SaaS, and MCP Server agent query tolls.</p>
+    <!-- CHAPTER 1 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 01</span>
+        <span class="sc-chapter-tag">GLOBAL TOPOLOGY</span>
+      </div>
+      <h2 class="sc-chapter-h2">The Global AI Centers Grid — Decentralized Intelligence Across 8 International Bases</h2>
+      <p class="sc-p">Cross-border trade and physical e-commerce cannot be governed by a monolithic server in California. When an Indonesian importer clears cosmetics through Tanjung Priok port, they require instant grounding in BPOM notification numbers, Indonesian Rupiah (IDR) currency spot hedges, and halal certification mandates. When a Korean bio-health laboratory exports vet formulations to Tokyo, they require PMDA veterinary drug standards and JPY clearing precision.</p>
+      <p class="sc-p">To resolve this jurisdictional friction, <strong>*SC AI Centers International</strong> operates 8 specialized sovereign bases connected via a high-speed vector synchronization mesh:</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">ASIAN HUBS 01-04</div>
+          <h3 class="sc-sub-h3">Manufacturing, Regulatory &amp; ASEAN SCM</h3>
+          <p class="sc-p"><strong>Korea (SCK — Seoul/Incheon):</strong> Bio-health R&amp;D formulation, K-Beauty OEM/ODM co-packing, and MFDS compliance hub.<br/>
+          <strong>Indonesia (SCI — Jakarta/Surabaya):</strong> Southeast Asian commercial gateway, BPOM regulatory filing engine, and mass-market sachet distribution.<br/>
+          <strong>Vietnam (SCV — Ho Chi Minh/Hanoi):</strong> Fast-fashion, packaging plastics, agricultural bulk trade, and MOH registration.<br/>
+          <strong>Singapore (SCS — Central):</strong> Treasury orchestration, sovereign trade finance, and international holding capital clearing.</p>
+        </div>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">GLOBAL HUBS 05-08</div>
+          <h3 class="sc-sub-h3">Global Markets, Tech &amp; Bulk Procurement</h3>
+          <p class="sc-p"><strong>USA (SCU — Los Angeles/New York):</strong> FDA OTC registration, North American Amazon distribution, and institutional venture investor relations.<br/>
+          <strong>China (SCC — Yiwu/Guangzhou/Shenzhen):</strong> 1688 factory raw materials, container consolidation, and mold tooling telemetry.<br/>
+          <strong>Japan (SCJ — Tokyo/Osaka):</strong> Precision veterinary diagnostics, PMDA clinical trials, and premium retail distribution.<br/>
+          <strong>India (SCIND — Mumbai/Bengaluru):</strong> Bulk active pharmaceutical ingredients (API), software engineering, and South Asian commerce.</p>
+        </div>
+      </div>
+
+      <!-- BESPOKE INLINE SVG 1 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#090d16"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">*SC AI CENTERS INTERNATIONAL &bull; 8-BASE SOVEREIGN INTELLIGENCE MESH</text>
+          
+          <!-- CENTRAL CORE -->
+          <circle cx="480" cy="180" r="54" fill="#0f172a" stroke="#10b981" stroke-width="2.5"/>
+          <text x="480" y="174" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">*SC AI CORE</text>
+          <text x="480" y="190" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Sovereign Mesh</text>
+
+          <!-- 8 BASE NODES IN A RING -->
+          <!-- 1. SCK Korea -->
+          <g transform="translate(420, 60)">
+            <circle cx="60" cy="20" r="32" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="60" y="16" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">SCK &bull; Korea</text>
+            <text x="60" y="30" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="8" text-anchor="middle">R&amp;D &bull; MFDS</text>
+            <line x1="60" y1="52" x2="60" y2="70" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <!-- 2. SCI Indonesia -->
+          <g transform="translate(640, 90)">
+            <circle cx="40" cy="20" r="32" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+            <text x="40" y="16" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">SCI &bull; Indonesia</text>
+            <text x="40" y="30" fill="#10b981" font-family="'Inter', sans-serif" font-size="8" text-anchor="middle">BPOM &bull; S1-S6</text>
+            <line x1="20" y1="40" x2="-80" y2="70" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <!-- 3. SCV Vietnam -->
+          <g transform="translate(710, 180)">
+            <circle cx="35" cy="20" r="32" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="35" y="16" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">SCV &bull; Vietnam</text>
+            <text x="35" y="30" fill="#f59e0b" font-family="'Inter', sans-serif" font-size="8" text-anchor="middle">MOH &bull; SCM</text>
+            <line x1="5" y1="20" x2="-140" y2="0" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <!-- 4. SCS Singapore -->
+          <g transform="translate(640, 260)">
+            <circle cx="40" cy="20" r="32" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+            <text x="40" y="16" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">SCS &bull; SG</text>
+            <text x="40" y="30" fill="#8b5cf6" font-family="'Inter', sans-serif" font-size="8" text-anchor="middle">Treasury &bull; IP</text>
+            <line x1="20" y1="5" x2="-80" y2="-40" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <!-- 5. SCU USA -->
+          <g transform="translate(420, 275)">
+            <circle cx="60" cy="20" r="32" fill="#1e293b" stroke="#ef4444" stroke-width="1.5"/>
+            <text x="60" y="16" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">SCU &bull; USA</text>
+            <text x="60" y="30" fill="#ef4444" font-family="'Inter', sans-serif" font-size="8" text-anchor="middle">FDA &bull; VC Hub</text>
+            <line x1="60" y1="-12" x2="60" y2="-40" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <!-- 6. SCC China -->
+          <g transform="translate(200, 260)">
+            <circle cx="40" cy="20" r="32" fill="#1e293b" stroke="#f97316" stroke-width="1.5"/>
+            <text x="40" y="16" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">SCC &bull; China</text>
+            <text x="40" y="30" fill="#f97316" font-family="'Inter', sans-serif" font-size="8" text-anchor="middle">1688 &bull; Tooling</text>
+            <line x1="60" y1="5" x2="220" y2="-40" stroke="#f97316" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <!-- 7. SCJ Japan -->
+          <g transform="translate(130, 180)">
+            <circle cx="35" cy="20" r="32" fill="#1e293b" stroke="#ec4899" stroke-width="1.5"/>
+            <text x="35" y="16" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">SCJ &bull; Japan</text>
+            <text x="35" y="30" fill="#ec4899" font-family="'Inter', sans-serif" font-size="8" text-anchor="middle">PMDA &bull; Vet Bio</text>
+            <line x1="65" y1="20" x2="295" y2="0" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <!-- 8. SCIND India -->
+          <g transform="translate(200, 90)">
+            <circle cx="40" cy="20" r="32" fill="#1e293b" stroke="#14b8a6" stroke-width="1.5"/>
+            <text x="40" y="16" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">SCIND &bull; India</text>
+            <text x="40" y="30" fill="#14b8a6" font-family="'Inter', sans-serif" font-size="8" text-anchor="middle">API &bull; Dev Core</text>
+            <line x1="60" y1="40" x2="220" y2="70" stroke="#14b8a6" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+
+          <text x="480" y="325" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Cryptographically Isolated Jurisdictional Nodes &bull; High-Speed pgvector State Sync &bull; Sub-Second Mesh Consensus</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 2 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 02</span>
+        <span class="sc-chapter-tag">COGNITIVE ARBITRAGE</span>
+      </div>
+      <h2 class="sc-chapter-h2">Multi-Model Cognitive Routing &amp; Compute Economics</h2>
+      <p class="sc-p">In commercial production, treating all AI tasks uniformly destroys operational margins. Calling frontier reasoning models ($15 to $75 per million tokens) for simple customer greetings or SKU price lookups is financial suicide; conversely, utilizing cheap 8B parameter models for multi-jurisdictional tax structuring or BPOM regulatory dossiers yields disastrous hallucinations.</p>
+      <p class="sc-p">Each <strong>*SC AI Center</strong> runs a dynamic, low-latency Cognitive Router that classifies incoming tasks into three deterministic computational tiers:</p>
+
+      <div class="sc-grid-3">
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">TIER 1 &bull; FAST ROUTE</div>
+          <h3 class="sc-sub-h3">Low-Latency Conversational Closers</h3>
+          <p class="sc-p">Executed via Gemini 2.5 Flash / Claude 3.5 Haiku (&lt; 250ms Time-to-First-Token). Handles high-volume customer inquiries, order status tracking, and Ms. Scarlet WhatsApp/Zalo interactive product recommendations.</p>
+        </div>
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">TIER 2 &bull; FACTUAL RAG</div>
+          <h3 class="sc-sub-h3">Citation-Constrained Knowledge Retrieval</h3>
+          <p class="sc-p">Executed via NotebookLM + Supabase pgvector with strict cosine similarity gating. Answers complex supplier trade questions, HS-code duty lookups, and warehouse stock levels with 100% verifiable source citations.</p>
+        </div>
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">TIER 3 &bull; REASONING DESK</div>
+          <h3 class="sc-sub-h3">Complex Multi-Hop Trade Structuring</h3>
+          <p class="sc-p">Executed via DeepSeek-R1 / Gemini 2.5 Pro. Formulates 36-month corporate pro-formas, calculates 3-Month Rolling Purchasing Forecasts (RPF), and drafts international commercial contracts under bilateral trade rules.</p>
+        </div>
+      </div>
+
+      <!-- BESPOKE INLINE SVG 2 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#0b1329"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">MULTI-MODEL COGNITIVE ROUTER &bull; DYNAMIC COMPUTE ARBITRAGE</text>
+          
+          <!-- INCOMING REQUEST -->
+          <g transform="translate(60, 110)">
+            <rect width="180" height="120" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="90" y="30" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">INCOMING TASK</text>
+            <text x="90" y="55" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">WhatsApp / Web / ERP</text>
+            <text x="90" y="75" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Commercial Intent Stream</text>
+            <text x="90" y="100" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">&gt; Embedding Vector</text>
+          </g>
+
+          <line x1="240" y1="170" x2="330" y2="170" stroke="#38bdf8" stroke-width="2"/>
+          <text x="285" y="160" fill="#38bdf8" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">CLASSIFY</text>
+
+          <!-- ROUTING ENGINE -->
+          <g transform="translate(330, 80)">
+            <rect width="260" height="180" rx="10" fill="#1e293b" stroke="#c084fc" stroke-width="2"/>
+            <text x="130" y="26" fill="#c084fc" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">DYNAMIC COGNITIVE ROUTER</text>
+            
+            <rect x="20" y="45" width="220" height="32" rx="5" fill="#0f172a" stroke="#6d28d9" stroke-width="1"/>
+            <text x="130" y="66" fill="#e9d5ff" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Complexity Score ($\mathcal{C} &lt; 0.3$)</text>
+
+            <rect x="20" y="85" width="220" height="32" rx="5" fill="#0f172a" stroke="#6d28d9" stroke-width="1"/>
+            <text x="130" y="106" fill="#e9d5ff" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Grounding Gating ($\text{sim} \ge 0.82$)</text>
+
+            <rect x="20" y="125" width="220" height="32" rx="5" fill="#0f172a" stroke="#6d28d9" stroke-width="1"/>
+            <text x="130" y="146" fill="#e9d5ff" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Multi-Hop Reasoning ($\mathcal{C} \ge 0.7$)</text>
+          </g>
+
+          <!-- ARROWS TO 3 TIERS -->
+          <line x1="590" y1="110" x2="680" y2="90" stroke="#34d399" stroke-width="1.5"/>
+          <line x1="590" y1="170" x2="680" y2="170" stroke="#38bdf8" stroke-width="1.5"/>
+          <line x1="590" y1="230" x2="680" y2="250" stroke="#f59e0b" stroke-width="1.5"/>
+
+          <!-- 3 TARGET TIERS -->
+          <!-- T1 -->
+          <g transform="translate(680, 65)">
+            <rect width="220" height="50" rx="6" fill="#064e3b" stroke="#34d399" stroke-width="1"/>
+            <text x="110" y="22" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">TIER 1 &bull; FLASH CLOSERS</text>
+            <text x="110" y="38" fill="#a7f3d0" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Gemini 2.5 Flash &bull; &lt;250ms &bull; $0.0001/req</text>
+          </g>
+
+          <!-- T2 -->
+          <g transform="translate(680, 145)">
+            <rect width="220" height="50" rx="6" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1"/>
+            <text x="110" y="22" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">TIER 2 &bull; ZERO-HALLUCINATION RAG</text>
+            <text x="110" y="38" fill="#bae6fd" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">NotebookLM + pgvector &bull; Exact Citations</text>
+          </g>
+
+          <!-- T3 -->
+          <g transform="translate(680, 225)">
+            <rect width="220" height="50" rx="6" fill="#451a03" stroke="#f59e0b" stroke-width="1"/>
+            <text x="110" y="22" fill="#f59e0b" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">TIER 3 &bull; REASONING DEEP DIVE</text>
+            <text x="110" y="38" fill="#fde68a" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">DeepSeek-R1 / Gemini Pro &bull; Multi-Hop Contract</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">91.4% OPEX Compute Reduction &bull; Dynamic Model Arbitrage &bull; Zero Hallucination Risk</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 3 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 03</span>
+        <span class="sc-chapter-tag">EDGE TELEMETRY</span>
+      </div>
+      <h2 class="sc-chapter-h2">AI Center Edge-to-Cloud Distributed Architecture</h2>
+      <p class="sc-p">Each regional AI Center does not merely exist in software; it controls physical edge infrastructure situated in bonded warehouse facilities and automated franchise micro-nodes across Southeast Asia and Korea. By deploying localized edge devices connected to global cloud vector registries, *SC guarantees continuous operation even during international undersea fiber disruptions:</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">EDGE LAYER &bull; LOCAL WAREHOUSE</div>
+          <h3 class="sc-sub-h3">Sub-Second Vision Inferences &amp; Offline Resiliency</h3>
+          <p class="sc-p">Edge micro-servers installed in Jakarta and Incheon run optimized computer vision models directly against on-premise 4K CCTV streams. Stock count events, pallet arrival timestamps, and carton OCR reads are recorded locally in SQLite WAL caches, ensuring zero data loss during regional internet outages before batch-syncing to Supabase.</p>
+        </div>
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">CLOUD LAYER &bull; SOVEREIGN MESH</div>
+          <h3 class="sc-sub-h3">Global Consensus &amp; Financial Settlement</h3>
+          <p class="sc-p">The centralized holding cloud aggregates edge telemetry into real-time financial statements, reallocates K-SURE sovereign insurance ceilings, and triggers 70/30 payment gateway webhook split settlements within milliseconds of physical goods confirmation.</p>
+        </div>
+      </div>
+
+      <!-- BESPOKE INLINE SVG 3 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#090d16"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">EDGE-TO-CLOUD RESILIENT ARCHITECTURE &bull; 8-BASE EDGE NODES</text>
+          
+          <!-- EDGE LEVEL -->
+          <g transform="translate(60, 70)">
+            <rect width="360" height="220" rx="10" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
+            <text x="180" y="28" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">REGIONAL EDGE AI CENTER (SCI / SCK / SCV)</text>
+            
+            <rect x="25" y="50" width="310" height="38" rx="6" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+            <text x="180" y="74" fill="#a7f3d0" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Local RTSP CCTV Ingestion &bull; 60s Frame Sampling</text>
+
+            <rect x="25" y="100" width="310" height="38" rx="6" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+            <text x="180" y="124" fill="#a7f3d0" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Local SQLite WAL Cache &bull; 100% Offline Resilient</text>
+
+            <rect x="25" y="150" width="310" height="38" rx="6" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+            <text x="180" y="174" fill="#a7f3d0" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Nearbuy Micro-Fulfillment POS Webhook Engine</text>
+
+            <text x="180" y="208" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="10" text-anchor="middle">Edge Latency: &lt; 35ms &bull; Zero Cloud Dependency</text>
+          </g>
+
+          <!-- BIDIRECTIONAL SYNC -->
+          <g transform="translate(440, 150)">
+            <line x1="0" y1="15" x2="80" y2="15" stroke="#38bdf8" stroke-width="3"/>
+            <line x1="80" y1="35" x2="0" y2="35" stroke="#10b981" stroke-width="3"/>
+            <text x="40" y="8" fill="#38bdf8" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Telemetry &uarr;</text>
+            <text x="40" y="55" fill="#10b981" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">&darr; Consens.</text>
+          </g>
+
+          <!-- CLOUD LEVEL -->
+          <g transform="translate(540, 70)">
+            <rect width="360" height="220" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="180" y="28" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">GLOBAL SOVEREIGN CLOUD MESH (SCS / SCU)</text>
+            
+            <rect x="25" y="50" width="310" height="38" rx="6" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+            <text x="180" y="74" fill="#bae6fd" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Supabase pgvector Cluster &bull; HNSW Cosine Index</text>
+
+            <rect x="25" y="100" width="310" height="38" rx="6" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+            <text x="180" y="124" fill="#bae6fd" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">NotebookLM Curated Trade Dossiers &bull; Master SOPs</text>
+
+            <rect x="25" y="150" width="310" height="38" rx="6" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+            <text x="180" y="174" fill="#bae6fd" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">70/30 PG Split Clearing &bull; K-SURE Insurance Bridge</text>
+
+            <text x="180" y="208" fill="#38bdf8" font-family="'Space Grotesk', monospace" font-size="10" text-anchor="middle">Sovereign Vault &bull; Dual-Track Legal Isolation</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">High-Availability Fault-Tolerant Mesh &bull; Edge Independence &bull; Global Real-Time Settlement</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 4 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 04</span>
+        <span class="sc-chapter-tag">MATHEMATICAL FORMULATION</span>
+      </div>
+      <h2 class="sc-chapter-h2">Mathematical Connection: Entangled Global Mesh &amp; Compute Latency Collapse</h2>
+      <p class="sc-p">In classical distributed systems, maintaining database consistency across 8 global nodes incurs exponential communication overhead ($\mathcal{O}(N^2)$), causing significant latency and reconciliation collisions. Qubit ERP and AI Centers apply the mathematical formalism of <strong>Bell-State Entanglement</strong> from Domain 02 to treat all regional nodes as projections of a single immutable corporate state vector:</p>
+
+      <div class="sc-math-box">
+        <div class="sc-formula">|\Phi^+\rangle_{\text{Global}} = \frac{1}{\sqrt{8}} \sum_{k=1}^{8} |\text{Node}_k\rangle \otimes |\text{Inventory}_k, \text{Tariff}_k, \text{Settlement}_k\rangle \quad \text{with} \quad \lim_{\Delta t \to 0} \mathcal{L}_{\text{mesh}} = \tau_{\text{crypto}}</div>
+        <div class="sc-math-desc">A change in warehouse inventory state in Jakarta ($k=2$) or a regulatory gazette update in Seoul ($k=1$) collapses the global state non-locally at $t=0$, updating all connected AI agents across the 12-domain matrix without message-passing drift.</div>
+        <div class="sc-math-code">\text{Compute Arbitrage Ratio: } \mathcal{R}_{\text{Opex}} = \frac{\sum_{i} Q_i \cdot \text{Cost}(\text{Frontier})}{\sum_{i} Q_i \cdot [\omega_{\text{flash}} C_{\text{flash}} + \omega_{\text{rag}} C_{\text{rag}} + \omega_{\text{reason}} C_{\text{reason}}]} \ge 11.6\times</div>
+        <div class="sc-math-desc">Where dynamic routing allocates 84% of queries to ultra-low-cost Flash models ($\omega_{\text{flash}} = 0.84$), 12% to zero-hallucination vector RAG ($\omega_{\text{rag}} = 0.12$), and 4% to deep reasoning engines ($\omega_{\text{reason}} = 0.04$), delivering an 11.6x structural compute cost advantage over monolithic deployments.</div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 5 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 05</span>
+        <span class="sc-chapter-tag">REGIONAL SPECIALIZATION</span>
+      </div>
+      <h2 class="sc-chapter-h2">8-Base AI Center Specialization &amp; Regional Telemetry Profiles</h2>
+      <p class="sc-p">Every AI Center node maintains an exhaustive, domain-specific telemetry portfolio tailored to its geographical and economic responsibilities:</p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Base Code &amp; Jurisdiction</th>
+            <th>Primary Telemetry &amp; Sourcing Engine</th>
+            <th>Regulatory &amp; Legal Framework</th>
+            <th>Commercial Anchor Applications</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>SCK &bull; Korea (Seoul)</strong></td>
+            <td>K-Beauty OEM/ODM formulations, veterinary bio-actives, MFDS drug ledgers</td>
+            <td>MFDS, K-SURE Sovereign Export Credit</td>
+            <td>Sismii K-Beauty, MedIX Vet Bio, Auto-Formulator R1</td>
+          </tr>
+          <tr>
+            <td><strong>SCI &bull; Indonesia (Jakarta)</strong></td>
+            <td>Shopee/Tokopedia SKU scrapers, BPOM food/vet dossiers, rupiah spot rates</td>
+            <td>BPOM RI, Halal MUI, Indonesian Trade Min.</td>
+            <td>Rp 1,320 Sachet Repacking, S1-S6 Mint Franchises</td>
+          </tr>
+          <tr>
+            <td><strong>SCV &bull; Vietnam (HCMC)</strong></td>
+            <td>Packaging plastics, sea freight container consolidation, agricultural sourcing</td>
+            <td>Vietnam MOH, General Dept of Customs</td>
+            <td>Cross-Border SCM, S1-S6 Challenger Logistics Hub</td>
+          </tr>
+          <tr>
+            <td><strong>SCS &bull; Singapore (Central)</strong></td>
+            <td>Cross-border FX hedging, sovereign treasury routing, venture legal structuring</td>
+            <td>MAS Sovereign Compliance, ACRA Holding IP</td>
+            <td>Holding Company Capital Vault, 70/30 Split Treasury</td>
+          </tr>
+          <tr>
+            <td><strong>SCU &bull; USA (Los Angeles)</strong></td>
+            <td>Amazon North America pricing, FDA cosmetic registration, institutional VC relations</td>
+            <td>US FDA OTC Regulations, Delaware Corporate</td>
+            <td>US Institutional Due Diligence, Global E-Commerce</td>
+          </tr>
+          <tr>
+            <td><strong>SCC &bull; China (Yiwu/GZ)</strong></td>
+            <td>1688 wholesale prices, bulk glass/aluminum foils, injection mold tooling</td>
+            <td>China Customs, Bilateral FTA Certificate Rules</td>
+            <td>Overnight Raw Material Sourcing, Factory Direct Co-Pack</td>
+          </tr>
+          <tr>
+            <td><strong>SCJ &bull; Japan (Tokyo)</strong></td>
+            <td>Precision animal diagnostic standards, clinical trial validation data</td>
+            <td>PMDA Veterinary Medical Devices, JETRO</td>
+            <td>SISPet Advanced Diagnostics, Clinic Alliance Co-Op</td>
+          </tr>
+          <tr>
+            <td><strong>SCIND &bull; India (Mumbai)</strong></td>
+            <td>Bulk active pharmaceutical ingredients (API), Ayurvedic bio-extracts, core AI code</td>
+            <td>CDSCO Pharma Directives, Indian Customs</td>
+            <td>SisAyurvedic Formulations, Multi-Agent Software Core</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHAPTER 6 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 06</span>
+        <span class="sc-chapter-tag">PERFORMANCE MATRIX</span>
+      </div>
+      <h2 class="sc-chapter-h2">Comparative Analysis: Hyperscaler Centralized AI vs. *SC AI Centers International</h2>
+      <p class="sc-p">Understanding why centralized cloud AI models fail in practical international trade requires examining structural engineering differences:</p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Operational Dimension</th>
+            <th>Centralized Hyperscaler AI (OpenAI / AWS Bedrock)</th>
+            <th>*SC AI Centers International (Distributed Mesh)</th>
+            <th>Strategic Value Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Jurisdictional Regulatory Grounding</strong></td>
+            <td>Generic global knowledge; frequently hallucinates local tariff codes and import decrees</td>
+            <td><strong>Hyper-local vector vaults (BPOM, MFDS, FDA)</strong> with mandatory similarity gating</td>
+            <td>Zero customs seizure risk, immediate legal import compliance on Day 1</td>
+          </tr>
+          <tr>
+            <td><strong>Nocturnal Market Harvesting</strong></td>
+            <td>Stateless query-response; no automated nocturnal scraping or competitor indexing</td>
+            <td><strong>Autonomous Overnight Data Factory (22:00 -> 08:00)</strong> refreshing daily trade arbitrage</td>
+            <td>Daily 08:00 AM executive action briefs; real-time dynamic pricing arbitrage</td>
+          </tr>
+          <tr>
+            <td><strong>Compute Unit Economics</strong></td>
+            <td>Flat-rate high pricing across all prompt types; exponential margin bleeding at scale</td>
+            <td><strong>Dynamic 3-Tier Cognitive Routing</strong> achieving an 11.6x OPEX cost reduction</td>
+            <td>Sustainable 75% to 85% gross margins on all AI SaaS and trade operations</td>
+          </tr>
+          <tr>
+            <td><strong>Physical Warehouse Telemetry</strong></td>
+            <td>Completely blind to physical atoms; disconnected from warehouse stock reality</td>
+            <td><strong>CCTV + Gemini Vision AI edge inference</strong> updating inventory every 60 seconds</td>
+            <td>Elimination of inventory shrinkage; instant K-SURE collateral verification</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHAPTER 7 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 07</span>
+        <span class="sc-chapter-tag">MONETIZATION &amp; TOLLGATES</span>
+      </div>
+      <h2 class="sc-chapter-h2">Dual-Return SaaS Monetization &amp; Model Context Protocol (MCP) Tollgates</h2>
+      <p class="sc-p">Every AI Center established inside Domain 03 serves a dual economic purpose: it drives internal operating costs to zero while generating high-margin external technology revenues:</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">MONETIZATION PATHWAY 01</div>
+          <h3 class="sc-sub-h3">Regional AI Center Node Franchising</h3>
+          <p class="sc-p">External trading conglomerates, pharmaceutical importers, and regional logistics operators license turnkey AI Center instances. By adopting our pre-trained vector vaults and Google Workspace ERP connectors, clients eliminate their own back-office software stacks in exchange for monthly SaaS subscriptions.</p>
+        </div>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">MONETIZATION PATHWAY 02</div>
+          <h3 class="sc-sub-h3">Model Context Protocol (MCP) Agent API Tolls</h3>
+          <p class="sc-p">In the autonomous agent era, external enterprise procurement bots query *SC AI Centers to verify HS-code duties, check real-time factory capacity, or book co-packing runs. Each programmatic JSON-RPC 2.0 query is metered via HTTP 402 micro-payment headers, generating continuous passive cashflow.</p>
         </div>
       </div>
     </section>
 
-    <section class="sc-sec">
-      <div><span class="sc-kicker">STRATEGIC SYNERGY &amp; GOVERNANCE</span></div>
-      <h2 class="sc-h2">Integration Within the Signal Star Universe (*SC)</h2>
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <h3 class="sc-h3">1. Core Architecture &amp; Technical Integration</h3>
-          <p class="sc-p">Connected across our 12-domain semantic web matrix and 8 international bases (Korea SCK, Indonesia SCI, Singapore SCS, USA SCU, Vietnam SCV, India SCIND, China SCC, Japan SCJ). Every workflow is tracked transparently via standardized Google Workspace Console, Monthly Sales, and Dashboard ledgers.</p>
-        </div>
-        <div class="sc-card-line">
-          <h3 class="sc-h3">2. Risk Firewall &amp; Settlement Security</h3>
-          <p class="sc-p">Protected by the *SC Triple Control Towers and Dual-Track Legal Firewall (isolating SC Index holding IP from Biz Galaxy commercial liabilities). Transactions leverage 3-Month Rolling Purchasing Forecasts (RPF), K-SURE export credit guarantees, and automated 70/30 PG webhook split settlements.</p>
-        </div>
+    <!-- CHAPTER 8 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 08</span>
+        <span class="sc-chapter-tag">GOVERNANCE &amp; SOVEREIGN FIREWALL</span>
       </div>
-      <div class="sc-callout"><strong>*SC - SISTAR COMPANY | One Spark, Infinite Galaxifying:</strong> Powered by the Qubit Algorithm&trade;, *SC intelligence-core, Scarlet AI, Qubit Biz, and the Biz Galaxy constellation.<br/>Corporate Portal: https://sistarcompany.com &bull; Executive Contact: DennyKu (denniiku@sistarcompany.com)</div>
+      <h2 class="sc-chapter-h2">Triple Control Towers &amp; Dual-Track Legal Firewall</h2>
+      <p class="sc-p">The operation of *SC AI Centers International is governed by the supreme corporate checks-and-balances framework:</p>
+
+      <div class="sc-dossier-card">
+        <h3 class="sc-sub-h3">The Triple Control Towers &amp; Entity Isolation</h3>
+        <p class="sc-p"><strong>1. Technical Control Tower (SCS):</strong> Monitors model inference drift, similarity thresholds, and vector embedding integrity across all 8 bases.<br/>
+        <strong>2. Commercial Control Tower (SCI/SCK):</strong> Regulates dynamic pricing margins, pre-order escrow pooling, and 70/30 payment split disbursements.<br/>
+        <strong>3. Legal &amp; Regulatory Control Tower (Holding):</strong> Isolates proprietary software IP from local commercial trading liabilities via the Dual-Track Legal Firewall, ensuring that operating liabilities incurred by regional SPVs cannot breach core holding algorithms.</p>
+      </div>
+
+      <div class="sc-callout">
+        <div class="sc-callout-title">*SC - SISTAR COMPANY &bull; One Spark, Infinite Galaxifying</div>
+        <p class="sc-p">Powered by the Qubit Algorithm&trade;, *SC Intelligence-Core, Scarlet AI, Qubit Biz, and the Biz Galaxy Constellation.<br/>
+        Executive Contact: DennyKu (denniiku@sistarcompany.com) &bull; Official Portal: https://sistarcompany.com</p>
+      </div>
     </section>
   </main>
 </body>

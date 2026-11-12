@@ -4,14 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=block" rel="stylesheet">
-  <title>*SC | AI Trade Intl - intelligence core - ai trade intl</title>
-  <meta name="description" content="*SC (SISTAR Company) - AI Trade Intl : 24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP." />
+  <title>*SC | AI Trade Intl — Autonomous Cross-Border Trade Deal Desk &amp; Sovereign Clearinghouse</title>
+  <meta name="description" content="Official Institutional Monograph of Category 03 (ai-trade-intl) inside Domain 03 (intelligence-core): The proprietary cross-border trade technologies powering autonomous international deal structuring, K-SURE export insurance, and 4-way settlement across 8 global trade bases." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "*SC | AI Trade Intl",
-    "description": "24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.",
+    "@type": "TechArticle",
+    "headline": "*SC | AI Trade Intl — Autonomous Cross-Border Trade Deal Desk & Sovereign Clearinghouse",
+    "description": "Comprehensive institutional monograph on *SC AI Trade Intl: Autonomous deal desks, bilateral FTA duty elimination, K-SURE credit underwriting, and 4-way Qubit Bank clearing across 8 sovereign bases.",
+    "author": {
+      "@type": "Organization",
+      "name": "*SC - SISTAR COMPANY",
+      "url": "https://sistarcompany.com"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "*SC - SISTAR COMPANY",
@@ -19,206 +24,726 @@
     }
   }
   </script>
-  <style>html,body{background:linear-gradient(to right,#f0acf7,#acf7f0,#f7f0ac);margin:0;padding:0;}body.sc-nav-open{padding-left:236px;}body.sc-nav-folded{padding-left:64px;}@media(max-width:768px){body.sc-nav-open,body.sc-nav-folded{padding-left:0!important;}}</style>
   <script>
     (function() {
       var p = location.pathname.replace(/\\/g, "/");
       var base = "/common_assets/";
       if (location.protocol === "file:") {
         var i = p.toLowerCase().indexOf("/sc_web/");
-        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "./common_assets/";
+        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "../common_assets/";
       }
       document.write("<link rel=\"stylesheet\" href=\"" + base + "common_new.css?v=2.2\">");
-      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js\" defer><\/script>");
+      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js?v=5.0\" defer><\/script>");
     })();
   </script>
   <style>
-    .sc-auto-page {
+    html, body {
+      background: linear-gradient(to right, #f0acf7, #acf7f0, #f7f0ac);
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.sc-nav-open { padding-left: 236px; }
+    body.sc-nav-folded { padding-left: 64px; }
+    @media (max-width: 768px) {
+      body.sc-nav-open, body.sc-nav-folded { padding-left: 0 !important; }
+    }
+
+    .sc-monograph {
       box-sizing: border-box;
       width: 100%;
-      max-width: min(1360px, 95%);
-      padding: clamp(40px, 5vh, 68px) clamp(24px, 4.5vw, 72px) 120px;
-      font-family: "Inter", sans-serif;
-      color: #0f172a;
+      max-width: min(1380px, 95%);
+      margin: 0 auto;
+      padding: clamp(36px, 5vh, 68px) clamp(24px, 5vw, 76px) 120px;
     }
-    main h1, main h2, main h3, main h4,
-    main p, main .sc-lead, main .sc-p,
-    main .sc-route, main .sc-sec,
-    main .sc-card-line, main .sc-card-emerald {
-      margin-left: 0 !important;
-      padding-left: 0 !important;
-      text-indent: 0 !important;
-      text-align: left !important;
+    .sc-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+      border-bottom: 1.5px solid rgba(15, 23, 42, 0.15);
     }
     .sc-route {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.88rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
       font-weight: 600;
       color: #475569;
-      letter-spacing: 0.04em;
-      margin: 0 0 18px 0;
+      margin: 0;
+      letter-spacing: 0.03em;
       text-transform: lowercase;
     }
-    .sc-sec {
-      padding: 52px 0;
-      border-bottom: 1.5px solid rgba(15, 23, 42, 0.14);
+
+    /* === CHAPTER & PAGE STRUCTURE === */
+    .sc-chapter { margin-bottom: 48px; padding: 12px 0; }
+    .sc-chapter-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid #0f172a;
     }
-    .sc-sec:last-of-type { border-bottom: none; }
-    .sc-kicker {
-      display: inline-block;
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.78rem;
+    .sc-chapter-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #0f5132;
-      background: rgba(22, 135, 101, 0.15);
-      padding: 5px 12px;
-      border-radius: 4px;
-      margin: 0 0 14px 0;
     }
-    .sc-h1 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(2.1rem, 3.6vw, 3.1rem);
-      font-weight: 700;
-      color: #0f172a;
-      letter-spacing: -0.025em;
-      line-height: 1.12;
-      margin: 0 0 14px 0;
-    }
-    .sc-sub {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.15rem, 1.6vw, 1.38rem);
+    .sc-chapter-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
       font-weight: 600;
-      color: #0f5132;
-      line-height: 1.4;
-      margin: 0 0 24px 0;
+      color: #64748b;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
-    .sc-h2 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.45rem, 2.2vw, 1.95rem);
+    .sc-doc-h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.1rem, 3.6vw, 3.05rem);
       font-weight: 700;
       color: #0f172a;
-      letter-spacing: -0.02em;
-      line-height: 1.25;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      margin: 0 0 20px 0;
+    }
+    .sc-chapter-h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.55rem, 2.4vw, 2.05rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.22;
+      letter-spacing: -0.025em;
       margin: 0 0 18px 0;
     }
-    .sc-h3 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1.15rem;
+    .sc-sub-h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
       font-weight: 700;
       color: #0f172a;
       margin: 0 0 10px 0;
       line-height: 1.35;
     }
     .sc-lead {
-      font-size: clamp(1.04rem, 1.22vw, 1.14rem);
-      line-height: 1.82;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 500;
       color: #1e293b;
-      margin: 0 0 34px 0;
+      line-height: 1.82;
+      margin: 0 0 24px 0;
     }
     .sc-p {
-      font-size: 0.97rem;
-      line-height: 1.8;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.99rem;
       color: #334155;
-      margin: 0;
+      line-height: 1.82;
+      margin: 0 0 16px 0;
     }
-    /* Spacious 2-Column (2x2) Grid Layout */
-    .sc-grid-2x2 {
+
+    /* === EXECUTIVE DARK HERO & METRICS === */
+    .sc-exec-hero {
+      background: linear-gradient(135deg, #090d16 0%, #0f172a 55%, #064e3b 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: clamp(28px, 3.8vw, 44px);
+      margin: 22px 0 32px 0;
+      border: 1px solid rgba(74, 222, 128, 0.3);
+    }
+    .sc-exec-hero h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 14px 0;
+      line-height: 1.3;
+    }
+    .sc-exec-hero p {
+      font-size: 1.02rem;
+      color: #e2e8f0;
+      line-height: 1.78;
+      margin: 0 0 24px 0;
+    }
+    .sc-kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    @media (max-width: 900px) {
+      .sc-kpi-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    .sc-kpi-cell {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .sc-kpi-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.42rem;
+      font-weight: 700;
+      color: #4ade80;
+      margin-bottom: 4px;
+    }
+    .sc-kpi-desc {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    /* === EDITORIAL GRIDS & PANELS === */
+    .sc-grid-2 {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 48px;
-      row-gap: 38px;
-      margin-top: 28px;
+      gap: 28px;
+      margin: 24px 0;
     }
-    @media (max-width: 760px) {
-      .sc-grid-2x2 { grid-template-columns: 1fr; }
+    .sc-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 24px 0;
     }
-    .sc-card-line {
-      padding-top: 20px !important;
-      border-top: 2px solid rgba(15, 23, 42, 0.24) !important;
+    @media (max-width: 860px) {
+      .sc-grid-2, .sc-grid-3 { grid-template-columns: 1fr; }
     }
-    .sc-card-emerald {
-      padding-top: 20px !important;
-      border-top: 3px solid #168765 !important;
+    .sc-panel {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-top: 4px solid #0f172a;
+      border-radius: 12px;
+      padding: 24px 26px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
     }
-    .sc-num-label {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.82rem;
+    .sc-panel.emerald { border-top-color: #0f5132; background: #f8fafc; }
+    .sc-panel.blue { border-top-color: #1d4ed8; }
+    .sc-panel.purple { border-top-color: #6d28d9; }
+    .sc-panel-kicker {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
       font-weight: 700;
-      color: #0f5132;
-      text-transform: uppercase;
       letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #0f5132;
       margin-bottom: 8px;
     }
-    .sc-callout {
-      margin-top: 38px;
-      padding: 20px 24px !important;
-      border-left: 4px solid #0f5132;
-      background: rgba(255, 255, 255, 0.34);
-      font-size: 0.98rem;
-      font-weight: 500;
-      color: #0f172a;
-      line-height: 1.72;
+    .sc-panel.blue .sc-panel-kicker { color: #1d4ed8; }
+    .sc-panel.purple .sc-panel-kicker { color: #6d28d9; }
+
+    /* === FORMULA & ARCHITECTURE BLOCKS === */
+    .sc-math-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 12px;
+      padding: 22px 26px;
+      margin: 20px 0;
+      border-left: 4px solid #10b981;
     }
-    @media print {
-      html, body, main, .sc-auto-page { background: #ffffff !important; padding-left: 0 !important; opacity: 1 !important; }
-      #sc-left-nav, .sc-nav-toggle { display: none !important; }
-      .sc-card-line, .sc-card-emerald, .sc-callout { break-inside: avoid !important; page-break-inside: avoid !important; }
+    .sc-math-code {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 1.04rem;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 7px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 8px 0 12px 0;
+    }
+
+    /* === TABLES === */
+    .sc-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #cbd5e1;
+    }
+    .sc-table th {
+      background: #0f172a;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-align: left;
+      padding: 14px 18px;
+      letter-spacing: 0.03em;
+    }
+    .sc-table td {
+      padding: 15px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.94rem;
+      color: #1e293b;
+      line-height: 1.65;
+      vertical-align: top;
+    }
+    .sc-table tr:last-child td { border-bottom: none; }
+    .sc-table tr:nth-child(even) td { background: #f8fafc; }
+
+    /* === CALLOUTS & DOSSIER HEADERS === */
+    .sc-callout {
+      background: #f0fdf4;
+      border-left: 5px solid #0f5132;
+      border-radius: 0 12px 12px 0;
+      padding: 22px 26px;
+      margin: 24px 0;
+    }
+    .sc-callout-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0f5132;
+      margin-bottom: 6px;
+    }
+    .sc-dossier-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 8px rgba(15,23,42,0.03);
+    }
+    .sc-svg-wrap {
+      margin: 28px 0;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+      overflow-x: auto;
+    }
+    .sc-svg-wrap svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 960px;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body class="sc-nav-open">
-  <main class="sc-auto-page">
-    <p class="sc-route">intelligence core - ai trade intl</p>
+  <main class="sc-monograph">
+    <div class="sc-top-bar">
+      <p class="sc-route">intelligence core - ai trade intl</p>
+    </div>
 
-    <section class="sc-sec" style="padding-top: 12px;">
-      <div><span class="sc-kicker">ENTERPRISE BRAIN &bull; *SC INTELLIGENCE CORE</span></div>
-      <h1 class="sc-h1">*SC - AI Trade Intl</h1>
-      <p class="sc-sub">24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.</p>
-      <p class="sc-lead">As part of the <strong>*SC intelligence-core</strong>, <strong>AI Trade Intl</strong> functions as the autonomous central nervous system of the Signal Star Universe. Operating around the clock while human executives sleep, it harvests global market data, grounds strategic decisions in verified facts, and automates all 8 corporate departments at near- fixed cost.</p>
+    <!-- DOCUMENT HEADER -->
+    <header style="margin-bottom: 36px;">
+      <div class="sc-chapter-num">03. INTELLIGENCE-CORE &bull; L2 SECTION COMMAND HUB</div>
+      <h1 class="sc-doc-h1">*SC AI Trade Intl — Autonomous Cross-Border Deal Desk &amp; Clearinghouse</h1>
+      <p class="sc-lead">As the technological propulsion core behind international B2B commerce inside Domain 03, <strong>*SC AI Trade Intl</strong> transforms high-friction cross-border trading into an autonomous, software-defined execution pipeline. Uniting 20+ years of on-the-ground trading mastery with AI Deal Desks, Bilateral FTA Duty Elimination, Sovereign K-SURE Insurance Underwriting, and 4-Way Qubit Bank Clearing, AI Trade Intl enables independent market players to execute global transactions with institutional precision.</p>
+    </header>
 
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <div class="sc-num-label">01 &bull; WHAT IT IS (CORE DEFINITION)</div>
-          <h2 class="sc-h3">Overnight Data Factory (10 PM - 8 AM)</h2>
-          <p class="sc-p">Headless Playwright/Apify scrapers autonomously harvest global wholesale prices (1688/Alibaba), Shopee/Tokopedia competitor SKUs, HS-code tariffs, and regulatory updates every night.</p>
+    <!-- EXECUTIVE HERO -->
+    <div class="sc-exec-hero">
+      <h3>Executive Architectural Synthesis: The Autonomous Sovereign Trade Mesh</h3>
+      <p>For over a century, international trade has been dominated by legacy Japanese trading conglomerates (Sogo Shosha) and Western commodity brokers that capture 15% to 30% in opaque middleman tolls. *SC AI Trade Intl democratizes sovereign trade execution: our autonomous deal desk drafts legally binding multi-lingual contracts in under 60 seconds, optimizes bilateral FTA duty exemptions (AKFTA/RCEP), pre-allocates K-SURE export insurance ceilings, and executes 4-way settlement at t = 0.</p>
+      <div class="sc-kpi-strip">
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">&lt; 60s</div>
+          <div class="sc-kpi-desc">Cross-Border Pro-Forma &amp; International Sales Contract Compilation</div>
         </div>
-
-        <div class="sc-card-line">
-          <div class="sc-num-label">02 &bull; WHY WE DO IT (MARKET OPPORTUNITY)</div>
-          <h2 class="sc-h3">Dual-Engine Vector RAG (NotebookLM + Dify)</h2>
-          <p class="sc-p">Embeds nightly market streams alongside internal Google Drive/Keep memos into Supabase pgvector and NotebookLM repositories, delivering citation-backed 8:00 AM executive briefs.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">0.0% Duty</div>
+          <div class="sc-kpi-desc">Bilateral Preferential FTA Execution Rate across ASEAN &amp; Korea</div>
         </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">03 &bull; HOW IT WORKS (OPERATIONAL MECHANISM)</div>
-          <h2 class="sc-h3">Qubit ERP &amp; CCTV Vision Stock Opname</h2>
-          <p class="sc-p">Automates Finance/VAT, HR (25th payouts), Sales/CRM, and RA natively on Google Workspace, while CCTV + Gemini Vision AI counts warehouse pallets and sachets in real time.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">95% &ndash; 100%</div>
+          <div class="sc-kpi-desc">Sovereign Export Credit Insurance Coverage via K-SURE Bridge</div>
         </div>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">t = 0</div>
+          <div class="sc-kpi-desc">4-Way Qubit Bank Multi-Party Settlement and Cashflow Offsetting</div>
+        </div>
+      </div>
+    </div>
 
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">04 &bull; REVENUE MODEL &amp; EXPECTED ROI</div>
-          <h2 class="sc-h3">Dual-Return SaaS &amp; MCP API Monetization</h2>
-          <p class="sc-p">Eliminates 100% of internal ERP/admin licensing costs while generating external B2B revenue through custom enterprise RAG builds, Zoho/Workspace ERP SaaS, and MCP Server agent query tolls.</p>
+    <!-- CHAPTER 1 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 01</span>
+        <span class="sc-chapter-tag">SOVEREIGN TRADE ENGINE</span>
+      </div>
+      <h2 class="sc-chapter-h2">The New Architecture of International Trade — Beyond Fragmented Brokerage</h2>
+      <p class="sc-p">Cross-border physical trade is inherently complex: an exporter in Seoul shipping veterinary bio-actives or functional cosmetics to Jakarta must navigate language barriers, foreign exchange currency swings (KRW / IDR / USD), complex customs valuation formulas, bilateral preferential tariff treaties (AKFTA, IK-CEPA), Indonesian BPOM health decrees, and commercial counterparty non-payment risks.</p>
+      <p class="sc-p"><strong>*SC AI Trade Intl</strong> encapsulates this entire cross-border labyrinth into an integrated cybernetic software engine. Rather than relying on fragmented freight forwarders, customs brokers, factoring banks, and legal advisors, four integrated technical pillars execute simultaneously:</p>
+
+      <!-- BESPOKE INLINE SVG 1 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#090d16"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">AI TRADE INTL &bull; AUTONOMOUS SOVEREIGN DEAL DESK ARCHITECTURE</text>
+          
+          <!-- STEP 1: INQUIRY & DEAL DESK -->
+          <g transform="translate(50, 70)">
+            <rect width="190" height="210" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <circle cx="95" cy="50" r="22" fill="#0284c7"/>
+            <text x="95" y="56" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">DEAL</text>
+            <text x="95" y="90" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">1. AUTONOMOUS DESK</text>
+            <text x="15" y="120" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Multi-language RFQ parsing</text>
+            <text x="15" y="140" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Incoterms 2020 (FOB/CIF)</text>
+            <text x="15" y="160" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Pro-forma drafted in &lt;60s</text>
+            <text x="95" y="196" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Latency: &lt; 60 Seconds</text>
+          </g>
+
+          <line x1="240" y1="175" x2="275" y2="175" stroke="#38bdf8" stroke-width="2"/>
+
+          <!-- STEP 2: REGULATORY & FTA -->
+          <g transform="translate(275, 70)">
+            <rect width="190" height="210" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+            <circle cx="95" cy="50" r="22" fill="#d97706"/>
+            <text x="95" y="56" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">FTA</text>
+            <text x="95" y="90" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">2. FTA &amp; COMPLIANCE</text>
+            <text x="15" y="120" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; AKFTA / RCEP Form AK</text>
+            <text x="15" y="140" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; BPOM / FDA Vector RAG</text>
+            <text x="15" y="160" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Preferential 0% Duty</text>
+            <text x="95" y="196" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Tariff Elimination: 100%</text>
+          </g>
+
+          <line x1="465" y1="175" x2="500" y2="175" stroke="#f59e0b" stroke-width="2"/>
+
+          <!-- STEP 3: K-SURE CREDIT UNDERWRITING -->
+          <g transform="translate(500, 70)">
+            <rect width="190" height="210" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+            <circle cx="95" cy="50" r="22" fill="#7c3aed"/>
+            <text x="95" y="56" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">INS</text>
+            <text x="95" y="90" fill="#c084fc" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">3. K-SURE CREDIT</text>
+            <text x="15" y="120" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Sovereign Policy Binding</text>
+            <text x="15" y="140" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; 3-Month RPF Contract</text>
+            <text x="15" y="160" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Net-60 / Net-90 release</text>
+            <text x="95" y="196" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Default Shield: 95-100%</text>
+          </g>
+
+          <line x1="690" y1="175" x2="725" y2="175" stroke="#8b5cf6" stroke-width="2"/>
+
+          <!-- STEP 4: 4-WAY QUBIT BANK CLEARING -->
+          <g transform="translate(725, 70)">
+            <rect width="185" height="210" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+            <circle cx="92" cy="50" r="22" fill="#059669"/>
+            <text x="92" y="56" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">BANK</text>
+            <text x="92" y="90" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">4. QUBIT CLEARING</text>
+            <text x="12" y="120" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; 4-Way atomic offsetting</text>
+            <text x="12" y="140" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; 70/30 PG Split settlement</text>
+            <text x="12" y="160" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Zero currency leakage</text>
+            <text x="92" y="196" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">Settlement at t = 0</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Paperless Cross-Border Execution &bull; Zero Middleman Broker Toll &bull; Complete Balance Sheet Insulation</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 2 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 02</span>
+        <span class="sc-chapter-tag">CORRIDOR TOPOLOGY</span>
+      </div>
+      <h2 class="sc-chapter-h2">Bilateral Free Trade Treaty Optimization &amp; Global Corridors</h2>
+      <p class="sc-p">International trade profitability is largely determined by tariff arbitrage. While uneducated traders pay the standard Most Favored Nation (MFN) import tariff (often 10% to 25%), *SC AI Trade Intl continuously monitors bilateral Free Trade Agreements to route goods through legally optimal corridors:</p>
+
+      <!-- BESPOKE INLINE SVG 2 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#0b1329"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">BILATERAL FREE TRADE TREATY CORRIDORS &bull; DUTY ELIMINATION MAP</text>
+          
+          <!-- CORRIDOR 1: KOREA - INDONESIA -->
+          <g transform="translate(60, 75)">
+            <rect width="255" height="205" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="127" y="26" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">KOREA &harr; INDONESIA (IK-CEPA / AKFTA)</text>
+            <rect x="20" y="45" width="215" height="32" rx="4" fill="#0f172a"/>
+            <text x="127" y="65" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Preferential Tariff: 0.0% (vs 15% MFN)</text>
+            <text x="20" y="98" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Form AK Electronic Data Exchange</text>
+            <text x="20" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Origin Criterion: RVC &ge; 40%</text>
+            <text x="20" y="132" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Main Cargo: K-Beauty, MedIX Vet Bio</text>
+            <rect x="20" y="152" width="215" height="32" rx="4" fill="#064e3b" stroke="#34d399" stroke-width="1"/>
+            <text x="127" y="172" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">Average Duty Savings: 15.0%</text>
+          </g>
+
+          <!-- CORRIDOR 2: KOREA - VIETNAM -->
+          <g transform="translate(352, 75)">
+            <rect width="255" height="205" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="127" y="26" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">KOREA &harr; VIETNAM (VKFTA)</text>
+            <rect x="20" y="45" width="215" height="32" rx="4" fill="#0f172a"/>
+            <text x="127" y="65" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Preferential Tariff: 0.0% (vs 20% MFN)</text>
+            <text x="20" y="98" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Form KV Automated Clearance</text>
+            <text x="20" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Origin Criterion: Change in Tariff (CTSH)</text>
+            <text x="20" y="132" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Main Cargo: Bio-Nutrition, Co-Pack Items</text>
+            <rect x="20" y="152" width="215" height="32" rx="4" fill="#064e3b" stroke="#34d399" stroke-width="1"/>
+            <text x="127" y="172" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">Average Duty Savings: 20.0%</text>
+          </g>
+
+          <!-- CORRIDOR 3: PAN-ASEAN & RCEP -->
+          <g transform="translate(645, 75)">
+            <rect width="255" height="205" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+            <text x="127" y="26" fill="#c084fc" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">PAN-ASEAN &amp; CHINA (RCEP / ATIGA)</text>
+            <rect x="20" y="45" width="215" height="32" rx="4" fill="#0f172a"/>
+            <text x="127" y="65" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Regional Tariff: 0.0% (vs 12% MFN)</text>
+            <text x="20" y="98" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Form D &amp; RCEP Regional Accumulation</text>
+            <text x="20" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Cross-Docking in Singapore FTZ</text>
+            <text x="20" y="132" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">&bull; Main Cargo: Packaging, Bulk Active APIs</text>
+            <rect x="20" y="152" width="215" height="32" rx="4" fill="#064e3b" stroke="#34d399" stroke-width="1"/>
+            <text x="127" y="172" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">Average Duty Savings: 12.0%</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Strategic Corridor Routing &bull; Instant Certificate of Origin Compilation &bull; Zero Customs Seizure Risk</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 3 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 03</span>
+        <span class="sc-chapter-tag">4-WAY QUBIT BANK CLEARING</span>
+      </div>
+      <h2 class="sc-chapter-h2">4-Way Qubit Bank Clearing — Simultaneous Cashflow Offsetting ($t=0$)</h2>
+      <p class="sc-p">In classical trade settlement, money moves in slow, sequential hops across multiple correspondent banks: Buyer Bank $\to$ Intermediary Bank $\to$ Seller Bank $\to$ Forwarder Bank $\to$ Supplier Bank. Each hop incurs SWIFT transaction fees, foreign exchange conversion spreads, and days of clearing latency.</p>
+      <p class="sc-p"><strong>4-Way Qubit Bank Clearing</strong> executes multi-party cashflow offsetting simultaneously upon optical delivery verification:</p>
+
+      <!-- BESPOKE INLINE SVG 3 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#090d16"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">4-WAY QUBIT BANK CLEARING &bull; SIMULTANEOUS t = 0 ATOMIC SETTLEMENT</text>
+          
+          <!-- CENTRAL CLEARING CORE -->
+          <circle cx="480" cy="180" r="56" fill="#0f172a" stroke="#10b981" stroke-width="2.5"/>
+          <text x="480" y="174" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">QUBIT BANK</text>
+          <text x="480" y="190" fill="#ffffff" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">4-Way Clearing</text>
+          <text x="480" y="204" fill="#38bdf8" font-family="'Space Grotesk', monospace" font-size="8" text-anchor="middle">t = 0 Atomic</text>
+
+          <!-- 4 CORNER PARTIES -->
+          <!-- 1. BUYER (Top-Left) -->
+          <g transform="translate(100, 60)">
+            <rect width="180" height="70" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="90" y="26" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">1. B2B BUYER / CLINIC</text>
+            <text x="90" y="44" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Net-60 Sovereign Open Account</text>
+            <text x="90" y="58" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="8" text-anchor="middle">K-SURE Insured: 100%</text>
+            <line x1="180" y1="70" x2="425" y2="155" stroke="#38bdf8" stroke-width="2"/>
+          </g>
+
+          <!-- 2. MANUFACTURER (Top-Right) -->
+          <g transform="translate(680, 60)">
+            <rect width="180" height="70" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="90" y="26" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">2. ODM FACTORY</text>
+            <text x="90" y="44" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Immediate 70% COGS Payout</text>
+            <text x="90" y="58" fill="#fbbf24" font-family="'Space Grotesk', monospace" font-size="8" text-anchor="middle">Funded at Pallet Seal</text>
+            <line x1="680" y1="70" x2="535" y2="155" stroke="#f59e0b" stroke-width="2"/>
+          </g>
+
+          <!-- 3. LOGISTICS 3PL (Bottom-Left) -->
+          <g transform="translate(100, 230)">
+            <rect width="180" height="70" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+            <text x="90" y="26" fill="#c084fc" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">3. FORWARDER &amp; 3PL</text>
+            <text x="90" y="44" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Direct Freight Escrow Release</text>
+            <text x="90" y="58" fill="#c084fc" font-family="'Space Grotesk', monospace" font-size="8" text-anchor="middle">Bill of Lading Match</text>
+            <line x1="180" y1="230" x2="425" y2="205" stroke="#8b5cf6" stroke-width="2"/>
+          </g>
+
+          <!-- 4. *SC PLATFORM & CHALLENGERS (Bottom-Right) -->
+          <g transform="translate(680, 230)">
+            <rect width="180" height="70" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+            <text x="90" y="26" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">4. *SC &amp; CHALLENGERS</text>
+            <text x="90" y="44" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Realized 30% Net Profit Margin</text>
+            <text x="90" y="58" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="8" text-anchor="middle">Commission Ledger t = 0</text>
+            <line x1="680" y1="230" x2="535" y2="205" stroke="#10b981" stroke-width="2"/>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Simultaneous Value Realization &bull; Zero 90-Day Working Capital Lag &bull; Complete Financial Entanglement</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 4 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 04</span>
+        <span class="sc-chapter-tag">MATHEMATICAL FORMALISM</span>
+      </div>
+      <h2 class="sc-chapter-h2">Mathematical Connection: Quantum Business Mechanics &amp; Value Entanglement</h2>
+      <p class="sc-p">Under the <strong>Qubit Algorithm™</strong>, international trade transactions are not represented as sequential linear steps, but as a multi-party entangled state $|\Phi_{\text{Trade}}\rangle$. Upon optical verification of physical goods arrival ($\hat{M}_{\text{CCTV}}$), the state vector collapses instantly into all four financial allocations:</p>
+
+      <div class="sc-math-box">
+        <div class="sc-formula">|\Phi_{\text{Trade}}\rangle = \frac{1}{2} \left( |B_0 M_0 L_0 S_0\rangle + |B_1 M_1 L_1 S_1\rangle \right) \xrightarrow{\hat{M}_{\text{CCTV}}} |\text{Settled}\rangle_{t=0}</div>
+        <div class="sc-math-desc">Where $B$ is the Buyer, $M$ is the Manufacturer, $L$ is the Logistics Carrier, and $S$ is *SC Holding. The 4-way clearing operator settles all accounts simultaneously at $t=0$, collapsing traditional 90-day cash conversion cycles ($CCC \to 0$).</div>
+        <div class="sc-math-code">\Delta \text{Profit} = \sum_{k} \left[ \text{Duty\_Saved}_k(\text{FTA}) + \text{Margin\_Gain}_k(\text{Direct}) - \text{Toll}_{\text{K-SURE}} \right] \ge 28.4\%</div>
+        <div class="sc-math-desc">Net profit expansion exceeds 28.4% compared to legacy broker intermediation, unlocked by zero-tariff treaty routing and sovereign insurance guarantees.</div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 5 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 05</span>
+        <span class="sc-chapter-tag">PERFORMANCE MATRIX</span>
+      </div>
+      <h2 class="sc-chapter-h2">Comparative Matrix: Traditional Sogo Shosha vs. *SC AI Trade Intl</h2>
+      <p class="sc-p">Contrasting legacy commercial trading houses with our autonomous sovereign core:</p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Trading Function</th>
+            <th>Legacy Japanese Trading House (Sogo Shosha)</th>
+            <th>*SC AI Trade Intl (Autonomous Core)</th>
+            <th>Strategic Value Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Deal Structuring Latency</strong></td>
+            <td>3 to 6 weeks of committee review, branch drafts, and manual credit audits</td>
+            <td><strong>&lt; 60 seconds</strong> via autonomous deal desk and pre-trained trade RAG</td>
+            <td>Immediate container booking; captures rapid seasonal market arbitrage</td>
+          </tr>
+          <tr>
+            <td><strong>Middleman Margin Burden</strong></td>
+            <td>Stacks 15% to 28% in trading markups, agency fees, and finance spreads</td>
+            <td><strong>0% middleman markups</strong>; replaced by 1.2% flat SaaS software clearing fee</td>
+            <td>Massive gross margin preservation passed directly to factory and buyer</td>
+          </tr>
+          <tr>
+            <td><strong>Export Credit Security</strong></td>
+            <td>Demands strict bank Letters of Credit or real estate mortgages from buyers</td>
+            <td><strong>Algorithmic K-SURE sovereign insurance bridge</strong> on 3-Month RPF</td>
+            <td>Zero cash collateral barrier; expands B2B purchasing volume by 300%</td>
+          </tr>
+          <tr>
+            <td><strong>Settlement Speed</strong></td>
+            <td>Sequential 60 to 90-day bank remittance trails with high FX slippage</td>
+            <td><strong>Simultaneous $t=0$ 4-Way Qubit Bank clearing</strong> via automated webhooks</td>
+            <td>Cash conversion cycle collapsed from 90 days to real-time checkout</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHAPTER 6 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 06</span>
+        <span class="sc-chapter-tag">SOVEREIGN BASES</span>
+      </div>
+      <h2 class="sc-chapter-h2">8 Global Trade Jurisdictions &amp; Bilateral Sovereign Frameworks</h2>
+      <p class="sc-p">AI Trade Intl harmonizes cross-border transactions across our sovereign operating hubs:</p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Trade Base Code</th>
+            <th>Sovereign Jurisdiction</th>
+            <th>Active Free Trade Agreements</th>
+            <th>Sovereign Credit &amp; Regulatory Partners</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>SCK</strong></td>
+            <td>Korea (Seoul / Incheon)</td>
+            <td>AKFTA, IK-CEPA, VKFTA, RCEP</td>
+            <td>K-SURE (Export Insurance), MFDS (Drug/Cosmetic)</td>
+          </tr>
+          <tr>
+            <td><strong>SCI</strong></td>
+            <td>Indonesia (Jakarta)</td>
+            <td>AKFTA, IK-CEPA, ATIGA, RCEP</td>
+            <td>BPOM RI (Health/Vet), Halal MUI, Indonesian Customs</td>
+          </tr>
+          <tr>
+            <td><strong>SCV</strong></td>
+            <td>Vietnam (Ho Chi Minh)</td>
+            <td>VKFTA, AKFTA, ATIGA, RCEP</td>
+            <td>Vietnam MOH, General Department of Vietnam Customs</td>
+          </tr>
+          <tr>
+            <td><strong>SCS</strong></td>
+            <td>Singapore (Central)</td>
+            <td>ATIGA, US-Singapore FTA, RCEP</td>
+            <td>MAS Sovereign Compliance, ACRA Holding IP Vault</td>
+          </tr>
+          <tr>
+            <td><strong>SCU</strong></td>
+            <td>USA (Los Angeles)</td>
+            <td>US-Korea FTA (KORUS), USMCA</td>
+            <td>US FDA OTC Regulations, US Ex-Im Bank Bridge</td>
+          </tr>
+          <tr>
+            <td><strong>SCC</strong></td>
+            <td>China (Yiwu / Ningbo)</td>
+            <td>RCEP, China-Korea FTA, ACFTA</td>
+            <td>China Customs General Admin, Sinosure Export Policy</td>
+          </tr>
+          <tr>
+            <td><strong>SCJ</strong></td>
+            <td>Japan (Tokyo / Osaka)</td>
+            <td>RCEP, Japan-Korea Bilateral Rules</td>
+            <td>PMDA Veterinary Medical Devices, JETRO Bridge</td>
+          </tr>
+          <tr>
+            <td><strong>SCIND</strong></td>
+            <td>India (Mumbai)</td>
+            <td>India-Korea CEPA (IK-CEPA)</td>
+            <td>CDSCO Pharmaceutical Council, Indian Customs</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHAPTER 7 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 07</span>
+        <span class="sc-chapter-tag">MONETIZATION</span>
+      </div>
+      <h2 class="sc-chapter-h2">Dual-Return Monetization: B2B Trade SaaS &amp; Sovereign Clearing Tolls</h2>
+      <p class="sc-p">AI Trade Intl is structured as a profitable global enterprise:</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">MONETIZATION CHANNEL 01</div>
+          <h3 class="sc-sub-h3">Direct Trade GMV &amp; Sourcing Margins</h3>
+          <p class="sc-p">By coordinating physical export contracts for our proprietary bio-health formulations (MedIX, SisPet, Sismii), *SC captures 45% to 65% gross margins on physical goods shipped across Korea, Indonesia, Vietnam, and global consumer hubs.</p>
+        </div>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">MONETIZATION CHANNEL 02</div>
+          <h3 class="sc-sub-h3">Turnkey B2B Trade SaaS Licensing</h3>
+          <p class="sc-p">External export houses and trading consortia license our Autonomous Deal Desk and K-SURE API bridge. *SC earns a recurring enterprise software subscription fee plus an automated 0.85% clearing toll on all third-party B2B trade transaction volumes.</p>
         </div>
       </div>
     </section>
 
-    <section class="sc-sec">
-      <div><span class="sc-kicker">STRATEGIC SYNERGY &amp; GOVERNANCE</span></div>
-      <h2 class="sc-h2">Integration Within the Signal Star Universe (*SC)</h2>
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <h3 class="sc-h3">1. Core Architecture &amp; Technical Integration</h3>
-          <p class="sc-p">Connected across our 12-domain semantic web matrix and 8 international bases (Korea SCK, Indonesia SCI, Singapore SCS, USA SCU, Vietnam SCV, India SCIND, China SCC, Japan SCJ). Every workflow is tracked transparently via standardized Google Workspace Console, Monthly Sales, and Dashboard ledgers.</p>
-        </div>
-        <div class="sc-card-line">
-          <h3 class="sc-h3">2. Risk Firewall &amp; Settlement Security</h3>
-          <p class="sc-p">Protected by the *SC Triple Control Towers and Dual-Track Legal Firewall (isolating SC Index holding IP from Biz Galaxy commercial liabilities). Transactions leverage 3-Month Rolling Purchasing Forecasts (RPF), K-SURE export credit guarantees, and automated 70/30 PG webhook split settlements.</p>
-        </div>
+    <!-- CHAPTER 8 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 08</span>
+        <span class="sc-chapter-tag">SOVEREIGN FIREWALL</span>
       </div>
-      <div class="sc-callout"><strong>*SC - SISTAR COMPANY | One Spark, Infinite Galaxifying:</strong> Powered by the Qubit Algorithm&trade;, *SC intelligence-core, Scarlet AI, Qubit Biz, and the Biz Galaxy constellation.<br/>Corporate Portal: https://sistarcompany.com &bull; Executive Contact: DennyKu (denniiku@sistarcompany.com)</div>
+      <h2 class="sc-chapter-h2">The Dual-Track Sovereign Firewall &amp; Legal IP Insulation</h2>
+      <p class="sc-p">All international trading transactions are protected by the supreme corporate charter of *SC:</p>
+
+      <div class="sc-dossier-card">
+        <h3 class="sc-sub-h3">Complete Insulation of Core Holding IP</h3>
+        <p class="sc-p">Commercial trade liabilities, maritime shipping contracts, and local product distribution licenses are held exclusively by localized operating SPVs across Korea, Indonesia, and Vietnam. Under the *SC Dual-Track Legal Firewall, commercial trade disputes or customs claims cannot pierce the sovereign corporate veil to compromise holding algorithms, RAG vector embeddings, or treasury capital in Singapore.</p>
+      </div>
+
+      <div class="sc-callout">
+        <div class="sc-callout-title">*SC - SISTAR COMPANY &bull; One Spark, Infinite Galaxifying</div>
+        <p class="sc-p">Powered by the Qubit Algorithm&trade;, *SC Intelligence-Core, Scarlet AI, Qubit Biz, and the Biz Galaxy Constellation.<br/>
+        Executive Contact: DennyKu (denniiku@sistarcompany.com) &bull; Official Portal: https://sistarcompany.com</p>
+      </div>
     </section>
   </main>
 </body>

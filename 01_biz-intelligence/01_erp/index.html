@@ -4,14 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=block" rel="stylesheet">
-  <title>*SC | ERP - intelligence core - biz intelligence - erp</title>
-  <meta name="description" content="*SC (SISTAR Company) - ERP : 24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP." />
+  <title>*SC | ERP — 24/7 Autonomous 8-Team AI Enterprise Nervous System & Qubit ERP</title>
+  <meta name="description" content="Institutional Monograph of Domain 03 (intelligence-core): Qubit ERP operates as the autonomous central nervous system of *SC, integrating Overnight Data Factory, Dual-Engine Vector RAG, CCTV Vision Stock Opname, and 8-department Google Workspace automation." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "*SC | ERP",
-    "description": "24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.",
+    "@type": "TechArticle",
+    "headline": "*SC | ERP — 24/7 Autonomous 8-Team AI Enterprise Nervous System & Qubit ERP",
+    "description": "Comprehensive institutional monograph on Qubit ERP: Autonomous 8-team architecture, Overnight Data Factory (10 PM - 8 AM), CCTV Vision stock opname, and dual-return B2B SaaS monetization.",
+    "author": {
+      "@type": "Organization",
+      "name": "*SC - SISTAR COMPANY",
+      "url": "https://sistarcompany.com"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "*SC - SISTAR COMPANY",
@@ -19,206 +24,864 @@
     }
   }
   </script>
-  <style>html,body{background:linear-gradient(to right,#f0acf7,#acf7f0,#f7f0ac);margin:0;padding:0;}body.sc-nav-open{padding-left:236px;}body.sc-nav-folded{padding-left:64px;}@media(max-width:768px){body.sc-nav-open,body.sc-nav-folded{padding-left:0!important;}}</style>
   <script>
     (function() {
       var p = location.pathname.replace(/\\/g, "/");
       var base = "/common_assets/";
       if (location.protocol === "file:") {
         var i = p.toLowerCase().indexOf("/sc_web/");
-        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "./common_assets/";
+        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "../../common_assets/";
       }
       document.write("<link rel=\"stylesheet\" href=\"" + base + "common_new.css?v=2.2\">");
-      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js\" defer><\/script>");
+      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js?v=5.0\" defer><\/script>");
     })();
   </script>
   <style>
-    .sc-auto-page {
+    html, body {
+      background: linear-gradient(to right, #f0acf7, #acf7f0, #f7f0ac);
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.sc-nav-open { padding-left: 236px; }
+    body.sc-nav-folded { padding-left: 64px; }
+    @media (max-width: 768px) {
+      body.sc-nav-open, body.sc-nav-folded { padding-left: 0 !important; }
+    }
+
+    .sc-monograph {
       box-sizing: border-box;
       width: 100%;
-      max-width: min(1360px, 95%);
-      padding: clamp(40px, 5vh, 68px) clamp(24px, 4.5vw, 72px) 120px;
-      font-family: "Inter", sans-serif;
-      color: #0f172a;
+      max-width: min(1380px, 95%);
+      margin: 0 auto;
+      padding: clamp(36px, 5vh, 68px) clamp(24px, 5vw, 76px) 120px;
     }
-    main h1, main h2, main h3, main h4,
-    main p, main .sc-lead, main .sc-p,
-    main .sc-route, main .sc-sec,
-    main .sc-card-line, main .sc-card-emerald {
-      margin-left: 0 !important;
-      padding-left: 0 !important;
-      text-indent: 0 !important;
-      text-align: left !important;
+    .sc-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+      border-bottom: 1.5px solid rgba(15, 23, 42, 0.15);
     }
     .sc-route {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.88rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
       font-weight: 600;
       color: #475569;
-      letter-spacing: 0.04em;
-      margin: 0 0 18px 0;
+      margin: 0;
+      letter-spacing: 0.03em;
       text-transform: lowercase;
     }
-    .sc-sec {
-      padding: 52px 0;
-      border-bottom: 1.5px solid rgba(15, 23, 42, 0.14);
+
+    /* === CHAPTER & PAGE STRUCTURE === */
+    .sc-chapter { margin-bottom: 48px; padding: 12px 0; }
+    .sc-chapter-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid #0f172a;
     }
-    .sc-sec:last-of-type { border-bottom: none; }
-    .sc-kicker {
-      display: inline-block;
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.78rem;
+    .sc-chapter-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #0f5132;
-      background: rgba(22, 135, 101, 0.15);
-      padding: 5px 12px;
-      border-radius: 4px;
-      margin: 0 0 14px 0;
     }
-    .sc-h1 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(2.1rem, 3.6vw, 3.1rem);
-      font-weight: 700;
-      color: #0f172a;
-      letter-spacing: -0.025em;
-      line-height: 1.12;
-      margin: 0 0 14px 0;
-    }
-    .sc-sub {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.15rem, 1.6vw, 1.38rem);
+    .sc-chapter-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
       font-weight: 600;
-      color: #0f5132;
-      line-height: 1.4;
-      margin: 0 0 24px 0;
+      color: #64748b;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
-    .sc-h2 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.45rem, 2.2vw, 1.95rem);
+    .sc-doc-h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.1rem, 3.6vw, 3.05rem);
       font-weight: 700;
       color: #0f172a;
-      letter-spacing: -0.02em;
-      line-height: 1.25;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      margin: 0 0 20px 0;
+    }
+    .sc-chapter-h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.55rem, 2.4vw, 2.05rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.22;
+      letter-spacing: -0.025em;
       margin: 0 0 18px 0;
     }
-    .sc-h3 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1.15rem;
+    .sc-sub-h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
       font-weight: 700;
       color: #0f172a;
       margin: 0 0 10px 0;
       line-height: 1.35;
     }
     .sc-lead {
-      font-size: clamp(1.04rem, 1.22vw, 1.14rem);
-      line-height: 1.82;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 500;
       color: #1e293b;
-      margin: 0 0 34px 0;
+      line-height: 1.82;
+      margin: 0 0 24px 0;
     }
     .sc-p {
-      font-size: 0.97rem;
-      line-height: 1.8;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.99rem;
       color: #334155;
-      margin: 0;
+      line-height: 1.82;
+      margin: 0 0 16px 0;
     }
-    /* Spacious 2-Column (2x2) Grid Layout */
-    .sc-grid-2x2 {
+
+    /* === EXECUTIVE DARK HERO & METRICS === */
+    .sc-exec-hero {
+      background: linear-gradient(135deg, #090d16 0%, #0f172a 55%, #064e3b 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: clamp(28px, 3.8vw, 44px);
+      margin: 22px 0 32px 0;
+      border: 1px solid rgba(74, 222, 128, 0.3);
+    }
+    .sc-exec-hero h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 14px 0;
+      line-height: 1.3;
+    }
+    .sc-exec-hero p {
+      font-size: 1.02rem;
+      color: #e2e8f0;
+      line-height: 1.78;
+      margin: 0 0 24px 0;
+    }
+    .sc-kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    @media (max-width: 900px) {
+      .sc-kpi-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    .sc-kpi-cell {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .sc-kpi-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.42rem;
+      font-weight: 700;
+      color: #4ade80;
+      margin-bottom: 4px;
+    }
+    .sc-kpi-desc {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    /* === EDITORIAL GRIDS & PANELS === */
+    .sc-grid-2 {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 48px;
-      row-gap: 38px;
-      margin-top: 28px;
+      gap: 28px;
+      margin: 24px 0;
     }
-    @media (max-width: 760px) {
-      .sc-grid-2x2 { grid-template-columns: 1fr; }
+    .sc-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 24px 0;
     }
-    .sc-card-line {
-      padding-top: 20px !important;
-      border-top: 2px solid rgba(15, 23, 42, 0.24) !important;
+    @media (max-width: 860px) {
+      .sc-grid-2, .sc-grid-3 { grid-template-columns: 1fr; }
     }
-    .sc-card-emerald {
-      padding-top: 20px !important;
-      border-top: 3px solid #168765 !important;
+    .sc-panel {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-top: 4px solid #0f172a;
+      border-radius: 12px;
+      padding: 24px 26px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
     }
-    .sc-num-label {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.82rem;
+    .sc-panel.emerald { border-top-color: #0f5132; background: #f8fafc; }
+    .sc-panel.blue { border-top-color: #1d4ed8; }
+    .sc-panel.purple { border-top-color: #6d28d9; }
+    .sc-panel-kicker {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
       font-weight: 700;
-      color: #0f5132;
-      text-transform: uppercase;
       letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #0f5132;
       margin-bottom: 8px;
     }
-    .sc-callout {
-      margin-top: 38px;
-      padding: 20px 24px !important;
-      border-left: 4px solid #0f5132;
-      background: rgba(255, 255, 255, 0.34);
-      font-size: 0.98rem;
-      font-weight: 500;
-      color: #0f172a;
-      line-height: 1.72;
+    .sc-panel.blue .sc-panel-kicker { color: #1d4ed8; }
+    .sc-panel.purple .sc-panel-kicker { color: #6d28d9; }
+
+    /* === FORMULA & ARCHITECTURE BLOCKS === */
+    .sc-math-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 12px;
+      padding: 22px 26px;
+      margin: 20px 0;
+      border-left: 4px solid #10b981;
     }
-    @media print {
-      html, body, main, .sc-auto-page { background: #ffffff !important; padding-left: 0 !important; opacity: 1 !important; }
-      #sc-left-nav, .sc-nav-toggle { display: none !important; }
-      .sc-card-line, .sc-card-emerald, .sc-callout { break-inside: avoid !important; page-break-inside: avoid !important; }
+    .sc-math-code {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 1.04rem;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 7px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 8px 0 12px 0;
+    }
+
+    /* === TABLES === */
+    .sc-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #cbd5e1;
+    }
+    .sc-table th {
+      background: #0f172a;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-align: left;
+      padding: 14px 18px;
+      letter-spacing: 0.03em;
+    }
+    .sc-table td {
+      padding: 15px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.94rem;
+      color: #1e293b;
+      line-height: 1.65;
+      vertical-align: top;
+    }
+    .sc-table tr:last-child td { border-bottom: none; }
+    .sc-table tr:nth-child(even) td { background: #f8fafc; }
+
+    /* === CALLOUTS & DOSSIER HEADERS === */
+    .sc-callout {
+      background: #f0fdf4;
+      border-left: 5px solid #0f5132;
+      border-radius: 0 12px 12px 0;
+      padding: 22px 26px;
+      margin: 24px 0;
+    }
+    .sc-callout-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0f5132;
+      margin-bottom: 6px;
+    }
+    .sc-dossier-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 8px rgba(15,23,42,0.03);
+    }
+    .sc-svg-wrap {
+      margin: 28px 0;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+      overflow-x: auto;
+    }
+    .sc-svg-wrap svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 960px;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body class="sc-nav-open">
-  <main class="sc-auto-page">
-    <p class="sc-route">intelligence core - biz intelligence - erp</p>
+  <main class="sc-monograph">
+    <div class="sc-top-bar">
+      <p class="sc-route">intelligence core - biz intelligence - erp</p>
+    </div>
 
-    <section class="sc-sec" style="padding-top: 12px;">
-      <div><span class="sc-kicker">ENTERPRISE BRAIN &bull; *SC INTELLIGENCE CORE</span></div>
-      <h1 class="sc-h1">*SC - ERP</h1>
-      <p class="sc-sub">24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.</p>
-      <p class="sc-lead">As part of the <strong>*SC intelligence-core</strong>, <strong>ERP</strong> functions as the autonomous central nervous system of the Signal Star Universe. Operating around the clock while human executives sleep, it harvests global market data, grounds strategic decisions in verified facts, and automates all 8 corporate departments at near- fixed cost.</p>
+    <!-- DOCUMENT HEADER -->
+    <header style="margin-bottom: 36px;">
+      <div class="sc-chapter-num">03. INTELLIGENCE-CORE &bull; BIZ INTELLIGENCE</div>
+      <h1 class="sc-doc-h1">*SC Qubit ERP — 24/7 Autonomous Enterprise Nervous System</h1>
+      <p class="sc-lead">As the autonomous operational backbone of *SC (SISTAR Company / Signal Star Universe), <strong>Qubit ERP</strong> replaces legacy, seat-licensed commercial software with an intelligent, 8-team autonomous orchestration engine. Powered by the 24/7 Unmanned Overnight Data Factory, Dual-Engine Vector RAG, and CCTV Vision Stock Opname, Qubit ERP synchronizes global cross-border operations across 8 international bases at near-zero marginal cost.</p>
+    </header>
 
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <div class="sc-num-label">01 &bull; WHAT IT IS (CORE DEFINITION)</div>
-          <h2 class="sc-h3">Overnight Data Factory (10 PM - 8 AM)</h2>
-          <p class="sc-p">Headless Playwright/Apify scrapers autonomously harvest global wholesale prices (1688/Alibaba), Shopee/Tokopedia competitor SKUs, HS-code tariffs, and regulatory updates every night.</p>
+    <!-- EXECUTIVE HERO -->
+    <div class="sc-exec-hero">
+      <h3>Executive Architectural Synthesis: The Zero-Seat Autonomous ERP</h3>
+      <p>Traditional enterprise ERPs (SAP, NetSuite, Oracle) impose prohibitive six-figure annual licensing burdens, rigid data silos, and weeks of manual batch reconciliations. Qubit ERP inverts this paradigm by anchoring all 8 enterprise operational departments onto lightweight, native Google Workspace APIs, Supabase pgvector stores, and autonomous agent swarms—eliminating 100% of internal administrative licensing fees while generating high-margin external B2B SaaS cashflow.</p>
+      <div class="sc-kpi-strip">
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">100%</div>
+          <div class="sc-kpi-desc">Internal ERP License Elimination across 8 Global Hubs</div>
         </div>
-
-        <div class="sc-card-line">
-          <div class="sc-num-label">02 &bull; WHY WE DO IT (MARKET OPPORTUNITY)</div>
-          <h2 class="sc-h3">Dual-Engine Vector RAG (NotebookLM + Dify)</h2>
-          <p class="sc-p">Embeds nightly market streams alongside internal Google Drive/Keep memos into Supabase pgvector and NotebookLM repositories, delivering citation-backed 8:00 AM executive briefs.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">10h</div>
+          <div class="sc-kpi-desc">Nocturnal Data Factory Cycle (22:00 -> 08:00 Local)</div>
         </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">03 &bull; HOW IT WORKS (OPERATIONAL MECHANISM)</div>
-          <h2 class="sc-h3">Qubit ERP &amp; CCTV Vision Stock Opname</h2>
-          <p class="sc-p">Automates Finance/VAT, HR (25th payouts), Sales/CRM, and RA natively on Google Workspace, while CCTV + Gemini Vision AI counts warehouse pallets and sachets in real time.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">60s</div>
+          <div class="sc-kpi-desc">CCTV Optical Stock Opname Refresh Latency</div>
         </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">04 &bull; REVENUE MODEL &amp; EXPECTED ROI</div>
-          <h2 class="sc-h3">Dual-Return SaaS &amp; MCP API Monetization</h2>
-          <p class="sc-p">Eliminates 100% of internal ERP/admin licensing costs while generating external B2B revenue through custom enterprise RAG builds, Zoho/Workspace ERP SaaS, and MCP Server agent query tolls.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">t = 0</div>
+          <div class="sc-kpi-desc">70/30 PG Webhook Multi-Party Split Settlement</div>
         </div>
+      </div>
+    </div>
+
+    <!-- CHAPTER 1 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 01</span>
+        <span class="sc-chapter-tag">ARCHITECTURAL FOUNDATION</span>
+      </div>
+      <h2 class="sc-chapter-h2">The Autonomous Central Nervous System of *SC — The 8-Team Qubit ERP Architecture</h2>
+      <p class="sc-p">In classical multinational trading operations, corporate expansion into new jurisdictional territories demands linear headcount multiplication: local finance managers, customs regulatory agents, inventory controllers, and customer success coordinators. This linear staffing model introduces catastrophic overhead friction, communication latency, and institutional memory loss whenever senior personnel depart.</p>
+      <p class="sc-p">Within <strong>*SC Intelligence-Core</strong>, Qubit ERP functions as an unbroken cybernetic nervous system that standardizes and automates all 8 corporate divisions into modular AI agent teams operating directly on top of Google Workspace and PostgreSQL/pgvector databases. Rather than maintaining brittle proprietary enterprise databases, every transactional event—from raw chemical sourcing on 1688 to container manifests arriving at Tanjung Priok—is reflected deterministically across interconnected Google Sheets, Docs, and Drive ledger structures.</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">DIVISIONAL MATRIX 01-04</div>
+          <h3 class="sc-sub-h3">Operational &amp; Sourcing Core</h3>
+          <p class="sc-p"><strong>Team 01 (Strategy &amp; C.A.N. Dispatch):</strong> Directs CEO ActionNotes into atomic task graphs and KPI tracking ledgers.<br/>
+          <strong>Team 02 (R&amp;D &amp; Sourcing):</strong> Continuously monitors factory raw material prices, packaging film rolls, and co-packing toll rates across Korea, China, and Indonesia.<br/>
+          <strong>Team 03 (Regulatory Affairs &amp; BPOM/FDA):</strong> Maintains automated vector indexing of cosmetic, nutraceutical, and veterinary dossiers to ensure instant import compliance.<br/>
+          <strong>Team 04 (Logistics &amp; SCM):</strong> Orchestrates sea/air freight booking, preferential tariff execution (AKFTA/RCEP), and bonded warehouse telemetry.</p>
+        </div>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">DIVISIONAL MATRIX 05-08</div>
+          <h3 class="sc-sub-h3">Commercial, Settlement &amp; Legal Core</h3>
+          <p class="sc-p"><strong>Team 05 (HR &amp; Payroll Automation):</strong> Deterministic 25th-of-the-month multi-jurisdictional payroll, BPJS/tax deductions, and live commission ledger calculation.<br/>
+          <strong>Team 06 (Marketing &amp; SISTAR Studio):</strong> Coordinates daily multi-format media output and mall.sisTV broadcast scheduling.<br/>
+          <strong>Team 07 (B2B/B2C Sales &amp; Scarlet AI):</strong> Connects Ms. Scarlet closing webhooks, pre-order escrow pools, and wholesale account credit lines.<br/>
+          <strong>Team 08 (Finance, VAT &amp; Legal Firewall):</strong> Enforces the Dual-Track Legal Firewall, K-SURE credit insurance, and automated 70/30 PG split webhooks.</p>
+        </div>
+      </div>
+
+      <!-- BESPOKE INLINE SVG 1 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#090d16"/>
+          <defs>
+            <linearGradient id="erpGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#10b981" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#047857" stop-opacity="0.9"/>
+            </linearGradient>
+            <linearGradient id="erpGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#0284c7" stop-opacity="0.9"/>
+            </linearGradient>
+            <linearGradient id="erpGradCore" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#4c1d95" stop-opacity="0.9"/>
+            </linearGradient>
+          </defs>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">QUBIT ERP &bull; 8-TEAM AUTONOMOUS ENTERPRISE NERVOUS SYSTEM</text>
+          
+          <!-- CENTRAL CORE -->
+          <circle cx="480" cy="180" r="64" fill="url(#erpGradCore)" stroke="#c084fc" stroke-width="2"/>
+          <text x="480" y="172" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">QUBIT ERP</text>
+          <text x="480" y="190" fill="#e9d5ff" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Google Workspace</text>
+          <text x="480" y="204" fill="#a7f3d0" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">+ Supabase pgvector</text>
+
+          <!-- 8 SATELLITE NODES -->
+          <!-- T1: Strategy -->
+          <rect x="60" y="60" width="160" height="48" rx="8" fill="url(#erpGrad1)" stroke="#34d399" stroke-width="1"/>
+          <text x="140" y="80" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">T01 &bull; Strategy &amp; C.A.N.</text>
+          <text x="140" y="96" fill="#ecfdf5" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">ActionNote Task Graph</text>
+          <line x1="220" y1="84" x2="424" y2="150" stroke="#34d399" stroke-dasharray="4,4" stroke-width="1.5"/>
+
+          <!-- T02: Sourcing -->
+          <rect x="290" y="50" width="160" height="48" rx="8" fill="url(#erpGrad1)" stroke="#34d399" stroke-width="1"/>
+          <text x="370" y="70" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">T02 &bull; Sourcing &amp; BOM</text>
+          <text x="370" y="86" fill="#ecfdf5" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">1688 / Toll Auto-Audit</text>
+          <line x1="390" y1="98" x2="455" y2="135" stroke="#34d399" stroke-dasharray="4,4" stroke-width="1.5"/>
+
+          <!-- T03: Regulatory -->
+          <rect x="510" y="50" width="160" height="48" rx="8" fill="url(#erpGrad1)" stroke="#34d399" stroke-width="1"/>
+          <text x="590" y="70" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">T03 &bull; Regulatory / BPOM</text>
+          <text x="590" y="86" fill="#ecfdf5" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Dossier Vector RAG</text>
+          <line x1="570" y1="98" x2="505" y2="135" stroke="#34d399" stroke-dasharray="4,4" stroke-width="1.5"/>
+
+          <!-- T04: Logistics -->
+          <rect x="740" y="60" width="160" height="48" rx="8" fill="url(#erpGrad1)" stroke="#34d399" stroke-width="1"/>
+          <text x="820" y="80" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">T04 &bull; Logistics &amp; SCM</text>
+          <text x="820" y="96" fill="#ecfdf5" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Container Cube &amp; Tariffs</text>
+          <line x1="740" y1="84" x2="536" y2="150" stroke="#34d399" stroke-dasharray="4,4" stroke-width="1.5"/>
+
+          <!-- T05: HR & Payroll -->
+          <rect x="60" y="240" width="160" height="48" rx="8" fill="url(#erpGrad2)" stroke="#38bdf8" stroke-width="1"/>
+          <text x="140" y="260" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">T05 &bull; HR &amp; 25th Payroll</text>
+          <text x="140" y="276" fill="#e0f2fe" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Cross-Border BPJS/Tax</text>
+          <line x1="220" y1="264" x2="424" y2="210" stroke="#38bdf8" stroke-dasharray="4,4" stroke-width="1.5"/>
+
+          <!-- T06: Marketing -->
+          <rect x="290" y="250" width="160" height="48" rx="8" fill="url(#erpGrad2)" stroke="#38bdf8" stroke-width="1"/>
+          <text x="370" y="270" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">T06 &bull; SISTAR Studio</text>
+          <text x="370" y="286" fill="#e0f2fe" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">mall.sisTV Broadcasts</text>
+          <line x1="390" y1="250" x2="455" y2="225" stroke="#38bdf8" stroke-dasharray="4,4" stroke-width="1.5"/>
+
+          <!-- T07: Sales -->
+          <rect x="510" y="250" width="160" height="48" rx="8" fill="url(#erpGrad2)" stroke="#38bdf8" stroke-width="1"/>
+          <text x="590" y="270" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">T07 &bull; Sales &amp; Scarlet AI</text>
+          <text x="590" y="286" fill="#e0f2fe" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">24/7 Agent Closers</text>
+          <line x1="570" y1="250" x2="505" y2="225" stroke="#38bdf8" stroke-dasharray="4,4" stroke-width="1.5"/>
+
+          <!-- T08: Finance -->
+          <rect x="740" y="240" width="160" height="48" rx="8" fill="url(#erpGrad2)" stroke="#38bdf8" stroke-width="1"/>
+          <text x="820" y="260" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">T08 &bull; Finance &amp; Split PG</text>
+          <text x="820" y="276" fill="#e0f2fe" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">70/30 Webhook &amp; K-SURE</text>
+          <line x1="740" y1="264" x2="536" y2="210" stroke="#38bdf8" stroke-dasharray="4,4" stroke-width="1.5"/>
+
+          <!-- OUTER PROTOCOL LABELS -->
+          <text x="480" y="325" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Deterministic Bidirectional Google Workspace Sync &bull; JSON-RPC 2.0 MCP Tool Bus &bull; Zero Headcount Overhead</text>
+        </svg>
       </div>
     </section>
 
-    <section class="sc-sec">
-      <div><span class="sc-kicker">STRATEGIC SYNERGY &amp; GOVERNANCE</span></div>
-      <h2 class="sc-h2">Integration Within the Signal Star Universe (*SC)</h2>
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <h3 class="sc-h3">1. Core Architecture &amp; Technical Integration</h3>
-          <p class="sc-p">Connected across our 12-domain semantic web matrix and 8 international bases (Korea SCK, Indonesia SCI, Singapore SCS, USA SCU, Vietnam SCV, India SCIND, China SCC, Japan SCJ). Every workflow is tracked transparently via standardized Google Workspace Console, Monthly Sales, and Dashboard ledgers.</p>
+    <!-- CHAPTER 2 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 02</span>
+        <span class="sc-chapter-tag">NOCTURNAL HARVESTING</span>
+      </div>
+      <h2 class="sc-chapter-h2">The Nocturnal Engine: 24/7 Unmanned Overnight Data Factory (10:00 PM -> 08:00 AM)</h2>
+      <p class="sc-p">Corporate executives and commercial traders in conventional enterprises make critical purchasing and pricing decisions based on obsolete data: last week's distributor price list, month-old customs summaries, or anecdotal dealer feedback. In cross-border e-commerce and bulk ingredient trading, market pricing fluctuates continuously based on raw polymer spot costs, sea freight bunker adjustments, currency swings, and local marketplace flash sales.</p>
+      <p class="sc-p">To ensure absolute pricing supremacy, Qubit ERP deploys the <strong>Overnight Data Factory</strong>. Operating silently during the 10-hour nocturnal window between 10:00 PM and 08:00 AM local time across our 8 international hubs (Korea SCK, Indonesia SCI, Vietnam SCV, Singapore SCS, USA SCU, China SCC, Japan SCJ, India SCIND), a distributed swarm of headless Playwright and Apify scraping nodes scans, parses, and structures thousands of competitive data points:</p>
+
+      <div class="sc-grid-3">
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">INGESTION STREAM 01</div>
+          <h3 class="sc-sub-h3">Wholesale FOB &amp; Raw Material Telemetry</h3>
+          <p class="sc-p">Autonomous extractors monitor 1688, Alibaba, and Korean chemical exchanges for bulk active ingredients, glass bottles, aluminum sachet foils, and co-packing processing rates to recalibrate the baseline Bill of Materials (BOM).</p>
         </div>
-        <div class="sc-card-line">
-          <h3 class="sc-h3">2. Risk Firewall &amp; Settlement Security</h3>
-          <p class="sc-p">Protected by the *SC Triple Control Towers and Dual-Track Legal Firewall (isolating SC Index holding IP from Biz Galaxy commercial liabilities). Transactions leverage 3-Month Rolling Purchasing Forecasts (RPF), K-SURE export credit guarantees, and automated 70/30 PG webhook split settlements.</p>
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">INGESTION STREAM 02</div>
+          <h3 class="sc-sub-h3">Competitor Marketplace SKU Scraping</h3>
+          <p class="sc-p">Nightly crawlers scan Shopee, Tokopedia, TikTok Shop, Amazon, and Lazada across Indonesia, Vietnam, and Southeast Asia—tracking price discounts, review velocity, and stock depletion rates across target categories.</p>
+        </div>
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">INGESTION STREAM 03</div>
+          <h3 class="sc-sub-h3">Tariff, Customs &amp; Regulatory Shifts</h3>
+          <p class="sc-p">Monitors INSW (Indonesia National Single Window), Vietnam Customs, and MFDS/BPOM regulatory gazettes to detect tariff code modifications, anti-dumping duties, or packaging mandate updates instantly.</p>
         </div>
       </div>
-      <div class="sc-callout"><strong>*SC - SISTAR COMPANY | One Spark, Infinite Galaxifying:</strong> Powered by the Qubit Algorithm&trade;, *SC intelligence-core, Scarlet AI, Qubit Biz, and the Biz Galaxy constellation.<br/>Corporate Portal: https://sistarcompany.com &bull; Executive Contact: DennyKu (denniiku@sistarcompany.com)</div>
+
+      <!-- BESPOKE INLINE SVG 2 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#0b1329"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">OVERNIGHT DATA FACTORY &bull; 10:00 PM TO 08:00 AM PIPELINE</text>
+          
+          <!-- TIMELINE BAR -->
+          <line x1="80" y1="80" x2="880" y2="80" stroke="#1e293b" stroke-width="4"/>
+          <circle cx="120" cy="80" r="12" fill="#ef4444"/>
+          <text x="120" y="60" fill="#fca5a5" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">22:00 PM</text>
+          <text x="120" y="110" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Scraper Ignition</text>
+
+          <circle cx="360" cy="80" r="12" fill="#f59e0b"/>
+          <text x="360" y="60" fill="#fde68a" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">02:00 AM</text>
+          <text x="360" y="110" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Cleaning &amp; Vectorization</text>
+
+          <circle cx="620" cy="80" r="12" fill="#3b82f6"/>
+          <text x="620" y="60" fill="#93c5fd" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">05:30 AM</text>
+          <text x="620" y="110" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Synthesis &amp; RAG Indexing</text>
+
+          <circle cx="840" cy="80" r="12" fill="#10b981"/>
+          <text x="840" y="60" fill="#6ee7b7" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">08:00 AM</text>
+          <text x="840" y="110" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Executive Action Brief</text>
+
+          <!-- 4 INGESTION CARDS -->
+          <g transform="translate(60, 140)">
+            <rect width="190" height="150" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+            <text x="95" y="28" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">STAGE 1: SCRAPE</text>
+            <text x="15" y="55" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Headless Playwright/Apify</text>
+            <text x="15" y="75" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; 1688 / Alibaba wholesale</text>
+            <text x="15" y="95" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Shopee / Tokopedia SKUs</text>
+            <text x="15" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; HS-code &amp; tariff updates</text>
+            <text x="15" y="135" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9">&gt; Output: Raw JSON Stream</text>
+          </g>
+
+          <g transform="translate(285, 140)">
+            <rect width="190" height="150" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+            <text x="95" y="28" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">STAGE 2: VECTORIZE</text>
+            <text x="15" y="55" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Deduplication &amp; normalization</text>
+            <text x="15" y="75" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; OpenAI text-embedding-3</text>
+            <text x="15" y="95" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Supabase pgvector store</text>
+            <text x="15" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; HNSW cosine similarity</text>
+            <text x="15" y="135" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9">&gt; Index Latency: &lt; 140ms</text>
+          </g>
+
+          <g transform="translate(510, 140)">
+            <rect width="190" height="150" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+            <text x="95" y="28" fill="#a78bfa" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">STAGE 3: GROUND</text>
+            <text x="15" y="55" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Dual-Engine RAG routing</text>
+            <text x="15" y="75" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; NotebookLM source synthesis</text>
+            <text x="15" y="95" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Dify multi-agent checks</text>
+            <text x="15" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Strict citation constraint</text>
+            <text x="15" y="135" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9">&gt; Hallucination Rate: 0.0%</text>
+          </g>
+
+          <g transform="translate(735, 140)">
+            <rect width="165" height="150" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+            <text x="82" y="28" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">STAGE 4: DELIVER</text>
+            <text x="12" y="55" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; 08:00 AM C.A.N. Memo</text>
+            <text x="12" y="75" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Dynamic price adjustments</text>
+            <text x="12" y="95" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Sourcing arbitrage alerts</text>
+            <text x="12" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; One-click CEO approval</text>
+            <text x="12" y="135" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="9">&gt; Dispatched via Google Chat</text>
+          </g>
+
+          <text x="480" y="322" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Unattended Automated Cycle Execution &bull; Zero Human Intervention &bull; Deterministic Ground Truth Delivery</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 3 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 03</span>
+        <span class="sc-chapter-tag">COGNITIVE GROUNDING</span>
+      </div>
+      <h2 class="sc-chapter-h2">Dual-Engine Vector RAG: Zero-Hallucination Grounding via Supabase &amp; NotebookLM</h2>
+      <p class="sc-p">Large Language Models deployed in generic enterprise environments frequently hallucinate pricing, inventory quantities, and legal requirements. In cross-border commerce, a single hallucinated HS code or shipping tariff can cause container impoundment at port customs or destroy entire product gross margins.</p>
+      <p class="sc-p">Qubit ERP enforces a <strong>Dual-Engine Zero-Hallucination Retrieval-Augmented Generation (RAG)</strong> architecture that tethers every conversational query and autonomous agent action to cryptographically verified institutional ground truth:</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">ENGINE A &bull; NOTEBOOKLM</div>
+          <h3 class="sc-sub-h3">Deep Institutional Memory &amp; Executive Synthesis</h3>
+          <p class="sc-p">Powered by Gemini 2.5 Pro multimodal reasoning across our curated institutional knowledge vaults: 30 years of trade contracts, master standard operating procedures (SOPs), bilateral investment treaties, and regulatory filings. Operates with strict inline citations; any claim not grounded in an uploaded master document is actively rejected.</p>
+        </div>
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">ENGINE B &bull; DIFY + SUPABASE PGVECTOR</div>
+          <h3 class="sc-sub-h3">Sub-Second Agentic Execution &amp; Tool Bus</h3>
+          <p class="sc-p">A high-velocity vector search engine storing over 500,000 product SKUs, supplier price points, and customs rulings in Supabase pgvector. Integrated directly into Dify DAG workflows, granting autonomous agents instant SQL queries, JSON-RPC 2.0 tool triggers, and real-time ledger updates in under 200 milliseconds.</p>
+        </div>
+      </div>
+
+      <div class="sc-callout">
+        <div class="sc-callout-title">Operational Rule: Mandatory Similarity Gating</div>
+        <p class="sc-p">All Qubit ERP and Scarlet AI agent responses must pass a minimum cosine similarity threshold ($\text{sim} \ge 0.82$) against verified knowledge bases. If a supplier inquiry or customer question touches an unverified specification, the engine automatically triggers an edge notification to the human regional Challenger rather than fabricating an answer.</p>
+      </div>
+    </section>
+
+    <!-- CHAPTER 4 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 04</span>
+        <span class="sc-chapter-tag">PHYSICAL EMBODIMENT</span>
+      </div>
+      <h2 class="sc-chapter-h2">CCTV + Gemini Vision AI Stock Opname: Real-Time Optical Warehouse Audit</h2>
+      <p class="sc-p">The greatest failure point of legacy ERP systems is <em>physical-digital drift</em>: the inevitable divergence between what an ERP database records and what physically sits on warehouse pallet racks. Physical stock opname in conventional 3PL facilities is performed manually once a month, requiring complete warehouse shutdowns, teams of barcode-scanning clerks, and still yielding a 3% to 7% inventory variance rate due to theft, misplacement, and unrecorded breakage.</p>
+      <p class="sc-p">Qubit ERP eliminates physical-digital drift by converting standard, low-cost 4K IP security cameras installed across our bonded facilities in Jakarta (SCI), Seoul/Incheon (SCK), and Ho Chi Minh City (SCV) into continuous optical auditing sensors. Powered by <strong>Gemini Vision AI</strong> running edge-to-cloud inferences, the system audits warehouse stock continuously:</p>
+
+      <div class="sc-grid-3">
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">VISION AUDIT 01</div>
+          <h3 class="sc-sub-h3">Bounding Box &amp; Pallet Geometry</h3>
+          <p class="sc-p">Calculates the volumetric displacement of pallet stacks every 60 seconds, verifying physical carton count against warehouse ledger reservations without moving a single box.</p>
+        </div>
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">VISION AUDIT 02</div>
+          <h3 class="sc-sub-h3">Automated OCR Batch &amp; Expiry Verification</h3>
+          <p class="sc-p">Reads printed outer-carton lot numbers, production dates, and BPOM registration strings, cross-checking batch numbers against factory certificates of analysis (CoA) stored in Supabase.</p>
+        </div>
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">VISION AUDIT 03</div>
+          <h3 class="sc-sub-h3">Real-Time Depletion &amp; Auto-Reorder Trigger</h3>
+          <p class="sc-p">When pallet stacks cross predetermined minimum stock thresholds ($Q \le Q_{\text{reorder}}$), Qubit ERP Team 02 automatically compiles and dispatches a supplier purchase order draft to factory partners.</p>
+        </div>
+      </div>
+
+      <!-- BESPOKE INLINE SVG 3 -->
+      <div class="sc-svg-wrap">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <rect width="960" height="340" rx="12" fill="#090d16"/>
+          <text x="480" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1">CCTV + GEMINI VISION AI &bull; OPTICAL STOCK OPNAME &amp; 70/30 CLEARING</text>
+          
+          <!-- STAGE 1: PHYSICAL WAREHOUSE -->
+          <g transform="translate(40, 70)">
+            <rect width="250" height="220" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+            <text x="125" y="26" fill="#60a5fa" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">PHYSICAL WAREHOUSE FLOOR</text>
+            <circle cx="50" cy="65" r="16" fill="#3b82f6"/>
+            <text x="50" y="70" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">4K</text>
+            <text x="80" y="65" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="11" font-weight="600">IP CCTV Cameras</text>
+            <text x="80" y="80" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">Continuous RTSP Stream</text>
+            
+            <!-- Pallet representation -->
+            <rect x="30" y="110" width="190" height="80" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+            <rect x="40" y="120" width="50" height="25" fill="#059669" rx="3"/>
+            <rect x="100" y="120" width="50" height="25" fill="#059669" rx="3"/>
+            <rect x="160" y="120" width="50" height="25" fill="#059669" rx="3"/>
+            <rect x="40" y="155" width="50" height="25" fill="#059669" rx="3"/>
+            <rect x="100" y="155" width="50" height="25" fill="#059669" rx="3"/>
+            <rect x="160" y="155" width="50" height="25" fill="#059669" rx="3"/>
+            <text x="125" y="205" fill="#34d399" font-family="'Space Grotesk', monospace" font-size="10" text-anchor="middle">Pallets &bull; S1-S6 Sachets &bull; Cartons</text>
+          </g>
+
+          <!-- FLOW ARROW 1 -->
+          <line x1="300" y1="180" x2="350" y2="180" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)"/>
+          <text x="325" y="170" fill="#38bdf8" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">60s FRAME</text>
+
+          <!-- STAGE 2: GEMINI VISION AI ENGINE -->
+          <g transform="translate(360, 70)">
+            <rect width="250" height="220" rx="10" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+            <text x="125" y="26" fill="#c084fc" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">GEMINI VISION AI ENGINE</text>
+            
+            <rect x="20" y="50" width="210" height="35" rx="6" fill="#0f172a" stroke="#6d28d9" stroke-width="1"/>
+            <text x="125" y="72" fill="#e9d5ff" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Volumetric Pallet Sizing (&plusmn;0.5%)</text>
+            
+            <rect x="20" y="95" width="210" height="35" rx="6" fill="#0f172a" stroke="#6d28d9" stroke-width="1"/>
+            <text x="125" y="117" fill="#e9d5ff" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Optical OCR Lot / Expiry Scanner</text>
+
+            <rect x="20" y="140" width="210" height="35" rx="6" fill="#0f172a" stroke="#6d28d9" stroke-width="1"/>
+            <text x="125" y="162" fill="#e9d5ff" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Zero-Shrinkage Audit Verification</text>
+
+            <text x="125" y="202" fill="#a7f3d0" font-family="'Space Grotesk', monospace" font-size="10" text-anchor="middle">Physical State Collapsed at t = 0</text>
+          </g>
+
+          <!-- FLOW ARROW 2 -->
+          <line x1="620" y1="180" x2="670" y2="180" stroke="#10b981" stroke-width="3"/>
+          <text x="645" y="170" fill="#10b981" font-family="'Space Grotesk', monospace" font-size="9" text-anchor="middle">SYNC</text>
+
+          <!-- STAGE 3: QUBIT ERP & 70/30 SPLIT -->
+          <g transform="translate(680, 70)">
+            <rect width="240" height="220" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+            <text x="120" y="26" fill="#4ade80" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">QUBIT ERP &amp; 70/30 CLEARING</text>
+            
+            <rect x="15" y="50" width="210" height="32" rx="5" fill="#0f172a"/>
+            <text x="120" y="71" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Live Inventory Ledger Updated</text>
+
+            <rect x="15" y="90" width="210" height="32" rx="5" fill="#0f172a"/>
+            <text x="120" y="111" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Scarlet AI Stock Available</text>
+
+            <rect x="15" y="130" width="210" height="42" rx="5" fill="#064e3b" stroke="#34d399" stroke-width="1"/>
+            <text x="120" y="148" fill="#ecfdf5" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">70/30 PG Webhook Trigger</text>
+            <text x="120" y="163" fill="#a7f3d0" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Instant Supplier &amp; Partner Split</text>
+
+            <text x="120" y="202" fill="#38bdf8" font-family="'Space Grotesk', monospace" font-size="10" text-anchor="middle">CCC = 0 &bull; Risk Extinguished</text>
+          </g>
+
+          <text x="480" y="322" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle">Autonomous Physical Telemetry Stream &bull; K-SURE Collateral Verifiable &bull; Near-Zero Marginal Ledger Cost</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CHAPTER 5 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 05</span>
+        <span class="sc-chapter-tag">MATHEMATICAL FORMALISM</span>
+      </div>
+      <h2 class="sc-chapter-h2">Mathematical Connection to the Qubit Algorithm™: State Vector Superposition ($t=0$)</h2>
+      <p class="sc-p">In classical enterprise systems, accounting obeys Newtonian linear causality ($A \to B \to C$): a supplier issues a pro-forma invoice ($A$), goods are shipped across 30 days ($B$), and invoices are manually reconciled and paid 60 days post-arrival ($C$), tying up working capital across a 90-day Cash Conversion Cycle ($CCC$).</p>
+      <p class="sc-p">Under the <strong>Qubit Algorithm™</strong>, Qubit ERP models all corporate transactional states as an entangled Quantum State Vector $|\Psi_{\text{ERP}}\rangle$. Rather than waiting for sequential milestones, multi-party obligations exist in superposition and collapse into simultaneous settlement ($t=0$) upon automated optical verification:</p>
+
+      <div class="sc-math-box">
+        <div class="sc-formula">|\Psi_{\text{ERP}}(t)\rangle = \alpha |M_{\text{Raw}}\rangle \otimes \beta |F_{\text{Factory}}\rangle \otimes \gamma |L_{\text{Logistics}}\rangle \otimes \delta |B_{\text{Bank}}\rangle \xrightarrow{\hat{M}_{\text{Vision}}} |\text{Settled}_{t=0}\rangle</div>
+        <div class="sc-math-desc">Where $\hat{M}_{\text{Vision}}$ is the Gemini Vision optical audit operator. The instant warehouse CCTV verifies physical pallet arrival, the wave function collapses into four simultaneous ledger updates: factory COGS payout ($70\%$), platform reserve ($30\%$), instant VAT remittance, and client credit release.</div>
+        <div class="sc-math-code">\Delta S_{\text{entropy}} = k_B \ln\left(\frac{W_{\text{unverified}}}{W_{\text{optical}}}\right) \longrightarrow 0 \quad \text{and} \quad CCC = \text{DIO} + \text{DSO} - \text{DPO} \xrightarrow{t=0} 0</div>
+        <div class="sc-math-desc">Physical inventory entropy $\Delta S$ approaches zero via continuous 60-second optical observation, collapsing the traditional 90-day cash conversion cycle ($CCC$) to instantaneous settlement ($t=0$).</div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 6 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 06</span>
+        <span class="sc-chapter-tag">SYSTEMS COMPARISON</span>
+      </div>
+      <h2 class="sc-chapter-h2">Comparative Performance Matrix: Classical Enterprise ERP vs. *SC Qubit ERP</h2>
+      <p class="sc-p">The following institutional comparison matrix highlights the profound structural, economic, and operational advantages of Qubit ERP over legacy enterprise architectures:</p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Architecture Dimension</th>
+            <th>Legacy Enterprise ERP (SAP / NetSuite / Oracle)</th>
+            <th>*SC Qubit ERP (Google Workspace + AI Core)</th>
+            <th>Strategic Value Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Annual Licensing Cost</strong></td>
+            <td>$120,000 &ndash; $350,000+ per year in recurring seat licenses and database upkeep</td>
+            <td><strong>$0.00</strong> (100% internal licensing elimination via native Google Workspace &amp; open-source Supabase)</td>
+            <td>Complete capital reinvestment into physical product inventory and trade financing</td>
+          </tr>
+          <tr>
+            <td><strong>Inventory Stock Opname</strong></td>
+            <td>Manual monthly audits; warehouse shutdown for 48 hours; &plusmn;4.5% drift error</td>
+            <td><strong>Continuous 60-Second CCTV Optical Audit</strong> via Gemini Vision AI edge inference</td>
+            <td>Zero inventory shrinkage, zero operational downtime, instantaneous collateral verification</td>
+          </tr>
+          <tr>
+            <td><strong>Cross-Border Settlement</strong></td>
+            <td>Sequential Net-30 to Net-90 days; manual wire reconciliations; cross-border FX slippage</td>
+            <td><strong>Simultaneous $t=0$ 70/30 PG Webhook Splits</strong> via Xendit / Midtrans / Stripe</td>
+            <td>Cash conversion cycle collapsed from 90 days to real-time checkout settlement</td>
+          </tr>
+          <tr>
+            <td><strong>Nocturnal Market Telemetry</strong></td>
+            <td>Manual analyst research; static quarterly price lists; lagging tariff awareness</td>
+            <td><strong>Overnight Data Factory (22:00 &ndash; 08:00)</strong> scraping 1688, Tokopedia, Shopee, and customs gazettes</td>
+            <td>Daily 08:00 AM executive action briefs; real-time dynamic pricing arbitrage capture</td>
+          </tr>
+          <tr>
+            <td><strong>Deployment &amp; Onboarding</strong></td>
+            <td>9 to 18 months of systems integration consulting; complex employee training curves</td>
+            <td><strong>Turnkey Workspace Provisioning in &lt; 2 hours</strong>; conversational AI Co-Pilots on Google Chat</td>
+            <td>Zero training barrier; immediate veteran-grade operational proficiency on Day 1</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHAPTER 7 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 07</span>
+        <span class="sc-chapter-tag">OPERATIONAL LEDGER MAPPING</span>
+      </div>
+      <h2 class="sc-chapter-h2">8-Team Operational Division Matrix &amp; Google Workspace Automation</h2>
+      <p class="sc-p">Each of the 8 enterprise teams inside Qubit ERP operates autonomously with dedicated Google Sheets, automated Apps Script triggers, and Supabase webhook bridges:</p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Team Code &amp; Function</th>
+            <th>Google Workspace Master Ledger</th>
+            <th>Autonomous AI Trigger &amp; Tool Bus</th>
+            <th>Jurisdictional Scope</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Team 01 &bull; Strategy &amp; C.A.N.</strong></td>
+            <td>`01_CAN_Executive_Dispatch.gdoc` &amp; KPI Dashboard</td>
+            <td>CEO voice memo parsing via Whisper -> atomic DAG ticket creation</td>
+            <td>Global (*SC Holding &amp; All 8 Bases)</td>
+          </tr>
+          <tr>
+            <td><strong>Team 02 &bull; R&amp;D &amp; Sourcing</strong></td>
+            <td>`02_BOM_Formulation_RawMaterials.gsheet`</td>
+            <td>1688 / Alibaba wholesale scrapers -> auto BOM margin recalculation</td>
+            <td>Korea (SCK), China (SCC), Indonesia (SCI)</td>
+          </tr>
+          <tr>
+            <td><strong>Team 03 &bull; Regulatory &amp; BPOM</strong></td>
+            <td>`03_Regulatory_Dossiers_BPOM.gdrive`</td>
+            <td>Dify Vector RAG -> instant product compliance certification verification</td>
+            <td>Indonesia (BPOM), USA (FDA), Vietnam (MOH)</td>
+          </tr>
+          <tr>
+            <td><strong>Team 04 &bull; Logistics &amp; SCM</strong></td>
+            <td>`04_Container_SCM_Customs.gsheet`</td>
+            <td>Vessel tracking APIs -> preferential tariff duty calculation (AKFTA/RCEP)</td>
+            <td>Global Sea &amp; Air Freight Forwarding</td>
+          </tr>
+          <tr>
+            <td><strong>Team 05 &bull; HR &amp; Payroll</strong></td>
+            <td>`05_Payroll_25th_Disbursements.gsheet`</td>
+            <td>Automated statutory deductions -> direct bank payouts on the 25th</td>
+            <td>8 Global Jurisdictions (KRW, IDR, VND, USD)</td>
+          </tr>
+          <tr>
+            <td><strong>Team 06 &bull; Marketing &amp; Studio</strong></td>
+            <td>`06_Media_Content_Calendar.gsheet`</td>
+            <td>SISTAR Studio image/video compiler -> mall.sisTV live stream queue</td>
+            <td>Omnichannel (*SC Digital Web Matrix)</td>
+          </tr>
+          <tr>
+            <td><strong>Team 07 &bull; Sales &amp; Scarlet AI</strong></td>
+            <td>`07_Live_B2B_Order_Closing.gsheet`</td>
+            <td>Ms. Scarlet conversational agent -> pre-order escrow lock webhook</td>
+            <td>Scarlet AI &amp; Qubit Biz Platforms</td>
+          </tr>
+          <tr>
+            <td><strong>Team 08 &bull; Finance &amp; Tax</strong></td>
+            <td>`08_Monthly_Sales_Consolidated.gsheet`</td>
+            <td>Payment gateway webhook -> 70/30 split and K-SURE credit ledger</td>
+            <td>Dual-Track Legal Firewall Isolated Entities</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHAPTER 8 -->
+    <section class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER 08</span>
+        <span class="sc-chapter-tag">MONETIZATION &amp; GOVERNANCE</span>
+      </div>
+      <h2 class="sc-chapter-h2">Dual-Return Monetization Engine &amp; Sovereign Dual-Track Legal Firewall</h2>
+      <p class="sc-p">Qubit ERP is engineered from the ground up as a dual-return capitalization engine. It delivers immediate internal returns by driving corporate operational expenses to near zero, while simultaneously generating external commercial software revenues:</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">RETURN TRACK 1 &bull; INTERNAL OPEX REDUCTION</div>
+          <h3 class="sc-sub-h3">Zero Administrative Overhead &amp; Headcount Freedom</h3>
+          <p class="sc-p">By eliminating commercial ERP software subscriptions across 8 countries, *SC captures an immediate $250,000+ annual margin expansion. Furthermore, because a single regional operator commands all 8 AI sub-agent teams, organizational headcount remains completely decoupled from transaction volume growth.</p>
+        </div>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">RETURN TRACK 2 &bull; EXTERNAL B2B SAAS CASHFLOW</div>
+          <h3 class="sc-sub-h3">White-Label Qubit ERP &amp; MCP Agent Tollgates</h3>
+          <p class="sc-p">External trading corporations, regional importers, and clinic franchise networks license Qubit ERP as a managed SaaS solution. External procurement AI agents query *SC inventory, verify tariff compliance, and book manufacturing slots via Model Context Protocol (MCP) endpoints with automated per-call API query micro-tolls.</p>
+        </div>
+      </div>
+
+      <div class="sc-dossier-card">
+        <h3 class="sc-sub-h3">Sovereign Dual-Track Legal Firewall &amp; Settlement Protection</h3>
+        <p class="sc-p">All Qubit ERP operations are insulated by the <strong>*SC Dual-Track Legal Firewall</strong>. Core intellectual property, proprietary RAG embedding weights, and holding algorithms are strictly ring-fenced within *SC Holding entities, while commercial transaction liabilities, logistics handling, and retail payment collection are executed by localized operating SPVs across Korea, Indonesia, Vietnam, and global hubs. Transactions leverage 3-Month Rolling Purchasing Forecasts (RPF), K-SURE sovereign export credit guarantees, and automated 70/30 PG webhook split settlements—ensuring absolute balance sheet resilience.</p>
+      </div>
+
+      <div class="sc-callout">
+        <div class="sc-callout-title">*SC - SISTAR COMPANY &bull; One Spark, Infinite Galaxifying</div>
+        <p class="sc-p">Powered by the Qubit Algorithm&trade;, *SC Intelligence-Core, Scarlet AI, Qubit Biz, and the Biz Galaxy Constellation.<br/>
+        Executive Contact: DennyKu (denniiku@sistarcompany.com) &bull; Official Portal: https://sistarcompany.com</p>
+      </div>
     </section>
   </main>
 </body>
