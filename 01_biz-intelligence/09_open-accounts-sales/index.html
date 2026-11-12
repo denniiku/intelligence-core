@@ -4,22 +4,464 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=block" rel="stylesheet">
-  <title>*SC | Open Accounts Sales - intelligence core - biz intelligence - open accounts sales</title>
-  <meta name="description" content="*SC (SISTAR Company) - Open Accounts Sales : 24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP." />
+  <title>*SC | Open Accounts Sales — K-SURE Export Credit &amp; Autonomous B2B Trade Receivables Engine</title>
+  <meta name="description" content="Official Institutional Monograph of *SC (SISTAR Company) Domain 03 (intelligence-core): Open Accounts Sales Engine — Autonomous B2B Credit Underwriting, 3-Month Rolling Purchasing Forecast (RPF), K-SURE Export Credit Insurance, and 70/30 PG Split Clearing." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "*SC | Open Accounts Sales",
-    "description": "24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.",
+    "@type": "TechArticle",
+    "headline": "*SC | Open Accounts Sales — K-SURE Export Credit & Autonomous B2B Trade Receivables Engine",
+    "description": "Autonomous B2B Open Account underwriting, 3-Month Rolling Purchasing Forecast (RPF) algorithms, K-SURE sovereign export credit integration, and 70/30 smart split settlement powering Scarlet AI and Qubit Biz.",
+    "author": {
+      "@type": "Person",
+      "name": "DennyKu (*SC)"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "*SC - SISTAR COMPANY",
+      "alternateName": "Signal Star Universe",
       "url": "https://sistarcompany.com"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://intelligencecore.sistarcompany.com/01_biz-intelligence/09_open-accounts-sales/"
     }
   }
   </script>
-  <style>html,body{background:linear-gradient(to right,#f0acf7,#acf7f0,#f7f0ac);margin:0;padding:0;}body.sc-nav-open{padding-left:236px;}body.sc-nav-folded{padding-left:64px;}@media(max-width:768px){body.sc-nav-open,body.sc-nav-folded{padding-left:0!important;}}</style>
+  <style>
+    html, body {
+      background: linear-gradient(to right, #f0acf7, #acf7f0, #f7f0ac);
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.sc-nav-open { padding-left: 236px; }
+    body.sc-nav-folded { padding-left: 64px; }
+    @media (max-width: 768px) {
+      body.sc-nav-open, body.sc-nav-folded { padding-left: 0 !important; }
+    }
+
+    .sc-monograph {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: min(1380px, 95%);
+      margin: 0 auto;
+      padding: clamp(36px, 5vh, 68px) clamp(24px, 5vw, 76px) 120px;
+    }
+    .sc-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+      border-bottom: 1.5px solid rgba(15, 23, 42, 0.15);
+    }
+    .sc-route {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #475569;
+      margin: 0;
+      letter-spacing: 0.03em;
+      text-transform: lowercase;
+    }
+    .sc-action-btns {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .sc-btn-pdf {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 600;
+      padding: 9px 18px;
+      border-radius: 8px;
+      border: 1.5px solid #0f172a;
+      background: rgba(255, 255, 255, 0.85);
+      color: #0f172a;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .sc-btn-pdf.emerald {
+      background: #0f5132;
+      border-color: #0f5132;
+      color: #ffffff;
+    }
+    .sc-btn-pdf:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+    }
+
+    /* === CHAPTER & PAGE STRUCTURE === */
+    .sc-chapter {
+      background: rgba(255, 255, 255, 0.86);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(15, 23, 42, 0.12);
+      border-radius: 18px;
+      padding: clamp(32px, 4.5vw, 56px);
+      margin-bottom: 44px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+    }
+    .sc-chapter-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid #0f172a;
+    }
+    .sc-chapter-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #0f5132;
+    }
+    .sc-chapter-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #64748b;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .sc-doc-h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.1rem, 3.6vw, 3.05rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      margin: 0 0 20px 0;
+    }
+    .sc-chapter-h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.55rem, 2.4vw, 2.05rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.22;
+      letter-spacing: -0.025em;
+      margin: 0 0 18px 0;
+    }
+    .sc-sub-h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 0 0 10px 0;
+      line-height: 1.35;
+    }
+    .sc-lead {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 500;
+      color: #1e293b;
+      line-height: 1.82;
+      margin: 0 0 24px 0;
+    }
+    .sc-p {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.99rem;
+      color: #334155;
+      line-height: 1.82;
+      margin: 0 0 16px 0;
+    }
+
+    /* === EXECUTIVE DARK HERO & METRICS === */
+    .sc-exec-hero {
+      background: linear-gradient(135deg, #090d16 0%, #0f172a 55%, #064e3b 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: clamp(28px, 3.8vw, 44px);
+      margin: 22px 0 32px 0;
+      border: 1px solid rgba(74, 222, 128, 0.3);
+    }
+    .sc-exec-hero h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 14px 0;
+      line-height: 1.3;
+    }
+    .sc-exec-hero p {
+      font-size: 1.02rem;
+      color: #e2e8f0;
+      line-height: 1.78;
+      margin: 0 0 24px 0;
+    }
+    .sc-kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    @media (max-width: 900px) {
+      .sc-kpi-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    .sc-kpi-cell {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .sc-kpi-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.42rem;
+      font-weight: 700;
+      color: #4ade80;
+      margin-bottom: 4px;
+    }
+    .sc-kpi-desc {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    /* === EDITORIAL GRIDS & PANELS === */
+    .sc-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+      margin: 24px 0;
+    }
+    .sc-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 24px 0;
+    }
+    @media (max-width: 860px) {
+      .sc-grid-2, .sc-grid-3 { grid-template-columns: 1fr; }
+    }
+    .sc-panel {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-top: 4px solid #0f172a;
+      border-radius: 12px;
+      padding: 24px 26px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+    }
+    .sc-panel.emerald { border-top-color: #0f5132; background: #f8fafc; }
+    .sc-panel.blue { border-top-color: #1d4ed8; }
+    .sc-panel.purple { border-top-color: #6d28d9; }
+    .sc-panel-kicker {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #0f5132;
+      margin-bottom: 8px;
+    }
+    .sc-panel.blue .sc-panel-kicker { color: #1d4ed8; }
+    .sc-panel.purple .sc-panel-kicker { color: #6d28d9; }
+
+    /* === FORMULA & ARCHITECTURE BLOCKS === */
+    .sc-math-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 12px;
+      padding: 22px 26px;
+      margin: 16px 0;
+      border-left: 4px solid #10b981;
+    }
+    .sc-math-code {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 1.04rem;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 7px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 8px 0 12px 0;
+    }
+
+    /* === TABLES === */
+    .sc-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #cbd5e1;
+    }
+    .sc-table th {
+      background: #0f172a;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-align: left;
+      padding: 14px 18px;
+      letter-spacing: 0.03em;
+    }
+    .sc-table td {
+      padding: 15px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.94rem;
+      color: #1e293b;
+      line-height: 1.65;
+      vertical-align: top;
+    }
+    .sc-table tr:last-child td { border-bottom: none; }
+    .sc-table tr:nth-child(even) td { background: #f8fafc; }
+
+    /* === CALLOUTS & DOSSIER HEADERS === */
+    .sc-callout {
+      background: #f0fdf4;
+      border-left: 5px solid #0f5132;
+      border-radius: 0 12px 12px 0;
+      padding: 22px 26px;
+      margin: 24px 0;
+    }
+    .sc-callout-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #064e3b;
+      margin-bottom: 8px;
+    }
+    .sc-dossier-card {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 14px;
+      padding: 28px 32px;
+      margin-bottom: 32px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    }
+    .sc-dossier-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+      border-bottom: 1.5px solid #e2e8f0;
+    }
+    .sc-dossier-id {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      background: #0f172a;
+      color: #4ade80;
+      padding: 5px 12px;
+      border-radius: 6px;
+      letter-spacing: 0.06em;
+    }
+    .sc-dossier-domain {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: #0f5132;
+    }
+    .sc-dossier-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-top: 18px;
+    }
+    @media (max-width: 760px) {
+      .sc-dossier-metrics { grid-template-columns: 1fr; }
+    }
+
+    .sc-svg-frame {
+      width: 100%;
+      margin: 28px 0;
+      padding: 24px;
+      box-sizing: border-box;
+      border-top: 3px solid #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      border-left: 1px solid #e2e8f0;
+      border-right: 1px solid #e2e8f0;
+      background: #f8fafc;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+    }
+    .sc-svg-frame svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .sc-svg-caption {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: #475569;
+      margin-top: 12px;
+      letter-spacing: 0.02em;
+    }
+
+    /* === MULTI-PAGE A4 PRINT ENGINE (10+ PAGES GUARANTEED) === */
+    @page {
+      size: A4 portrait;
+      margin: 15mm 14mm;
+    }
+    @media print {
+      html, body {
+        background: #ffffff !important;
+        color: #0f172a !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      #sc-left-nav, .sc-action-btns, .sc-nav-toggle, .sc-top-bar {
+        display: none !important;
+      }
+      body.sc-nav-open, body.sc-nav-folded, body {
+        padding-left: 0 !important;
+      }
+      .sc-monograph {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 !important;
+      }
+      .sc-chapter {
+        background: #ffffff !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 10px 0 24px 0 !important;
+        margin-bottom: 0 !important;
+        page-break-after: always !important;
+        break-after: page !important;
+      }
+      .sc-chapter:last-of-type {
+        page-break-after: auto !important;
+        break-after: auto !important;
+      }
+      .sc-page-break {
+        page-break-before: always !important;
+        break-before: page !important;
+      }
+      .sc-exec-hero, .sc-math-box {
+        background: #f8fafc !important;
+        color: #0f172a !important;
+        border: 1.5px solid #94a3b8 !important;
+      }
+      .sc-exec-hero h3, .sc-exec-hero p, .sc-kpi-val, .sc-kpi-desc, .sc-math-code {
+        color: #0f172a !important;
+      }
+      .sc-panel, .sc-dossier-card, .sc-callout, .sc-table tr {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+      }
+    }
+  </style>
   <script>
     (function() {
       var p = location.pathname.replace(/\\/g, "/");
@@ -29,197 +471,558 @@
         base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "./common_assets/";
       }
       document.write("<link rel=\"stylesheet\" href=\"" + base + "common_new.css?v=2.2\">");
-      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js\" defer><\/script>");
+      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js?v=5.0\" defer><\/script>");
     })();
   </script>
-  <style>
-    .sc-auto-page {
-      box-sizing: border-box;
-      width: 100%;
-      max-width: min(1360px, 95%);
-      padding: clamp(40px, 5vh, 68px) clamp(24px, 4.5vw, 72px) 120px;
-      font-family: "Inter", sans-serif;
-      color: #0f172a;
-    }
-    main h1, main h2, main h3, main h4,
-    main p, main .sc-lead, main .sc-p,
-    main .sc-route, main .sc-sec,
-    main .sc-card-line, main .sc-card-emerald {
-      margin-left: 0 !important;
-      padding-left: 0 !important;
-      text-indent: 0 !important;
-      text-align: left !important;
-    }
-    .sc-route {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.88rem;
-      font-weight: 600;
-      color: #475569;
-      letter-spacing: 0.04em;
-      margin: 0 0 18px 0;
-      text-transform: lowercase;
-    }
-    .sc-sec {
-      padding: 52px 0;
-      border-bottom: 1.5px solid rgba(15, 23, 42, 0.14);
-    }
-    .sc-sec:last-of-type { border-bottom: none; }
-    .sc-kicker {
-      display: inline-block;
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: #0f5132;
-      background: rgba(22, 135, 101, 0.15);
-      padding: 5px 12px;
-      border-radius: 4px;
-      margin: 0 0 14px 0;
-    }
-    .sc-h1 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(2.1rem, 3.6vw, 3.1rem);
-      font-weight: 700;
-      color: #0f172a;
-      letter-spacing: -0.025em;
-      line-height: 1.12;
-      margin: 0 0 14px 0;
-    }
-    .sc-sub {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.15rem, 1.6vw, 1.38rem);
-      font-weight: 600;
-      color: #0f5132;
-      line-height: 1.4;
-      margin: 0 0 24px 0;
-    }
-    .sc-h2 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.45rem, 2.2vw, 1.95rem);
-      font-weight: 700;
-      color: #0f172a;
-      letter-spacing: -0.02em;
-      line-height: 1.25;
-      margin: 0 0 18px 0;
-    }
-    .sc-h3 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: #0f172a;
-      margin: 0 0 10px 0;
-      line-height: 1.35;
-    }
-    .sc-lead {
-      font-size: clamp(1.04rem, 1.22vw, 1.14rem);
-      line-height: 1.82;
-      color: #1e293b;
-      margin: 0 0 34px 0;
-    }
-    .sc-p {
-      font-size: 0.97rem;
-      line-height: 1.8;
-      color: #334155;
-      margin: 0;
-    }
-    /* Spacious 2-Column (2x2) Grid Layout */
-    .sc-grid-2x2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 48px;
-      row-gap: 38px;
-      margin-top: 28px;
-    }
-    @media (max-width: 760px) {
-      .sc-grid-2x2 { grid-template-columns: 1fr; }
-    }
-    .sc-card-line {
-      padding-top: 20px !important;
-      border-top: 2px solid rgba(15, 23, 42, 0.24) !important;
-    }
-    .sc-card-emerald {
-      padding-top: 20px !important;
-      border-top: 3px solid #168765 !important;
-    }
-    .sc-num-label {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.82rem;
-      font-weight: 700;
-      color: #0f5132;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 8px;
-    }
-    .sc-callout {
-      margin-top: 38px;
-      padding: 20px 24px !important;
-      border-left: 4px solid #0f5132;
-      background: rgba(255, 255, 255, 0.34);
-      font-size: 0.98rem;
-      font-weight: 500;
-      color: #0f172a;
-      line-height: 1.72;
-    }
-    @media print {
-      html, body, main, .sc-auto-page { background: #ffffff !important; padding-left: 0 !important; opacity: 1 !important; }
-      #sc-left-nav, .sc-nav-toggle { display: none !important; }
-      .sc-card-line, .sc-card-emerald, .sc-callout { break-inside: avoid !important; page-break-inside: avoid !important; }
-    }
-  </style>
 </head>
 <body class="sc-nav-open">
-  <main class="sc-auto-page">
-    <p class="sc-route">intelligence core - biz intelligence - open accounts sales</p>
+  <main class="sc-monograph">
+    <div class="sc-top-bar">
+      <p class="sc-route">intelligence core - biz intelligence - open accounts sales</p>
+      <div class="sc-action-btns">
+        <a class="sc-btn-pdf emerald" href="../index.html">Back to Biz Intelligence -></a>
+        <a class="sc-btn-pdf" href="../../03_ai-trade-intl/index.html">Explore AI Trade Intl -></a>
+        <button class="sc-btn-pdf" onclick="window.print()">Print / Export PDF</button>
+      </div>
+    </div>
 
-    <section class="sc-sec" style="padding-top: 12px;">
-      <div><span class="sc-kicker">ENTERPRISE BRAIN &bull; *SC INTELLIGENCE CORE</span></div>
-      <h1 class="sc-h1">*SC - Open Accounts Sales</h1>
-      <p class="sc-sub">24/7 Unmanned Overnight Data Factory, Zero-Hallucination RAG, and 8-Team AI ERP.</p>
-      <p class="sc-lead">As part of the <strong>*SC intelligence-core</strong>, <strong>Open Accounts Sales</strong> functions as the autonomous central nervous system of the Signal Star Universe. Operating around the clock while human executives sleep, it harvests global market data, grounds strategic decisions in verified facts, and automates all 8 corporate departments at near- fixed cost.</p>
+    <!-- ============================================================================
+         CHAPTER I. EXECUTIVE MANIFESTO & OPEN ACCOUNTS PARADIGM SHIFT
+         ============================================================================ -->
+    <article class="sc-chapter" id="chapter-1">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER I • EXECUTIVE MANIFESTO &amp; SOVEREIGN TRADE CREDIT</span>
+        <span class="sc-chapter-tag">DOMAIN 03 ENGINE • BIZ INTELLIGENCE MODULE 09</span>
+      </div>
+      <h1 class="sc-doc-h1">Open Accounts Sales — Autonomous B2B Trade Credit, 3-Month RPF &amp; K-SURE Clearing Engine</h1>
+      <p class="sc-lead">
+        Within <strong>Domain 03 (<code>intelligence-core</code>)</strong> of <strong>*SC (SISTAR Company / Signal Star Universe)</strong>, the <strong>Open Accounts Sales Engine</strong> serves as the algorithmic credit underwriting, receivables telemetry, and sovereign trade-insurance core. It transforms high-friction international B2B trade—traditionally paralyzed by costly Letters of Credit (L/C), 90-day working capital droughts, and counterparty default anxiety—into a frictionless, zero-default <strong>Open Account (O/A) &amp; B2B Buy-Now-Pay-Later (BNPL)</strong> expansion machine across our 8 global bases (<code>SCK / SCI / SCV / SCJ / SCC / SCU / SG / IN</code>).
+      </p>
 
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <div class="sc-num-label">01 &bull; WHAT IT IS (CORE DEFINITION)</div>
-          <h2 class="sc-h3">Overnight Data Factory (10 PM - 8 AM)</h2>
-          <p class="sc-p">Headless Playwright/Apify scrapers autonomously harvest global wholesale prices (1688/Alibaba), Shopee/Tokopedia competitor SKUs, HS-code tariffs, and regulatory updates every night.</p>
-        </div>
-
-        <div class="sc-card-line">
-          <div class="sc-num-label">02 &bull; WHY WE DO IT (MARKET OPPORTUNITY)</div>
-          <h2 class="sc-h3">Dual-Engine Vector RAG (NotebookLM + Dify)</h2>
-          <p class="sc-p">Embeds nightly market streams alongside internal Google Drive/Keep memos into Supabase pgvector and NotebookLM repositories, delivering citation-backed 8:00 AM executive briefs.</p>
-        </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">03 &bull; HOW IT WORKS (OPERATIONAL MECHANISM)</div>
-          <h2 class="sc-h3">Qubit ERP &amp; CCTV Vision Stock Opname</h2>
-          <p class="sc-p">Automates Finance/VAT, HR (25th payouts), Sales/CRM, and RA natively on Google Workspace, while CCTV + Gemini Vision AI counts warehouse pallets and sachets in real time.</p>
-        </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">04 &bull; REVENUE MODEL &amp; EXPECTED ROI</div>
-          <h2 class="sc-h3">Dual-Return SaaS &amp; MCP API Monetization</h2>
-          <p class="sc-p">Eliminates 100% of internal ERP/admin licensing costs while generating external B2B revenue through custom enterprise RAG builds, Zoho/Workspace ERP SaaS, and MCP Server agent query tolls.</p>
+      <div class="sc-exec-hero">
+        <h3>Replacing Collateral-Heavy Letters of Credit with AI-Underwritten Sovereign Open Accounts</h3>
+        <p>
+          In legacy international commerce, qualified regional importers, veterinary hospital networks, and pharmacy chains are systematically throttled by commercial banks demanding 100% cash collateral or complex Documentary Letters of Credit (L/C) that consume 3% to 5% in banking fees and delay shipment schedules by weeks. Conversely, exporters who grant traditional Open Account (O/A) terms face existential balance-sheet exposure if an overseas buyer delays or defaults. The <strong>*SC Open Accounts Sales Engine</strong> solves both sides simultaneously: by fusing real-time POS/ERP sell-through telemetry from the buyer with <strong>3-Month Rolling Purchasing Forecasts (RPF)</strong>, <strong>K-SURE (Korea Trade Insurance Corporation) sovereign credit guarantees</strong>, and <strong>70/30 Payment Gateway (PG) automated split webhooks</strong>, *SC expands B2B purchasing power by 300% while maintaining a mathematical non-payment risk approaching zero.
+        </p>
+        <div class="sc-kpi-strip">
+          <div class="sc-kpi-cell">
+            <div class="sc-kpi-val">95% ~ 100%</div>
+            <div class="sc-kpi-desc">Sovereign Default Coverage via K-SURE Export Credit Insurance API</div>
+          </div>
+          <div class="sc-kpi-cell">
+            <div class="sc-kpi-val">3-Month RPF</div>
+            <div class="sc-kpi-desc">Rolling Purchasing Forecast Locking Production &amp; Credit Quotas</div>
+          </div>
+          <div class="sc-kpi-cell">
+            <div class="sc-kpi-val">70 / 30 Split</div>
+            <div class="sc-kpi-desc">Automated PG Webhook Settlement Isolating COGS from Net Margin</div>
+          </div>
+          <div class="sc-kpi-cell">
+            <div class="sc-kpi-val">t = 0 Liquidity</div>
+            <div class="sc-kpi-desc">Immediate Invoice Factoring &amp; Zero Working-Capital Lockup</div>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section class="sc-sec">
-      <div><span class="sc-kicker">STRATEGIC SYNERGY &amp; GOVERNANCE</span></div>
-      <h2 class="sc-h2">Integration Within the Signal Star Universe (*SC)</h2>
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <h3 class="sc-h3">1. Core Architecture &amp; Technical Integration</h3>
-          <p class="sc-p">Connected across our 12-domain semantic web matrix and 8 international bases (Korea SCK, Indonesia SCI, Singapore SCS, USA SCU, Vietnam SCV, India SCIND, China SCC, Japan SCJ). Every workflow is tracked transparently via standardized Google Workspace Console, Monthly Sales, and Dashboard ledgers.</p>
+      <div class="sc-grid-3">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">01 • REAL-TIME CREDIT TELEMETRY</div>
+          <h3 class="sc-sub-h3">Continuous Behavioral Underwriting</h3>
+          <p class="sc-p">
+            Instead of relying on stale annual financial statements, the Open Accounts Sales Engine ingests live inventory sell-through velocity, customs clearance records, and daily payment gateway settlements from connected buyers across Indonesia, Vietnam, and global hubs.
+          </p>
         </div>
-        <div class="sc-card-line">
-          <h3 class="sc-h3">2. Risk Firewall &amp; Settlement Security</h3>
-          <p class="sc-p">Protected by the *SC Triple Control Towers and Dual-Track Legal Firewall (isolating SC Index holding IP from Biz Galaxy commercial liabilities). Transactions leverage 3-Month Rolling Purchasing Forecasts (RPF), K-SURE export credit guarantees, and automated 70/30 PG webhook split settlements.</p>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">02 • SOVEREIGN EXPORT INSURANCE</div>
+          <h3 class="sc-sub-h3">K-SURE &amp; Eximbank API Bridge</h3>
+          <p class="sc-p">
+            Every approved B2B Open Account limit is programmatically bound to a sovereign export credit policy (K-SURE / Sinosure / Eximbank). Once bill-of-lading (B/L) and customs data match the purchase order, receivables become institutional-grade insured assets.
+          </p>
+        </div>
+        <div class="sc-panel purple">
+          <div class="sc-panel-kicker">03 • SMART ESCROW &amp; PG LOCK</div>
+          <h3 class="sc-sub-h3">Self-Liquidating Receivables</h3>
+          <p class="sc-p">
+            Downstream B2B2C sales processed through Scarlet AI and Qubit Biz payment gateways automatically route 70% of proceeds to retire Open Account principal and factory COGS at the moment of consumer checkout, eliminating manual debt collection.
+          </p>
         </div>
       </div>
-      <div class="sc-callout"><strong>*SC - SISTAR COMPANY | One Spark, Infinite Galaxifying:</strong> Powered by the Qubit Algorithm&trade;, *SC intelligence-core, Scarlet AI, Qubit Biz, and the Biz Galaxy constellation.<br/>Corporate Portal: https://sistarcompany.com &bull; Executive Contact: DennyKu (denniiku@sistarcompany.com)</div>
-    </section>
+    </article>
+
+    <!-- ============================================================================
+         CHAPTER II. ARCHITECTURAL BLUEPRINT OF THE OPEN ACCOUNTS SALES ENGINE
+         ============================================================================ -->
+    <article class="sc-chapter" id="chapter-2">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER II • SYSTEM TOPOLOGY &amp; TELEMETRY PIPELINE</span>
+        <span class="sc-chapter-tag">OVERNIGHT DATA FACTORY -> DYNAMIC CREDIT LIMIT -> K-SURE -> PG SPLIT</span>
+      </div>
+      <h2 class="sc-chapter-h2">End-to-End Architecture of Autonomous Open Account Sales</h2>
+      <p class="sc-lead">
+        The Open Accounts Sales architecture operates as a closed-loop cybernetic financial system inside <code>intelligence-core</code>. Every night between 10:00 PM and 8:00 AM, the Overnight Data Factory refreshes buyer credit scores, verifies sovereign insurance ceilings, reconciles warehouse CCTV stock counts, and adjusts Net-30 / Net-60 / Net-90 credit lines before sales agents begin morning trading.
+      </p>
+
+      <figure class="sc-svg-frame">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="oaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#090d16" />
+              <stop offset="55%" stop-color="#0f172a" />
+              <stop offset="100%" stop-color="#064e3b" />
+            </linearGradient>
+            <marker id="oaArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 10 5 L 0 9 z" fill="#10b981" />
+            </marker>
+            <marker id="oaArrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8" />
+            </marker>
+          </defs>
+          <rect width="960" height="340" rx="14" fill="url(#oaBg)" />
+          <text x="28" y="34" fill="#4ade80" font-family="Space Grotesk, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">*SC INTELLIGENCE-CORE • OPEN ACCOUNTS SALES &amp; SOVEREIGN CREDIT ARCHITECTURE</text>
+          <line x1="28" y1="46" x2="932" y2="46" stroke="rgba(255,255,255,0.14)" stroke-width="1" />
+
+          <!-- Node 1: Buyer Telemetry & RPF -->
+          <rect x="28" y="68" width="200" height="190" rx="10" fill="rgba(15,23,42,0.85)" stroke="#38bdf8" stroke-width="1.5" />
+          <text x="44" y="94" fill="#38bdf8" font-family="Space Grotesk, sans-serif" font-size="11" font-weight="700">STAGE 01 • DEMAND &amp; KYC</text>
+          <text x="44" y="116" fill="#ffffff" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="700">3-Month RPF &amp; Telemetry</text>
+          <text x="44" y="140" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">• Rolling Purchasing Forecast</text>
+          <text x="44" y="160" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">• POS / ERP Sell-Through Sync</text>
+          <text x="44" y="180" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">• Customs &amp; Tax ID Verification</text>
+          <text x="44" y="200" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">• Historical Payment Velocity</text>
+          <rect x="44" y="218" width="168" height="24" rx="5" fill="rgba(56,189,248,0.15)" />
+          <text x="54" y="234" fill="#38bdf8" font-family="Space Grotesk, monospace" font-size="10" font-weight="700">Input: 90-Day Demand Vector</text>
+
+          <line x1="228" y1="163" x2="258" y2="163" stroke="#10b981" stroke-width="2" marker-end="url(#oaArrow)" />
+
+          <!-- Node 2: AI Credit Scoring & K-SURE -->
+          <rect x="262" y="68" width="210" height="190" rx="10" fill="rgba(15,23,42,0.85)" stroke="#10b981" stroke-width="1.5" />
+          <text x="278" y="94" fill="#4ade80" font-family="Space Grotesk, sans-serif" font-size="11" font-weight="700">STAGE 02 • AI UNDERWRITING</text>
+          <text x="278" y="116" fill="#ffffff" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="700">K-SURE &amp; Credit Matrix</text>
+          <text x="278" y="140" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">• Overnight RAG Risk Scoring</text>
+          <text x="278" y="160" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">• K-SURE Sovereign API Bind</text>
+          <text x="278" y="180" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">• Net-30 / 60 / 90 Tiering</text>
+          <text x="278" y="200" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">• Dynamic Credit Limit (DCL)</text>
+          <rect x="278" y="218" width="178" height="24" rx="5" fill="rgba(16,185,129,0.18)" />
+          <text x="288" y="234" fill="#4ade80" font-family="Space Grotesk, monospace" font-size="10" font-weight="700">Risk: 95~100% Insured O/A</text>
+
+          <line x1="472" y1="163" x2="502" y2="163" stroke="#10b981" stroke-width="2" marker-end="url(#oaArrow)" />
+
+          <!-- Node 3: Shipment & CCTV Verification -->
+          <rect x="506" y="68" width="200" height="190" rx="10" fill="rgba(15,23,42,0.85)" stroke="#38bdf8" stroke-width="1.5" />
+          <text x="522" y="94" fill="#38bdf8" font-family="Space Grotesk, sans-serif" font-size="11" font-weight="700">STAGE 03 • FULFILLMENT</text>
+          <text x="522" y="116" fill="#ffffff" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="700">e-B/L &amp; Vision Opname</text>
+          <text x="522" y="140" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">• Zero-Capital Factory Dispatch</text>
+          <text x="522" y="160" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">• Digital B/L &amp; Customs Match</text>
+          <text x="522" y="180" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">• Gemini Vision CCTV Stock Count</text>
+          <text x="522" y="200" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">• Consignment Trigger Events</text>
+          <rect x="522" y="218" width="168" height="24" rx="5" fill="rgba(56,189,248,0.15)" />
+          <text x="532" y="234" fill="#38bdf8" font-family="Space Grotesk, monospace" font-size="10" font-weight="700">Proof: Verified Physical Flow</text>
+
+          <line x1="706" y1="163" x2="736" y2="163" stroke="#10b981" stroke-width="2" marker-end="url(#oaArrow)" />
+
+          <!-- Node 4: 70/30 PG Split Clearing -->
+          <rect x="740" y="68" width="192" height="190" rx="10" fill="rgba(6,78,59,0.9)" stroke="#4ade80" stroke-width="2" />
+          <text x="756" y="94" fill="#4ade80" font-family="Space Grotesk, sans-serif" font-size="11" font-weight="700">STAGE 04 • t = 0 CLEARING</text>
+          <text x="756" y="116" fill="#ffffff" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="700">70/30 PG Split Engine</text>
+          <text x="756" y="140" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="11">• 70% COGS &amp; O/A Principal</text>
+          <text x="756" y="160" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="11">• 30% Margin &amp; Partner Split</text>
+          <text x="756" y="180" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="11">• 4-Way Qubit Bank Ledger</text>
+          <text x="756" y="200" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="11">• Auto Credit Line Replenish</text>
+          <rect x="756" y="218" width="160" height="24" rx="5" fill="rgba(74,222,128,0.22)" />
+          <text x="764" y="234" fill="#ffffff" font-family="Space Grotesk, monospace" font-size="10" font-weight="700">Output: Zero Overdue AR</text>
+
+          <!-- Bottom Feedback Loop -->
+          <rect x="28" y="276" width="904" height="44" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(56,189,248,0.35)" stroke-width="1" />
+          <text x="46" y="302" fill="#38bdf8" font-family="Space Grotesk, sans-serif" font-size="11.5" font-weight="700">CLOSED-LOOP TELEMETRY FEEDBACK -></text>
+          <text x="275" y="302" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="11.5">Every completed PG split settlement immediately recalibrates the buyer's Dynamic Credit Limit (DCL) for the next 90-day RPF cycle.</text>
+        </svg>
+        <figcaption class="sc-svg-caption">Figure 2.1 — *SC Open Accounts Sales 4-Stage Autonomous Underwriting, K-SURE Sovereign Insurance &amp; 70/30 Split Clearing Pipeline.</figcaption>
+      </figure>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">MECHANISM A • THE 3-MONTH ROLLING PURCHASING FORECAST (RPF)</div>
+          <h3 class="sc-sub-h3">Eliminating Bullwhip Distortion &amp; Locking Factory Capacity</h3>
+          <p class="sc-p">
+            To qualify for *SC Open Account terms, every B2B distributor, clinical network, or franchise operator submits a binding <strong>3-Month Rolling Purchasing Forecast (RPF)</strong>: Month 1 is locked at 100% firm commitment, Month 2 allows a +/- 15% algorithmic variance band, and Month 3 allows a +/- 30% band. Our <code>intelligence-core</code> aggregates these RPF streams across all 8 countries to schedule bulk raw-material procurement and ODM production runs at rock-bottom unit costs while pre-allocating K-SURE export credit limits 90 days ahead of vessel departure.
+          </p>
+        </div>
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">MECHANISM B • CCTV VISION STOCK OPNAME &amp; CONSIGNMENT TRIGGERS</div>
+          <h3 class="sc-sub-h3">Physical-to-Digital Verification via Gemini Vision AI</h3>
+          <p class="sc-p">
+            In hybrid Open Account and VMI (Vendor-Managed Inventory) deployments, warehouse cameras equipped with <strong>*SC CCTV Vision Stock Opname</strong> count pallet movement and carton depletion every hour. When physical stock leaves the bonded distribution zone or crosses a predefined depletion threshold, the vision engine triggers an automated invoice event in <strong>Qubit ERP</strong>, synchronizing physical inventory drawdowns with financial accounts receivable in real time.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <!-- ============================================================================
+         CHAPTER III. QUBIT ALGORITHM™ MATHEMATICAL FORMULATION FOR OPEN ACCOUNTS
+         ============================================================================ -->
+    <article class="sc-chapter" id="chapter-3">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER III • QUANTUM FINANCIAL MATHEMATICS</span>
+        <span class="sc-chapter-tag">WKB TUNNELING • BELL-STATE ENTANGLEMENT • t = 0 SUPERPOSITION</span>
+      </div>
+      <h2 class="sc-chapter-h2">Mathematical Connection to the Qubit Algorithm™</h2>
+      <p class="sc-lead">
+        The Open Accounts Sales Engine is a direct commercial implementation of <strong>Domain 02 (<code>qubit-algorithm</code>)</strong>. By expressing cross-border credit barriers as a quantum potential barrier and coupling buyer-seller balance sheets via entangled smart clearing, *SC collapses a 90-day cash conversion cycle into instantaneous value realization at <code>t = 0</code>.
+      </p>
+
+      <div class="sc-math-box">
+        <div class="sc-panel-kicker" style="color:#4ade80;">EQUATION 3.1 • DYNAMIC CREDIT LIMIT (DCL) &amp; WKB CREDIT TUNNELING</div>
+        <div class="sc-math-code">DCL_i(t) = Base_K_SURE_i * [ 1 + alpha * V_sell(t) - beta * sigma_RPF(t) ] * exp( -2 * Integral( sqrt(2m * (V_barrier - E_trust)) dx ) / hbar -> 0 )</div>
+        <p class="sc-p" style="color:#e2e8f0; margin-bottom:10px;">
+          In classical trade finance, a working-capital barrier <code>V_barrier</code> blocks buyers whose immediate cash liquidity <code>E_cash</code> is lower than the shipment value (<code>E_cash &lt; V_barrier</code>). Under the <strong>*SC WKB Credit Tunneling Protocol</strong>, verified 3-Month RPF commitments and K-SURE sovereign guarantees reduce the effective barrier width <code>Delta_x -> 0</code>, driving the transmission probability <code>T -> 1</code> without requiring upfront cash immobilization from the buyer.
+        </p>
+        <div class="sc-math-code">|Psi_OA&gt; = (1 / sqrt(2)) * ( |Shipment_Dispatched&gt;_Maker (x) |Receivable_Insured&gt;_KSURE + |POS_Checkout&gt;_Buyer (x) |70_30_Settled&gt;_QubitBank )</div>
+        <p class="sc-p" style="color:#cbd5e1; margin-bottom:0;">
+          Through <strong>Bell-State Financial Entanglement</strong>, the dispatch of goods by the manufacturer and the downstream settlement by the buyer are locked into a single non-separable state vector <code>|Psi_OA&gt;</code>. When a downstream sale occurs, wave-function collapse simultaneously credits the factory (70% COGS recovery) and distributes the net profit (30% margin split) at <code>t = 0</code>.
+        </p>
+      </div>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Credit Risk &amp; Liquidity Dimension</th>
+            <th>Legacy Letter of Credit (L/C)</th>
+            <th>Unsecured Traditional Open Account</th>
+            <th>*SC AI-Underwritten Open Accounts Engine</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Buyer Capital Lockup</strong></td>
+            <td>100% cash margin or bank credit line frozen for 60~120 days</td>
+            <td>0% upfront lockup, but strictly limited to Tier-1 multinationals</td>
+            <td><strong>0% Idle Cash Lockup</strong>; unlocked for qualified SMEs &amp; regional distributors via 3-Month RPF</td>
+          </tr>
+          <tr>
+            <td><strong>Banking &amp; Document Fees</strong></td>
+            <td>2.5% ~ 4.8% per transaction + 14 days of paper discrepancy delays</td>
+            <td>0.5% wire fees, high manual legal &amp; collection overhead</td>
+            <td><strong>&lt; 0.65% Automated K-SURE + PG Clearing Fee</strong>; 100% digital e-B/L verification</td>
+          </tr>
+          <tr>
+            <td><strong>Exporter Default Protection</strong></td>
+            <td>Bank-guaranteed (subject to strict document discrepancy rejection)</td>
+            <td>0% protection; 100% balance-sheet loss upon buyer insolvency</td>
+            <td><strong>95% ~ 100% Sovereign K-SURE Coverage</strong> + real-time PG auto-deduction</td>
+          </tr>
+          <tr>
+            <td><strong>Credit Limit Recalibration</strong></td>
+            <td>Annual static bank review (12-month lag)</td>
+            <td>Ad-hoc manual management approval</td>
+            <td><strong>Nightly Autonomous Recalibration (10 PM - 8 AM)</strong> via Overnight Data Factory</td>
+          </tr>
+          <tr>
+            <td><strong>Exporter Cash Conversion (DSO)</strong></td>
+            <td>45 ~ 90 days after vessel arrival</td>
+            <td>60 ~ 120+ days with frequent overdue slippage</td>
+            <td><strong>t = 0 Instant Factoring</strong> against K-SURE policy or continuous daily PG split</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <!-- ============================================================================
+         CHAPTER IV. OVERNIGHT RISK SCORING, RAG AUDIT & 4-TIER CREDIT MATRIX
+         ============================================================================ -->
+    <article class="sc-chapter" id="chapter-4">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER IV • RISK UNDERWRITING &amp; CREDIT TIERING</span>
+        <span class="sc-chapter-tag">COMPANY RAG • 8-TEAM AI ERP • DYNAMIC CREDIT SCORING</span>
+      </div>
+      <h2 class="sc-chapter-h2">Overnight Data Factory Underwriting &amp; 4-Tier Open Account Matrix</h2>
+      <p class="sc-lead">
+        Every night between 10:00 PM and 8:00 AM, the <strong>Overnight Data Factory</strong> executes a multi-agent risk audit across every active and prospective B2B account. By combining external macro-signals (currency volatility, port congestion, litigation registries, marketplace review velocity) with internal <strong>Qubit ERP</strong> ledger history, accounts are dynamically assigned into four institutional credit tiers.
+      </p>
+
+      <div class="sc-dossier-card">
+        <div class="sc-dossier-top">
+          <span class="sc-dossier-id">ENGINE SPEC • OA-RAG-UW-09</span>
+          <span class="sc-dossier-domain">INTELLIGENCE-CORE -> QUBIT ERP FINANCE &amp; RA TEAMS</span>
+        </div>
+        <h3 class="sc-sub-h3">Zero-Hallucination Credit Dossier Generation at 08:00 AM</h3>
+        <p class="sc-p">
+          Before any credit limit increase or Net-90 shipment release is executed, the <strong>Company RAG Solution (NotebookLM + Dify + Supabase pgvector)</strong> compiles an immutable <em>Executive Credit Dossier</em>. Every underwriting metric is anchored to verifiable primary documents: customs import declarations (PIB/PEB), K-SURE policy certificates, tax compliance filings, and historical PG settlement logs. If a buyer's local currency depreciates beyond a 4.5% weekly threshold or warehouse sell-through slows by more than 20%, the engine automatically shifts the next tranche from Net-60 to a split milestone structure.
+        </p>
+        <div class="sc-dossier-metrics">
+          <div>
+            <div class="sc-panel-kicker">UNDERWRITING LATENCY</div>
+            <div style="font-family:'Space Grotesk',sans-serif; font-size:1.25rem; font-weight:700; color:#0f172a;">&lt; 4.2 Minutes / Account</div>
+          </div>
+          <div>
+            <div class="sc-panel-kicker">DATA POINTS INGESTED</div>
+            <div style="font-family:'Space Grotesk',sans-serif; font-size:1.25rem; font-weight:700; color:#0f5132;">140+ Macro &amp; ERP Signals</div>
+          </div>
+          <div>
+            <div class="sc-panel-kicker">HISTORICAL LOSS RATIO</div>
+            <div style="font-family:'Space Grotesk',sans-serif; font-size:1.25rem; font-weight:700; color:#1d4ed8;">0.00% Uninsured Default</div>
+          </div>
+        </div>
+      </div>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Open Account Tier</th>
+            <th>Target Partner Profile</th>
+            <th>Payment &amp; Tunneling Structure</th>
+            <th>Credit Ceiling &amp; Security Protocol</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Tier S • Quantum Anchor O/A</strong></td>
+            <td>National Master Distributors, Tier-1 Hospital/Pharmacy Chains, 12+ months clean RPF history</td>
+            <td><strong>0% Advance / 100% Net-90 O/A</strong> with continuous daily 70/30 PG revenue sweep</td>
+            <td>Up to <strong>$2,500,000 Revolving</strong>; 100% K-SURE Sovereign Export Credit Policy + ERP API Lock</td>
+          </tr>
+          <tr>
+            <td><strong>Tier A • Sovereign Growth O/A</strong></td>
+            <td>Regional Wholesalers, Vet Specialty Networks (MedIX / SISPet), 6+ months verified trade</td>
+            <td><strong>15% Booking Deposit / 85% Net-60 O/A</strong> triggered upon digital e-B/L issuance</td>
+            <td>Up to <strong>$750,000 Revolving</strong>; 95% K-SURE Credit Insurance + CCTV Vision Stock Opname</td>
+          </tr>
+          <tr>
+            <td><strong>Tier B • Hybrid Tunneling O/A</strong></td>
+            <td>Emerging B2B Franchises (S1–S6), Smart ODM Brand Founders, 3-Month RPF onboarded</td>
+            <td><strong>30% Pre-Order Tunneling / 70% Net-30 O/A</strong> cleared via local PG split settlement</td>
+            <td>Up to <strong>$150,000 Revolving</strong>; Escrow PG Lock + Bonded Warehouse Release Controls</td>
+          </tr>
+          <tr>
+            <td><strong>Tier C • Ignition Incubation</strong></td>
+            <td>First-time cross-border buyers, micro-distributors, social commerce guild leaders</td>
+            <td><strong>50% Advance Tunneling / 50% Cash Against Digital B/L</strong> (Graduates to Tier B after 3 cycles)</td>
+            <td>Up to <strong>$30,000 per Cycle</strong>; Direct Qubit Bank Escrow &amp; Instant Milestone Verification</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <!-- ============================================================================
+         CHAPTER V. BRIDGE TO COMMERCIALIZATION: POWERING SCARLET-AI & QUBIT-BIZ
+         ============================================================================ -->
+    <article class="sc-chapter" id="chapter-5">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER V • COMMERCIAL ENGINE SYNERGY</span>
+        <span class="sc-chapter-tag">INTELLIGENCE-CORE -> SCARLET-AI &amp; QUBIT-BIZ</span>
+      </div>
+      <h2 class="sc-chapter-h2">How Open Accounts Sales Powers Scarlet AI &amp; Qubit Biz</h2>
+      <p class="sc-lead">
+        Within the Signal Star Universe, <code>intelligence-core</code> never operates in isolation. The Open Accounts Sales Engine directly feeds real-time credit authority into our conversational commerce nexus (<strong>Domain 04: <code>scarlet-ai</code></strong>) and our financial clearing launchpad (<strong>Domain 05: <code>qubit-biz</code></strong>).
+      </p>
+
+      <figure class="sc-svg-frame">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="oaBridgeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0f172a" />
+              <stop offset="50%" stop-color="#1e293b" />
+              <stop offset="100%" stop-color="#064e3b" />
+            </linearGradient>
+          </defs>
+          <rect width="960" height="340" rx="14" fill="url(#oaBridgeBg)" />
+          <text x="28" y="34" fill="#38bdf8" font-family="Space Grotesk, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">TRI-DOMAIN COMMERCIAL BRIDGE • INTELLIGENCE-CORE -> SCARLET-AI -> QUBIT-BIZ</text>
+          <line x1="28" y1="46" x2="932" y2="46" stroke="rgba(255,255,255,0.14)" stroke-width="1" />
+
+          <!-- Left Box: Intelligence Core -->
+          <rect x="28" y="68" width="280" height="244" rx="12" fill="rgba(9,13,22,0.9)" stroke="#10b981" stroke-width="2" />
+          <text x="48" y="96" fill="#4ade80" font-family="Space Grotesk, sans-serif" font-size="11" font-weight="700">DOMAIN 03 • INTELLIGENCE-CORE</text>
+          <text x="48" y="120" fill="#ffffff" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="700">Open Accounts Sales Vault</text>
+          <text x="48" y="148" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11.5">1. Nightly DCL Credit Calculation</text>
+          <text x="48" y="170" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11.5">2. K-SURE Policy Token Generation</text>
+          <text x="48" y="192" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11.5">3. 3-Month RPF Variance Audit</text>
+          <text x="48" y="214" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11.5">4. Qubit ERP AR/AP Ledger Sync</text>
+          <rect x="48" y="236" width="240" height="56" rx="8" fill="rgba(16,185,129,0.12)" stroke="rgba(74,222,128,0.3)" />
+          <text x="60" y="258" fill="#4ade80" font-family="Space Grotesk, monospace" font-size="10.5" font-weight="700">MCP API Payload:</text>
+          <text x="60" y="276" fill="#e2e8f0" font-family="Space Grotesk, monospace" font-size="10">{ "dcl_usd": 450000, "terms": "NET60" }</text>
+
+          <!-- Arrows to Center & Right -->
+          <line x1="308" y1="150" x2="348" y2="150" stroke="#38bdf8" stroke-width="2" marker-end="url(#oaArrowCyan)" />
+          <line x1="308" y1="230" x2="348" y2="230" stroke="#10b981" stroke-width="2" marker-end="url(#oaArrow)" />
+
+          <!-- Center Box: Scarlet AI -->
+          <rect x="352" y="68" width="276" height="244" rx="12" fill="rgba(15,23,42,0.9)" stroke="#38bdf8" stroke-width="2" />
+          <text x="372" y="96" fill="#38bdf8" font-family="Space Grotesk, sans-serif" font-size="11" font-weight="700">DOMAIN 04 • SCARLET-AI</text>
+          <text x="372" y="120" fill="#ffffff" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="700">24/7 Conversational Closer</text>
+          <text x="372" y="148" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11.5">• Ms. Scarlet Offers Instant BNPL</text>
+          <text x="372" y="170" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11.5">• Zero-Friction B2B Cart Checkout</text>
+          <text x="372" y="192" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11.5">• Dynamic Volume Tier Upselling</text>
+          <text x="372" y="214" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11.5">• WhatsApp / Line Digital Contract</text>
+          <rect x="372" y="236" width="236" height="56" rx="8" fill="rgba(56,189,248,0.12)" stroke="rgba(56,189,248,0.3)" />
+          <text x="384" y="258" fill="#38bdf8" font-family="Space Grotesk, monospace" font-size="10.5" font-weight="700">Commercial Impact:</text>
+          <text x="384" y="276" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="10.5">+310% B2B Conversion &amp; Order Size</text>
+
+          <line x1="628" y1="190" x2="668" y2="190" stroke="#10b981" stroke-width="2" marker-end="url(#oaArrow)" />
+
+          <!-- Right Box: Qubit Biz -->
+          <rect x="672" y="68" width="260" height="244" rx="12" fill="rgba(6,78,59,0.92)" stroke="#4ade80" stroke-width="2" />
+          <text x="692" y="96" fill="#4ade80" font-family="Space Grotesk, sans-serif" font-size="11" font-weight="700">DOMAIN 05 • QUBIT-BIZ</text>
+          <text x="692" y="120" fill="#ffffff" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="700">Cosmo Seed™ Clearinghouse</text>
+          <text x="692" y="148" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="11.5">• 4-Way Qubit Bank Factoring</text>
+          <text x="692" y="170" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="11.5">• 70/30 Smart PG Webhook Split</text>
+          <text x="692" y="192" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="11.5">• Rp 1,320 Sachet ODM Financing</text>
+          <text x="692" y="214" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="11.5">• MedIX / SISPet Clinic Credit</text>
+          <rect x="692" y="236" width="220" height="56" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(74,222,128,0.4)" />
+          <text x="704" y="258" fill="#4ade80" font-family="Space Grotesk, monospace" font-size="10.5" font-weight="700">Clearing Result:</text>
+          <text x="704" y="276" fill="#ffffff" font-family="Inter, sans-serif" font-size="10.5">t = 0 Liquidity Across All Parties</text>
+        </svg>
+        <figcaption class="sc-svg-caption">Figure 5.1 — Tri-Domain Commercial Synchronization: How Open Accounts Sales in Intelligence-Core Powers Scarlet-AI &amp; Qubit-Biz.</figcaption>
+      </figure>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">BRIDGE 01 • EMPOWERING SCARLET-AI (DOMAIN 04)</div>
+          <h3 class="sc-sub-h3">Real-Time B2B BNPL Quotes Inside Conversational Closers</h3>
+          <p class="sc-p">
+            When a hospital procurement director in Jakarta or a distributor in Ho Chi Minh City negotiates with <strong>Ms. Scarlet (24/7 AI Closer)</strong> on WhatsApp, Zalo, or <code>mall.sisTV</code>, Ms. Scarlet queries the Open Accounts MCP endpoint in milliseconds. Instead of demanding a 100% upfront wire transfer that stalls the conversation, Ms. Scarlet presents a pre-approved, personalized <strong>Net-60 Open Account offer</strong> right inside the chat window—increasing B2B checkout conversion by over 3.1x and tripling average container order volume.
+          </p>
+        </div>
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">BRIDGE 02 • EMPOWERING QUBIT-BIZ (DOMAIN 05)</div>
+          <h3 class="sc-sub-h3">Fueling the 5 Cosmo Seed™ Engines &amp; 4-Way Qubit Bank</h3>
+          <p class="sc-p">
+            In <strong>Qubit Biz</strong>, the Open Accounts Sales Engine provides the actuarial backbone for the <strong>4-Way Qubit Bank (Buyer, Manufacturer, Logistics, Financial Institution)</strong>. Because every Open Account receivable is backed by K-SURE export insurance and locked into a 70/30 payment gateway split, partner banks discount the invoice at <code>t = 0</code>. Korean and global factories receive immediate production payout upon shipment, while regional buyers enjoy 60 to 90 days to sell through inventory in <strong>Biz Galaxy</strong> (MedIX, SISPet, Smart ODM Rp 1,320 Sachets).
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <!-- ============================================================================
+         CHAPTER VI. DUAL-TRACK LEGAL FIREWALL, MCP JSON SCHEMA & ROI ECONOMICS
+         ============================================================================ -->
+    <article class="sc-chapter" id="chapter-6">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER VI • GOVERNANCE, MCP PAYLOAD &amp; UNIT ECONOMICS</span>
+        <span class="sc-chapter-tag">TRIPLE CONTROL TOWERS • DUAL-TRACK FIREWALL • B2B SAAS ROI</span>
+      </div>
+      <h2 class="sc-chapter-h2">Dual-Track Legal Firewall, MCP Protocol &amp; Revenue Architecture</h2>
+      <p class="sc-lead">
+        All Open Accounts operations are governed by the <strong>*SC Triple Control Towers</strong> and our strict <strong>Dual-Track Legal Firewall</strong>, which isolates core intellectual property held by SC Index HQ from localized commercial trade liabilities across our 8 operating bases.
+      </p>
+
+      <div class="sc-math-box">
+        <div class="sc-panel-kicker" style="color:#38bdf8;">MCP SERVER PROTOCOL • OPEN ACCOUNTS UNDERWRITING &amp; SPLIT SETTLEMENT PAYLOAD</div>
+        <div class="sc-math-code">POST https://mcp.intelligencecore.sistarcompany.com/v1/open-accounts/underwrite-and-bind</div>
+        <pre style="margin:8px 0 0 0; font-family:'Space Grotesk',monospace; font-size:0.86rem; color:#e2e8f0; line-height:1.55; overflow-x:auto;">{
+  "account_id": "SCI-ID-MEDIX-0842",
+  "corridor": "SCK_KOREA -> SCI_INDONESIA",
+  "rpf_90d_commitment_usd": 360000.00,
+  "ksure_policy_bind": { "status": "ACTIVE_BOUND", "coverage_ratio": 0.975, "policy_no": "KS-2026-88419" },
+  "approved_terms": { "tier": "TIER_A_SOVEREIGN", "advance_tunnel_pct": 0.15, "net_days": 60 },
+  "pg_webhook_split": { "factory_cogs_oa_principal": 0.70, "sc_qubit_margin_pool": 0.30 }
+}</pre>
+      </div>
+
+      <div class="sc-grid-3">
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">REVENUE STREAM 01</div>
+          <h3 class="sc-sub-h3">100% Internal Credit Ops Savings</h3>
+          <p class="sc-p">
+            Replaces an entire department of manual trade finance analysts, L/C document clerks, and collections officers with autonomous overnight underwriting—saving over $420,000 annually in corporate overhead.
+          </p>
+        </div>
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">REVENUE STREAM 02</div>
+          <h3 class="sc-sub-h3">1.5% ~ 2.8% O/A Clearing Spread</h3>
+          <p class="sc-p">
+            On every cross-border Open Account shipment cleared through Qubit Biz, *SC captures a structured trade-finance facilitation and K-SURE orchestration spread while still saving the buyer 50%+ vs. bank L/C fees.
+          </p>
+        </div>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">REVENUE STREAM 03</div>
+          <h3 class="sc-sub-h3">B2B SaaS &amp; MCP API Licensing</h3>
+          <p class="sc-p">
+            External export associations, trade chambers (IATA / IADA), and enterprise manufacturers license the *SC Open Accounts Underwriting &amp; RPF Engine at a 78%~85% gross margin SaaS subscription.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <!-- ============================================================================
+         CHAPTER VII. 8-BASE GLOBAL DEPLOYMENT & EMPIRICAL CORRIDOR BENCHMARKS
+         ============================================================================ -->
+    <article class="sc-chapter" id="chapter-7">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">CHAPTER VII • 8-BASE INTERNATIONAL DEPLOYMENT</span>
+        <span class="sc-chapter-tag">SCK • SCI • SCV • SCJ • SCC • SCU • SG • IN</span>
+      </div>
+      <h2 class="sc-chapter-h2">Global Corridor Deployment &amp; Empirical Trade Benchmarks</h2>
+      <p class="sc-lead">
+        Operating across all 8 international bases of the Signal Star Universe, the Open Accounts Sales Engine adapts its underwriting weights to local customs frameworks, central bank foreign-exchange rules, and sovereign export insurance treaties. Below is the operational deployment matrix governing our primary cross-border corridors.
+      </p>
+
+      <table class="sc-table">
+        <thead>
+          <tr>
+            <th>Trade Corridor</th>
+            <th>Primary Commercial Verticals</th>
+            <th>Sovereign Credit &amp; Escrow Partner</th>
+            <th>Standard O/A &amp; PG Split Protocol</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>SCK (Korea) -&gt; SCI (Indonesia)</strong></td>
+            <td>MedIX Vet Diagnostics, SISPet Bio-Health, Smart ODM Rp 1,320 Sachets, K-Beauty</td>
+            <td>K-SURE Export Credit + Local Indonesian PG (Midtrans / Xendit) Split Escrow</td>
+            <td>3-Month RPF + 15% Advance Tunnel + Net-60 O/A with daily 70/30 IDR-to-USD sweep</td>
+          </tr>
+          <tr>
+            <td><strong>SCK (Korea) -&gt; SCV (Vietnam)</strong></td>
+            <td>SISPharm Clinical Nutraceuticals, Sismii Cosmetics, Mint S1–S6 Franchises</td>
+            <td>K-SURE Short-Term Export Insurance + Vietcombank / VNPay Webhook Bridge</td>
+            <td>3-Month RPF + 20% Advance Tunnel + Net-45 O/A with automated customs e-B/L trigger</td>
+          </tr>
+          <tr>
+            <td><strong>SCC (China) -&gt; SCI / SCV (ASEAN)</strong></td>
+            <td>Smart Packaging, Auto-Formulator R1 Hardware, Veterinary Medical Devices</td>
+            <td>Sinosure / Cross-Border RMB-USD Clearing + *SC Singapore (SG) Treasury Hub</td>
+            <td>30% Pre-Order Tunneling + 70% Net-45 O/A backed by bonded warehouse CCTV Opname</td>
+          </tr>
+          <tr>
+            <td><strong>SCU (USA) / SCJ (Japan) -&gt; Global</strong></td>
+            <td>Premium Bio-Actives, Exo-Brain &amp; [&amp; I] Wearables, Enterprise AI SaaS Subscriptions</td>
+            <td>Stripe Connect Multi-Party Split + Sovereign Export Credit Guarantee</td>
+            <td>Instant 70/30 API Split at checkout or Net-60 Enterprise Subscription O/A</td>
+          </tr>
+          <tr>
+            <td><strong>IN (India) -&gt; SCI / SG / Global</strong></td>
+            <td>SisAyurvedic API Botanicals, Veterinary Active Pharmaceutical Ingredients (APIs)</td>
+            <td>ECGC / Singapore Escrow Clearinghouse + 3-Month Rolling Formulation Lock</td>
+            <td>20% Raw Material Lock + 80% Net-60 O/A cleared upon COA &amp; SGS lab verification</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">OPERATIONAL CASE STUDY • MEDIX &amp; SISPET INDONESIA</div>
+          <h3 class="sc-sub-h3">Scaling 400+ Veterinary Clinics with Zero Bad Debt</h3>
+          <p class="sc-p">
+            By deploying the Open Accounts Sales Engine for veterinary diagnostics and companion-animal therapeutics across Indonesia (<code>SCI</code>), clinics transition from sporadic cash-on-delivery micro-orders to locked 90-day RPF supply contracts. Clinic inventory replenishment is automated via Qubit ERP, raising average monthly clinic procurement by 280% while maintaining 100% on-time PG split settlement.
+          </p>
+        </div>
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">OPERATIONAL CASE STUDY • SMART ODM Rp 1,320 SACHET ENGINE</div>
+          <h3 class="sc-sub-h3">Financing High-Velocity Mass Production at t = 0</h3>
+          <p class="sc-p">
+            Brand owners launching <strong>Rp 1,320 ($0.08) Sachets</strong> via our Auto-Formulator R1 engine combine 50% Pre-Order Tunneling with 50% K-SURE Open Account credit. Raw material suppliers and co-packers are paid at <code>t = 0</code> without freezing founder equity, enabling rapid multi-million-sachet scale across ASEAN retail channels.
+          </p>
+        </div>
+      </div>
+
+      <div class="sc-callout">
+        <div class="sc-callout-title">*SC — SISTAR COMPANY | One Spark, Infinite Galaxifying</div>
+        <p class="sc-p" style="margin:0;">
+          <strong>Open Accounts Sales (Module 09 of Biz Intelligence)</strong> transforms trust from a subjective human gamble into an insured, mathematically entangled asset class. Powered by the <strong>Qubit Algorithm™</strong>, <strong>*SC intelligence-core</strong>, <strong>Scarlet AI</strong>, <strong>Qubit Biz</strong>, and the <strong>Biz Galaxy</strong> constellation.<br />
+          Corporate Portal: <code>https://sistarcompany.com</code> • Domain 03 Vault: <code>https://intelligencecore.sistarcompany.com</code> • Executive Contact: DennyKu (<code>denniiku@sistarcompany.com</code>)
+        </p>
+      </div>
+    </article>
   </main>
 </body>
 </html>
