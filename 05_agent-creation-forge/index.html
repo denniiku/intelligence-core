@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <title>*sc | intelligence-core — Agent & Creation Forge (Agent, Web & Delight Forge)</title>
+  <meta name="description" content="Official Institutional Monograph of Domain 03 (intelligence-core): The Proprietary AI Asset Vault of *SC (SISTAR Company) housing *SC AI Centers Int'l, Overnight Data Factory (10 PM - 8 AM), Company RAG, Qubit ERP, Agent Builder, and Exo-Brain that power scarlet-ai and qubit-biz." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "*SC | Intelligence-Core ??The Proprietary AI Asset Vault, Overnight Data Factory & Cognitive Engine Room",
+    "description": "Comprehensive architectural specification of Domain 03 (intelligence-core): 13 Core AI Sub-Domains, 24/7 Unmanned Overnight Data Factory, Dual-Engine Zero-Hallucination RAG, 8-Team Qubit ERP, Agent Builder (SISTAR AB), and Exo-Brain Physical AI powering scarlet-ai and qubit-biz.",
+    "author": {
+      "@type": "Person",
+      "name": "DennyKu (*SC)"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "*SC - SISTAR COMPANY",
+      "alternateName": "Signal Star Universe",
+      "url": "https://sistarcompany.com"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://intelligence-core.sistarcompany.com/"
+    }
+  }
+  </script>
+  <style>
+    html, body {
+      background: linear-gradient(to right, #f0acf7, #acf7f0, #f7f0ac);
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.sc-nav-open { padding-left: 236px; }
+    body.sc-nav-folded { padding-left: 64px; }
+    @media (max-width: 768px) {
+      body.sc-nav-open, body.sc-nav-folded { padding-left: 0 !important; }
+    }
+
+    .sc-monograph {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: min(1380px, 95%);
+      margin: 0 auto;
+      padding: clamp(36px, 5vh, 68px) clamp(24px, 5vw, 76px) 120px;
+    }
+    .sc-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+      border-bottom: 1.5px solid rgba(15, 23, 42, 0.15);
+    }
+    .sc-route {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #475569;
+      margin: 0;
+      letter-spacing: 0.03em;
+      text-transform: lowercase;
+    }
+    .sc-chapter-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid #0f172a;
+    }
+    .sc-chapter-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #0f5132;
+    }
+    .sc-chapter-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #64748b;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .sc-doc-h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.1rem, 3.6vw, 3.05rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      margin: 0 0 20px 0;
+    }
+    .sc-chapter-h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.55rem, 2.4vw, 2.05rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.22;
+      letter-spacing: -0.025em;
+      margin: 0 0 18px 0;
+    }
+    .sc-sub-h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 0 0 10px 0;
+      line-height: 1.35;
+    }
+    .sc-lead {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 500;
+      color: #1e293b;
+      line-height: 1.82;
+      margin: 0 0 24px 0;
+    }
+    .sc-p {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.99rem;
+      color: #334155;
+      line-height: 1.82;
+      margin: 0 0 16px 0;
+    }
+
+    /* === EXECUTIVE DARK HERO & METRICS === */
+    .sc-exec-hero {
+      background: linear-gradient(135deg, #090d16 0%, #0f172a 55%, #064e3b 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: clamp(28px, 3.8vw, 44px);
+      margin: 22px 0 32px 0;
+      border: 1px solid rgba(74, 222, 128, 0.3);
+    }
+    .sc-exec-hero h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 14px 0;
+      line-height: 1.3;
+    }
+    .sc-exec-hero p {
+      font-size: 1.02rem;
+      color: #e2e8f0;
+      line-height: 1.78;
+      margin: 0 0 24px 0;
+    }
+    .sc-kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    @media (max-width: 900px) {
+      .sc-kpi-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    .sc-kpi-cell {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .sc-kpi-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.42rem;
+      font-weight: 700;
+      color: #4ade80;
+      margin-bottom: 4px;
+    }
+    .sc-kpi-desc {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    /* === EDITORIAL GRIDS & PANELS === */
+    .sc-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+      margin: 24px 0;
+    }
+    .sc-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 24px 0;
+    }
+    @media (max-width: 860px) {
+      .sc-grid-2, .sc-grid-3 { grid-template-columns: 1fr; }
+    }
+    .sc-panel {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-top: 4px solid #0f172a;
+      border-radius: 12px;
+      padding: 24px 26px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+    }
+    .sc-panel.emerald { border-top-color: #0f5132; background: #f8fafc; }
+    .sc-panel.blue { border-top-color: #1d4ed8; }
+    .sc-panel.purple { border-top-color: #6d28d9; }
+    .sc-panel-kicker {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #0f5132;
+      margin-bottom: 8px;
+    }
+    .sc-panel.blue .sc-panel-kicker { color: #1d4ed8; }
+    .sc-panel.purple .sc-panel-kicker { color: #6d28d9; }
+
+    /* === FORMULA & ARCHITECTURE BLOCKS === */
+    .sc-math-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 12px;
+      padding: 22px 26px;
+      margin: 16px 0;
+      border-left: 4px solid #10b981;
+    }
+    .sc-math-code {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 1.04rem;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 7px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 8px 0 12px 0;
+    }
+
+    /* === TABLES === */
+    .sc-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #cbd5e1;
+    }
+    .sc-table th {
+      background: #0f172a;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-align: left;
+      padding: 14px 18px;
+      letter-spacing: 0.03em;
+    }
+    .sc-table td {
+      padding: 15px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.94rem;
+      color: #1e293b;
+      line-height: 1.65;
+      vertical-align: top;
+    }
+    .sc-table tr:last-child td { border-bottom: none; }
+    .sc-table tr:nth-child(even) td { background: #f8fafc; }
+
+    /* === CALLOUTS & DOSSIER HEADERS === */
+    .sc-callout {
+      background: #f0fdf4;
+      border-left: 5px solid #0f5132;
+      border-radius: 0 12px 12px 0;
+      padding: 22px 26px;
+      margin: 24px 0;
+    }
+    .sc-callout-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #064e3b;
+      margin-bottom: 8px;
+    }
+    .sc-dossier-card {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 14px;
+      padding: 28px 32px;
+      margin-bottom: 32px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    }
+    .sc-dossier-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+      border-bottom: 1.5px solid #e2e8f0;
+    }
+    .sc-dossier-id {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      background: #0f172a;
+      color: #4ade80;
+      padding: 5px 12px;
+      border-radius: 6px;
+      letter-spacing: 0.06em;
+    }
+    .sc-dossier-domain {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: #0f5132;
+    }
+    .sc-dossier-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-top: 18px;
+    }
+    @media (max-width: 760px) {
+      .sc-dossier-metrics { grid-template-columns: 1fr; }
+    }
+
+    .sc-svg-frame {
+      width: 100%;
+      margin: 28px 0;
+      padding: 24px;
+      box-sizing: border-box;
+      border-top: 3px solid #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      border-left: 1px solid #e2e8f0;
+      border-right: 1px solid #e2e8f0;
+      background: #f8fafc;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+    }
+    .sc-svg-frame svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .sc-svg-caption {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: #475569;
+      margin-top: 12px;
+      letter-spacing: 0.02em;
+    }
+
+    /* === MULTI-PAGE A4 PRINT ENGINE (10+ PAGES GUARANTEED) === */
+    @page {
+      size: A4 portrait;
+      margin: 15mm 14mm;
+    }
+    @media print {
+      html, body {
+        background: #ffffff !important;
+        color: #0f172a !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      #sc-left-nav, .sc-nav-toggle, .sc-top-bar {
+        display: none !important;
+      }
+      body.sc-nav-open, body.sc-nav-folded, body {
+        padding-left: 0 !important;
+      }
+      .sc-monograph {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 !important;
+      }
+      .sc-chapter:last-of-type {
+        page-break-after: auto !important;
+        break-after: auto !important;
+      }
+      .sc-page-break {
+        page-break-before: always !important;
+        break-before: page !important;
+      }
+      .sc-exec-hero, .sc-math-box {
+        background: #f8fafc !important;
+        color: #0f172a !important;
+        border: 1.5px solid #94a3b8 !important;
+      }
+      .sc-exec-hero h3, .sc-exec-hero p, .sc-kpi-val, .sc-kpi-desc, .sc-math-code {
+        color: #0f172a !important;
+      }
+      .sc-panel, .sc-dossier-card, .sc-callout, .sc-table tr {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+      }
+    }
+  </style>
+  <script>
+    (function() {
+      var p = location.pathname.replace(/\\/g, "/");
+      var base = "/common_assets/";
+      if (location.protocol === "file:") {
+        var i = p.toLowerCase().indexOf("/sc_web/");
+        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "../common_assets/";
+      }
+      document.write("<link rel=\"stylesheet\" href=\"" + base + "common_new.css?v=2.2\">");
+      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js?v=5.0\" defer><\/script>");
+    })();
+  </script>
+</head>
+<body class="sc-nav-open">
+  <main class="sc-monograph">
+    <div class="sc-top-bar">
+      <p class="sc-route">intelligence-core - agent creation forge</p>
+      <div class="sc-action-btns">
+        <a class="sc-btn-pdf" href="../index.html">&larr; Back to Intelligence-Core Main</a>
+        <button class="sc-btn-pdf" onclick="window.print()">Print / Save PDF</button>
+      </div>
+    </div>
+
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">PILLAR 04 • CREATE : AGENT BUILDER, WEB BUILDER, MONEY MAKING DESIGNS & AI/ONLINE DELIGHTS</span>
+        <span class="sc-chapter-tag">INTELLIGENCE-CORE L2 PILLAR</span>
+      </div>
+      <h1 class="sc-chapter-h2" style="font-size:clamp(1.8rem, 3vw, 2.5rem); margin-bottom:12px;">Agent & Creation Forge (Agent, Web & Delight Forge)</h1>
+      <p class="sc-lead" style="margin-bottom:14px;"><strong>The Vibe Working Execution Factory Minted from a Single directive to Simultaneously Deploy Agents, 6-Language Portals, and Shoppable Media.</strong></p>
+      <p class="sc-p">Triggered by a single task from CEO ActionNote (c.a.n.), the Agent & Creation Forge automatically assembles custom autonomous AI agents, 6-language semantic websites, conversion-engineered commercial designs, 10+ daily shoppable videos, and gamified/reverse-auction customer experience modules.</p>
+
+      <div class="sc-grid-2" style="margin-top:24px;">
+        <div class="sc-panel" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div class="sc-panel-kicker">MODULE SPECIFICATION &bull; 01</div>
+            <h3 class="sc-sub-h3" style="margin-top:0;">AGENT BUILDER</h3>
+            <p class="sc-p">Explore the full technical architecture, operating mechanics, and production implementation of <strong>AGENT BUILDER</strong> inside *SC Intelligence-Core.</p>
+          </div>
+          <div style="margin-top:14px;">
+            <a href="./01_agent-builder/index.html" style="display:inline-flex; align-items:center; gap:6px; padding:8px 16px; border-radius:99px; background:#0F172A; color:#FFFFFF; font-family:'Space Grotesk',sans-serif; font-size:0.84rem; font-weight:700; text-decoration:none;">Open Module Specification &rarr;</a>
+          </div>
+        </div>        <div class="sc-panel" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div class="sc-panel-kicker">MODULE SPECIFICATION &bull; 02</div>
+            <h3 class="sc-sub-h3" style="margin-top:0;">WEB BUILDER</h3>
+            <p class="sc-p">Explore the full technical architecture, operating mechanics, and production implementation of <strong>WEB BUILDER</strong> inside *SC Intelligence-Core.</p>
+          </div>
+          <div style="margin-top:14px;">
+            <a href="./02_web-builder/index.html" style="display:inline-flex; align-items:center; gap:6px; padding:8px 16px; border-radius:99px; background:#0F172A; color:#FFFFFF; font-family:'Space Grotesk',sans-serif; font-size:0.84rem; font-weight:700; text-decoration:none;">Open Module Specification &rarr;</a>
+          </div>
+        </div>        <div class="sc-panel" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div class="sc-panel-kicker">MODULE SPECIFICATION &bull; 03</div>
+            <h3 class="sc-sub-h3" style="margin-top:0;">MONEY MAKING DESIGNS</h3>
+            <p class="sc-p">Explore the full technical architecture, operating mechanics, and production implementation of <strong>MONEY MAKING DESIGNS</strong> inside *SC Intelligence-Core.</p>
+          </div>
+          <div style="margin-top:14px;">
+            <a href="./03_money-making-designs/index.html" style="display:inline-flex; align-items:center; gap:6px; padding:8px 16px; border-radius:99px; background:#0F172A; color:#FFFFFF; font-family:'Space Grotesk',sans-serif; font-size:0.84rem; font-weight:700; text-decoration:none;">Open Module Specification &rarr;</a>
+          </div>
+        </div>        <div class="sc-panel" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div class="sc-panel-kicker">MODULE SPECIFICATION &bull; 04</div>
+            <h3 class="sc-sub-h3" style="margin-top:0;">BRAND NEW ONLINE DELIGHTS</h3>
+            <p class="sc-p">Explore the full technical architecture, operating mechanics, and production implementation of <strong>BRAND NEW ONLINE DELIGHTS</strong> inside *SC Intelligence-Core.</p>
+          </div>
+          <div style="margin-top:14px;">
+            <a href="./04_brand-new-online-delights/index.html" style="display:inline-flex; align-items:center; gap:6px; padding:8px 16px; border-radius:99px; background:#0F172A; color:#FFFFFF; font-family:'Space Grotesk',sans-serif; font-size:0.84rem; font-weight:700; text-decoration:none;">Open Module Specification &rarr;</a>
+          </div>
+        </div>        <div class="sc-panel" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div class="sc-panel-kicker">MODULE SPECIFICATION &bull; 05</div>
+            <h3 class="sc-sub-h3" style="margin-top:0;">BRAND NEW AI DELIGHTS</h3>
+            <p class="sc-p">Explore the full technical architecture, operating mechanics, and production implementation of <strong>BRAND NEW AI DELIGHTS</strong> inside *SC Intelligence-Core.</p>
+          </div>
+          <div style="margin-top:14px;">
+            <a href="./05_brand-new-ai-delights/index.html" style="display:inline-flex; align-items:center; gap:6px; padding:8px 16px; border-radius:99px; background:#0F172A; color:#FFFFFF; font-family:'Space Grotesk',sans-serif; font-size:0.84rem; font-weight:700; text-decoration:none;">Open Module Specification &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+  <script src="../common_assets/nav_new.js"></script>
+</body>
+</html>
