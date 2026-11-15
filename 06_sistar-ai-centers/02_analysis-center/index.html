@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=block" rel="stylesheet">
+  <title>intelligence-core | Analysis Center — Quantitative Modeling & ROI Feasibility</title>
+  <style>
+    html, body {
+      background: linear-gradient(to right, #f0acf7, #acf7f0, #f7f0ac);
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.sc-nav-open { padding-left: 236px; }
+    body.sc-nav-folded { padding-left: 64px; }
+    @media (max-width: 768px) {
+      body.sc-nav-open, body.sc-nav-folded { padding-left: 0 !important; }
+    }
+
+    .sc-monograph {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: min(1380px, 95%);
+      margin: 0 auto;
+      padding: clamp(36px, 5vh, 68px) clamp(24px, 5vw, 76px) 120px;
+    }
+    .sc-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+      border-bottom: 1.5px solid rgba(15, 23, 42, 0.15);
+    }
+    .sc-route {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #475569;
+      margin: 0;
+      letter-spacing: 0.03em;
+      text-transform: lowercase;
+    }
+    .sc-action-btns {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .sc-btn-pdf {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 600;
+      padding: 9px 18px;
+      border-radius: 8px;
+      border: 1.5px solid #0f172a;
+      background: rgba(255, 255, 255, 0.85);
+      color: #0f172a;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .sc-btn-pdf:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+    }
+
+    .sc-chapter {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(15, 23, 42, 0.12);
+      border-radius: 18px;
+      padding: clamp(32px, 4.5vw, 56px);
+      margin-bottom: 44px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+    }
+    .sc-chapter-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid #0f172a;
+    }
+    .sc-chapter-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #0f5132;
+    }
+    .sc-chapter-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #64748b;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .sc-doc-h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.95rem, 3.2vw, 2.75rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.18;
+      letter-spacing: -0.025em;
+      margin: 0 0 14px 0;
+    }
+    .sc-author-bar {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: #0f5132;
+      margin-bottom: 24px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #cbd5e1;
+    }
+    .sc-chapter-h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.5rem, 2.3vw, 1.95rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      margin: 0 0 18px 0;
+    }
+    .sc-sub-h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 26px 0 10px 0;
+      line-height: 1.35;
+    }
+    .sc-lead {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.06rem;
+      font-weight: 500;
+      color: #1e293b;
+      line-height: 1.82;
+      margin: 0 0 20px 0;
+    }
+    .sc-p {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.99rem;
+      color: #334155;
+      line-height: 1.82;
+      margin: 0 0 16px 0;
+    }
+
+    .sc-exec-hero {
+      background: linear-gradient(135deg, #090d16 0%, #0f172a 55%, #064e3b 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: clamp(26px, 3.6vw, 40px);
+      margin: 20px 0 28px 0;
+      border: 1px solid rgba(74, 222, 128, 0.3);
+    }
+    .sc-exec-hero h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #4ade80;
+      margin: 0 0 12px 0;
+      letter-spacing: 0.02em;
+    }
+    .sc-exec-hero p {
+      font-size: 1rem;
+      color: #e2e8f0;
+      line-height: 1.8;
+      margin: 0 0 14px 0;
+    }
+    .sc-kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding-top: 18px;
+      margin-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    @media (max-width: 900px) {
+      .sc-kpi-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    .sc-kpi-cell {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .sc-kpi-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #4ade80;
+      margin-bottom: 4px;
+    }
+    .sc-kpi-desc {
+      font-size: 0.84rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    .sc-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 26px;
+      margin: 22px 0;
+    }
+    .sc-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin: 22px 0;
+    }
+    @media (max-width: 860px) {
+      .sc-grid-2, .sc-grid-3 { grid-template-columns: 1fr; }
+    }
+    .sc-panel {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-top: 4px solid #0f172a;
+      border-radius: 12px;
+      padding: 24px 26px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+    }
+    .sc-panel.emerald { border-top-color: #0f5132; background: #f8fafc; }
+    .sc-panel.blue { border-top-color: #1d4ed8; }
+    .sc-panel-kicker {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #0f5132;
+      margin-bottom: 8px;
+    }
+
+    .sc-math-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 12px;
+      padding: 20px 26px;
+      margin: 18px 0;
+      border-left: 4px solid #10b981;
+      overflow-x: auto;
+    }
+    .sc-math-label {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #4ade80;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .sc-math-code {
+      font-family: 'Space Grotesk', 'Consolas', monospace;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 10px 14px;
+      border-radius: 6px;
+      display: block;
+      margin: 6px 0 10px 0;
+      white-space: pre-wrap;
+    }
+    .sc-pre-json {
+      background: #0f172a;
+      color: #e2e8f0;
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      padding: 24px 28px;
+      border-radius: 12px;
+      border-left: 4px solid #38bdf8;
+      overflow-x: auto;
+      margin: 20px 0;
+    }
+
+    .sc-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 22px 0;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #cbd5e1;
+    }
+    .sc-table th {
+      background: #0f172a;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-align: left;
+      padding: 14px 18px;
+      letter-spacing: 0.03em;
+    }
+    .sc-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.94rem;
+      color: #1e293b;
+      line-height: 1.65;
+      vertical-align: top;
+    }
+    .sc-table tr:last-child td { border-bottom: none; }
+    .sc-table tr:nth-child(even) td { background: #f8fafc; }
+
+    .sc-svg-wrap {
+      background: #0f172a;
+      border-radius: 14px;
+      padding: 24px;
+      margin: 26px 0;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      overflow-x: auto;
+    }
+
+    @page { size: A4 portrait; margin: 15mm 14mm; }
+    @media print {
+      html, body { background: #ffffff !important; color: #0f172a !important; }
+      #sc-left-nav, .sc-action-btns, .sc-nav-toggle, .sc-top-bar { display: none !important; }
+      body.sc-nav-open, body.sc-nav-folded, body { padding-left: 0 !important; }
+      .sc-monograph { max-width: 100% !important; width: 100% !important; padding: 0 !important; }
+      .sc-chapter {
+        background: #ffffff !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 10px 0 24px 0 !important;
+        page-break-after: always !important;
+        break-after: page !important;
+      }
+      .sc-chapter:last-of-type { page-break-after: auto !important; break-after: auto !important; }
+      .sc-exec-hero, .sc-math-box, .sc-pre-json, .sc-svg-wrap {
+        background: #f8fafc !important;
+        color: #0f172a !important;
+        border: 1.5px solid #94a3b8 !important;
+      }
+      .sc-exec-hero h3, .sc-exec-hero p, .sc-kpi-val, .sc-kpi-desc, .sc-math-code { color: #0f172a !important; }
+    }
+  </style>
+  <script>
+    (function() {
+      var p = location.pathname.replace(/\\/g, "/");
+      var base = "/common_assets/";
+      if (location.protocol === "file:") {
+        var i = p.toLowerCase().indexOf("/sc_web/");
+        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "./common_assets/";
+      }
+      document.write("<link rel=\"stylesheet\" href=\"" + base + "common_new.css?v=2.2\">");
+      document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js?v=5.0\" defer><\/script>");
+    })();
+  </script>
+</head>
+<body class="sc-nav-open">
+  <main class="sc-monograph">
+    <div class="sc-top-bar">
+      <p class="sc-route">intelligence-core - sistar ai centers - analysis center</p>
+      <div class="sc-action-btns">
+        <a class="sc-btn-pdf" href="../index.html">&larr; Back to SISTAR AI Centers</a><a class="sc-btn-pdf" href="../01_command-center/index.html">&larr; Prev Center</a><a class="sc-btn-pdf" href="../03_media-center/index.html">Next Center &rarr;</a>
+        <button class="sc-btn-pdf" onclick="window.print()">Print / Save PDF</button>
+      </div>
+    </div>
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">LEVEL 3 &bull; ANALYSIS_CENTER</span>
+        <span class="sc-chapter-tag">CENTER 02 / 09</span>
+      </div>
+      <h1 class="sc-chapter-h2" style="font-size:clamp(1.85rem, 3.1vw, 2.55rem); margin-bottom:12px;">Analysis Center &mdash; Quantitative Modeling &amp; ROI Feasibility</h1>
+      <p class="sc-lead" style="margin-bottom:18px;"><strong>The quantitative laboratory of *SC. Transforming raw financial and market data into deep mathematical insights, break-even simulations, and pricing elasticity models.</strong></p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">01 &bull; WHAT IT IS (CORE DEFINITION)</div>
+          <h3 class="sc-sub-h3" style="margin-top:0;">Core Identity &amp; Operational Role</h3>
+          <p class="sc-p" style="margin-bottom:0;">The Analysis Center is dedicated entirely to advanced mathematical modeling, strategic project feasibility studies, and post-mortem project audits. Before *SC injects capital into a new Cosmo Seed&trade; venture or enters a new global market, the Analysis Center performs rigorous quantitative testing to ensure profitability, calculating exact break-even points and optimal pricing structures.</p>
+        </div>
+
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">02 &bull; ROUTING SCOPE &amp; TRIGGER MECHANISMS</div>
+          <h3 class="sc-sub-h3" style="margin-top:0;">Routing Scope &amp; Trigger Keywords</h3>
+          <p class="sc-p"><strong>Routing Scope:</strong> Quantitative data modeling, project feasibility studies, ROI and break-even simulations, post-mortem project audits, margin analysis, and pricing elasticity modeling.</p>
+          <p class="sc-p" style="margin-bottom:0;"><strong>Trigger Keywords:</strong> analyze feasibility, simulate ROI, break-even point, post-mortem, margin analysis, elasticity, quantitative study.</p>
+        </div>
+      </div>
+
+      <div class="sc-panel blue" style="margin-top:22px;">
+        <div class="sc-panel-kicker">03 &bull; EXCLUSION BOUNDARIES (WHAT IT DOES NOT DO)</div>
+        <h3 class="sc-sub-h3" style="margin-top:0;">Strict Operational Guardrails</h3>
+        <p class="sc-p" style="margin-bottom:0;">To maintain absolute analytical integrity, the Analysis Center is heavily compartmentalized. It does NOT store, clean, or maintain raw corporate data (which is strictly the domain of DATA_CENTER). It does NOT manage routine accounting books, daily cash flow, or official tax filings (which belong exclusively to TEAM_FINANCE). It focuses purely on analytical, predictive insights and high-level mathematical evaluation based on data provided to it.</p>
+      </div>
+    </article>
+
+  </main>
+</body>
+</html>
